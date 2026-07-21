@@ -1,0 +1,13 @@
+[Unit]
+Description=Valovi Most motor (paper, dvije knjige)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+WorkingDirectory=/opt/valovi/most
+ExecStart=/usr/bin/python3 /opt/valovi/most/motor.py
+Restart=always
+RestartSec=30
+
+[Install]
+WantedBy=multi-user.target
