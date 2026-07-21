@@ -1,0 +1,74 @@
+{
+  "rezim": "paper",
+  "valuta": "EUR",
+  "ciklus_sekundi": 60,
+
+  "naknade": {
+    "maker_pct": 0.40,
+    "taker_pct": 0.80,
+    "rollover_pct_4h": 0.02
+  },
+
+  "dnevni": {
+    "bot_radi": true,
+    "pauza_novih_ulaza": false,
+    "sredstva_u_prometu": 1000,
+    "svijece_interval_min": 60,
+    "ema_brzi": 9,
+    "ema_spori": 21,
+    "rsi_gornji": 72,
+    "rsi_donji": 28,
+    "max_pozicija": 10,
+    "auto_zetva_pct": 2.5,
+    "auto_grizanje": true,
+    "grizi_dok_gorivo_iznad": 60,
+    "stop_loss_pct": 8,
+    "zakljucaj_na_pct": 3,
+    "trailing_pct": 1.5,
+    "dokup": {
+      "upaljen": true,
+      "razmak_pct": 1.0,
+      "max_dokupa": 3,
+      "mnozitelj": 1.5,
+      "potvrdna_svijeca": true
+    },
+    "osiguraci": {
+      "limit_gubitka_pct": 5,
+      "max_istog_smjera": 7,
+      "max_short_izlozenost_pct": 30
+    }
+  },
+
+  "tjedni": {
+    "bot_radi": true,
+    "pauza_novih_ulaza": false,
+    "sredstva_u_prometu": 400,
+    "svijece_interval_min": 1440,
+    "ema_brzi": 9,
+    "ema_spori": 21,
+    "rsi_gornji": 70,
+    "rsi_donji": 30,
+    "max_pozicija": 5,
+    "ulaz_samo_trend_tjedan": true,
+    "pametna_zetva": true,
+    "pametna_zetva_faktor": 0.6,
+    "auto_zetva_pct": 10,
+    "auto_grizanje": true,
+    "grizi_dok_gorivo_iznad": 60,
+    "stop_loss_pct": 15,
+    "zakljucaj_na_pct": 5,
+    "trailing_pct": 4,
+    "dokup": {
+      "upaljen": true,
+      "razmak_pct": 3.5,
+      "max_dokupa": 3,
+      "mnozitelj": 1.5,
+      "potvrdna_svijeca": true
+    },
+    "osiguraci": {
+      "limit_gubitka_pct": 10,
+      "max_istog_smjera": 4,
+      "max_short_izlozenost_pct": 30
+    }
+  }
+}
