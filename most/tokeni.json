@@ -1,0 +1,8 @@
+{
+  "komentar": "30 ozbiljnih tokena. Motor na startu pita Kraken i sam nadje par (EUR); tokene bez para preskace.",
+  "tokeni": [
+    "BTC", "ETH", "SOL", "XRP", "ADA", "DOGE", "DOT", "LINK", "AVAX", "LTC",
+    "BCH", "ATOM", "UNI", "AAVE", "ALGO", "FIL", "TRX", "XLM", "ETC", "NEAR",
+    "APT", "ARB", "OP", "INJ", "SUI", "TIA", "SEI", "GRT", "SAND", "PEPE"
+  ]
+}
