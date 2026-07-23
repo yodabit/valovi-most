@@ -11,6 +11,7 @@
 
   "dnevni": {
     "bot_radi": true,
+    "short_dozvoljen": false,
     "pauza_novih_ulaza": false,
     "sredstva_u_prometu": 1000,
     "svijece_interval_min": 60,
@@ -41,6 +42,7 @@
 
   "tjedni": {
     "bot_radi": true,
+    "short_dozvoljen": false,
     "pauza_novih_ulaza": false,
     "sredstva_u_prometu": 400,
     "svijece_interval_min": 1440,
