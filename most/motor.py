@@ -536,6 +536,8 @@ class Motor:
                                        p["rsi_gornji"], p["rsi_donji"])
             if not sig:
                 continue
+            if sig == "SHORT" and not p.get("short_dozvoljen", False):
+                continue   
             # protiv vrtnje: ne ulazi ponovno u isti smjer iz kojeg smo tek izasli
             if k["zadnji_izlaz_signal"].get(tok) == sig:
                 continue
