@@ -1,6 +1,6 @@
 {
- "generirano_utc": "23.07.2026 15:28:39 UTC",
- "generirano_ts": 1784820519,
+ "generirano_utc": "23.07.2026 15:31:48 UTC",
+ "generirano_ts": 1784820708,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-1.0",
@@ -28,14 +28,14 @@
      "ATOM": {
       "smjer": "LONG",
       "prvi_ulaz": 1.3119,
-      "prosjek": 1.2966629257501037,
-      "ulozeno": 250.0,
-      "kolicina": 192.8026127957488,
-      "dokupa": 1,
-      "naknade_eur": 1.0,
+      "prosjek": 1.2737276290552781,
+      "ulozeno": 1150.0,
+      "kolicina": 902.8617843933819,
+      "dokupa": 2,
+      "naknade_eur": 4.6,
       "rollover_eur": 0.0,
       "vrijeme_ulaza": "21.07. 14:51 UTC",
-      "zadnja_stepenica": 1.2867,
+      "zadnja_stepenica": 1.2675,
       "stop_pct": -8,
       "zakljucano": false,
       "u_zoni": false,
@@ -45,14 +45,14 @@
      "AVAX": {
       "smjer": "LONG",
       "prvi_ulaz": 5.79,
-      "prosjek": 5.79,
-      "ulozeno": 100.0,
-      "kolicina": 17.271157167530223,
-      "dokupa": 0,
-      "naknade_eur": 0.4,
+      "prosjek": 5.676487449873757,
+      "ulozeno": 700.0,
+      "kolicina": 123.31569587378684,
+      "dokupa": 1,
+      "naknade_eur": 2.8,
       "rollover_eur": 0.0,
       "vrijeme_ulaza": "21.07. 14:51 UTC",
-      "zadnja_stepenica": 5.79,
+      "zadnja_stepenica": 5.658,
       "stop_pct": -8,
       "zakljucano": false,
       "u_zoni": false,
@@ -62,14 +62,14 @@
      "DOT": {
       "smjer": "LONG",
       "prvi_ulaz": 0.7524,
-      "prosjek": 0.7476400085419892,
-      "ulozeno": 250.0,
-      "kolicina": 334.3855293238489,
-      "dokupa": 1,
-      "naknade_eur": 1.0,
+      "prosjek": 0.7223294188571028,
+      "ulozeno": 1150.0,
+      "kolicina": 1592.0713873450898,
+      "dokupa": 2,
+      "naknade_eur": 4.6,
       "rollover_eur": 0.0,
       "vrijeme_ulaza": "21.07. 14:51 UTC",
-      "zadnja_stepenica": 0.7445,
+      "zadnja_stepenica": 0.7156,
       "stop_pct": -8,
       "zakljucano": false,
       "u_zoni": false,
@@ -126,6 +126,23 @@
       "u_zoni": false,
       "najbolji_pl": 2.409442960056829,
       "zetva_pct": null
+     },
+     "AAVE": {
+      "smjer": "SHORT",
+      "prvi_ulaz": 84.23,
+      "prosjek": 84.23,
+      "ulozeno": 400.0,
+      "kolicina": 4.748901816454945,
+      "dokupa": 0,
+      "naknade_eur": 1.6,
+      "rollover_eur": 0.0,
+      "vrijeme_ulaza": "23.07. 15:28 UTC",
+      "zadnja_stepenica": 84.23,
+      "stop_pct": -8,
+      "zakljucano": false,
+      "u_zoni": false,
+      "najbolji_pl": 0.0,
+      "zetva_pct": null
      }
     },
     "sef": 11.874021400312273,
@@ -136,7 +153,6 @@
     "dobitni": 5,
     "gubitni": 0,
     "zadnji_izlaz_signal": {
-     "AAVE": "LONG",
      "NEAR": "SHORT",
      "APT": "LONG",
      "BCH": "SHORT"
@@ -240,7 +256,7 @@
     "zadnji_izlaz_signal": {}
    }
   },
-  "zadnja_runda": "23.07. 15:27 UTC"
+  "zadnja_runda": "23.07. 15:31 UTC"
  },
  "params": {
   "rezim": "paper",
