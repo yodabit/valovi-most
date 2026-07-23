@@ -1,6 +1,6 @@
 {
- "generirano_utc": "23.07.2026 22:17:18 UTC",
- "generirano_ts": 1784845038,
+ "generirano_utc": "23.07.2026 22:20:18 UTC",
+ "generirano_ts": 1784845218,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-1.0",
@@ -110,23 +110,6 @@
       "najbolji_pl": 1.8747907599598213,
       "zetva_pct": null
      },
-     "ADA": {
-      "smjer": "SHORT",
-      "prvi_ulaz": 0.151397,
-      "prosjek": 0.151397,
-      "ulozeno": 100.0,
-      "kolicina": 660.5150696513141,
-      "dokupa": 0,
-      "naknade_eur": 0.4,
-      "rollover_eur": 0.04,
-      "vrijeme_ulaza": "23.07. 07:41 UTC",
-      "zadnja_stepenica": 0.151397,
-      "stop_pct": -8,
-      "zakljucano": false,
-      "u_zoni": false,
-      "najbolji_pl": 2.409442960056829,
-      "zetva_pct": null
-     },
      "AAVE": {
       "smjer": "SHORT",
       "prvi_ulaz": 84.23,
@@ -145,17 +128,18 @@
       "zetva_pct": null
      }
     },
-    "sef": 11.874021400312273,
-    "realizirano_period": 1.7204351748660116,
+    "sef": 13.566224193252715,
+    "realizirano_period": 3.412637967806453,
     "period_od": "2026-07-23T00:00:00+00:00",
     "pauza_do": null,
-    "broj_trejdova": 5,
-    "dobitni": 5,
+    "broj_trejdova": 6,
+    "dobitni": 6,
     "gubitni": 0,
     "zadnji_izlaz_signal": {
      "NEAR": "SHORT",
      "APT": "LONG",
-     "BCH": "SHORT"
+     "BCH": "SHORT",
+     "ADA": "SHORT"
     }
    },
    "tjedni": {
@@ -256,7 +240,7 @@
     "zadnji_izlaz_signal": {}
    }
   },
-  "zadnja_runda": "23.07. 22:16 UTC"
+  "zadnja_runda": "23.07. 22:19 UTC"
  },
  "params": {
   "rezim": "paper",
@@ -411,6 +395,22 @@
    "pl_eur": 1.72,
    "zatvorio": "🍇 BOT-ZETVA",
    "saldo_eur": 1011.87
+  },
+  {
+   "portfelj": "dnevni",
+   "token": "ADA",
+   "smjer": "SHORT",
+   "kupljeno": "23.07. 07:41 UTC",
+   "kupljeno_po": 0.151397,
+   "prosjek": 0.151397,
+   "dokupa": 0,
+   "prodano": "23.07. 22:18 UTC",
+   "prodano_po": 0.147658,
+   "ulog_eur": 100.0,
+   "naknade_eur": 0.84,
+   "pl_eur": 1.69,
+   "zatvorio": "🍇 BOT-ZETVA",
+   "saldo_eur": 4013.57
   }
  ]
 }
