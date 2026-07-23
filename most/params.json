@@ -11,9 +11,9 @@
 
   "dnevni": {
     "bot_radi": true,
-    "short_dozvoljen": false,
+    "short_dozvoljen": true,
     "pauza_novih_ulaza": false,
-    "sredstva_u_prometu": 1000,
+    "sredstva_u_prometu": 4000,
     "svijece_interval_min": 60,
     "ema_brzi": 9,
     "ema_spori": 21,
@@ -42,9 +42,9 @@
 
   "tjedni": {
     "bot_radi": true,
-    "short_dozvoljen": false,
+    "short_dozvoljen": true,
     "pauza_novih_ulaza": false,
-    "sredstva_u_prometu": 400,
+    "sredstva_u_prometu": 2000,
     "svijece_interval_min": 1440,
     "ema_brzi": 9,
     "ema_spori": 21,
