@@ -1,0 +1,7 @@
+[Unit]
+Description=Valovi glasnik - nosi stanje na GitHub
+After=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 /opt/valovi/glasnik/glasnik.py

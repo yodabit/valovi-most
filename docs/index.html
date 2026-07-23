@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VALOVI — Komandni most (živo)</title>
+<style>
+  :root{--bg:#0b1118;--panel:#111a24;--panel2:#0e1620;--border:#1e2a38;--text:#d7e1ea;
+    --muted:#7d8fa0;--teal:#2dd4bf;--red:#f26d6d;--gold:#e8c268;--green:#4ade80;
+    --num:"SF Mono",Consolas,monospace}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);font:14px/1.5 -apple-system,"Segoe UI",Roboto,sans-serif;padding:16px}
+  #pcb{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.5}
+  body>*:not(#pcb){position:relative;z-index:1}
+  h1{font-size:20px;margin:0}.dot{color:var(--teal)}
+  h2{font-size:14px;margin:22px 0 8px;letter-spacing:.3px}
+  h2 small{color:var(--muted);font-weight:400;margin-left:8px;font-size:11.5px}
+  .zivo{background:var(--green);color:#04211d;font-weight:700;padding:4px 10px;border-radius:6px;font-size:12px;display:inline-block;margin-bottom:10px}
+  .zivo.problem{background:var(--red);color:#fff}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0;align-items:center}
+  .chip{background:var(--panel);border:1px solid var(--border);border-radius:8px;padding:7px 12px;font-size:12.5px;color:var(--muted)}
+  .chip b{color:var(--text);font-family:var(--num)}
+  .chip.big b{font-size:16px}
+  .chip.sef{border-color:var(--green)} .chip.sef b{color:var(--green)}
+  .chip.sef b.minus{color:var(--red)}
+  button{background:var(--panel);border:1px solid var(--border);color:var(--text);border-radius:7px;padding:6px 12px;cursor:pointer;font-size:12.5px}
+  button.primary{background:var(--teal);color:#04211d;border-color:var(--teal);font-weight:600}
+  table{width:100%;border-collapse:collapse;background:var(--panel);border:1px solid var(--border);border-radius:10px;overflow:hidden;font-size:13px}
+  th{font-size:10.5px;text-transform:uppercase;letter-spacing:1px;color:var(--muted);text-align:left;padding:9px 11px;border-bottom:1px solid var(--border)}
+  td{padding:8px 11px;border-bottom:1px solid var(--border)}
+  tr:last-child td{border-bottom:none}
+  tr:nth-child(even) td{background:var(--panel2)}
+  .num{font-family:var(--num);white-space:nowrap}
+  .up{color:var(--green)}.down{color:var(--red)}.zuto{color:var(--gold)}
+  .badge{display:inline-block;padding:2px 9px;border-radius:6px;font-size:11px;font-weight:700;border:1px solid}
+  .b-long{color:var(--green);border-color:var(--green)}
+  .b-short{color:var(--red);border-color:var(--red)}
+  .note{color:var(--muted);font-size:12px;margin-top:6px}
+  .legend{background:var(--panel2);border:1px dashed var(--gold);border-radius:8px;padding:8px 12px;font-size:12px;color:var(--gold);margin:8px 0}
+  .mini{font-size:10px;color:var(--muted)}
+</style>
+</head>
+<body>
+
+<svg id="pcb" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" viewBox="0 0 1600 900">
+  <defs><filter id="glow" x="-200%" y="-200%" width="500%" height="500%">
+    <feGaussianBlur stdDeviation="3.5" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter></defs>
+  <g stroke="#123825" stroke-width="1.4" fill="none">
+    <path id="t1" d="M -20 120 H 240 L 320 200 H 620 L 700 120 H 980 L 1060 200 V 320 H 1350 L 1430 240 H 1650"/>
+    <path id="t2" d="M -20 480 H 180 L 260 400 H 520 L 600 480 H 860 L 940 400 H 1240 L 1320 480 H 1650"/>
+    <path id="t3" d="M -20 760 H 260 L 340 680 H 700 L 780 760 H 1100 L 1180 680 H 1420 L 1500 760 H 1650"/>
+    <path id="t6" d="M -20 260 L 60 340 H 300 L 380 260 H 560 L 640 340 V 560 L 720 640 H 1000"/>
+    <path id="t7" d="M 1650 340 L 1540 340 L 1460 420 H 1180 L 1100 500 V 620 L 1020 700 H 820"/>
+  </g>
+  <g fill="#1a4a30">
+    <circle cx="320" cy="200" r="4"/><circle cx="700" cy="120" r="4"/><circle cx="1060" cy="200" r="4"/>
+    <circle cx="260" cy="400" r="4"/><circle cx="600" cy="480" r="4"/><circle cx="940" cy="400" r="4"/>
+    <circle cx="340" cy="680" r="4"/><circle cx="780" cy="760" r="4"/><circle cx="1180" cy="680" r="4"/>
+    <circle cx="640" cy="340" r="4"/><circle cx="1100" cy="500" r="4"/>
+  </g>
+  <g filter="url(#glow)">
+    <circle r="3.5" fill="#39ff88"><animateMotion dur="9s" repeatCount="indefinite"><mpath href="#t1"/></animateMotion></circle>
+    <circle r="3" fill="#39ff88"><animateMotion dur="13s" begin="2s" repeatCount="indefinite"><mpath href="#t2"/></animateMotion></circle>
+    <circle r="3.5" fill="#2dd4bf"><animateMotion dur="11s" begin="4s" repeatCount="indefinite"><mpath href="#t3"/></animateMotion></circle>
+    <circle r="3" fill="#39ff88"><animateMotion dur="10s" begin="3s" repeatCount="indefinite"><mpath href="#t6"/></animateMotion></circle>
+    <circle r="3" fill="#00ff41"><animateMotion dur="12s" begin="6s" repeatCount="indefinite"><mpath href="#t7"/></animateMotion></circle>
+  </g>
+</svg>
+
+<div id="traka" class="zivo">⏳ Učitavam stanje…</div>
+<h1>VALOVI<span class="dot">.</span> Komandni most <span style="font-size:13px;color:var(--muted)">· živo stanje motora (paper) · samo čitanje — Faza 2A</span></h1>
+
+<div class="chips" id="glavniChips"></div>
+<div class="legend" id="legenda" style="display:none"></div>
+
+<h2>⚡ DNEVNI portfelj <small id="dnevniInfo"></small></h2>
+<div class="chips" id="dnevniChips"></div>
+<div id="dnevniTab"></div>
+
+<h2>🌊 TJEDNI portfelj <small id="tjedniInfo"></small></h2>
+<div class="chips" id="tjedniChips"></div>
+<div id="tjedniTab"></div>
+
+<h2>📒 Dnevnik trejdova <small>zadnjih 200 · najnoviji prvi · knjiži se stvarno izvršeno (paper simulacija)</small></h2>
+<div id="dnevnikTab"></div>
+
+<p class="note">Cijene "TRENUTNO" vuku se ŽIVO s Kraken javnog API-ja pri svakom osvježenju ploče; ostatak stanja (pozicije, SEF, dnevnik) glasnik donosi s motora svake ~3 min. Neto P/L = bruto − naknade − rollover, po podacima motora. Ploča je zrcalo — ništa se odavde ne može mijenjati.</p>
+
+<script>
+const KRAKEN_ALIAS = {BTC:"XBT", DOGE:"XDG"};
+let stanje = null, cijene = {};
+
+function n(x, dec){ if(x===null||x===undefined||isNaN(x)) return "—";
+  return Number(x).toLocaleString("hr-HR",{minimumFractionDigits:dec===undefined?2:dec,maximumFractionDigits:dec===undefined?2:dec}); }
+function cij(x){ if(x===null||x===undefined||isNaN(x)) return "—";
+  const d = x>=1000?0:(x>=10?2:(x>=0.1?4:6)); return n(x,d); }
+function klasa(v){ return v>0?"up":(v<0?"down":""); }
+
+async function ucitajStanje(){
+  const r = await fetch("stanje.json?t="+Date.now(), {cache:"no-store"});
+  if(!r.ok) throw new Error("stanje.json HTTP "+r.status);
+  stanje = await r.json();
+}
+
+async function ucitajCijene(tokeni){
+  cijene = {};
+  if(!tokeni.length) return;
+  const parovi = tokeni.map(t => (KRAKEN_ALIAS[t]||t)+"EUR");
+  try{
+    const r = await fetch("https://api.kraken.com/0/public/Ticker?pair="+parovi.join(","));
+    const j = await r.json();
+    if(j.result){
+      for(const t of tokeni){
+        const alias = (KRAKEN_ALIAS[t]||t);
+        for(const kljuc in j.result){
+          if(kljuc.includes(alias) && kljuc.includes("EUR")){
+            cijene[t] = parseFloat(j.result[kljuc].c[0]); break;
+          }
+        }
+      }
+    }
+  }catch(e){ console.warn("Kraken cijene nedostupne", e); }
+}
+
+function pl_pct(poz, cur){
+  if(!cur || !poz.prosjek) return null;
+  const bruto = poz.smjer==="SHORT" ? (poz.prosjek-cur)/poz.prosjek*100 : (cur-poz.prosjek)/poz.prosjek*100;
+  return bruto;
+}
+
+function tablicaPozicija(knjiga){
+  const poz = (knjiga && knjiga.pozicije) || {};
+  const kljucevi = Object.keys(poz);
+  if(!kljucevi.length) return '<p class="note">Nema otvorenih pozicija — motor čeka valove.</p>';
+  let h = '<table><tr><th>Token</th><th>Smjer</th><th>Prosjek ulaza</th><th>Trenutno (živo)</th><th>Bruto P/L</th><th>Neto P/L €</th><th>Troškovi €</th><th>🔺 Dokupa</th><th>Stop</th><th>Status</th><th>Od</th></tr>';
+  for(const t of kljucevi){
+    const p = poz[t];
+    const cur = cijene[t];
+    const bp = pl_pct(p, cur);
+    const brutoEur = bp===null?null:(p.ulozeno*bp/100);
+    const trosak = (p.naknade_eur||0)+(p.rollover_eur||0);
+    const neto = brutoEur===null?null:(brutoEur-trosak);
+    let status = [];
+    if(p.zakljucano) status.push("🔒 zaključano");
+    if(p.u_zoni) status.push("⛽ produžna zona");
+    if(p.zetva_pct) status.push("🍇 TOMO "+n(p.zetva_pct,1)+"%");
+    h += `<tr><td><b>${t}</b>${(p.dokupa||0)>0?' <span class="mini" style="color:#b48ce8">🔺 piramida</span>':''}</td>
+      <td><span class="badge ${p.smjer==="SHORT"?"b-short":"b-long"}">${p.smjer}</span></td>
+      <td class="num">${cij(p.prosjek)}${(p.dokupa||0)>0?` <span class="mini">(${1+(p.dokupa||0)}×)</span>`:""}</td>
+      <td class="num">${cij(cur)}</td>
+      <td class="num ${bp===null?"":klasa(bp)}">${bp===null?"—":(bp>0?"+":"")+n(bp,2)+" %"}</td>
+      <td class="num ${neto===null?"":klasa(neto)}">${neto===null?"—":(neto>0?"+":"")+n(neto,2)}</td>
+      <td class="num">${n(trosak,2)}${(p.rollover_eur||0)>0?` <span class="mini down">(roll ${n(p.rollover_eur,2)})</span>`:""}</td>
+      <td class="num">${p.dokupa||0}</td>
+      <td class="num">${p.stop_pct!==undefined?n(p.stop_pct,0)+" %":"—"}</td>
+      <td>${status.join(" · ")||"—"}</td>
+      <td class="num mini">${p.vrijeme_ulaza||"—"}</td></tr>`;
+  }
+  return h+"</table>";
+}
+
+function chipovi(knjiga, ime, params){
+  if(!knjiga) return "";
+  const poz = Object.keys((knjiga.pozicije)||{}).length;
+  const ang = Object.values((knjiga.pozicije)||{}).reduce((s,x)=>s+(x.ulozeno||0),0);
+  const p = (params||{});
+  const sef = knjiga.sef||0, per = knjiga.realizirano_period||0;
+  let h = `<span class="chip sef">${ime} SEF <b class="${sef<0?"minus":""}">${sef>0?"+":""}${n(sef)} €</b></span>
+    <span class="chip">period <b class="${klasa(per)}">${per>0?"+":""}${n(per)} €</b></span>
+    <span class="chip">pozicija <b>${poz}</b> (${n(ang,0)} €)</span>
+    <span class="chip">trejdova <b>${knjiga.broj_trejdova||0}</b></span>`;
+  if(p.sredstva_u_prometu) h += `<span class="chip">sredstva <b>${n(p.sredstva_u_prometu,0)} €</b></span>`;
+  h += `<span class="chip">🩳 SHORT <b class="${p.short_dozvoljen?"zuto":""}">${p.short_dozvoljen?"DOZVOLJEN":"zabranjen"}</b></span>`;
+  if(p.pauza_novih_ulaza) h += `<span class="chip" style="border-color:var(--gold)">⏸ <b class="zuto">PAUZA ULAZA</b></span>`;
+  if(knjiga.pauza_do) h += `<span class="chip" style="border-color:var(--red)">🔌 <b class="down">OSIGURAČ PREGORIO</b></span>`;
+  return h;
+}
+
+function dnevnikTablica(zapisi){
+  if(!zapisi || !zapisi.length) return '<p class="note">Dnevnik je još prazan — prve žetve stižu.</p>';
+  const z = [...zapisi].reverse();
+  const stupci = [];
+  const uzorak = Object.assign({}, ...z.slice(0,10));
+  const poznati = ["vrijeme","ts","knjiga","tok","token","smjer","ulaz","cijena_ulaza","izlaz","cijena_izlaza","ulozeno","naknade_eur","rollover_eur","neto","neto_eur","pl_eur","tko","razlog"];
+  for(const k of poznati) if(k in uzorak) stupci.push(k);
+  for(const k in uzorak) if(!stupci.includes(k)) stupci.push(k);
+  let h = "<table><tr>"+stupci.map(s=>`<th>${s}</th>`).join("")+"</tr>";
+  for(const red of z.slice(0,60)){
+    h += "<tr>"+stupci.map(s=>{
+      let v = red[s];
+      if(v===undefined||v===null) return "<td>—</td>";
+      if(typeof v === "number"){
+        const kl = (s.includes("neto")||s.includes("pl"))?klasa(v):"";
+        return `<td class="num ${kl}">${n(v, Math.abs(v)<1?4:2)}</td>`;
+      }
+      return `<td>${String(v)}</td>`;
+    }).join("")+"</tr>";
+  }
+  return h+"</table>";
+}
+
+async function osvjezi(){
+  const traka = document.getElementById("traka");
+  try{
+    await ucitajStanje();
+    const knjige = (stanje.state && stanje.state.knjige) || stanje.state || {};
+    const dn = knjige.dnevni||{}, tj = knjige.tjedni||{};
+    const pd = (stanje.params&&stanje.params.dnevni)||{}, pt = (stanje.params&&stanje.params.tjedni)||{};
+    const sviTokeni = [...new Set([...Object.keys(dn.pozicije||{}), ...Object.keys(tj.pozicije||{})])];
+    await ucitajCijene(sviTokeni);
+
+    const sefUk = (dn.sef||0)+(tj.sef||0);
+    document.getElementById("glavniChips").innerHTML =
+      `<button class="primary" onclick="osvjezi()">⟳ Osvježi</button>
+       <span class="chip">glasnik donio: <b>${stanje.generirano_utc||"?"}</b></span>
+       <span class="chip sef big">Σ UKUPNO SEF <b class="${sefUk<0?"minus":""}">${sefUk>0?"+":""}${n(sefUk)} €</b></span>
+       <span class="chip" style="border-color:var(--teal)">🎯 režim <b style="color:var(--teal)">${(!pd.short_dozvoljen&&!pt.short_dozvoljen)?"SAMO LONG":"LONG+SHORT"}</b></span>
+       <span class="chip">cijene: <b>${Object.keys(cijene).length}/${sviTokeni.length} živo s Krakena</b></span>`;
+
+    document.getElementById("dnevniChips").innerHTML = chipovi(dn,"⚡",pd);
+    document.getElementById("tjedniChips").innerHTML = chipovi(tj,"🌊",pt);
+    document.getElementById("dnevniTab").innerHTML = tablicaPozicija(dn);
+    document.getElementById("tjedniTab").innerHTML = tablicaPozicija(tj);
+    document.getElementById("dnevnikTab").innerHTML = dnevnikTablica(stanje.dnevnik);
+
+    const starost = stanje.generirano_ts ? Math.round((Date.now()/1000-stanje.generirano_ts)/60) : null;
+    if(starost!==null && starost>10){
+      traka.className="zivo problem";
+      traka.textContent = "⚠ GLASNIK KASNI — stanje staro "+starost+" min (provjeri VPS)";
+    }else{
+      traka.className="zivo";
+      traka.textContent = "🟢 ŽIVO · paper režim · stanje "+(starost===null?"":starost+" min staro")+" · cijene s Krakena upravo sad";
+    }
+  }catch(e){
+    traka.className="zivo problem";
+    traka.textContent = "⚠ Ne mogu učitati stanje ("+e.message+")";
+  }
+}
+osvjezi();
+setInterval(osvjezi, 60000);
+</script>
+</body>
+</html>

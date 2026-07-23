@@ -1,0 +1,10 @@
+[Unit]
+Description=Valovi glasnik - svake 3 minute
+
+[Timer]
+OnBootSec=90
+OnUnitActiveSec=180
+AccuracySec=30
+
+[Install]
+WantedBy=timers.target
