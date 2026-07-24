@@ -1,6 +1,6 @@
 {
- "generirano_utc": "24.07.2026 00:33:21 UTC",
- "generirano_ts": 1784853201,
+ "generirano_utc": "24.07.2026 00:36:21 UTC",
+ "generirano_ts": 1784853381,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-1.0",
@@ -124,7 +124,7 @@
       "stop_pct": -8,
       "zakljucano": false,
       "u_zoni": false,
-      "najbolji_pl": 1.237980769230762,
+      "najbolji_pl": 1.5063870812243918,
       "zetva_pct": null
      }
     },
@@ -198,14 +198,14 @@
      "ETH": {
       "smjer": "LONG",
       "prvi_ulaz": 1696.56,
-      "prosjek": 1696.56,
-      "ulozeno": 80.0,
-      "kolicina": 0.04715424152402509,
-      "dokupa": 0,
-      "naknade_eur": 0.32,
+      "prosjek": 1641.2084937631892,
+      "ulozeno": 680.0,
+      "kolicina": 0.41432883304229207,
+      "dokupa": 1,
+      "naknade_eur": 2.7199999999999998,
       "rollover_eur": 0.0,
       "vrijeme_ulaza": "21.07. 14:51 UTC",
-      "zadnja_stepenica": 1696.56,
+      "zadnja_stepenica": 1634.1,
       "stop_pct": -15,
       "zakljucano": false,
       "u_zoni": false,
@@ -240,7 +240,7 @@
     "zadnji_izlaz_signal": {}
    }
   },
-  "zadnja_runda": "24.07. 00:32 UTC"
+  "zadnja_runda": "24.07. 00:35 UTC"
  },
  "params": {
   "rezim": "paper",
