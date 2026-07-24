@@ -1,6 +1,6 @@
 {
- "generirano_utc": "24.07.2026 02:34:22 UTC",
- "generirano_ts": 1784860462,
+ "generirano_utc": "24.07.2026 02:37:26 UTC",
+ "generirano_ts": 1784860646,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-1.0",
@@ -93,23 +93,6 @@
       "najbolji_pl": 1.6277128547579345,
       "zetva_pct": null
      },
-     "ETC": {
-      "smjer": "SHORT",
-      "prvi_ulaz": 6.086,
-      "prosjek": 6.086,
-      "ulozeno": 100.0,
-      "kolicina": 16.43115346697338,
-      "dokupa": 0,
-      "naknade_eur": 0.4,
-      "rollover_eur": 0.12000000000000001,
-      "vrijeme_ulaza": "22.07. 21:43 UTC",
-      "zadnja_stepenica": 6.086,
-      "stop_pct": -8,
-      "zakljucano": false,
-      "u_zoni": false,
-      "najbolji_pl": 2.2169969768223163,
-      "zetva_pct": null
-     },
      "AAVE": {
       "smjer": "SHORT",
       "prvi_ulaz": 84.23,
@@ -126,20 +109,37 @@
       "u_zoni": false,
       "najbolji_pl": 1.5063870812243918,
       "zetva_pct": null
+     },
+     "APT": {
+      "smjer": "SHORT",
+      "prvi_ulaz": 0.5463,
+      "prosjek": 0.5463,
+      "ulozeno": 400.0,
+      "kolicina": 732.1984257733845,
+      "dokupa": 0,
+      "naknade_eur": 1.6,
+      "rollover_eur": 0.0,
+      "vrijeme_ulaza": "24.07. 02:35 UTC",
+      "zadnja_stepenica": 0.5463,
+      "stop_pct": -8,
+      "zakljucano": false,
+      "u_zoni": false,
+      "najbolji_pl": 0.0,
+      "zetva_pct": null
      }
     },
-    "sef": 13.566224193252715,
-    "realizirano_period": 0.0,
+    "sef": 15.798766566134077,
+    "realizirano_period": 2.232542372881362,
     "period_od": "2026-07-24T00:00:00+00:00",
     "pauza_do": null,
-    "broj_trejdova": 6,
-    "dobitni": 6,
+    "broj_trejdova": 7,
+    "dobitni": 7,
     "gubitni": 0,
     "zadnji_izlaz_signal": {
      "NEAR": "SHORT",
-     "APT": "LONG",
      "BCH": "SHORT",
-     "ADA": "SHORT"
+     "ADA": "SHORT",
+     "ETC": "SHORT"
     }
    },
    "tjedni": {
@@ -240,7 +240,7 @@
     "zadnji_izlaz_signal": {}
    }
   },
-  "zadnja_runda": "24.07. 02:34 UTC"
+  "zadnja_runda": "24.07. 02:36 UTC"
  },
  "params": {
   "rezim": "paper",
@@ -411,6 +411,22 @@
    "pl_eur": 1.69,
    "zatvorio": "🍇 BOT-ZETVA",
    "saldo_eur": 4013.57
+  },
+  {
+   "portfelj": "dnevni",
+   "token": "ETC",
+   "smjer": "SHORT",
+   "kupljeno": "22.07. 21:43 UTC",
+   "kupljeno_po": 6.086,
+   "prosjek": 6.086,
+   "dokupa": 0,
+   "prodano": "24.07. 02:35 UTC",
+   "prodano_po": 5.9,
+   "ulog_eur": 100.0,
+   "naknade_eur": 0.92,
+   "pl_eur": 2.23,
+   "zatvorio": "🍇 BOT-ZETVA",
+   "saldo_eur": 4015.8
   }
  ]
 }
