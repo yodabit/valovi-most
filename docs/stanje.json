@@ -1,6 +1,6 @@
 {
- "generirano_utc": "24.07.2026 13:10:08 UTC",
- "generirano_ts": 1784898608,
+ "generirano_utc": "24.07.2026 13:13:16 UTC",
+ "generirano_ts": 1784898796,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-1.0",
@@ -110,36 +110,37 @@
       "najbolji_pl": 2.357516101591939,
       "zetva_pct": null
      },
-     "APT": {
+     "ETH": {
       "smjer": "SHORT",
-      "prvi_ulaz": 0.5463,
-      "prosjek": 0.5463,
+      "prvi_ulaz": 1635.98,
+      "prosjek": 1635.98,
       "ulozeno": 400.0,
-      "kolicina": 732.1984257733845,
+      "kolicina": 0.24450176652526315,
       "dokupa": 0,
       "naknade_eur": 1.6,
-      "rollover_eur": 0.24,
-      "vrijeme_ulaza": "24.07. 02:35 UTC",
-      "zadnja_stepenica": 0.5463,
+      "rollover_eur": 0.0,
+      "vrijeme_ulaza": "24.07. 13:10 UTC",
+      "zadnja_stepenica": 1635.98,
       "stop_pct": -8,
       "zakljucano": false,
       "u_zoni": false,
-      "najbolji_pl": 2.4184476940382504,
+      "najbolji_pl": 0.0,
       "zetva_pct": null
      }
     },
-    "sef": 15.798766566134077,
-    "realizirano_period": 2.232542372881362,
+    "sef": 26.065695759621384,
+    "realizirano_period": 12.499471566368667,
     "period_od": "2026-07-24T00:00:00+00:00",
     "pauza_do": null,
-    "broj_trejdova": 7,
-    "dobitni": 7,
+    "broj_trejdova": 8,
+    "dobitni": 8,
     "gubitni": 0,
     "zadnji_izlaz_signal": {
      "NEAR": "SHORT",
      "BCH": "SHORT",
      "ADA": "SHORT",
-     "ETC": "SHORT"
+     "ETC": "SHORT",
+     "APT": "SHORT"
     }
    },
    "tjedni": {
@@ -240,7 +241,7 @@
     "zadnji_izlaz_signal": {}
    }
   },
-  "zadnja_runda": "24.07. 13:09 UTC"
+  "zadnja_runda": "24.07. 13:12 UTC"
  },
  "params": {
   "rezim": "paper",
@@ -427,6 +428,22 @@
    "pl_eur": 2.23,
    "zatvorio": "🍇 BOT-ZETVA",
    "saldo_eur": 4015.8
+  },
+  {
+   "portfelj": "dnevni",
+   "token": "APT",
+   "smjer": "SHORT",
+   "kupljeno": "24.07. 02:35 UTC",
+   "kupljeno_po": 0.5463,
+   "prosjek": 0.5463,
+   "dokupa": 0,
+   "prodano": "24.07. 13:10 UTC",
+   "prodano_po": 0.5282,
+   "ulog_eur": 400.0,
+   "naknade_eur": 3.44,
+   "pl_eur": 10.27,
+   "zatvorio": "🍇 BOT-ZETVA",
+   "saldo_eur": 4026.07
   }
  ]
 }
