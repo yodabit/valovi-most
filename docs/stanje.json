@@ -1,6 +1,6 @@
 {
- "generirano_utc": "24.07.2026 01:55:06 UTC",
- "generirano_ts": 1784858106,
+ "generirano_utc": "24.07.2026 01:58:06 UTC",
+ "generirano_ts": 1784858286,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-1.0",
@@ -240,7 +240,7 @@
     "zadnji_izlaz_signal": {}
    }
   },
-  "zadnja_runda": "24.07. 01:55 UTC"
+  "zadnja_runda": "24.07. 01:58 UTC"
  },
  "params": {
   "rezim": "paper",
