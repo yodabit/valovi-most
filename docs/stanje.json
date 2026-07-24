@@ -1,6 +1,6 @@
 {
- "generirano_utc": "24.07.2026 23:27:55 UTC",
- "generirano_ts": 1784935675,
+ "generirano_utc": "24.07.2026 23:30:55 UTC",
+ "generirano_ts": 1784935855,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-1.0",
@@ -84,7 +84,7 @@
       "kolicina": 1368.9253935660506,
       "dokupa": 0,
       "naknade_eur": 0.4,
-      "rollover_eur": 0.27999999999999997,
+      "rollover_eur": 0.3,
       "vrijeme_ulaza": "22.07. 07:08 UTC",
       "zadnja_stepenica": 0.07305,
       "stop_pct": -8,
@@ -101,7 +101,7 @@
       "kolicina": 0.24450176652526315,
       "dokupa": 0,
       "naknade_eur": 1.6,
-      "rollover_eur": 0.16,
+      "rollover_eur": 0.24,
       "vrijeme_ulaza": "24.07. 13:10 UTC",
       "zadnja_stepenica": 1635.98,
       "stop_pct": -8,
@@ -118,7 +118,7 @@
       "kolicina": 628.9308176100628,
       "dokupa": 0,
       "naknade_eur": 1.6,
-      "rollover_eur": 0.0,
+      "rollover_eur": 0.08,
       "vrijeme_ulaza": "24.07. 21:13 UTC",
       "zadnja_stepenica": 0.636,
       "stop_pct": -8,
@@ -171,7 +171,7 @@
       "kolicina": 1077.8765831312317,
       "dokupa": 0,
       "naknade_eur": 0.32,
-      "rollover_eur": 0.28800000000000014,
+      "rollover_eur": 0.30400000000000016,
       "vrijeme_ulaza": "21.07. 14:51 UTC",
       "zadnja_stepenica": 0.07422,
       "stop_pct": -15,
@@ -242,7 +242,7 @@
     "zadnji_izlaz_signal": {}
    }
   },
-  "zadnja_runda": "24.07. 23:26 UTC"
+  "zadnja_runda": "24.07. 23:30 UTC"
  },
  "params": {
   "rezim": "paper",
