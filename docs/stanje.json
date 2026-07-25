@@ -1,6 +1,6 @@
 {
- "generirano_utc": "24.07.2026 23:58:10 UTC",
- "generirano_ts": 1784937490,
+ "generirano_utc": "25.07.2026 00:01:10 UTC",
+ "generirano_ts": 1784937670,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-1.0",
@@ -129,8 +129,8 @@
      }
     },
     "sef": 33.183744540109245,
-    "realizirano_period": 19.617520346856526,
-    "period_od": "2026-07-24T00:00:00+00:00",
+    "realizirano_period": 0.0,
+    "period_od": "2026-07-25T00:00:00+00:00",
     "pauza_do": null,
     "broj_trejdova": 9,
     "dobitni": 9,
@@ -242,7 +242,7 @@
     "zadnji_izlaz_signal": {}
    }
   },
-  "zadnja_runda": "24.07. 23:57 UTC"
+  "zadnja_runda": "25.07. 00:00 UTC"
  },
  "params": {
   "rezim": "paper",
