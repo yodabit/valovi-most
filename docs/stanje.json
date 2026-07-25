@@ -1,6 +1,6 @@
 {
- "generirano_utc": "25.07.2026 01:31:56 UTC",
- "generirano_ts": 1784943116,
+ "generirano_utc": "25.07.2026 01:34:56 UTC",
+ "generirano_ts": 1784943296,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-1.0",
@@ -8,23 +8,6 @@
   "knjige": {
    "dnevni": {
     "pozicije": {
-     "ARB": {
-      "smjer": "LONG",
-      "prvi_ulaz": 0.0786,
-      "prosjek": 0.0786,
-      "ulozeno": 100.0,
-      "kolicina": 1272.264631043257,
-      "dokupa": 0,
-      "naknade_eur": 0.4,
-      "rollover_eur": 0.0,
-      "vrijeme_ulaza": "21.07. 14:51 UTC",
-      "zadnja_stepenica": 0.0786,
-      "stop_pct": -8,
-      "zakljucano": false,
-      "u_zoni": false,
-      "najbolji_pl": 1.9083969465648831,
-      "zetva_pct": null
-     },
      "ATOM": {
       "smjer": "LONG",
       "prvi_ulaz": 1.3119,
@@ -128,20 +111,21 @@
       "zetva_pct": null
      }
     },
-    "sef": 33.183744540109245,
-    "realizirano_period": 0.0,
+    "sef": 23.714024438328067,
+    "realizirano_period": -9.469720101781176,
     "period_od": "2026-07-25T00:00:00+00:00",
     "pauza_do": null,
-    "broj_trejdova": 9,
+    "broj_trejdova": 10,
     "dobitni": 9,
-    "gubitni": 0,
+    "gubitni": 1,
     "zadnji_izlaz_signal": {
      "NEAR": "SHORT",
      "BCH": "SHORT",
      "ADA": "SHORT",
      "ETC": "SHORT",
      "APT": "SHORT",
-     "AAVE": "SHORT"
+     "AAVE": "SHORT",
+     "ARB": "LONG"
     }
    },
    "tjedni": {
@@ -242,7 +226,7 @@
     "zadnji_izlaz_signal": {}
    }
   },
-  "zadnja_runda": "25.07. 01:31 UTC"
+  "zadnja_runda": "25.07. 01:34 UTC"
  },
  "params": {
   "rezim": "paper",
@@ -461,6 +445,22 @@
    "pl_eur": 7.12,
    "zatvorio": "🍇 BOT-ZETVA",
    "saldo_eur": 4033.18
+  },
+  {
+   "portfelj": "dnevni",
+   "token": "ARB",
+   "smjer": "LONG",
+   "kupljeno": "21.07. 14:51 UTC",
+   "kupljeno_po": 0.0786,
+   "prosjek": 0.0786,
+   "dokupa": 0,
+   "prodano": "25.07. 01:32 UTC",
+   "prodano_po": 0.0721,
+   "ulog_eur": 100.0,
+   "naknade_eur": 1.2,
+   "pl_eur": -9.47,
+   "zatvorio": "🛑 STOP",
+   "saldo_eur": 4023.71
   }
  ]
 }
