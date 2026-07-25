@@ -1,6 +1,6 @@
 {
- "generirano_utc": "25.07.2026 16:03:56 UTC",
- "generirano_ts": 1784995436,
+ "generirano_utc": "25.07.2026 16:06:57 UTC",
+ "generirano_ts": 1784995617,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-1.0",
@@ -23,23 +23,6 @@
       "zakljucano": false,
       "u_zoni": false,
       "najbolji_pl": 0.0,
-      "zetva_pct": null
-     },
-     "AVAX": {
-      "smjer": "LONG",
-      "prvi_ulaz": 5.79,
-      "prosjek": 5.676487449873757,
-      "ulozeno": 700.0,
-      "kolicina": 123.31569587378684,
-      "dokupa": 1,
-      "naknade_eur": 2.8,
-      "rollover_eur": 0.0,
-      "vrijeme_ulaza": "21.07. 14:51 UTC",
-      "zadnja_stepenica": 5.658,
-      "stop_pct": -8,
-      "zakljucano": false,
-      "u_zoni": false,
-      "najbolji_pl": 2.422493687170957,
       "zetva_pct": null
      },
      "DOT": {
@@ -109,23 +92,56 @@
       "u_zoni": false,
       "najbolji_pl": 1.11287758346581,
       "zetva_pct": null
+     },
+     "BCH": {
+      "smjer": "LONG",
+      "prvi_ulaz": 184.44,
+      "prosjek": 184.44,
+      "ulozeno": 400.0,
+      "kolicina": 2.168726957276079,
+      "dokupa": 0,
+      "naknade_eur": 1.6,
+      "rollover_eur": 0.0,
+      "vrijeme_ulaza": "25.07. 16:03 UTC",
+      "zadnja_stepenica": 184.44,
+      "stop_pct": -8,
+      "zakljucano": false,
+      "u_zoni": false,
+      "najbolji_pl": 0.0,
+      "zetva_pct": null
+     },
+     "GRT": {
+      "smjer": "LONG",
+      "prvi_ulaz": 0.01416,
+      "prosjek": 0.01416,
+      "ulozeno": 400.0,
+      "kolicina": 28248.58757062147,
+      "dokupa": 0,
+      "naknade_eur": 1.6,
+      "rollover_eur": 0.0,
+      "vrijeme_ulaza": "25.07. 16:03 UTC",
+      "zadnja_stepenica": 0.01416,
+      "stop_pct": -8,
+      "zakljucano": false,
+      "u_zoni": false,
+      "najbolji_pl": 0.0,
+      "zetva_pct": null
      }
     },
-    "sef": 23.714024438328067,
-    "realizirano_period": -9.469720101781176,
+    "sef": 37.784425557748044,
+    "realizirano_period": 4.6006810176388,
     "period_od": "2026-07-25T00:00:00+00:00",
     "pauza_do": null,
-    "broj_trejdova": 10,
-    "dobitni": 9,
+    "broj_trejdova": 11,
+    "dobitni": 10,
     "gubitni": 1,
     "zadnji_izlaz_signal": {
      "NEAR": "SHORT",
-     "BCH": "SHORT",
      "ADA": "SHORT",
      "ETC": "SHORT",
      "APT": "SHORT",
      "AAVE": "SHORT",
-     "ARB": "LONG"
+     "AVAX": "LONG"
     }
    },
    "tjedni": {
@@ -226,7 +242,7 @@
     "zadnji_izlaz_signal": {}
    }
   },
-  "zadnja_runda": "25.07. 16:02 UTC"
+  "zadnja_runda": "25.07. 16:05 UTC"
  },
  "params": {
   "rezim": "paper",
@@ -461,6 +477,22 @@
    "pl_eur": -9.47,
    "zatvorio": "🛑 STOP",
    "saldo_eur": 4023.71
+  },
+  {
+   "portfelj": "dnevni",
+   "token": "AVAX",
+   "smjer": "LONG",
+   "kupljeno": "21.07. 14:51 UTC",
+   "kupljeno_po": 5.79,
+   "prosjek": 5.67648745,
+   "dokupa": 1,
+   "prodano": "25.07. 16:03 UTC",
+   "prodano_po": 5.836,
+   "ulog_eur": 700.0,
+   "naknade_eur": 5.6,
+   "pl_eur": 14.07,
+   "zatvorio": "🍇 BOT-ZETVA",
+   "saldo_eur": 4037.78
   }
  ]
 }
