@@ -1,6 +1,6 @@
 {
- "generirano_utc": "26.07.2026 14:48:56 UTC",
- "generirano_ts": 1785077336,
+ "generirano_utc": "26.07.2026 14:51:59 UTC",
+ "generirano_ts": 1785077519,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-1.0",
@@ -146,23 +146,6 @@
    },
    "tjedni": {
     "pozicije": {
-     "AAVE": {
-      "smjer": "LONG",
-      "prvi_ulaz": 82.89,
-      "prosjek": 82.89,
-      "ulozeno": 80.0,
-      "kolicina": 0.9651345156231149,
-      "dokupa": 0,
-      "naknade_eur": 0.32,
-      "rollover_eur": 0.0,
-      "vrijeme_ulaza": "21.07. 14:51 UTC",
-      "zadnja_stepenica": 82.89,
-      "stop_pct": -15,
-      "zakljucano": false,
-      "u_zoni": false,
-      "najbolji_pl": 4.343105320304019,
-      "zetva_pct": null
-     },
      "ALGO": {
       "smjer": "SHORT",
       "prvi_ulaz": 0.07422,
@@ -208,11 +191,13 @@
       "rollover_eur": 0.0,
       "vrijeme_ulaza": "21.07. 14:51 UTC",
       "zadnja_stepenica": 1634.1,
-      "stop_pct": -15,
-      "zakljucano": false,
+      "stop_pct": 1.2,
+      "zakljucano": true,
       "u_zoni": false,
       "najbolji_pl": 2.0290844437718336,
-      "zetva_pct": null
+      "zetva_pct": null,
+      "brava": true,
+      "brava_ts": 1785077394.0307035
      },
      "INJ": {
       "smjer": "LONG",
@@ -230,19 +215,38 @@
       "u_zoni": false,
       "najbolji_pl": 2.6010318142734246,
       "zetva_pct": null
+     },
+     "APT": {
+      "smjer": "SHORT",
+      "prvi_ulaz": 0.5533,
+      "prosjek": 0.5533,
+      "ulozeno": 400.0,
+      "kolicina": 722.9351165732875,
+      "dokupa": 0,
+      "naknade_eur": 1.6,
+      "rollover_eur": 0.0,
+      "vrijeme_ulaza": "26.07. 14:49 UTC",
+      "zadnja_stepenica": 0.5533,
+      "stop_pct": -15,
+      "zakljucano": false,
+      "u_zoni": false,
+      "najbolji_pl": 0.0,
+      "zetva_pct": null
      }
     },
-    "sef": 0.0,
-    "realizirano_period": 0.0,
+    "sef": 0.922012305465075,
+    "realizirano_period": 0.922012305465075,
     "period_od": "2026-07-20T00:00:00+00:00",
     "pauza_do": null,
-    "broj_trejdova": 0,
-    "dobitni": 0,
+    "broj_trejdova": 1,
+    "dobitni": 1,
     "gubitni": 0,
-    "zadnji_izlaz_signal": {}
+    "zadnji_izlaz_signal": {
+     "AAVE": "LONG"
+    }
    }
   },
-  "zadnja_runda": "26.07. 14:47 UTC"
+  "zadnja_runda": "26.07. 14:51 UTC"
  },
  "params": {
   "rezim": "paper",
@@ -541,6 +545,22 @@
    "pl_eur": 14.07,
    "zatvorio": "🍇 BOT-ZETVA",
    "saldo_eur": 4037.78
+  },
+  {
+   "portfelj": "tjedni",
+   "token": "AAVE",
+   "smjer": "LONG",
+   "kupljeno": "21.07. 14:51 UTC",
+   "kupljeno_po": 82.89,
+   "prosjek": 82.89,
+   "dokupa": 0,
+   "prodano": "26.07. 14:49 UTC",
+   "prodano_po": 84.84,
+   "ulog_eur": 80.0,
+   "naknade_eur": 0.96,
+   "pl_eur": 0.92,
+   "zatvorio": "OPRUGA",
+   "saldo_eur": 2000.92
   }
  ]
 }
