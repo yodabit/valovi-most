@@ -437,6 +437,37 @@ class Motor:
         poz["najbolji_pl"] = max(poz["najbolji_pl"], pl)
         taker = self.params["naknade"]["taker_pct"]
         maker = self.params["naknade"]["maker_pct"]
+        # ---------- OPRUGA: breakeven brava + pametni trailing + tajmer ----------
+        o = p.get("opruga") or {}
+        if o.get("upaljen"):
+            ul = poz["ulozeno"]
+            trosak = poz.get("naknade_eur", 0.0) + poz.get("rollover_eur", 0.0) + ul * taker / 100.0
+            neto = ul * pl / 100.0 - trosak
+            be_pct = trosak / ul * 100.0
+            if not poz.get("brava") and neto > 0:
+                poz["brava"] = True
+                poz["brava_ts"] = time.time()
+                poz["zakljucano"] = True
+                poz["stop_pct"] = max(poz["stop_pct"], be_pct)
+                log(f"[{ime_k}] BRAVA {tok}: troskovi otplaceni, stop na break-even, tajmer {o.get('tajmer_h', 48)}h")
+            if poz.get("brava"):
+                razmak = 1.2
+                for prag, r in o.get("ljestvica", [[1, 1.2], [3, 0.8], [8, 0.5], [999999, 0.3]]):
+                    if neto <= prag:
+                        razmak = r
+                        break
+                g_op = gorivo_vala(smjer, rsi_v, pl, val_pct, svijece, p["rsi_gornji"], p["rsi_donji"])
+                if g_op < o.get("gorivo_stegni_ispod", 40):
+                    razmak *= 0.5
+                elif g_op > o.get("gorivo_pusti_iznad", 70):
+                    razmak *= 1.5
+                if neto > 0 and pl <= poz["najbolji_pl"] - razmak:
+                    self._zatvori(ime_k, k, p, tok, poz, cijena, "OPRUGA", taker)
+                    return
+                sati = (time.time() - poz.get("brava_ts", time.time())) / 3600.0
+                if sati >= o.get("tajmer_h", 48):
+                    self._zatvori(ime_k, k, p, tok, poz, cijena, "TAJMER-48h", taker)
+                    return
 
         # 1) STOP (od prosjeka; zakljucan stop = 0 ili vise)
         if pl <= poz["stop_pct"]:
