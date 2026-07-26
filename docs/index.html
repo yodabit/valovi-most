@@ -86,7 +86,7 @@
 <h2>📒 Dnevnik trejdova <small>zadnjih 200 · najnoviji prvi · knjiži se stvarno izvršeno (paper simulacija)</small></h2>
 <div id="dnevnikTab"></div>
 
-<p class="note">Cijene "TRENUTNO" vuku se ŽIVO s Kraken javnog API-ja pri svakom osvježenju ploče; ostatak stanja (pozicije, SEF, dnevnik) glasnik donosi s motora svake ~3 min. Neto P/L = bruto − naknade − rollover, po podacima motora. Ploča je zrcalo — ništa se odavde ne može mijenjati.</p>
+<p class="note">Cijene "TRENUTNO" vuku se ŽIVO s Kraken javnog API-ja pri svakom osvježenju ploče; ostatak stanja (pozicije, SEF, dnevnik) glasnik donosi s motora svake ~3 min. NETO P/L = ČISTA ZARADA U DŽEP: bruto − plaćene naknade − rollover − IZLAZNA naknada (taker) — ista računica kojom motor pali bravu; pređe li NETO nulu, brava škljoca. Ploča je zrcalo — ništa se odavde ne može mijenjati.</p>
 
 <script>
 const KRAKEN_ALIAS = {BTC:"XBT", DOGE:"XDG"};
@@ -141,13 +141,14 @@ function tablicaPozicija(knjiga, params){
   const o = (params||{}).opruga || null;
   const kljucevi = Object.keys(poz);
   if(!kljucevi.length) return '<p class="note">Nema otvorenih pozicija — motor čeka valove.</p>';
-  let h = '<table><tr><th>Token</th><th>Smjer</th><th>Uloženo €</th><th>Prosjek</th><th>Trenutno (živo)</th><th>Bruto P/L</th><th>Neto P/L €</th><th>Troškovi €</th><th>🔺</th><th>Stop</th><th>🔒 Brava</th><th>🌀 Opruga</th><th>⏱ Tajmer</th><th>Od</th></tr>';
+  let h = '<table><tr><th>Token</th><th>Smjer</th><th>Uloženo €</th><th>Prosjek</th><th>Trenutno (živo)</th><th>Bruto P/L</th><th>Neto P/L € <span class="mini">(u džep, s izlaznom kartom)</span></th><th>Troškovi €</th><th>🔺</th><th>Stop</th><th>🔒 Brava</th><th>🌀 Opruga</th><th>⏱ Tajmer</th><th>Od</th></tr>';
   for(const t of kljucevi){
     const p = poz[t];
     const cur = cijene[t];
     const bp = pl_pct(p, cur);
     const brutoEur = bp===null?null:(p.ulozeno*bp/100);
-    const trosak = (p.naknade_eur||0)+(p.rollover_eur||0);
+    const taker = ((stanje.params||{}).naknade||{}).taker_pct || 0.40;
+    const trosak = (p.naknade_eur||0)+(p.rollover_eur||0) + p.ulozeno*taker/100;
     const neto = brutoEur===null?null:(brutoEur-trosak);
     const razmak = p.brava ? opruga_razmak(o, neto) : null;
     let tajmer = "—";
