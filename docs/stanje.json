@@ -1,6 +1,6 @@
 {
- "generirano_utc": "26.07.2026 18:35:47 UTC",
- "generirano_ts": 1785090947,
+ "generirano_utc": "26.07.2026 18:38:47 UTC",
+ "generirano_ts": 1785091127,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-1.0",
@@ -93,25 +93,6 @@
       "najbolji_pl": 1.11287758346581,
       "zetva_pct": null
      },
-     "BCH": {
-      "smjer": "LONG",
-      "prvi_ulaz": 184.44,
-      "prosjek": 184.44,
-      "ulozeno": 400.0,
-      "kolicina": 2.168726957276079,
-      "dokupa": 0,
-      "naknade_eur": 1.6,
-      "rollover_eur": 0.0,
-      "vrijeme_ulaza": "25.07. 16:03 UTC",
-      "zadnja_stepenica": 184.44,
-      "stop_pct": 1.2000000000000002,
-      "zakljucano": true,
-      "u_zoni": false,
-      "najbolji_pl": 2.4994578182606864,
-      "zetva_pct": null,
-      "brava": true,
-      "brava_ts": 1785080892.0870864
-     },
      "GRT": {
       "smjer": "LONG",
       "prvi_ulaz": 0.01416,
@@ -128,22 +109,39 @@
       "u_zoni": false,
       "najbolji_pl": 2.1186440677966045,
       "zetva_pct": null
+     },
+     "ADA": {
+      "smjer": "LONG",
+      "prvi_ulaz": 0.144737,
+      "prosjek": 0.144737,
+      "ulozeno": 400.0,
+      "kolicina": 2763.6333487636193,
+      "dokupa": 0,
+      "naknade_eur": 1.6,
+      "rollover_eur": 0.0,
+      "vrijeme_ulaza": "26.07. 18:35 UTC",
+      "zadnja_stepenica": 0.144737,
+      "stop_pct": -8,
+      "zakljucano": false,
+      "u_zoni": false,
+      "najbolji_pl": 0.035236325196730256,
+      "zetva_pct": null
      }
     },
-    "sef": 37.784425557748044,
-    "realizirano_period": 0.0,
+    "sef": 45.03768949181869,
+    "realizirano_period": 7.253263934070645,
     "period_od": "2026-07-26T00:00:00+00:00",
     "pauza_do": null,
-    "broj_trejdova": 11,
-    "dobitni": 10,
+    "broj_trejdova": 12,
+    "dobitni": 11,
     "gubitni": 1,
     "zadnji_izlaz_signal": {
      "NEAR": "SHORT",
-     "ADA": "SHORT",
      "ETC": "SHORT",
      "APT": "SHORT",
      "AAVE": "SHORT",
-     "AVAX": "LONG"
+     "AVAX": "LONG",
+     "BCH": "LONG"
     }
    },
    "tjedni": {
@@ -247,7 +245,7 @@
     }
    }
   },
-  "zadnja_runda": "26.07. 18:34 UTC"
+  "zadnja_runda": "26.07. 18:37 UTC"
  },
  "params": {
   "rezim": "paper",
@@ -578,6 +576,22 @@
    "pl_eur": 11.47,
    "zatvorio": "OPRUGA",
    "saldo_eur": 2012.39
+  },
+  {
+   "portfelj": "dnevni",
+   "token": "BCH",
+   "smjer": "LONG",
+   "kupljeno": "25.07. 16:03 UTC",
+   "kupljeno_po": 184.44,
+   "prosjek": 184.44,
+   "dokupa": 0,
+   "prodano": "26.07. 18:35 UTC",
+   "prodano_po": 189.26,
+   "ulog_eur": 400.0,
+   "naknade_eur": 3.2,
+   "pl_eur": 7.25,
+   "zatvorio": "🍇 BOT-ZETVA",
+   "saldo_eur": 4045.04
   }
  ]
 }
