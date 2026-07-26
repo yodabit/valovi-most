@@ -1,6 +1,6 @@
 {
- "generirano_utc": "26.07.2026 16:34:43 UTC",
- "generirano_ts": 1785083683,
+ "generirano_utc": "26.07.2026 16:37:43 UTC",
+ "generirano_ts": 1785083863,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-1.0",
@@ -107,7 +107,7 @@
       "stop_pct": 1.2000000000000002,
       "zakljucano": true,
       "u_zoni": false,
-      "najbolji_pl": 1.5289525048796326,
+      "najbolji_pl": 1.794621557145959,
       "zetva_pct": null,
       "brava": true,
       "brava_ts": 1785080892.0870864
@@ -182,25 +182,6 @@
       "najbolji_pl": 1.9083969465648831,
       "zetva_pct": null
      },
-     "ETH": {
-      "smjer": "LONG",
-      "prvi_ulaz": 1696.56,
-      "prosjek": 1641.2084937631892,
-      "ulozeno": 680.0,
-      "kolicina": 0.41432883304229207,
-      "dokupa": 1,
-      "naknade_eur": 2.7199999999999998,
-      "rollover_eur": 0.0,
-      "vrijeme_ulaza": "21.07. 14:51 UTC",
-      "zadnja_stepenica": 1634.1,
-      "stop_pct": 1.2,
-      "zakljucano": true,
-      "u_zoni": false,
-      "najbolji_pl": 3.243433508850191,
-      "zetva_pct": null,
-      "brava": true,
-      "brava_ts": 1785077394.0307035
-     },
      "INJ": {
       "smjer": "LONG",
       "prvi_ulaz": 4.652,
@@ -234,21 +215,39 @@
       "u_zoni": false,
       "najbolji_pl": 0.10855798805862182,
       "zetva_pct": null
+     },
+     "LINK": {
+      "smjer": "LONG",
+      "prvi_ulaz": 7.58841,
+      "prosjek": 7.58841,
+      "ulozeno": 400.0,
+      "kolicina": 52.71196469352605,
+      "dokupa": 0,
+      "naknade_eur": 1.6,
+      "rollover_eur": 0.0,
+      "vrijeme_ulaza": "26.07. 16:36 UTC",
+      "zadnja_stepenica": 7.58841,
+      "stop_pct": -15,
+      "zakljucano": false,
+      "u_zoni": false,
+      "najbolji_pl": 0.0,
+      "zetva_pct": null
      }
     },
-    "sef": 0.922012305465075,
-    "realizirano_period": 0.922012305465075,
+    "sef": 12.3893932040185,
+    "realizirano_period": 12.3893932040185,
     "period_od": "2026-07-20T00:00:00+00:00",
     "pauza_do": null,
-    "broj_trejdova": 1,
-    "dobitni": 1,
+    "broj_trejdova": 2,
+    "dobitni": 2,
     "gubitni": 0,
     "zadnji_izlaz_signal": {
-     "AAVE": "LONG"
+     "AAVE": "LONG",
+     "ETH": "LONG"
     }
    }
   },
-  "zadnja_runda": "26.07. 16:33 UTC"
+  "zadnja_runda": "26.07. 16:36 UTC"
  },
  "params": {
   "rezim": "paper",
@@ -563,6 +562,22 @@
    "pl_eur": 0.92,
    "zatvorio": "OPRUGA",
    "saldo_eur": 2000.92
+  },
+  {
+   "portfelj": "tjedni",
+   "token": "ETH",
+   "smjer": "LONG",
+   "kupljeno": "21.07. 14:51 UTC",
+   "kupljeno_po": 1696.56,
+   "prosjek": 1641.20849376,
+   "dokupa": 1,
+   "prodano": "26.07. 16:36 UTC",
+   "prodano_po": 1688.58,
+   "ulog_eur": 680.0,
+   "naknade_eur": 8.16,
+   "pl_eur": 11.47,
+   "zatvorio": "OPRUGA",
+   "saldo_eur": 2012.39
   }
  ]
 }
