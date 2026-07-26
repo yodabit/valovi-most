@@ -130,11 +130,18 @@ function pl_pct(poz, cur){
   return bruto;
 }
 
-function tablicaPozicija(knjiga){
+function opruga_razmak(o, neto){
+  if(!o || !o.upaljen || neto===null) return null;
+  const lj = o.ljestvica || [[1,1.2],[3,0.8],[8,0.5],[999999,0.3]];
+  for(const [prag,r] of lj){ if(neto<=prag) return r; }
+  return lj[lj.length-1][1];
+}
+function tablicaPozicija(knjiga, params){
   const poz = (knjiga && knjiga.pozicije) || {};
+  const o = (params||{}).opruga || null;
   const kljucevi = Object.keys(poz);
   if(!kljucevi.length) return '<p class="note">Nema otvorenih pozicija — motor čeka valove.</p>';
-  let h = '<table><tr><th>Token</th><th>Smjer</th><th>Prosjek ulaza</th><th>Trenutno (živo)</th><th>Bruto P/L</th><th>Neto P/L €</th><th>Troškovi €</th><th>🔺 Dokupa</th><th>Stop</th><th>Status</th><th>Od</th></tr>';
+  let h = '<table><tr><th>Token</th><th>Smjer</th><th>Uloženo €</th><th>Prosjek</th><th>Trenutno (živo)</th><th>Bruto P/L</th><th>Neto P/L €</th><th>Troškovi €</th><th>🔺</th><th>Stop</th><th>🔒 Brava</th><th>🌀 Opruga</th><th>⏱ Tajmer</th><th>Od</th></tr>';
   for(const t of kljucevi){
     const p = poz[t];
     const cur = cijene[t];
@@ -142,20 +149,27 @@ function tablicaPozicija(knjiga){
     const brutoEur = bp===null?null:(p.ulozeno*bp/100);
     const trosak = (p.naknade_eur||0)+(p.rollover_eur||0);
     const neto = brutoEur===null?null:(brutoEur-trosak);
-    let status = [];
-    if(p.zakljucano) status.push("🔒 zaključano");
-    if(p.u_zoni) status.push("⛽ produžna zona");
-    if(p.zetva_pct) status.push("🍇 TOMO "+n(p.zetva_pct,1)+"%");
-    h += `<tr><td><b>${t}</b>${(p.dokupa||0)>0?' <span class="mini" style="color:#b48ce8">🔺 piramida</span>':''}</td>
+    const razmak = p.brava ? opruga_razmak(o, neto) : null;
+    let tajmer = "—";
+    if(p.brava && p.brava_ts){
+      const sati = (Date.now()/1000 - p.brava_ts)/3600;
+      const max = (o&&o.tajmer_h)||48;
+      const kl = sati>max*0.8?"zuto":"";
+      tajmer = `<span class="${kl}">${n(sati,0)}h / ${max}h</span>`;
+    }
+    h += `<tr><td><b>${t}</b>${(p.dokupa||0)>0?' <span class="mini" style="color:#b48ce8">🔺 piramida</span>':''}${p.u_zoni?' <span class="mini">⛽</span>':''}</td>
       <td><span class="badge ${p.smjer==="SHORT"?"b-short":"b-long"}">${p.smjer}</span></td>
+      <td class="num">${n(p.ulozeno,0)}</td>
       <td class="num">${cij(p.prosjek)}${(p.dokupa||0)>0?` <span class="mini">(${1+(p.dokupa||0)}×)</span>`:""}</td>
       <td class="num">${cij(cur)}</td>
       <td class="num ${bp===null?"":klasa(bp)}">${bp===null?"—":(bp>0?"+":"")+n(bp,2)+" %"}</td>
       <td class="num ${neto===null?"":klasa(neto)}">${neto===null?"—":(neto>0?"+":"")+n(neto,2)}</td>
       <td class="num">${n(trosak,2)}${(p.rollover_eur||0)>0?` <span class="mini down">(roll ${n(p.rollover_eur,2)})</span>`:""}</td>
       <td class="num">${p.dokupa||0}</td>
-      <td class="num">${p.stop_pct!==undefined?n(p.stop_pct,0)+" %":"—"}</td>
-      <td>${status.join(" · ")||"—"}</td>
+      <td class="num">${p.stop_pct!==undefined?n(p.stop_pct,1)+" %":"—"}</td>
+      <td>${p.brava?'<span class="up">🔒 ✓</span>':(p.zakljucano?'<span class="mini">🔓 zakl.</span>':"—")}</td>
+      <td class="num">${razmak!==null?n(razmak,1)+" %":"—"}</td>
+      <td class="num mini">${tajmer}</td>
       <td class="num mini">${p.vrijeme_ulaza||"—"}</td></tr>`;
   }
   return h+"</table>";
@@ -188,7 +202,9 @@ function dnevnikTablica(zapisi){
   for(const k in uzorak) if(!stupci.includes(k)) stupci.push(k);
   let h = "<table><tr>"+stupci.map(s=>`<th>${s}</th>`).join("")+"</tr>";
   for(const red of z.slice(0,60)){
-    h += "<tr>"+stupci.map(s=>{
+    const kn = String(red.knjiga||red.portfelj||"");
+    const rub = kn==="dnevni"?"#2dd4bf":(kn==="tjedni"?"#5b8def":(kn.startsWith("sum")?"#e8c268":"#3a4a5c"));
+    h += `<tr style="box-shadow:inset 3px 0 0 ${rub}">`+stupci.map(s=>{
       let v = red[s];
       if(v===undefined||v===null) return "<td>—</td>";
       if(typeof v === "number"){
@@ -221,8 +237,8 @@ async function osvjezi(){
 
     document.getElementById("dnevniChips").innerHTML = chipovi(dn,"⚡",pd);
     document.getElementById("tjedniChips").innerHTML = chipovi(tj,"🌊",pt);
-    document.getElementById("dnevniTab").innerHTML = tablicaPozicija(dn);
-    document.getElementById("tjedniTab").innerHTML = tablicaPozicija(tj);
+    document.getElementById("dnevniTab").innerHTML = tablicaPozicija(dn, pd);
+    document.getElementById("tjedniTab").innerHTML = tablicaPozicija(tj, pt);
     document.getElementById("dnevnikTab").innerHTML = dnevnikTablica(stanje.dnevnik);
 
     const starost = stanje.generirano_ts ? Math.round((Date.now()/1000-stanje.generirano_ts)/60) : null;
