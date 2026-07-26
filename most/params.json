@@ -12,6 +12,7 @@
   "dnevni": {
     "bot_radi": true,
     "short_dozvoljen": true,
+    "opruga": { "upaljen": true, "tajmer_h": 48, "ljestvica": [[1, 1.2], [3, 0.8], [8, 0.5], [999999, 0.3]], "gorivo_stegni_ispod": 40, "gorivo_pusti_iznad": 70 },
     "pauza_novih_ulaza": false,
     "sredstva_u_prometu": 4000,
     "svijece_interval_min": 60,
@@ -43,6 +44,7 @@
   "tjedni": {
     "bot_radi": true,
     "short_dozvoljen": true,
+    "opruga": { "upaljen": true, "tajmer_h": 48, "ljestvica": [[1, 1.2], [3, 0.8], [8, 0.5], [999999, 0.3]], "gorivo_stegni_ispod": 40, "gorivo_pusti_iznad": 70 },
     "pauza_novih_ulaza": false,
     "sredstva_u_prometu": 2000,
     "svijece_interval_min": 1440,
