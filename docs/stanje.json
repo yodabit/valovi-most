@@ -1,6 +1,6 @@
 {
- "generirano_utc": "26.07.2026 21:49:24 UTC",
- "generirano_ts": 1785102564,
+ "generirano_utc": "26.07.2026 21:52:24 UTC",
+ "generirano_ts": 1785102744,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-1.0",
@@ -124,7 +124,7 @@
       "stop_pct": -8,
       "zakljucano": false,
       "u_zoni": false,
-      "najbolji_pl": 0.10018170889267708,
+      "najbolji_pl": 0.1326544007406616,
       "zetva_pct": null
      }
     },
@@ -245,7 +245,7 @@
     }
    }
   },
-  "zadnja_runda": "26.07. 21:48 UTC"
+  "zadnja_runda": "26.07. 21:51 UTC"
  },
  "params": {
   "rezim": "paper",
