@@ -1,6 +1,6 @@
 {
- "generirano_utc": "27.07.2026 08:23:20 UTC",
- "generirano_ts": 1785140600,
+ "generirano_utc": "27.07.2026 08:26:25 UTC",
+ "generirano_ts": 1785140785,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -61,8 +61,8 @@
       "lokot_ts": 1785135295.6289203,
       "najbolji_pl": 0.9968854917341119,
       "najbolji_neto": 1.8146593246662641,
-      "neto_zivo": 1.65,
-      "gorivo": 69,
+      "neto_zivo": 1.19,
+      "gorivo": 70,
       "opruga_razmak": 1.5,
       "tajmer_h": 1.5
      },
@@ -101,7 +101,7 @@
    "stanje": "MIJESANO",
    "prosla_sirina": 45
   },
-  "zadnja_runda": "27.07. 08:23 UTC"
+  "zadnja_runda": "27.07. 08:26 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
