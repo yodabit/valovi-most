@@ -1,6 +1,6 @@
 {
- "generirano_utc": "27.07.2026 00:17:41 UTC",
- "generirano_ts": 1785111461,
+ "generirano_utc": "27.07.2026 00:20:42 UTC",
+ "generirano_ts": 1785111642,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-1.0",
@@ -214,40 +214,39 @@
       "najbolji_pl": 1.2072434607645954,
       "zetva_pct": null
      },
-     "LINK": {
+     "LTC": {
       "smjer": "LONG",
-      "prvi_ulaz": 7.58841,
-      "prosjek": 7.58841,
+      "prvi_ulaz": 41.7,
+      "prosjek": 41.7,
       "ulozeno": 400.0,
-      "kolicina": 52.71196469352605,
+      "kolicina": 9.592326139088728,
       "dokupa": 0,
       "naknade_eur": 1.6,
       "rollover_eur": 0.0,
-      "vrijeme_ulaza": "26.07. 16:36 UTC",
-      "zadnja_stepenica": 7.58841,
-      "stop_pct": 1.2000000000000002,
-      "zakljucano": true,
+      "vrijeme_ulaza": "27.07. 00:20 UTC",
+      "zadnja_stepenica": 41.7,
+      "stop_pct": -15,
+      "zakljucano": false,
       "u_zoni": false,
-      "najbolji_pl": 2.1361523692051465,
-      "zetva_pct": null,
-      "brava": true,
-      "brava_ts": 1785105174.3204358
+      "najbolji_pl": 0.0,
+      "zetva_pct": null
      }
     },
-    "sef": 12.3893932040185,
-    "realizirano_period": 0.0,
+    "sef": 11.857480985253297,
+    "realizirano_period": -0.531912218765203,
     "period_od": "2026-07-27T00:00:00+00:00",
     "pauza_do": null,
-    "broj_trejdova": 2,
+    "broj_trejdova": 3,
     "dobitni": 2,
-    "gubitni": 0,
+    "gubitni": 1,
     "zadnji_izlaz_signal": {
      "AAVE": "LONG",
-     "ETH": "LONG"
+     "ETH": "LONG",
+     "LINK": "LONG"
     }
    }
   },
-  "zadnja_runda": "27.07. 00:17 UTC"
+  "zadnja_runda": "27.07. 00:20 UTC"
  },
  "params": {
   "rezim": "paper",
@@ -594,6 +593,22 @@
    "pl_eur": 7.25,
    "zatvorio": "🍇 BOT-ZETVA",
    "saldo_eur": 4045.04
+  },
+  {
+   "portfelj": "tjedni",
+   "token": "LINK",
+   "smjer": "LONG",
+   "kupljeno": "26.07. 16:36 UTC",
+   "kupljeno_po": 7.58841,
+   "prosjek": 7.58841,
+   "dokupa": 0,
+   "prodano": "27.07. 00:20 UTC",
+   "prodano_po": 7.66938,
+   "ulog_eur": 400.0,
+   "naknade_eur": 4.8,
+   "pl_eur": -0.53,
+   "zatvorio": "🔒 ZAKLJUCAJ",
+   "saldo_eur": 2011.86
   }
  ]
 }
