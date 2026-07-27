@@ -1,6 +1,6 @@
 {
- "generirano_utc": "27.07.2026 08:29:26 UTC",
- "generirano_ts": 1785140966,
+ "generirano_utc": "27.07.2026 08:32:32 UTC",
+ "generirano_ts": 1785141152,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -10,7 +10,46 @@
     "valuta": "USD",
     "sredstva_pocetna": 6000,
     "kasa": 6000,
-    "pozicije": {},
+    "pozicije": {
+     "ATOM": {
+      "smjer": "SHORT",
+      "prvi_ulaz": 1.3859,
+      "prosjek": 1.3859,
+      "ulozeno": 200,
+      "kolicina": 144.31055631719462,
+      "dokupa": 0,
+      "naknade_usd": 0.09,
+      "funding_usd": 0.0,
+      "vrijeme_ulaza": "27.07. 08:30 UTC",
+      "ulaz_ts": 1785141028.4550562,
+      "zadnja_stepenica": 1.3859,
+      "stop_pct": -8,
+      "lokot": false,
+      "lokot_ts": null,
+      "najbolji_pl": 0.0,
+      "najbolji_neto": 0.0,
+      "neto_zivo": -0.18
+     },
+     "TRX": {
+      "smjer": "SHORT",
+      "prvi_ulaz": 0.331303,
+      "prosjek": 0.331303,
+      "ulozeno": 200,
+      "kolicina": 603.6769965862065,
+      "dokupa": 0,
+      "naknade_usd": 0.09,
+      "funding_usd": 0.0,
+      "vrijeme_ulaza": "27.07. 08:30 UTC",
+      "ulaz_ts": 1785141028.462543,
+      "zadnja_stepenica": 0.331303,
+      "stop_pct": -8,
+      "lokot": false,
+      "lokot_ts": null,
+      "najbolji_pl": 0.0,
+      "najbolji_neto": 0.0,
+      "neto_zivo": -0.18
+     }
+    },
     "sef": 0.0,
     "realizirano_period": 0.0,
     "period_od": null,
@@ -61,9 +100,9 @@
       "lokot_ts": 1785135295.6289203,
       "najbolji_pl": 0.9968854917341119,
       "najbolji_neto": 1.8146593246662641,
-      "neto_zivo": 1.1,
-      "gorivo": 71,
-      "opruga_razmak": 2.25,
+      "neto_zivo": 1.28,
+      "gorivo": 70,
+      "opruga_razmak": 1.5,
       "tajmer_h": 1.6
      },
      "ARB": {
@@ -78,12 +117,15 @@
       "vrijeme_ulaza": "27.07. 06:43 UTC",
       "ulaz_ts": 1785134595.5688796,
       "zadnja_stepenica": 0.0822,
-      "stop_pct": -15,
-      "lokot": false,
-      "lokot_ts": null,
-      "najbolji_pl": 0.0,
-      "najbolji_neto": 0.0,
-      "neto_zivo": -0.18
+      "stop_pct": 0.0898905109489051,
+      "lokot": true,
+      "lokot_ts": 1785141028.4644277,
+      "najbolji_pl": 0.24390243902439046,
+      "najbolji_neto": 0.3080238561509707,
+      "neto_zivo": 0.31,
+      "gorivo": 68,
+      "opruga_razmak": 1.5,
+      "tajmer_h": 0.0
      }
     },
     "sef": 0.0,
@@ -101,7 +143,7 @@
    "stanje": "MIJESANO",
    "prosla_sirina": 45
   },
-  "zadnja_runda": "27.07. 08:29 UTC"
+  "zadnja_runda": "27.07. 08:31 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
