@@ -44,7 +44,8 @@
   .b-short{color:var(--red);border-color:var(--red)}
   .note{color:var(--muted);font-size:12px;margin-top:6px}
   .mini{font-size:10px;color:var(--muted)}
-  .dah{position:relative;width:150px;height:12px;background:#1a2432;border-radius:6px}
+  .dah{position:relative;width:170px;height:12px;background:#1a2432;border-radius:6px;margin-top:12px}
+  .dah .lokottxt{position:absolute;top:-14px;font-size:9.5px;font-family:var(--num);color:var(--gold);white-space:nowrap;text-shadow:0 1px 2px #000}
   .dah .zona{position:absolute;top:0;bottom:0;border-radius:6px}
   .dah .tocka{position:absolute;top:-2px;width:8px;height:16px;border-radius:4px;background:#fff;box-shadow:0 0 6px #fff8}
   .dah .tocka.minus{background:var(--red);box-shadow:0 0 6px #f26d6d88}
@@ -202,18 +203,29 @@ function neto_usd(poz, cur, takerPct){
   return poz.ulozeno*bp/100 - (poz.naknade_usd||0) - (poz.funding_usd||0) - izlazna;
 }
 
-function dahBar(poz, bp){
+function dahBar(poz, bp, takerPct){
   if(bp===null) return "—";
   const lijevo = Math.min(poz.stop_pct||-8, -1);
-  const desno = Math.max(2, (poz.najbolji_pl||0)*1.15, bp*1.15);
+  const desno = Math.max(2, (poz.najbolji_pl||0)*1.15, bp*1.15, (poz.stop_pct||0)*1.3);
   const span = desno - lijevo;
   const pos = v => Math.max(0, Math.min(100, (v - lijevo)/span*100));
   const t = pos(bp), z = pos(0);
+  // zakljucano $: neto koji je zajamcen ako pod okine (stop_pct preveden u dzep)
+  let zakljucano = null;
+  if(poz.lokot && poz.stop_pct >= 0){
+    const izlazna = poz.ulozeno*(1+poz.stop_pct/100)*takerPct/100;
+    zakljucano = poz.ulozeno*poz.stop_pct/100 - (poz.naknade_usd||0) - (poz.funding_usd||0) - izlazna;
+    if(zakljucano < 0) zakljucano = 0;
+  }
   let h = `<div class="dah">`;
   h += `<div class="zona" style="left:0;width:${z}%;background:#3a1520"></div>`;
   h += `<div class="zona" style="left:${z}%;right:0;background:#12301f"></div>`;
   h += `<div style="position:absolute;left:${z}%;top:-1px;bottom:-1px;width:1px;background:#7d8fa0"></div>`;
-  if(poz.lokot && poz.stop_pct>=0) h += `<div class="lokotm" style="left:calc(${pos(poz.stop_pct)}% - 5px)">🔒</div>`;
+  if(zakljucano !== null){
+    const lp = pos(poz.stop_pct);
+    h += `<div class="lokotm" style="left:calc(${lp}% - 5px)">🔒</div>`;
+    h += `<div class="lokottxt" style="left:calc(${lp}% - 18px)">+${n(zakljucano, zakljucano<10?2:1)}$</div>`;
+  }
   h += `<div class="tocka ${bp<0?"minus":""}" style="left:calc(${t}% - 4px)"></div></div>`;
   return h;
 }
@@ -256,7 +268,7 @@ function tablicaPozicija(knjiga, p, takerPct){
       <td class="num ${bp===null?"":klasa(bp)}">${bp===null?"—":(bp>0?"+":"")+n(bp,2)+"%"}</td>
       <td class="num ${neto===null?"":klasa(neto)}"><b>${neto===null?"—":(neto>0?"+":"")+n(neto,2)}</b>${(pz.lokot&&neto!==null&&neto<0)?' <span class="mini up">→ izlaz ≥ 0 🔒</span>':""}</td>
       <td>${pz.lokot?'<span class="up">🔒</span>':"—"}</td>
-      <td>${dahBar(pz, bp)}</td>
+      <td>${dahBar(pz, bp, takerPct)}</td>
       <td class="num">${pz.opruga_razmak?n(pz.opruga_razmak,1)+"%":"—"}${pz.gorivo!==undefined?` <span class="mini">⛽${pz.gorivo}</span>`:""}</td>
       <td class="num mini">${tajmer}</td>
       <td class="num">${pz.dokupa||0}/5</td>
