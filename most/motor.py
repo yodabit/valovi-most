@@ -380,19 +380,27 @@ class Motor:
             poz["stop_pct"] = max(poz["stop_pct"], be_pct)
             log(f"[{ime_k}] LOKOT {tok}: karte placene, izlaz osiguran — tajmer {o.get('tajmer_h', 48)}h")
 
+        # dnevnik hoda za suljaca (uvijek, i prije lokota)
+        hod = poz.setdefault("hod", [])
+        hod.append(round(pl, 4))
+        if len(hod) > o.get("suljac_prozor", 20):
+            del hod[0]
+
         if poz["lokot"]:
-            # 3) OPRUGA: razmak po netu (ljestvica) x gorivo
-            razmak = 1.2
-            for prag, r in o.get("ljestvica", [[1, 1.2], [3, 0.8], [8, 0.5], [999999, 0.3]]):
-                if neto <= prag:
-                    razmak = r
-                    break
+            # 3) SULJAC: razmak = izmjereni ljuljaj tocke x mnozitelj (gorivo modulira)
             g = gorivo_vala(smjer, rsi_v, pl, val_pct)
             poz["gorivo"] = g
+            if len(hod) >= 5:
+                koraci = [abs(hod[i] - hod[i-1]) for i in range(1, len(hod))]
+                ljuljaj = sum(koraci) / len(koraci)
+            else:
+                ljuljaj = 0.4  # default dok mjeri
+            mnoz = o.get("suljac_mnozitelj", 2.5)
             if g < o.get("gorivo_stegni_ispod", 40):
-                razmak *= 0.5
+                mnoz = max(1.5, mnoz - 0.5)
             elif g > o.get("gorivo_pusti_iznad", 70):
-                razmak *= 1.5
+                mnoz = mnoz + 0.5
+            razmak = max(o.get("suljac_min_pct", 0.15), min(ljuljaj * mnoz, o.get("suljac_max_pct", 2.0)))
             poz["opruga_razmak"] = round(razmak, 2)
             # CEGRTALJKA: pod = najbolji_neto - razmak($), penje se samo gore
             razmak_usd = poz["ulozeno"] * razmak / 100.0
