@@ -224,25 +224,21 @@ function dahBar(poz, bp, takerPct){
   const span = desno - lijevo;
   const pos = v => Math.max(0, Math.min(100, (v - lijevo)/span*100));
   const t = pos(bp), z = pos(0);
-  // zakljucano $: ista matematika kao prije, ništa dirano
+  // zakljucano $: ista matematika kao i prije
   let zakljucano = null;
   if(poz.lokot && poz.stop_pct >= 0){
     const izlazna = poz.ulozeno*(1+poz.stop_pct/100)*takerPct/100;
     zakljucano = poz.ulozeno*poz.stop_pct/100 - (poz.naknade_usd||0) - (poz.funding_usd||0) - izlazna;
     if(zakljucano < 0) zakljucano = 0;
   }
-  const lp = zakljucano!==null ? pos(poz.stop_pct) : z;
-  let h = `<div style="position:relative;padding:${zakljucano!==null?'13px':'2px'} 0 2px">`;
-  if(zakljucano !== null){
-    h += `<div style="position:absolute;top:-1px;left:calc(${lp}% - 18px);font-size:10px;font-family:var(--num);color:#4fb3f0;text-shadow:0 0 6px rgba(79,179,240,.5)">🔒+${n(zakljucano, zakljucano<10?2:1)}$</div>`;
-  }
-  h += `<div class="dah-cijev"><div class="dah-staklo"></div>`;
+  const lp = (zakljucano!==null && zakljucano>0) ? pos(poz.stop_pct) : null;
+  let h = `<div style="position:relative;min-width:190px;height:6px;margin:4px 0">`;
+  h += `<div class="dah-staklo" style="border-radius:3px"></div>`;
   if(bp<0) h += `<div class="dah-crvena" style="left:${t}%;right:${100-z}%"></div>`;
   if(bp>0) h += `<div class="dah-zelena" style="left:${z}%;width:${t-z}%"></div>`;
-  h += `<div class="dah-nula" style="left:${z}%"></div></div>`;
-  h += `<div class="dah-cijev dah-cijev-tanka"><div class="dah-staklo" style="border-radius:3px"></div>`;
-  if(zakljucano!==null && lp>z) h += `<div class="dah-plava" style="left:${z}%;width:${lp-z}%"></div>`;
-  h += `</div></div>`;
+  h += `<div class="dah-nula" style="left:${z}%;width:1.5px"></div>`;
+  if(lp!==null && lp>z) h += `<div style="position:absolute;bottom:-3px;left:${z}%;width:${lp-z}%;height:2px;background:#4fb3f0;border-radius:1px;box-shadow:0 0 5px rgba(79,179,240,.6)"></div>`;
+  h += `</div>`;
   return h;
 }
 function chipovi(knjiga, ime, p){
