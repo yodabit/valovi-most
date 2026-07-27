@@ -1,6 +1,6 @@
 {
- "generirano_utc": "27.07.2026 09:39:26 UTC",
- "generirano_ts": 1785145166,
+ "generirano_utc": "27.07.2026 09:42:39 UTC",
+ "generirano_ts": 1785145359,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -30,28 +30,6 @@
       "najbolji_neto": 0.0,
       "neto_zivo": -0.15
      },
-     "AVAX": {
-      "smjer": "SHORT",
-      "prvi_ulaz": 6.61,
-      "prosjek": 6.61,
-      "ulozeno": 200,
-      "kolicina": 30.2571860816944,
-      "dokupa": 0,
-      "naknade_usd": 0.09,
-      "funding_usd": 0.0,
-      "vrijeme_ulaza": "27.07. 09:03 UTC",
-      "ulaz_ts": 1785143004.53157,
-      "zadnja_stepenica": 6.61,
-      "stop_pct": 0.08993872919818456,
-      "lokot": true,
-      "lokot_ts": 1785143833.5589144,
-      "najbolji_pl": 0.21224984839296468,
-      "najbolji_neto": 0.24469031705824407,
-      "neto_zivo": 0.12,
-      "gorivo": 52,
-      "opruga_razmak": 1.2,
-      "tajmer_h": 0.4
-     },
      "LTC": {
       "smjer": "SHORT",
       "prvi_ulaz": 46.97,
@@ -67,18 +45,37 @@
       "stop_pct": -8,
       "lokot": false,
       "lokot_ts": null,
-      "najbolji_pl": 0.02129471890970347,
+      "najbolji_pl": 0.06391137622496768,
       "najbolji_neto": 0.0,
-      "neto_zivo": -0.18
+      "neto_zivo": -0.05
+     },
+     "AVAX": {
+      "smjer": "SHORT",
+      "prvi_ulaz": 6.608,
+      "prosjek": 6.608,
+      "ulozeno": 200,
+      "kolicina": 30.26634382566586,
+      "dokupa": 0,
+      "naknade_usd": 0.09,
+      "funding_usd": 0.0,
+      "vrijeme_ulaza": "27.07. 09:39 UTC",
+      "ulaz_ts": 1785145172.2132263,
+      "zadnja_stepenica": 6.608,
+      "stop_pct": -8,
+      "lokot": false,
+      "lokot_ts": null,
+      "najbolji_pl": 0.0,
+      "najbolji_neto": 0.0,
+      "neto_zivo": -0.21
      }
     },
-    "sef": -0.14,
-    "realizirano_period": -0.14,
+    "sef": -0.26,
+    "realizirano_period": -0.26,
     "period_od": null,
     "pauza_do": null,
-    "broj_trejdova": 2,
+    "broj_trejdova": 3,
     "dobitni": 0,
-    "gubitni": 2,
+    "gubitni": 3,
     "zadnji_izlaz_signal": {}
    },
    "tjedni": {
@@ -125,7 +122,7 @@
       "neto_zivo": 0.88,
       "gorivo": 71,
       "opruga_razmak": 2.25,
-      "tajmer_h": 2.7
+      "tajmer_h": 2.8
      },
      "ARB": {
       "smjer": "SHORT",
@@ -144,10 +141,10 @@
       "lokot_ts": 1785141028.4644277,
       "najbolji_pl": 1.1070110701107083,
       "najbolji_neto": 2.0350075416812707,
-      "neto_zivo": 1.54,
-      "gorivo": 64,
+      "neto_zivo": 1.04,
+      "gorivo": 66,
       "opruga_razmak": 1.5,
-      "tajmer_h": 1.1
+      "tajmer_h": 1.2
      }
     },
     "sef": 0.0,
@@ -165,7 +162,7 @@
    "stanje": "MIJESANO",
    "prosla_sirina": 45
   },
-  "zadnja_runda": "27.07. 09:38 UTC"
+  "zadnja_runda": "27.07. 09:41 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
@@ -299,6 +296,22 @@
    "neto_usd": -0.05,
    "zatvorio": "LOKOT-IZLAZ",
    "sef": -0.14,
+   "kasa": 6000
+  },
+  {
+   "vrijeme": "27.07. 09:39 UTC",
+   "knjiga": "dnevni",
+   "token": "AVAX",
+   "smjer": "SHORT",
+   "ulaz_po": 6.61,
+   "izlaz_po": 6.608,
+   "ulozeno_usd": 200,
+   "dokupa": 0,
+   "naknade_usd": 0.18,
+   "funding_usd": 0.0,
+   "neto_usd": -0.12,
+   "zatvorio": "LOKOT-IZLAZ",
+   "sef": -0.26,
    "kasa": 6000
   }
  ]
