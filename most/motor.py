@@ -136,6 +136,7 @@ class Trziste:
             self.parovi[t] = (ALIAS.get(t, t)) + "USD"
         self.svijece = {}   # (tok, interval) -> lista
         self.cijene = {}
+        self.rot = {}       # interval -> pokazivac rotacije
 
     def rijesi_parove(self):
         info = http_json("https://api.kraken.com/0/public/AssetPairs")
@@ -152,9 +153,14 @@ class Trziste:
 
     def osvjezi_svijece(self, interval_min, max_poziva):
         greske = 0
-        stari = sorted(self.parovi.keys(),
-                       key=lambda t: 0 if (t, interval_min) not in self.svijece else 1)
-        for t in stari[:max_poziva]:
+        lista = sorted(self.parovi.keys())
+        start = self.rot.get(interval_min, 0) % max(len(lista), 1)
+        kruzna = lista[start:] + lista[:start]
+        bez = [t for t in kruzna if (t, interval_min) not in self.svijece]
+        sa = [t for t in kruzna if (t, interval_min) in self.svijece]
+        red = (bez + sa)[:max_poziva]
+        self.rot[interval_min] = (start + max_poziva) % max(len(lista), 1)
+        for t in red:
             j = http_json(f"https://api.kraken.com/0/public/OHLC?pair={self.parovi[t]}&interval={interval_min}")
             if not j or "result" not in j:
                 greske += 1
