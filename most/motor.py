@@ -317,9 +317,10 @@ class Motor:
             k["sef"] = round(k["sef"] + neto, 2)
         min_plijen = p.get("opruga", {}).get("min_plijen_usd", 1.0)
         if neto < min_plijen and tko in ("LOKOT-IZLAZ", "TAJMER"):
-            k["zadnji_izlaz_signal"].pop(tok, None)   # trzaj/nula — napadni opet na istom signalu
+            k["zadnji_izlaz_signal"].pop(tok, None)   # trzaj/nula — napad dopusten
         else:
             k["zadnji_izlaz_signal"][tok] = poz["smjer"]
+        k.setdefault("hladnjak", {})[tok] = time.time()   # ali ne odmah — pauza napada
         del k["pozicije"][tok]
         dnevnik_zapis({
             "vrijeme": ts(), "knjiga": ime_k, "token": tok, "smjer": poz["smjer"],
@@ -362,7 +363,7 @@ class Motor:
 
         # 1) STOP (minus nema tajmer — cuva ga samo cijena)
         if pl <= poz["stop_pct"]:
-            tko = "LOKOT-IZLAZ" if poz["lokot"] and poz["stop_pct"] >= 0 else "STOP"
+            tko = ("CEGRTALJKA" if poz.get("najbolji_neto", 0) > 1 else "LOKOT-IZLAZ") if poz["lokot"] and poz["stop_pct"] >= 0 else "STOP"
             self._zatvori(ime_k, k, p, tok, poz, cijena, tko)
             return
 
@@ -370,8 +371,9 @@ class Motor:
         if not o.get("upaljen", True):
             return
 
-        # 2) LOKOT: ulaz + izlaz placeni → izlaz siguran bez ogrebotine
-        if not poz["lokot"] and neto > 0:
+        # 2) LOKOT: ulaz + izlaz placeni + JASTUK → izlaz siguran bez ogrebotine
+        jastuk = o.get("lokot_jastuk_usd", 0.7)
+        if not poz["lokot"] and neto >= jastuk:
             poz["lokot"] = True
             poz["lokot_ts"] = time.time()
             be_pct = trosak / poz["ulozeno"] * 100.0
@@ -392,6 +394,14 @@ class Motor:
             elif g > o.get("gorivo_pusti_iznad", 70):
                 razmak *= 1.5
             poz["opruga_razmak"] = round(razmak, 2)
+            # CEGRTALJKA: pod = najbolji_neto - razmak($), penje se samo gore
+            razmak_usd = poz["ulozeno"] * razmak / 100.0
+            pod_neto = poz.get("najbolji_neto", 0.0) - razmak_usd
+            if pod_neto > 0:
+                fiksni = poz["naknade_usd"] + poz["funding_usd"]
+                pod_pct = (pod_neto + fiksni) / poz["ulozeno"] * 100.0 / (1 - self.params["naknade"]["taker_pct"] / 100.0)
+                if pod_pct > poz["stop_pct"]:
+                    poz["stop_pct"] = round(pod_pct, 3)
             min_plijen = o.get("min_plijen_usd", 1.0)
             if neto >= min_plijen and pl <= poz["najbolji_pl"] - razmak:
                 self._zatvori(ime_k, k, p, tok, poz, cijena, "OPRUGA")
@@ -437,6 +447,9 @@ class Motor:
             if not ok:
                 continue
             if k["zadnji_izlaz_signal"].get(tok) == sig:
+                continue
+            hl = k.get("hladnjak", {}).get(tok)
+            if hl and (time.time() - hl) < p.get("napad_pauza_min", 30) * 60:
                 continue
             k["zadnji_izlaz_signal"].pop(tok, None)
             if len(k["pozicije"]) >= p["max_pozicija"]:
