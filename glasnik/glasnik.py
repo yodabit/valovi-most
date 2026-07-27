@@ -12,7 +12,7 @@ TOKEN_DAT = "/opt/valovi/glasnik_token"
 STATE_DAT = "/opt/valovi/data/most_state.json"
 DNEVNIK_DAT = "/opt/valovi/data/most_dnevnik.jsonl"
 PARAMS_DAT = "/opt/valovi/most/params.json"
-MAX_DNEVNIK = 200  # zadnjih N zapisa
+MAX_DNEVNIK = 1000  # zadnjih N zapisa
 
 API = "https://api.github.com/repos/%s/contents/%s" % (REPO, CILJ)
 
