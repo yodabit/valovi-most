@@ -1,6 +1,6 @@
 {
- "generirano_utc": "27.07.2026 09:29:55 UTC",
- "generirano_ts": 1785144595,
+ "generirano_utc": "27.07.2026 09:33:01 UTC",
+ "generirano_ts": 1785144781,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -28,7 +28,7 @@
       "lokot_ts": null,
       "najbolji_pl": 0.01630193600583585,
       "najbolji_neto": 0.0,
-      "neto_zivo": -0.19
+      "neto_zivo": -0.21
      },
      "AVAX": {
       "smjer": "SHORT",
@@ -45,10 +45,10 @@
       "stop_pct": 0.08993872919818456,
       "lokot": true,
       "lokot_ts": 1785143833.5589144,
-      "najbolji_pl": 0.13634297833662323,
-      "najbolji_neto": 0.09280849827687734,
-      "neto_zivo": 0.06,
-      "gorivo": 54,
+      "najbolji_pl": 0.21224984839296468,
+      "najbolji_neto": 0.24469031705824407,
+      "neto_zivo": 0.24,
+      "gorivo": 49,
       "opruga_razmak": 1.2,
       "tajmer_h": 0.2
      },
@@ -69,7 +69,7 @@
       "lokot_ts": null,
       "najbolji_pl": 0.02129471890970347,
       "najbolji_neto": 0.0,
-      "neto_zivo": -0.35
+      "neto_zivo": -0.44
      }
     },
     "sef": -0.14,
@@ -103,7 +103,7 @@
       "lokot_ts": null,
       "najbolji_pl": 0.08647713760674414,
       "najbolji_neto": 0.0,
-      "neto_zivo": -0.98
+      "neto_zivo": -1.03
      },
      "ADA": {
       "smjer": "SHORT",
@@ -122,8 +122,8 @@
       "lokot_ts": 1785135295.6289203,
       "najbolji_pl": 1.091401868023012,
       "najbolji_neto": 2.003775393044611,
-      "neto_zivo": 1.37,
-      "gorivo": 70,
+      "neto_zivo": 1.58,
+      "gorivo": 69,
       "opruga_razmak": 1.5,
       "tajmer_h": 2.6
      },
@@ -165,7 +165,7 @@
    "stanje": "MIJESANO",
    "prosla_sirina": 45
   },
-  "zadnja_runda": "27.07. 09:28 UTC"
+  "zadnja_runda": "27.07. 09:32 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
