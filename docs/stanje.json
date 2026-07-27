@@ -1,6 +1,6 @@
 {
- "generirano_utc": "27.07.2026 08:45:16 UTC",
- "generirano_ts": 1785141916,
+ "generirano_utc": "27.07.2026 08:48:22 UTC",
+ "generirano_ts": 1785142102,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -31,7 +31,7 @@
       "neto_zivo": 0.02,
       "gorivo": 67,
       "opruga_razmak": 1.2,
-      "tajmer_h": 0.0
+      "tajmer_h": 0.1
      },
      "TRX": {
       "smjer": "SHORT",
@@ -84,7 +84,7 @@
       "lokot_ts": null,
       "najbolji_pl": 0.08647713760674414,
       "najbolji_neto": 0.0,
-      "neto_zivo": -0.94
+      "neto_zivo": -0.89
      },
      "ADA": {
       "smjer": "SHORT",
@@ -103,10 +103,10 @@
       "lokot_ts": 1785135295.6289203,
       "najbolji_pl": 0.9968854917341119,
       "najbolji_neto": 1.8146593246662641,
-      "neto_zivo": 1.63,
+      "neto_zivo": 1.55,
       "gorivo": 69,
       "opruga_razmak": 1.5,
-      "tajmer_h": 1.8
+      "tajmer_h": 1.9
      },
      "ARB": {
       "smjer": "SHORT",
@@ -128,7 +128,7 @@
       "neto_zivo": 1.04,
       "gorivo": 66,
       "opruga_razmak": 1.5,
-      "tajmer_h": 0.2
+      "tajmer_h": 0.3
      }
     },
     "sef": 0.0,
@@ -146,7 +146,7 @@
    "stanje": "MIJESANO",
    "prosla_sirina": 45
   },
-  "zadnja_runda": "27.07. 08:44 UTC"
+  "zadnja_runda": "27.07. 08:47 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
