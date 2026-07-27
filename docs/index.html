@@ -47,6 +47,7 @@
   .dah{position:relative;width:150px;height:12px;background:#1a2432;border-radius:6px}
   .dah .zona{position:absolute;top:0;bottom:0;border-radius:6px}
   .dah .tocka{position:absolute;top:-2px;width:8px;height:16px;border-radius:4px;background:#fff;box-shadow:0 0 6px #fff8}
+  .dah .tocka.minus{background:var(--red);box-shadow:0 0 6px #f26d6d88}
   .dah .lokotm{position:absolute;top:-4px;font-size:11px}
   .sk{display:inline-block;padding:2px 8px;border-radius:6px;font-size:10.5px;font-weight:700;border:1px solid var(--border);color:var(--muted)}
   .sk.on{color:var(--green);border-color:var(--green)}
@@ -92,10 +93,18 @@
 <div class="chips" id="tjedniChips"></div>
 <div id="tjedniTab"></div>
 
-<h2>📒 Dnevnik — ⚡ DNEVNA <small>najnoviji prvi</small></h2>
+<h2>📒 Dnevnik trejdova <small>filtri vrijede za obje knjige</small></h2>
+<div class="chips" id="dnFilter">
+  <span class="chip">od <input type="date" id="fOd" style="background:transparent;border:none;color:var(--text);font-family:var(--num)"></span>
+  <span class="chip">do <input type="date" id="fDo" style="background:transparent;border:none;color:var(--text);font-family:var(--num)"></span>
+  <span class="chip">token <select id="fTok" style="background:transparent;border:none;color:var(--text)"><option value="">SVI</option></select></span>
+  <button onclick="resetFilter()">✕ Reset</button>
+</div>
+<div class="chips" id="dnSazetak"></div>
+<h2>⚡ DNEVNA <small>najnoviji prvi</small></h2>
 <div id="dnevnikDnevni"></div>
 
-<h2>📒 Dnevnik — 🌊 TJEDNA <small>najnoviji prvi</small></h2>
+<h2>🌊 TJEDNA <small>najnoviji prvi</small></h2>
 <div id="dnevnikTjedni"></div>
 
 <p class="note">NETO $ = ČISTA ZARADA U DŽEP: bruto − plaćene naknade − funding − izlazna karta (taker 0,045 %) — ista računica kojom motor pali LOKOT 🔒. Traka daha: lijevo STOP, 🔒 = zaključano (ne može se izgubiti), ● = trenutna cijena živo s Krakena, desno prostor do vrha. Gumbi ručne žetve rade kroz privatni tunel — stižu s Tailscaleom.</p>
@@ -103,6 +112,52 @@
 <script>
 const ALIAS = {BTC:"XBT", DOGE:"XDG"};
 let stanje = null, cijene = {};
+let F = {od:null, do_:null, tok:""};
+function parseVrijeme(v){
+  // "27.07. 09:51 UTC" → Date (tekuca godina)
+  const m = String(v||"").match(/(\d{2})\.(\d{2})\./);
+  if(!m) return null;
+  return new Date(new Date().getFullYear(), +m[2]-1, +m[1]);
+}
+function prolazi(r){
+  const d = parseVrijeme(r.vrijeme);
+  if(F.od && d && d < F.od) return false;
+  if(F.do_ && d && d > F.do_) return false;
+  if(F.tok && (r.token||r.tok) !== F.tok) return false;
+  return true;
+}
+function resetFilter(){
+  F = {od:null, do_:null, tok:""};
+  document.getElementById("fOd").value = "";
+  document.getElementById("fDo").value = "";
+  document.getElementById("fTok").value = "";
+  osvjezi();
+}
+function veziFiltre(){
+  document.getElementById("fOd").onchange = e => { F.od = e.target.value? new Date(e.target.value): null; osvjezi(); };
+  document.getElementById("fDo").onchange = e => { F.do_ = e.target.value? new Date(e.target.value+"T23:59"): null; osvjezi(); };
+  document.getElementById("fTok").onchange = e => { F.tok = e.target.value; osvjezi(); };
+}
+function napuniTokene(zapisi){
+  const sel = document.getElementById("fTok");
+  const sada = sel.value;
+  const tokeni = [...new Set((zapisi||[]).map(r=>r.token||r.tok).filter(Boolean))].sort();
+  sel.innerHTML = '<option value="">SVI</option>' + tokeni.map(t=>`<option ${t===sada?"selected":""}>${t}</option>`).join("");
+}
+function sazetakDnevnika(zapisi){
+  const z = (zapisi||[]).filter(prolazi);
+  const uk = z.reduce((s,r)=>s+(r.neto_usd||0),0);
+  const dob = z.filter(r=>(r.neto_usd||0)>=0).length;
+  const brojac = {};
+  for(const r of z){ const t=r.token||r.tok; if(t) brojac[t]=(brojac[t]||0)+1; }
+  const top = Object.entries(brojac).sort((a,b)=>b[1]-a[1]).slice(0,6);
+  document.getElementById("dnSazetak").innerHTML =
+    `<span class="chip big">prikazano <b>${z.length}</b> trejdova</span>
+     <span class="chip sef">Σ NETO <b class="${uk<0?"minus":""}">${uk>=0?"+":""}${n(uk,2)} $</b></span>
+     <span class="chip">dobitnih <b>${dob}/${z.length}</b></span>` +
+    top.map(([t,c])=>`<span class="chip">🔁 <b>${t}</b> ×${c}</span>`).join("");
+}
+
 
 function n(x,d){ if(x===null||x===undefined||isNaN(x)) return "—";
   return Number(x).toLocaleString("hr-HR",{minimumFractionDigits:d===undefined?2:d,maximumFractionDigits:d===undefined?2:d}); }
@@ -148,21 +203,20 @@ function neto_usd(poz, cur, takerPct){
 }
 
 function dahBar(poz, bp){
-  // skala: [stop_pct ... max(najbolji_pl, cilj)] — tocka=trenutno, lokot marker na stop_pct ako je >=0
   if(bp===null) return "—";
   const lijevo = Math.min(poz.stop_pct||-8, -1);
-  const desno = Math.max(poz.najbolji_pl||0, bp, 1) * 1.15;
+  const desno = Math.max(2, (poz.najbolji_pl||0)*1.15, bp*1.15);
   const span = desno - lijevo;
   const pos = v => Math.max(0, Math.min(100, (v - lijevo)/span*100));
   const t = pos(bp), z = pos(0);
   let h = `<div class="dah">`;
   h += `<div class="zona" style="left:0;width:${z}%;background:#3a1520"></div>`;
   h += `<div class="zona" style="left:${z}%;right:0;background:#12301f"></div>`;
+  h += `<div style="position:absolute;left:${z}%;top:-1px;bottom:-1px;width:1px;background:#7d8fa0"></div>`;
   if(poz.lokot && poz.stop_pct>=0) h += `<div class="lokotm" style="left:calc(${pos(poz.stop_pct)}% - 5px)">🔒</div>`;
-  h += `<div class="tocka" style="left:calc(${t}% - 4px)"></div></div>`;
+  h += `<div class="tocka ${bp<0?"minus":""}" style="left:calc(${t}% - 4px)"></div></div>`;
   return h;
 }
-
 function chipovi(knjiga, ime, p){
   if(!knjiga) return "";
   const poz = Object.keys(knjiga.pozicije||{}).length;
@@ -200,7 +254,7 @@ function tablicaPozicija(knjiga, p, takerPct){
       <td class="num">${cij(pz.prosjek)}${(pz.dokupa||0)>0?` <span class="mini">(${1+(pz.dokupa||0)}×)</span>`:""}</td>
       <td class="num">${cij(cur)}</td>
       <td class="num ${bp===null?"":klasa(bp)}">${bp===null?"—":(bp>0?"+":"")+n(bp,2)+"%"}</td>
-      <td class="num ${neto===null?"":klasa(neto)}"><b>${neto===null?"—":(neto>0?"+":"")+n(neto,2)}</b></td>
+      <td class="num ${neto===null?"":klasa(neto)}"><b>${neto===null?"—":(neto>0?"+":"")+n(neto,2)}</b>${(pz.lokot&&neto!==null&&neto<0)?' <span class="mini up">→ izlaz ≥ 0 🔒</span>':""}</td>
       <td>${pz.lokot?'<span class="up">🔒</span>':"—"}</td>
       <td>${dahBar(pz, bp)}</td>
       <td class="num">${pz.opruga_razmak?n(pz.opruga_razmak,1)+"%":"—"}${pz.gorivo!==undefined?` <span class="mini">⛽${pz.gorivo}</span>`:""}</td>
@@ -214,11 +268,11 @@ function tablicaPozicija(knjiga, p, takerPct){
 }
 
 function dnevnikTablica(zapisi, knjiga){
-  const z = (zapisi||[]).filter(x=>(x.knjiga||x.portfelj)===knjiga).reverse();
+  const z = (zapisi||[]).filter(x=>(x.knjiga||x.portfelj)===knjiga).filter(prolazi).reverse();
   if(!z.length) return '<p class="note">Još nema trejdova.</p>';
   const rub = knjiga==="dnevni"?"#2dd4bf":"#5b8def";
   let h = '<table><tr><th>Vrijeme</th><th>Token</th><th>Smjer</th><th>Ulaz→Izlaz</th><th>Uloženo $</th><th>🔺</th><th>Naknade $</th><th>Funding $</th><th>NETO $</th><th>Zatvorio</th><th>SEF $</th><th>Kasa $</th></tr>';
-  for(const r of z.slice(0,60)){
+  for(const r of z.slice(0,200)){
     h += `<tr style="box-shadow:inset 3px 0 0 ${rub}"><td class="num mini">${r.vrijeme||"—"}</td>
       <td><b>${r.token||r.tok||"—"}</b></td>
       <td><span class="badge ${r.smjer==="SHORT"?"b-short":"b-long"}">${r.smjer||"—"}</span></td>
@@ -277,6 +331,8 @@ async function osvjezi(){
     document.getElementById("tjedniChips").innerHTML = chipovi(tj,"🌊",pt);
     document.getElementById("dnevniTab").innerHTML = tablicaPozicija(dn, pd, taker);
     document.getElementById("tjedniTab").innerHTML = tablicaPozicija(tj, pt, taker);
+    napuniTokene(stanje.dnevnik);
+    sazetakDnevnika(stanje.dnevnik);
     document.getElementById("dnevnikDnevni").innerHTML = dnevnikTablica(stanje.dnevnik, "dnevni");
     document.getElementById("dnevnikTjedni").innerHTML = dnevnikTablica(stanje.dnevnik, "tjedni");
 
@@ -351,6 +407,7 @@ async function osvjezi(){
     }
   }, 120);
 })();
+veziFiltre();
 osvjezi();
 setInterval(osvjezi, 60000);
 </script>
