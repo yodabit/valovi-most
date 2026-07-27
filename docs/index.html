@@ -3,31 +3,35 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VALOVI — Komandni most (živo)</title>
+<title>VALOVI — Komandni most 2.0 (NOVA ERA)</title>
 <style>
   :root{--bg:#0b1118;--panel:#111a24;--panel2:#0e1620;--border:#1e2a38;--text:#d7e1ea;
     --muted:#7d8fa0;--teal:#2dd4bf;--red:#f26d6d;--gold:#e8c268;--green:#4ade80;
-    --num:"SF Mono",Consolas,monospace}
+    --plavi:#5b8def;--num:"SF Mono",Consolas,monospace}
   *{box-sizing:border-box}
   body{margin:0;background:var(--bg);color:var(--text);font:14px/1.5 -apple-system,"Segoe UI",Roboto,sans-serif;padding:16px}
-  #pcb{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.5}
-  body>*:not(#pcb){position:relative;z-index:1}
-  h1{font-size:20px;margin:0}.dot{color:var(--teal)}
+  h1{font-size:20px;margin:8px 0 4px}.dot{color:var(--teal)}
   h2{font-size:14px;margin:22px 0 8px;letter-spacing:.3px}
   h2 small{color:var(--muted);font-weight:400;margin-left:8px;font-size:11.5px}
-  .zivo{background:var(--green);color:#04211d;font-weight:700;padding:4px 10px;border-radius:6px;font-size:12px;display:inline-block;margin-bottom:10px}
+  .zivo{background:var(--green);color:#04211d;font-weight:700;padding:4px 10px;border-radius:6px;font-size:12px;display:inline-block;margin-bottom:8px}
   .zivo.problem{background:var(--red);color:#fff}
+  #puls{position:relative;height:34px;background:var(--panel2);border:1px solid var(--border);border-radius:9px;overflow:hidden;margin:6px 0 10px}
+  #pulsFill{position:absolute;left:0;top:0;bottom:0;width:0%;background:linear-gradient(90deg,#14532d,var(--green));transition:width .8s}
+  #pulsFill.minus{background:linear-gradient(90deg,#7f1d1d,var(--red))}
+  #pulsTxt{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:var(--num);font-weight:700;font-size:14px;text-shadow:0 1px 3px #000}
   .chips{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0;align-items:center}
   .chip{background:var(--panel);border:1px solid var(--border);border-radius:8px;padding:7px 12px;font-size:12.5px;color:var(--muted)}
   .chip b{color:var(--text);font-family:var(--num)}
   .chip.big b{font-size:16px}
-  .chip.sef{border-color:var(--green)} .chip.sef b{color:var(--green)}
-  .chip.sef b.minus{color:var(--red)}
+  .chip.sef{border-color:var(--green)} .chip.sef b{color:var(--green)} .chip.sef b.minus{color:var(--red)}
+  .chip.kasa{border-color:var(--teal)} .chip.kasa b{color:var(--teal)}
+  .chip.more-PLIMA{border-color:var(--green)} .chip.more-OSEKA{border-color:var(--red)} .chip.more-MIJESANO{border-color:var(--gold)}
   button{background:var(--panel);border:1px solid var(--border);color:var(--text);border-radius:7px;padding:6px 12px;cursor:pointer;font-size:12.5px}
   button.primary{background:var(--teal);color:#04211d;border-color:var(--teal);font-weight:600}
+  button.ruka{opacity:.45;cursor:not-allowed;font-size:11px;padding:3px 8px}
   table{width:100%;border-collapse:collapse;background:var(--panel);border:1px solid var(--border);border-radius:10px;overflow:hidden;font-size:13px}
-  th{font-size:10.5px;text-transform:uppercase;letter-spacing:1px;color:var(--muted);text-align:left;padding:9px 11px;border-bottom:1px solid var(--border)}
-  td{padding:8px 11px;border-bottom:1px solid var(--border)}
+  th{font-size:10px;text-transform:uppercase;letter-spacing:.8px;color:var(--muted);text-align:left;padding:9px 10px;border-bottom:1px solid var(--border)}
+  td{padding:8px 10px;border-bottom:1px solid var(--border)}
   tr:last-child td{border-bottom:none}
   tr:nth-child(even) td{background:var(--panel2)}
   .num{font-family:var(--num);white-space:nowrap}
@@ -36,66 +40,48 @@
   .b-long{color:var(--green);border-color:var(--green)}
   .b-short{color:var(--red);border-color:var(--red)}
   .note{color:var(--muted);font-size:12px;margin-top:6px}
-  .legend{background:var(--panel2);border:1px dashed var(--gold);border-radius:8px;padding:8px 12px;font-size:12px;color:var(--gold);margin:8px 0}
   .mini{font-size:10px;color:var(--muted)}
+  .dah{position:relative;width:150px;height:12px;background:#1a2432;border-radius:6px}
+  .dah .zona{position:absolute;top:0;bottom:0;border-radius:6px}
+  .dah .tocka{position:absolute;top:-2px;width:8px;height:16px;border-radius:4px;background:#fff;box-shadow:0 0 6px #fff8}
+  .dah .lokotm{position:absolute;top:-4px;font-size:11px}
+  .sk{display:inline-block;padding:2px 8px;border-radius:6px;font-size:10.5px;font-weight:700;border:1px solid var(--border);color:var(--muted)}
+  .sk.on{color:var(--green);border-color:var(--green)}
+  .sk.off{color:var(--red);border-color:var(--red)}
 </style>
 </head>
 <body>
 
-<svg id="pcb" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" viewBox="0 0 1600 900">
-  <defs><filter id="glow" x="-200%" y="-200%" width="500%" height="500%">
-    <feGaussianBlur stdDeviation="3.5" result="b"/>
-    <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-  </filter></defs>
-  <g stroke="#123825" stroke-width="1.4" fill="none">
-    <path id="t1" d="M -20 120 H 240 L 320 200 H 620 L 700 120 H 980 L 1060 200 V 320 H 1350 L 1430 240 H 1650"/>
-    <path id="t2" d="M -20 480 H 180 L 260 400 H 520 L 600 480 H 860 L 940 400 H 1240 L 1320 480 H 1650"/>
-    <path id="t3" d="M -20 760 H 260 L 340 680 H 700 L 780 760 H 1100 L 1180 680 H 1420 L 1500 760 H 1650"/>
-    <path id="t6" d="M -20 260 L 60 340 H 300 L 380 260 H 560 L 640 340 V 560 L 720 640 H 1000"/>
-    <path id="t7" d="M 1650 340 L 1540 340 L 1460 420 H 1180 L 1100 500 V 620 L 1020 700 H 820"/>
-  </g>
-  <g fill="#1a4a30">
-    <circle cx="320" cy="200" r="4"/><circle cx="700" cy="120" r="4"/><circle cx="1060" cy="200" r="4"/>
-    <circle cx="260" cy="400" r="4"/><circle cx="600" cy="480" r="4"/><circle cx="940" cy="400" r="4"/>
-    <circle cx="340" cy="680" r="4"/><circle cx="780" cy="760" r="4"/><circle cx="1180" cy="680" r="4"/>
-    <circle cx="640" cy="340" r="4"/><circle cx="1100" cy="500" r="4"/>
-  </g>
-  <g filter="url(#glow)">
-    <circle r="3.5" fill="#39ff88"><animateMotion dur="9s" repeatCount="indefinite"><mpath href="#t1"/></animateMotion></circle>
-    <circle r="3" fill="#39ff88"><animateMotion dur="13s" begin="2s" repeatCount="indefinite"><mpath href="#t2"/></animateMotion></circle>
-    <circle r="3.5" fill="#2dd4bf"><animateMotion dur="11s" begin="4s" repeatCount="indefinite"><mpath href="#t3"/></animateMotion></circle>
-    <circle r="3" fill="#39ff88"><animateMotion dur="10s" begin="3s" repeatCount="indefinite"><mpath href="#t6"/></animateMotion></circle>
-    <circle r="3" fill="#00ff41"><animateMotion dur="12s" begin="6s" repeatCount="indefinite"><mpath href="#t7"/></animateMotion></circle>
-  </g>
-</svg>
-
-<div id="traka" class="zivo">⏳ Učitavam stanje…</div>
-<h1>VALOVI<span class="dot">.</span> Komandni most <span style="font-size:13px;color:var(--muted)">· živo stanje motora (paper) · samo čitanje — Faza 2A</span></h1>
+<div id="traka" class="zivo">⏳ Učitavam NOVU ERU…</div>
+<div id="puls"><div id="pulsFill"></div><div id="pulsTxt">—</div></div>
+<h1>VALOVI<span class="dot">.</span> Komandni most 2.0 <span style="font-size:13px;color:var(--muted)">· NOVA ERA — futures paper · USD · opruga+lokot · samo čitanje (ruke čekaju tunel 🔗)</span></h1>
 
 <div class="chips" id="glavniChips"></div>
-<div class="legend" id="legenda" style="display:none"></div>
 
-<h2>⚡ DNEVNI portfelj <small id="dnevniInfo"></small></h2>
+<h2>⚡ DNEVNA knjiga <small>futures · tajmer 48 h od lokota · dokupi +200 $ × 5</small></h2>
 <div class="chips" id="dnevniChips"></div>
 <div id="dnevniTab"></div>
 
-<h2>🌊 TJEDNI portfelj <small id="tjedniInfo"></small></h2>
+<h2>🌊 TJEDNA knjiga <small>futures · tajmer 7 dana od lokota · dokupi +200 $ × 5</small></h2>
 <div class="chips" id="tjedniChips"></div>
 <div id="tjedniTab"></div>
 
-<h2>📒 Dnevnik trejdova <small>zadnjih 200 · najnoviji prvi · knjiži se stvarno izvršeno (paper simulacija)</small></h2>
-<div id="dnevnikTab"></div>
+<h2>📒 Dnevnik — ⚡ DNEVNA <small>najnoviji prvi</small></h2>
+<div id="dnevnikDnevni"></div>
 
-<p class="note">Cijene "TRENUTNO" vuku se ŽIVO s Kraken javnog API-ja pri svakom osvježenju ploče; ostatak stanja (pozicije, SEF, dnevnik) glasnik donosi s motora svake ~3 min. NETO P/L = ČISTA ZARADA U DŽEP: bruto − plaćene naknade − rollover − IZLAZNA naknada (taker) — ista računica kojom motor pali bravu; pređe li NETO nulu, brava škljoca. Ploča je zrcalo — ništa se odavde ne može mijenjati.</p>
+<h2>📒 Dnevnik — 🌊 TJEDNA <small>najnoviji prvi</small></h2>
+<div id="dnevnikTjedni"></div>
+
+<p class="note">NETO $ = ČISTA ZARADA U DŽEP: bruto − plaćene naknade − funding − izlazna karta (taker 0,045 %) — ista računica kojom motor pali LOKOT 🔒. Traka daha: lijevo STOP, 🔒 = zaključano (ne može se izgubiti), ● = trenutna cijena živo s Krakena, desno prostor do vrha. Gumbi ručne žetve rade kroz privatni tunel — stižu s Tailscaleom.</p>
 
 <script>
-const KRAKEN_ALIAS = {BTC:"XBT", DOGE:"XDG"};
+const ALIAS = {BTC:"XBT", DOGE:"XDG"};
 let stanje = null, cijene = {};
 
-function n(x, dec){ if(x===null||x===undefined||isNaN(x)) return "—";
-  return Number(x).toLocaleString("hr-HR",{minimumFractionDigits:dec===undefined?2:dec,maximumFractionDigits:dec===undefined?2:dec}); }
+function n(x,d){ if(x===null||x===undefined||isNaN(x)) return "—";
+  return Number(x).toLocaleString("hr-HR",{minimumFractionDigits:d===undefined?2:d,maximumFractionDigits:d===undefined?2:d}); }
 function cij(x){ if(x===null||x===undefined||isNaN(x)) return "—";
-  const d = x>=1000?0:(x>=10?2:(x>=0.1?4:6)); return n(x,d); }
+  const d = x>=1000?0:(x>=10?2:(x>=0.1?4:8)); return n(x,d); }
 function klasa(v){ return v>0?"up":(v<0?"down":""); }
 
 async function ucitajStanje(){
@@ -107,15 +93,15 @@ async function ucitajStanje(){
 async function ucitajCijene(tokeni){
   cijene = {};
   if(!tokeni.length) return;
-  const parovi = tokeni.map(t => (KRAKEN_ALIAS[t]||t)+"EUR");
+  const parovi = tokeni.map(t => (ALIAS[t]||t)+"USD");
   try{
     const r = await fetch("https://api.kraken.com/0/public/Ticker?pair="+parovi.join(","));
     const j = await r.json();
     if(j.result){
       for(const t of tokeni){
-        const alias = (KRAKEN_ALIAS[t]||t);
+        const a = (ALIAS[t]||t);
         for(const kljuc in j.result){
-          if(kljuc.includes(alias) && kljuc.includes("EUR")){
+          if(kljuc.includes(a) && kljuc.includes("USD") && !kljuc.includes("USDT") && !kljuc.includes("USDC")){
             cijene[t] = parseFloat(j.result[kljuc].c[0]); break;
           }
         }
@@ -126,94 +112,99 @@ async function ucitajCijene(tokeni){
 
 function pl_pct(poz, cur){
   if(!cur || !poz.prosjek) return null;
-  const bruto = poz.smjer==="SHORT" ? (poz.prosjek-cur)/poz.prosjek*100 : (cur-poz.prosjek)/poz.prosjek*100;
-  return bruto;
+  return poz.smjer==="SHORT" ? (poz.prosjek-cur)/poz.prosjek*100 : (cur-poz.prosjek)/poz.prosjek*100;
+}
+function neto_usd(poz, cur, takerPct){
+  const bp = pl_pct(poz, cur);
+  if(bp===null) return null;
+  const izlazna = poz.ulozeno*(1+bp/100)*takerPct/100;
+  return poz.ulozeno*bp/100 - (poz.naknade_usd||0) - (poz.funding_usd||0) - izlazna;
 }
 
-function opruga_razmak(o, neto){
-  if(!o || !o.upaljen || neto===null) return null;
-  const lj = o.ljestvica || [[1,1.2],[3,0.8],[8,0.5],[999999,0.3]];
-  for(const [prag,r] of lj){ if(neto<=prag) return r; }
-  return lj[lj.length-1][1];
+function dahBar(poz, bp){
+  // skala: [stop_pct ... max(najbolji_pl, cilj)] — tocka=trenutno, lokot marker na stop_pct ako je >=0
+  if(bp===null) return "—";
+  const lijevo = Math.min(poz.stop_pct||-8, -1);
+  const desno = Math.max(poz.najbolji_pl||0, bp, 1) * 1.15;
+  const span = desno - lijevo;
+  const pos = v => Math.max(0, Math.min(100, (v - lijevo)/span*100));
+  const t = pos(bp), z = pos(0);
+  let h = `<div class="dah">`;
+  h += `<div class="zona" style="left:0;width:${z}%;background:#3a1520"></div>`;
+  h += `<div class="zona" style="left:${z}%;right:0;background:#12301f"></div>`;
+  if(poz.lokot && poz.stop_pct>=0) h += `<div class="lokotm" style="left:calc(${pos(poz.stop_pct)}% - 5px)">🔒</div>`;
+  h += `<div class="tocka" style="left:calc(${t}% - 4px)"></div></div>`;
+  return h;
 }
-function tablicaPozicija(knjiga, params){
+
+function chipovi(knjiga, ime, p){
+  if(!knjiga) return "";
+  const poz = Object.keys(knjiga.pozicije||{}).length;
+  const ang = Object.values(knjiga.pozicije||{}).reduce((s,x)=>s+(x.ulozeno||0),0);
+  const kasa = knjiga.kasa||0, slobodno = kasa - ang;
+  const sef = knjiga.sef||0, per = knjiga.realizirano_period||0;
+  const sk = (naziv, on) => `<span class="sk ${on?"on":"off"}">${naziv} ${on?"✓":"✗"}</span>`;
+  return `<span class="chip sef">${ime} SEF <b class="${sef<0?"minus":""}">${sef>0?"+":""}${n(sef)} $</b></span>
+    <span class="chip">period <b class="${klasa(per)}">${per>0?"+":""}${n(per)} $</b></span>
+    <span class="chip kasa">kasa <b>${n(slobodno,0)} / ${n(kasa,0)} $</b> <small>slobodno</small></span>
+    <span class="chip">pozicija <b>${poz}</b> (${n(ang,0)} $)</span>
+    <span class="chip">trejdova <b>${knjiga.broj_trejdova||0}</b> <small>(${knjiga.dobitni||0}✓/${knjiga.gubitni||0}✗)</small></span>
+    ${sk("BOT", p.bot_radi)} ${sk("🩳 SHORT", p.short_dozvoljen)} ${sk("♻ REINVEST", p.reinvestiraj)}`;
+}
+
+function tablicaPozicija(knjiga, p, takerPct){
   const poz = (knjiga && knjiga.pozicije) || {};
-  const o = (params||{}).opruga || null;
   const kljucevi = Object.keys(poz);
   if(!kljucevi.length) return '<p class="note">Nema otvorenih pozicija — motor čeka valove.</p>';
-  let h = '<table><tr><th>Token</th><th>Smjer</th><th>Uloženo €</th><th>Prosjek</th><th>Trenutno (živo)</th><th>Bruto P/L</th><th>Neto P/L € <span class="mini">(u džep, s izlaznom kartom)</span></th><th>Troškovi €</th><th>🔺</th><th>Stop</th><th>🔒 Brava</th><th>🌀 Opruga</th><th>⏱ Tajmer</th><th>Od</th></tr>';
+  let h = '<table><tr><th>Token</th><th>Smjer</th><th>Uloženo $</th><th>Prosjek</th><th>Trenutno</th><th>Bruto</th><th>NETO $ <span class="mini">(u džep)</span></th><th>🔒</th><th>Dah</th><th>🌀</th><th>⏱</th><th>🔺</th><th>Stop</th><th>Ruka</th><th>Od</th></tr>';
   for(const t of kljucevi){
-    const p = poz[t];
+    const pz = poz[t];
     const cur = cijene[t];
-    const bp = pl_pct(p, cur);
-    const brutoEur = bp===null?null:(p.ulozeno*bp/100);
-    const taker = ((stanje.params||{}).naknade||{}).taker_pct || 0.40;
-    const trosak = (p.naknade_eur||0)+(p.rollover_eur||0) + p.ulozeno*taker/100;
-    const neto = brutoEur===null?null:(brutoEur-trosak);
-    const razmak = p.brava ? opruga_razmak(o, neto) : null;
+    const bp = pl_pct(pz, cur);
+    const neto = neto_usd(pz, cur, takerPct);
+    const max = (p.opruga&&p.opruga.tajmer_h)||48;
     let tajmer = "—";
-    if(p.brava && p.brava_ts){
-      const sati = (Date.now()/1000 - p.brava_ts)/3600;
-      const max = (o&&o.tajmer_h)||48;
-      const kl = sati>max*0.8?"zuto":"";
-      tajmer = `<span class="${kl}">${n(sati,0)}h / ${max}h</span>`;
+    if(pz.lokot && pz.lokot_ts){
+      const sati = (Date.now()/1000 - pz.lokot_ts)/3600;
+      tajmer = `<span class="${sati>max*0.8?"zuto":""}">${n(sati,0)}h/${max}h</span>`;
     }
-    h += `<tr><td><b>${t}</b>${(p.dokupa||0)>0?' <span class="mini" style="color:#b48ce8">🔺 piramida</span>':''}${p.u_zoni?' <span class="mini">⛽</span>':''}</td>
-      <td><span class="badge ${p.smjer==="SHORT"?"b-short":"b-long"}">${p.smjer}</span></td>
-      <td class="num">${n(p.ulozeno,0)}</td>
-      <td class="num">${cij(p.prosjek)}${(p.dokupa||0)>0?` <span class="mini">(${1+(p.dokupa||0)}×)</span>`:""}</td>
+    h += `<tr><td><b>${t}</b></td>
+      <td><span class="badge ${pz.smjer==="SHORT"?"b-short":"b-long"}">${pz.smjer}</span></td>
+      <td class="num">${n(pz.ulozeno,0)}</td>
+      <td class="num">${cij(pz.prosjek)}${(pz.dokupa||0)>0?` <span class="mini">(${1+(pz.dokupa||0)}×)</span>`:""}</td>
       <td class="num">${cij(cur)}</td>
-      <td class="num ${bp===null?"":klasa(bp)}">${bp===null?"—":(bp>0?"+":"")+n(bp,2)+" %"}</td>
-      <td class="num ${neto===null?"":klasa(neto)}">${neto===null?"—":(neto>0?"+":"")+n(neto,2)}</td>
-      <td class="num">${n(trosak,2)}${(p.rollover_eur||0)>0?` <span class="mini down">(roll ${n(p.rollover_eur,2)})</span>`:""}</td>
-      <td class="num">${p.dokupa||0}</td>
-      <td class="num">${p.stop_pct!==undefined?n(p.stop_pct,1)+" %":"—"}</td>
-      <td>${p.brava?'<span class="up">🔒 ✓</span>':(p.zakljucano?'<span class="mini">🔓 zakl.</span>':"—")}</td>
-      <td class="num">${razmak!==null?n(razmak,1)+" %":"—"}</td>
+      <td class="num ${bp===null?"":klasa(bp)}">${bp===null?"—":(bp>0?"+":"")+n(bp,2)+"%"}</td>
+      <td class="num ${neto===null?"":klasa(neto)}"><b>${neto===null?"—":(neto>0?"+":"")+n(neto,2)}</b></td>
+      <td>${pz.lokot?'<span class="up">🔒</span>':"—"}</td>
+      <td>${dahBar(pz, bp)}</td>
+      <td class="num">${pz.opruga_razmak?n(pz.opruga_razmak,1)+"%":"—"}${pz.gorivo!==undefined?` <span class="mini">⛽${pz.gorivo}</span>`:""}</td>
       <td class="num mini">${tajmer}</td>
-      <td class="num mini">${p.vrijeme_ulaza||"—"}</td></tr>`;
+      <td class="num">${pz.dokupa||0}/5</td>
+      <td class="num">${pz.stop_pct!==undefined?n(pz.stop_pct,1)+"%":"—"}</td>
+      <td><button class="ruka" title="Ručna žetva (Market/Limit) stiže s Tailscale tunelom">🍇 M/L 🔗</button></td>
+      <td class="num mini">${pz.vrijeme_ulaza||"—"}</td></tr>`;
   }
   return h+"</table>";
 }
 
-function chipovi(knjiga, ime, params){
-  if(!knjiga) return "";
-  const poz = Object.keys((knjiga.pozicije)||{}).length;
-  const ang = Object.values((knjiga.pozicije)||{}).reduce((s,x)=>s+(x.ulozeno||0),0);
-  const p = (params||{});
-  const sef = knjiga.sef||0, per = knjiga.realizirano_period||0;
-  let h = `<span class="chip sef">${ime} SEF <b class="${sef<0?"minus":""}">${sef>0?"+":""}${n(sef)} €</b></span>
-    <span class="chip">period <b class="${klasa(per)}">${per>0?"+":""}${n(per)} €</b></span>
-    <span class="chip">pozicija <b>${poz}</b> (${n(ang,0)} €)</span>
-    <span class="chip">trejdova <b>${knjiga.broj_trejdova||0}</b></span>`;
-  if(p.sredstva_u_prometu) h += `<span class="chip">sredstva <b>${n(p.sredstva_u_prometu,0)} €</b></span>`;
-  h += `<span class="chip">🩳 SHORT <b class="${p.short_dozvoljen?"zuto":""}">${p.short_dozvoljen?"DOZVOLJEN":"zabranjen"}</b></span>`;
-  if(p.pauza_novih_ulaza) h += `<span class="chip" style="border-color:var(--gold)">⏸ <b class="zuto">PAUZA ULAZA</b></span>`;
-  if(knjiga.pauza_do) h += `<span class="chip" style="border-color:var(--red)">🔌 <b class="down">OSIGURAČ PREGORIO</b></span>`;
-  return h;
-}
-
-function dnevnikTablica(zapisi){
-  if(!zapisi || !zapisi.length) return '<p class="note">Dnevnik je još prazan — prve žetve stižu.</p>';
-  const z = [...zapisi].reverse();
-  const stupci = [];
-  const uzorak = Object.assign({}, ...z.slice(0,10));
-  const poznati = ["vrijeme","ts","knjiga","tok","token","smjer","ulaz","cijena_ulaza","izlaz","cijena_izlaza","ulozeno","naknade_eur","rollover_eur","neto","neto_eur","pl_eur","tko","razlog"];
-  for(const k of poznati) if(k in uzorak) stupci.push(k);
-  for(const k in uzorak) if(!stupci.includes(k)) stupci.push(k);
-  let h = "<table><tr>"+stupci.map(s=>`<th>${s}</th>`).join("")+"</tr>";
-  for(const red of z.slice(0,60)){
-    const kn = String(red.knjiga||red.portfelj||"");
-    const rub = kn==="dnevni"?"#2dd4bf":(kn==="tjedni"?"#5b8def":(kn.startsWith("sum")?"#e8c268":"#3a4a5c"));
-    h += `<tr style="box-shadow:inset 3px 0 0 ${rub}">`+stupci.map(s=>{
-      let v = red[s];
-      if(v===undefined||v===null) return "<td>—</td>";
-      if(typeof v === "number"){
-        const kl = (s.includes("neto")||s.includes("pl"))?klasa(v):"";
-        return `<td class="num ${kl}">${n(v, Math.abs(v)<1?4:2)}</td>`;
-      }
-      return `<td>${String(v)}</td>`;
-    }).join("")+"</tr>";
+function dnevnikTablica(zapisi, knjiga){
+  const z = (zapisi||[]).filter(x=>(x.knjiga||x.portfelj)===knjiga).reverse();
+  if(!z.length) return '<p class="note">Još nema trejdova.</p>';
+  const rub = knjiga==="dnevni"?"#2dd4bf":"#5b8def";
+  let h = '<table><tr><th>Vrijeme</th><th>Token</th><th>Smjer</th><th>Ulaz→Izlaz</th><th>Uloženo $</th><th>🔺</th><th>Naknade $</th><th>Funding $</th><th>NETO $</th><th>Zatvorio</th><th>SEF $</th><th>Kasa $</th></tr>';
+  for(const r of z.slice(0,60)){
+    h += `<tr style="box-shadow:inset 3px 0 0 ${rub}"><td class="num mini">${r.vrijeme||"—"}</td>
+      <td><b>${r.token||r.tok||"—"}</b></td>
+      <td><span class="badge ${r.smjer==="SHORT"?"b-short":"b-long"}">${r.smjer||"—"}</span></td>
+      <td class="num">${cij(r.ulaz_po)} → ${cij(r.izlaz_po)}</td>
+      <td class="num">${n(r.ulozeno_usd,0)}</td>
+      <td class="num">${r.dokupa||0}</td>
+      <td class="num">${n(r.naknade_usd,2)}</td>
+      <td class="num">${n(r.funding_usd,2)}</td>
+      <td class="num ${klasa(r.neto_usd)}"><b>${r.neto_usd>0?"+":""}${n(r.neto_usd,2)}</b></td>
+      <td>${r.zatvorio||"—"}</td>
+      <td class="num ${klasa(r.sef)}">${n(r.sef,2)}</td>
+      <td class="num">${n(r.kasa,0)}</td></tr>`;
   }
   return h+"</table>";
 }
@@ -222,33 +213,54 @@ async function osvjezi(){
   const traka = document.getElementById("traka");
   try{
     await ucitajStanje();
-    const knjige = (stanje.state && stanje.state.knjige) || stanje.state || {};
+    const knjige = (stanje.state && stanje.state.knjige) || {};
     const dn = knjige.dnevni||{}, tj = knjige.tjedni||{};
     const pd = (stanje.params&&stanje.params.dnevni)||{}, pt = (stanje.params&&stanje.params.tjedni)||{};
+    const taker = ((stanje.params||{}).naknade||{}).taker_pct || 0.045;
+    const more = (stanje.state&&stanje.state.more)||{};
     const sviTokeni = [...new Set([...Object.keys(dn.pozicije||{}), ...Object.keys(tj.pozicije||{})])];
     await ucitajCijene(sviTokeni);
 
-    const sefUk = (dn.sef||0)+(tj.sef||0);
+    // PULS: cijeli racun = kase + SEF-ovi + zivi neto svih pozicija
+    let zivi = 0;
+    for(const [kn, pp] of [[dn,pd],[tj,pt]]){
+      for(const t in (kn.pozicije||{})){
+        const nv = neto_usd(kn.pozicije[t], cijene[t], taker);
+        if(nv!==null) zivi += nv;
+      }
+    }
+    const baza = (dn.sredstva_pocetna||6000)+(tj.sredstva_pocetna||4000);
+    const racun = (dn.kasa||0)+(tj.kasa||0)+(dn.sef||0)+(tj.sef||0)+zivi;
+    const profit = racun - baza;
+    const pct = profit/baza*100;
+    const fill = document.getElementById("pulsFill");
+    fill.style.width = Math.min(100, Math.abs(pct)*10+2)+"%";
+    fill.className = profit<0?"minus":"";
+    document.getElementById("pulsTxt").textContent =
+      `RAČUN ${n(racun,2)} $ · ${profit>=0?"+":""}${n(pct,2)} % · ${profit>=0?"+":""}${n(profit,2)} $ uživo`;
+
+    const mS = more.stanje||"?", mI = mS==="PLIMA"?"🌊":(mS==="OSEKA"?"🩸":"〰️");
     document.getElementById("glavniChips").innerHTML =
       `<button class="primary" onclick="osvjezi()">⟳ Osvježi</button>
-       <span class="chip">glasnik donio: <b>${stanje.generirano_utc||"?"}</b></span>
-       <span class="chip sef big">Σ UKUPNO SEF <b class="${sefUk<0?"minus":""}">${sefUk>0?"+":""}${n(sefUk)} €</b></span>
-       <span class="chip" style="border-color:var(--teal)">🎯 režim <b style="color:var(--teal)">${(!pd.short_dozvoljen&&!pt.short_dozvoljen)?"SAMO LONG":"LONG+SHORT"}</b></span>
-       <span class="chip">cijene: <b>${Object.keys(cijene).length}/${sviTokeni.length} živo s Krakena</b></span>`;
+       <span class="chip">glasnik: <b>${stanje.generirano_utc||"?"}</b></span>
+       <span class="chip more-${mS}">${mI} more: <b>${mS}</b> <small>${more.sirina!==null&&more.sirina!==undefined?more.sirina+"% zeleno":""}</small></span>
+       <span class="chip">cijene: <b>${Object.keys(cijene).length}/${sviTokeni.length} živo</b></span>
+       <span class="chip" style="border-color:var(--gold)">💵 <b style="color:var(--gold)">NOVA ERA · USD · futures</b></span>`;
 
     document.getElementById("dnevniChips").innerHTML = chipovi(dn,"⚡",pd);
     document.getElementById("tjedniChips").innerHTML = chipovi(tj,"🌊",pt);
-    document.getElementById("dnevniTab").innerHTML = tablicaPozicija(dn, pd);
-    document.getElementById("tjedniTab").innerHTML = tablicaPozicija(tj, pt);
-    document.getElementById("dnevnikTab").innerHTML = dnevnikTablica(stanje.dnevnik);
+    document.getElementById("dnevniTab").innerHTML = tablicaPozicija(dn, pd, taker);
+    document.getElementById("tjedniTab").innerHTML = tablicaPozicija(tj, pt, taker);
+    document.getElementById("dnevnikDnevni").innerHTML = dnevnikTablica(stanje.dnevnik, "dnevni");
+    document.getElementById("dnevnikTjedni").innerHTML = dnevnikTablica(stanje.dnevnik, "tjedni");
 
     const starost = stanje.generirano_ts ? Math.round((Date.now()/1000-stanje.generirano_ts)/60) : null;
     if(starost!==null && starost>10){
       traka.className="zivo problem";
-      traka.textContent = "⚠ GLASNIK KASNI — stanje staro "+starost+" min (provjeri VPS)";
+      traka.textContent = "⚠ GLASNIK KASNI — stanje staro "+starost+" min";
     }else{
       traka.className="zivo";
-      traka.textContent = "🟢 ŽIVO · paper režim · stanje "+(starost===null?"":starost+" min staro")+" · cijene s Krakena upravo sad";
+      traka.textContent = "🟢 NOVA ERA ŽIVA · paper futures · stanje "+(starost===null?"":starost+" min")+" · cijene s Krakena upravo sad";
     }
   }catch(e){
     traka.className="zivo problem";

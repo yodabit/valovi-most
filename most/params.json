@@ -1,78 +1,101 @@
 {
-  "rezim": "paper",
-  "valuta": "EUR",
   "ciklus_sekundi": 60,
-
   "naknade": {
-    "maker_pct": 0.40,
-    "taker_pct": 0.80,
-    "rollover_pct_4h": 0.02
+    "taker_pct": 0.045,
+    "maker_pct": 0.02,
+    "funding_8h_pct": 0.01
   },
-
+  "plima_potvrda_bodova": 10,
   "dnevni": {
     "bot_radi": true,
     "short_dozvoljen": true,
-    "opruga": { "upaljen": true, "tajmer_h": 48, "ljestvica": [[1, 1.2], [3, 0.8], [8, 0.5], [999999, 0.3]], "gorivo_stegni_ispod": 40, "gorivo_pusti_iznad": 70 },
     "pauza_novih_ulaza": false,
-    "sredstva_u_prometu": 4000,
+    "reinvestiraj": false,
+    "sredstva_u_prometu": 6000,
     "svijece_interval_min": 60,
     "ema_brzi": 9,
     "ema_spori": 21,
-    "rsi_gornji": 72,
-    "rsi_donji": 28,
+    "rsi_gornji": 70,
+    "rsi_donji": 30,
     "max_pozicija": 10,
-    "auto_zetva_pct": 2.5,
-    "auto_grizanje": true,
-    "grizi_dok_gorivo_iznad": 60,
+    "ulaz_usd": 200,
     "stop_loss_pct": 8,
-    "zakljucaj_na_pct": 3,
-    "trailing_pct": 1.5,
+    "opruga": {
+      "upaljen": true,
+      "tajmer_h": 48,
+      "ljestvica": [
+        [
+          1,
+          1.2
+        ],
+        [
+          3,
+          0.8
+        ],
+        [
+          8,
+          0.5
+        ],
+        [
+          999999,
+          0.3
+        ]
+      ],
+      "gorivo_stegni_ispod": 40,
+      "gorivo_pusti_iznad": 70,
+      "min_plijen_usd": 1
+    },
     "dokup": {
       "upaljen": true,
-      "razmak_pct": 1.0,
-      "max_dokupa": 3,
-      "mnozitelj": 1.5,
-      "potvrdna_svijeca": true
-    },
-    "osiguraci": {
-      "limit_gubitka_pct": 5,
-      "max_istog_smjera": 7,
-      "max_short_izlozenost_pct": 30
+      "iznos_usd": 200,
+      "razmak_pct": 1.5,
+      "max_dokupa": 5
     }
   },
-
   "tjedni": {
     "bot_radi": true,
     "short_dozvoljen": true,
-    "opruga": { "upaljen": true, "tajmer_h": 48, "ljestvica": [[1, 1.2], [3, 0.8], [8, 0.5], [999999, 0.3]], "gorivo_stegni_ispod": 40, "gorivo_pusti_iznad": 70 },
     "pauza_novih_ulaza": false,
-    "sredstva_u_prometu": 2000,
+    "reinvestiraj": false,
+    "sredstva_u_prometu": 4000,
     "svijece_interval_min": 1440,
     "ema_brzi": 9,
     "ema_spori": 21,
     "rsi_gornji": 70,
     "rsi_donji": 30,
     "max_pozicija": 5,
-    "ulaz_samo_trend_tjedan": true,
-    "pametna_zetva": true,
-    "pametna_zetva_faktor": 0.6,
-    "auto_zetva_pct": 10,
-    "auto_grizanje": true,
-    "grizi_dok_gorivo_iznad": 60,
+    "ulaz_usd": 200,
     "stop_loss_pct": 15,
-    "zakljucaj_na_pct": 5,
-    "trailing_pct": 4,
+    "opruga": {
+      "upaljen": true,
+      "tajmer_h": 168,
+      "ljestvica": [
+        [
+          2,
+          1.5
+        ],
+        [
+          6,
+          1.0
+        ],
+        [
+          16,
+          0.6
+        ],
+        [
+          999999,
+          0.4
+        ]
+      ],
+      "gorivo_stegni_ispod": 40,
+      "gorivo_pusti_iznad": 70,
+      "min_plijen_usd": 2
+    },
     "dokup": {
       "upaljen": true,
+      "iznos_usd": 200,
       "razmak_pct": 3.5,
-      "max_dokupa": 3,
-      "mnozitelj": 1.5,
-      "potvrdna_svijeca": true
-    },
-    "osiguraci": {
-      "limit_gubitka_pct": 10,
-      "max_istog_smjera": 4,
-      "max_short_izlozenost_pct": 30
+      "max_dokupa": 5
     }
   }
 }
