@@ -1,6 +1,6 @@
 {
- "generirano_utc": "27.07.2026 11:25:16 UTC",
- "generirano_ts": 1785151516,
+ "generirano_utc": "27.07.2026 11:28:18 UTC",
+ "generirano_ts": 1785151698,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -28,9 +28,9 @@
       "lokot_ts": 1785148742.7807703,
       "najbolji_pl": 0.40154192097656694,
       "najbolji_neto": 0.6234437843623484,
-      "neto_zivo": 0.53,
+      "neto_zivo": 0.5,
       "gorivo": 0,
-      "opruga_razmak": 0.45,
+      "opruga_razmak": 0.6,
       "tajmer_h": 0.8
      },
      "AVAX": {
@@ -183,7 +183,7 @@
       "lokot_ts": null,
       "najbolji_pl": 0.0,
       "najbolji_neto": 0.0,
-      "neto_zivo": -0.44
+      "neto_zivo": -0.69
      }
     },
     "sef": -0.76,
@@ -220,7 +220,7 @@
       "lokot_ts": null,
       "najbolji_pl": 0.08647713760674414,
       "najbolji_neto": 0.0,
-      "neto_zivo": -0.81
+      "neto_zivo": -1.06
      },
      "ADA": {
       "smjer": "SHORT",
@@ -234,14 +234,14 @@
       "vrijeme_ulaza": "27.07. 06:43 UTC",
       "ulaz_ts": 1785134595.5591166,
       "zadnja_stepenica": 0.166355,
-      "stop_pct": 0.08987367376994981,
+      "stop_pct": 0.247,
       "lokot": true,
       "lokot_ts": 1785135295.6289203,
       "najbolji_pl": 1.091401868023012,
       "najbolji_neto": 2.003775393044611,
       "neto_zivo": 1.73,
       "gorivo": 69,
-      "opruga_razmak": 1.5,
+      "opruga_razmak": 0.8,
       "tajmer_h": 4.5
      },
      "ARB": {
@@ -263,7 +263,7 @@
       "najbolji_neto": 0.552035385116914,
       "neto_zivo": 0.55,
       "gorivo": 67,
-      "opruga_razmak": 1.5,
+      "opruga_razmak": 1.2,
       "tajmer_h": 0.4
      }
     },
@@ -282,7 +282,7 @@
    "stanje": "MIJESANO",
    "prosla_sirina": 45
   },
-  "zadnja_runda": "27.07. 11:24 UTC"
+  "zadnja_runda": "27.07. 11:27 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
@@ -309,28 +309,14 @@
    "opruga": {
     "upaljen": true,
     "tajmer_h": 48,
-    "ljestvica": [
-     [
-      1.5,
-      0.9
-     ],
-     [
-      3,
-      0.7
-     ],
-     [
-      8,
-      0.5
-     ],
-     [
-      999999,
-      0.3
-     ]
-    ],
     "gorivo_stegni_ispod": 40,
     "gorivo_pusti_iznad": 70,
     "min_plijen_usd": 1,
-    "lokot_jastuk_usd": 0.7
+    "lokot_jastuk_usd": 0.7,
+    "suljac_prozor": 20,
+    "suljac_mnozitelj": 2.5,
+    "suljac_min_pct": 0.15,
+    "suljac_max_pct": 2.0
    },
    "dokup": {
     "upaljen": true,
@@ -357,28 +343,14 @@
    "opruga": {
     "upaljen": true,
     "tajmer_h": 168,
-    "ljestvica": [
-     [
-      2,
-      1.5
-     ],
-     [
-      6,
-      1.0
-     ],
-     [
-      16,
-      0.6
-     ],
-     [
-      999999,
-      0.4
-     ]
-    ],
     "gorivo_stegni_ispod": 40,
     "gorivo_pusti_iznad": 70,
     "min_plijen_usd": 2,
-    "lokot_jastuk_usd": 1.0
+    "lokot_jastuk_usd": 1.0,
+    "suljac_prozor": 20,
+    "suljac_mnozitelj": 2.5,
+    "suljac_min_pct": 0.15,
+    "suljac_max_pct": 2.0
    },
    "dokup": {
     "upaljen": true,
