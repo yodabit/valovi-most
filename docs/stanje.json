@@ -1,6 +1,6 @@
 {
- "generirano_utc": "27.07.2026 11:05:26 UTC",
- "generirano_ts": 1785150326,
+ "generirano_utc": "27.07.2026 11:08:47 UTC",
+ "generirano_ts": 1785150527,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -26,12 +26,12 @@
       "stop_pct": 0.08995843683878504,
       "lokot": true,
       "lokot_ts": 1785148742.7807703,
-      "najbolji_pl": 0.3352554240511729,
-      "najbolji_neto": 0.4908115697981953,
-      "neto_zivo": 0.49,
-      "gorivo": 57,
-      "opruga_razmak": 0.9,
-      "tajmer_h": 0.4
+      "najbolji_pl": 0.40154192097656694,
+      "najbolji_neto": 0.6234437843623484,
+      "neto_zivo": 0.62,
+      "gorivo": 1,
+      "opruga_razmak": 0.45,
+      "tajmer_h": 0.5
      },
      "AVAX": {
       "smjer": "SHORT",
@@ -50,7 +50,7 @@
       "lokot_ts": null,
       "najbolji_pl": 0.07572315614114977,
       "najbolji_neto": 0.0,
-      "neto_zivo": -1.05
+      "neto_zivo": -1.35
      },
      "FIL": {
       "smjer": "SHORT",
@@ -90,25 +90,6 @@
       "najbolji_neto": 0.0,
       "neto_zivo": -0.18
      },
-     "FET": {
-      "smjer": "SHORT",
-      "prvi_ulaz": 0.1558,
-      "prosjek": 0.1558,
-      "ulozeno": 200,
-      "kolicina": 1283.697047496791,
-      "dokupa": 0,
-      "naknade_usd": 0.09,
-      "funding_usd": 0.0,
-      "vrijeme_ulaza": "27.07. 11:02 UTC",
-      "ulaz_ts": 1785150145.6999173,
-      "zadnja_stepenica": 0.1558,
-      "stop_pct": -8,
-      "lokot": false,
-      "lokot_ts": null,
-      "najbolji_pl": 0.0,
-      "najbolji_neto": 0.0,
-      "neto_zivo": -0.18
-     },
      "ADA": {
       "smjer": "LONG",
       "prvi_ulaz": 0.16524,
@@ -126,7 +107,7 @@
       "lokot_ts": null,
       "najbolji_pl": 0.0,
       "najbolji_neto": 0.0,
-      "neto_zivo": -0.18
+      "neto_zivo": -0.33
      },
      "ARB": {
       "smjer": "LONG",
@@ -146,16 +127,38 @@
       "najbolji_pl": 0.0,
       "najbolji_neto": 0.0,
       "neto_zivo": -0.18
+     },
+     "OP": {
+      "smjer": "LONG",
+      "prvi_ulaz": 0.0948,
+      "prosjek": 0.0948,
+      "ulozeno": 200,
+      "kolicina": 2109.704641350211,
+      "dokupa": 0,
+      "naknade_usd": 0.09,
+      "funding_usd": 0.0,
+      "vrijeme_ulaza": "27.07. 11:06 UTC",
+      "ulaz_ts": 1785150372.0497704,
+      "zadnja_stepenica": 0.0948,
+      "stop_pct": -8,
+      "lokot": false,
+      "lokot_ts": null,
+      "najbolji_pl": 0.0,
+      "najbolji_neto": 0.0,
+      "neto_zivo": -0.18
      }
     },
-    "sef": -0.45,
-    "realizirano_period": -0.45,
+    "sef": -0.76,
+    "realizirano_period": -0.76,
     "period_od": null,
     "pauza_do": null,
-    "broj_trejdova": 5,
+    "broj_trejdova": 6,
     "dobitni": 0,
-    "gubitni": 5,
-    "zadnji_izlaz_signal": {}
+    "gubitni": 6,
+    "zadnji_izlaz_signal": {},
+    "hladnjak": {
+     "FET": 1785150499.5774436
+    }
    },
    "tjedni": {
     "valuta": "USD",
@@ -179,7 +182,7 @@
       "lokot_ts": null,
       "najbolji_pl": 0.08647713760674414,
       "najbolji_neto": 0.0,
-      "neto_zivo": -1.1
+      "neto_zivo": -1.04
      },
      "ADA": {
       "smjer": "SHORT",
@@ -198,9 +201,9 @@
       "lokot_ts": 1785135295.6289203,
       "najbolji_pl": 1.091401868023012,
       "najbolji_neto": 2.003775393044611,
-      "neto_zivo": 1.17,
-      "gorivo": 71,
-      "opruga_razmak": 2.25,
+      "neto_zivo": 1.33,
+      "gorivo": 70,
+      "opruga_razmak": 1.5,
       "tajmer_h": 4.2
      },
      "ARB": {
@@ -241,7 +244,7 @@
    "stanje": "MIJESANO",
    "prosla_sirina": 45
   },
-  "zadnja_runda": "27.07. 11:04 UTC"
+  "zadnja_runda": "27.07. 11:08 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
@@ -444,6 +447,22 @@
    "zatvorio": "LOKOT-IZLAZ",
    "sef": -0.42,
    "kasa": 4000
+  },
+  {
+   "vrijeme": "27.07. 11:08 UTC",
+   "knjiga": "dnevni",
+   "token": "FET",
+   "smjer": "SHORT",
+   "ulaz_po": 0.1558,
+   "izlaz_po": 0.1559,
+   "ulozeno_usd": 200,
+   "dokupa": 0,
+   "naknade_usd": 0.1801,
+   "funding_usd": 0.0,
+   "neto_usd": -0.31,
+   "zatvorio": "LOKOT-IZLAZ",
+   "sef": -0.76,
+   "kasa": 6000
   }
  ]
 }
