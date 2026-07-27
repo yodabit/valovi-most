@@ -248,7 +248,7 @@ function tablicaPozicija(knjiga, p, takerPct){
   const poz = (knjiga && knjiga.pozicije) || {};
   const kljucevi = Object.keys(poz);
   if(!kljucevi.length) return '<p class="note">Nema otvorenih pozicija — motor čeka valove.</p>';
-  let h = '<table><tr><th>Token</th><th>Smjer</th><th>Uloženo $</th><th>Prosjek</th><th>Trenutno</th><th>Bruto</th><th>NETO $ <span class="mini">(u džep)</span></th><th>🔒</th><th>Dah</th><th>🌀</th><th>⏱</th><th>🔺</th><th>Stop</th><th>Ruka</th><th>Od</th></tr>';
+  let h = '<table><tr><th>Token</th><th>Smjer</th><th>Uloženo $</th><th>Prosjek</th><th>Trenutno</th><th>Bruto</th><th>NETO $ <span class="mini">(u džep)</span></th><th style="color:var(--plavi)">ZAKLJUČANO $</th><th>🔒</th><th>Dah</th><th>🌀</th><th>⏱</th><th>🔺</th><th>Stop</th><th>Ruka</th><th>Od</th></tr>';
   for(const t of kljucevi){
     const pz = poz[t];
     const cur = cijene[t];
@@ -267,6 +267,13 @@ function tablicaPozicija(knjiga, p, takerPct){
       <td class="num">${cij(cur)}</td>
       <td class="num ${bp===null?"":klasa(bp)}">${bp===null?"—":(bp>0?"+":"")+n(bp,2)+"%"}</td>
       <td class="num ${neto===null?"":klasa(neto)}"><b>${neto===null?"—":(neto>0?"+":"")+n(neto,2)}</b>${(pz.lokot&&neto!==null&&neto<0)?' <span class="mini up">→ izlaz ≥ 0 🔒</span>':""}</td>
+      <td class="num" style="color:var(--plavi)"><b>${(()=>{
+        if(!pz.lokot || pz.stop_pct===undefined || pz.stop_pct<0) return "—";
+        const iz = pz.ulozeno*(1+pz.stop_pct/100)*takerPct/100;
+        let z = pz.ulozeno*pz.stop_pct/100 - (pz.naknade_usd||0) - (pz.funding_usd||0) - iz;
+        if(z<0) z=0;
+        return (z>0?"+":"")+n(z, z<10?2:1);
+      })()}</b></td>
       <td>${pz.lokot?'<span class="up">🔒</span>':"—"}</td>
       <td>${dahBar(pz, bp, takerPct)}</td>
       <td class="num">${pz.opruga_razmak?n(pz.opruga_razmak,1)+"%":"—"}${pz.gorivo!==undefined?` <span class="mini">⛽${pz.gorivo}</span>`:""}</td>
