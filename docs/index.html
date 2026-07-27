@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>VALOVI — Komandni most 2.0 (NOVA ERA)</title>
 <style>
-  :root{--bg:#0b1118;--panel:#111a24;--panel2:#0e1620;--border:#1e2a38;--text:#d7e1ea;
+  :root{--bg:#0b1118;--panel:rgba(17,26,36,.72);--panel2:rgba(14,22,32,.55);--border:#1e2a38;--text:#d7e1ea;
     --muted:#7d8fa0;--teal:#2dd4bf;--red:#f26d6d;--gold:#e8c268;--green:#4ade80;
     --plavi:#5b8def;--num:"SF Mono",Consolas,monospace}
   *{box-sizing:border-box}
@@ -15,6 +15,9 @@
   h2 small{color:var(--muted);font-weight:400;margin-left:8px;font-size:11.5px}
   .zivo{background:var(--green);color:#04211d;font-weight:700;padding:4px 10px;border-radius:6px;font-size:12px;display:inline-block;margin-bottom:8px}
   .zivo.problem{background:var(--red);color:#fff}
+  #pcb{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.75}
+  #pcb.smrznuto #elektroni{display:none}
+  body>*:not(#pcb){position:relative;z-index:1}
   #puls{position:relative;height:34px;background:var(--panel2);border:1px solid var(--border);border-radius:9px;overflow:hidden;margin:6px 0 10px}
   #pulsFill{position:absolute;left:0;top:0;bottom:0;width:0%;background:linear-gradient(90deg,#14532d,var(--green));transition:width .8s}
   #pulsFill.minus{background:linear-gradient(90deg,#7f1d1d,var(--red))}
@@ -33,7 +36,7 @@
   th{font-size:10px;text-transform:uppercase;letter-spacing:.8px;color:var(--muted);text-align:left;padding:9px 10px;border-bottom:1px solid var(--border)}
   td{padding:8px 10px;border-bottom:1px solid var(--border)}
   tr:last-child td{border-bottom:none}
-  tr:nth-child(even) td{background:var(--panel2)}
+  tr:nth-child(even) td{background:rgba(14,22,32,.45)}
   .num{font-family:var(--num);white-space:nowrap}
   .up{color:var(--green)}.down{color:var(--red)}.zuto{color:var(--gold)}
   .badge{display:inline-block;padding:2px 9px;border-radius:6px;font-size:11px;font-weight:700;border:1px solid}
@@ -53,6 +56,29 @@
 <body>
 
 <div id="traka" class="zivo">⏳ Učitavam NOVU ERU…</div>
+
+<svg id="pcb" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" viewBox="0 0 1600 900">
+  <defs><filter id="glow" x="-200%" y="-200%" width="500%" height="500%">
+    <feGaussianBlur stdDeviation="3.5" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter></defs>
+  <g stroke="#123825" stroke-width="1.3" fill="none">
+    <path id="t1" d="M -20 90 H 220 L 300 170 H 600 L 680 90 H 960 L 1040 170 V 290 H 1330 L 1410 210 H 1650"/>
+    <path id="t2" d="M -20 210 H 140 L 220 290 H 480 L 560 210 H 820 L 900 290 H 1160 L 1240 210 H 1650"/>
+    <path id="t3" d="M -20 350 H 180 L 260 270 H 520 L 600 350 H 860 L 940 270 H 1240 L 1320 350 H 1650"/>
+    <path id="t4" d="M -20 470 H 240 L 320 390 H 640 L 720 470 H 1020 L 1100 390 H 1400 L 1480 470 H 1650"/>
+    <path id="t5" d="M -20 590 H 160 L 240 510 H 540 L 620 590 H 900 L 980 510 H 1280 L 1360 590 H 1650"/>
+    <path id="t6" d="M -20 710 H 260 L 340 630 H 700 L 780 710 H 1100 L 1180 630 H 1420 L 1500 710 H 1650"/>
+    <path id="t7" d="M -20 830 H 300 L 380 750 H 720 L 800 830 H 1140 L 1220 750 H 1650"/>
+    <path id="t8" d="M -20 150 L 60 230 H 300 L 380 150 H 560 L 640 230 V 450 L 720 530 H 1000 L 1080 610 V 780"/>
+    <path id="t9" d="M 1650 130 L 1540 130 L 1460 210 H 1180 L 1100 290 V 410 L 1020 490 H 820 L 740 570 V 720"/>
+    <path id="t10" d="M 200 -20 V 120 L 280 200 V 420 L 200 500 V 700 L 280 780 V 920"/>
+    <path id="t11" d="M 850 -20 V 60 L 930 140 V 340 L 850 420 V 640 L 930 720 V 920"/>
+    <path id="t12" d="M 1350 -20 V 100 L 1270 180 V 400 L 1350 480 V 680 L 1270 760 V 920"/>
+  </g>
+  <g id="tockice" fill="#1a4a30"></g>
+  <g id="elektroni" filter="url(#glow)"></g>
+</svg>
 <div id="puls"><div id="pulsFill"></div><div id="pulsTxt">—</div></div>
 <h1>VALOVI<span class="dot">.</span> Komandni most 2.0 <span style="font-size:13px;color:var(--muted)">· NOVA ERA — futures paper · USD · opruga+lokot · samo čitanje (ruke čekaju tunel 🔗)</span></h1>
 
@@ -258,8 +284,10 @@ async function osvjezi(){
     if(starost!==null && starost>10){
       traka.className="zivo problem";
       traka.textContent = "⚠ GLASNIK KASNI — stanje staro "+starost+" min";
+      document.getElementById("pcb").classList.add("smrznuto");
     }else{
       traka.className="zivo";
+      document.getElementById("pcb").classList.remove("smrznuto");
       traka.textContent = "🟢 NOVA ERA ŽIVA · paper futures · stanje "+(starost===null?"":starost+" min")+" · cijene s Krakena upravo sad";
     }
   }catch(e){
@@ -267,6 +295,62 @@ async function osvjezi(){
     traka.textContent = "⚠ Ne mogu učitati stanje ("+e.message+")";
   }
 }
+// ---- PCB: tockice na konekcijama, elektroni, bljesak ----
+(function(){
+  const svg = document.getElementById("pcb");
+  const tg = document.getElementById("tockice");
+  const eg = document.getElementById("elektroni");
+  const NS = "http://www.w3.org/2000/svg";
+  const staze = [];
+  for(let i=1;i<=12;i++){ const p = document.getElementById("t"+i); if(p) staze.push(p); }
+  const tocke = [];
+  for(const p of staze){
+    const d = p.getAttribute("d");
+    const koord = [...d.matchAll(/L\s*(\d+)\s+(\d+)/g)].map(m=>[+m[1],+m[2]]);
+    for(const [x,y] of koord){
+      const c = document.createElementNS(NS,"circle");
+      c.setAttribute("cx",x); c.setAttribute("cy",y); c.setAttribute("r",3.5);
+      tg.appendChild(c); tocke.push({x,y,el:c,do:0});
+    }
+  }
+  const boje = ["#39ff88","#2dd4bf","#00ff41","#39ff88","#2dd4bf"];
+  staze.forEach((p,i)=>{
+    const c = document.createElementNS(NS,"circle");
+    c.setAttribute("r", 2.6 + (i%3)*0.5); c.setAttribute("fill", boje[i%boje.length]);
+    const am = document.createElementNS(NS,"animateMotion");
+    am.setAttribute("dur", (8 + (i*1.7)%9).toFixed(1)+"s");
+    am.setAttribute("begin", (i*0.9)+"s");
+    am.setAttribute("repeatCount","indefinite");
+    const mp = document.createElementNS(NS,"mpath");
+    mp.setAttributeNS("http://www.w3.org/1999/xlink","href","#"+p.id);
+    am.appendChild(mp); c.appendChild(am); eg.appendChild(c);
+  });
+  // bljesak: svakih 120ms provjeri blizinu elektrona tockicama
+  setInterval(()=>{
+    if(svg.classList.contains("smrznuto")) return;
+    const els = [...eg.children];
+    const sada = Date.now();
+    for(const e of els){
+      const m = e.getCTM ? null : null;
+      let bb; try{ bb = e.getBBox(); }catch(err){ continue; }
+      const tr = e.transform.baseVal.numberOfItems ? null : null;
+      const pt = svg.createSVGPoint();
+      const ctm = e.getCTM(); if(!ctm) continue;
+      pt.x = 0; pt.y = 0;
+      const gp = pt.matrixTransform(ctm);
+      for(const t of tocke){
+        const dx = gp.x - t.x, dy = gp.y - t.y;
+        if(dx*dx + dy*dy < 200 && sada - t.do > 600){
+          t.do = sada;
+          t.el.setAttribute("fill","#39ff88");
+          t.el.setAttribute("r","5.5");
+          t.el.setAttribute("filter","url(#glow)");
+          setTimeout(()=>{ t.el.setAttribute("fill","#1a4a30"); t.el.setAttribute("r","3.5"); t.el.removeAttribute("filter"); }, 350);
+        }
+      }
+    }
+  }, 120);
+})();
 osvjezi();
 setInterval(osvjezi, 60000);
 </script>
