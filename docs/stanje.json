@@ -1,6 +1,6 @@
 {
- "generirano_utc": "27.07.2026 02:55:08 UTC",
- "generirano_ts": 1785120908,
+ "generirano_utc": "27.07.2026 02:58:19 UTC",
+ "generirano_ts": 1785121099,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-1.0",
@@ -166,14 +166,14 @@
      "ARB": {
       "smjer": "LONG",
       "prvi_ulaz": 0.0786,
-      "prosjek": 0.0786,
-      "ulozeno": 80.0,
-      "kolicina": 1017.8117048346055,
-      "dokupa": 0,
-      "naknade_eur": 0.32,
+      "prosjek": 0.07253830334190232,
+      "ulozeno": 680.0,
+      "kolicina": 9374.35766583739,
+      "dokupa": 1,
+      "naknade_eur": 2.7199999999999998,
       "rollover_eur": 0.0,
       "vrijeme_ulaza": "21.07. 14:51 UTC",
-      "zadnja_stepenica": 0.0786,
+      "zadnja_stepenica": 0.0718,
       "stop_pct": -15,
       "zakljucano": false,
       "u_zoni": false,
@@ -246,7 +246,7 @@
     }
    }
   },
-  "zadnja_runda": "27.07. 02:54 UTC"
+  "zadnja_runda": "27.07. 02:57 UTC"
  },
  "params": {
   "rezim": "paper",
