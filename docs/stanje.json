@@ -1,6 +1,6 @@
 {
- "generirano_utc": "27.07.2026 11:21:56 UTC",
- "generirano_ts": 1785151316,
+ "generirano_utc": "27.07.2026 11:25:16 UTC",
+ "generirano_ts": 1785151516,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -28,10 +28,10 @@
       "lokot_ts": 1785148742.7807703,
       "najbolji_pl": 0.40154192097656694,
       "najbolji_neto": 0.6234437843623484,
-      "neto_zivo": 0.54,
+      "neto_zivo": 0.53,
       "gorivo": 0,
       "opruga_razmak": 0.45,
-      "tajmer_h": 0.7
+      "tajmer_h": 0.8
      },
      "AVAX": {
       "smjer": "SHORT",
@@ -88,7 +88,7 @@
       "lokot_ts": null,
       "najbolji_pl": 0.0,
       "najbolji_neto": 0.0,
-      "neto_zivo": -0.24
+      "neto_zivo": -0.35
      },
      "ADA": {
       "smjer": "LONG",
@@ -107,7 +107,7 @@
       "lokot_ts": null,
       "najbolji_pl": 0.0,
       "najbolji_neto": 0.0,
-      "neto_zivo": -0.73
+      "neto_zivo": -0.74
      },
      "ARB": {
       "smjer": "LONG",
@@ -126,7 +126,7 @@
       "lokot_ts": null,
       "najbolji_pl": 0.0,
       "najbolji_neto": 0.0,
-      "neto_zivo": -0.18
+      "neto_zivo": -0.42
      },
      "OP": {
       "smjer": "LONG",
@@ -183,7 +183,7 @@
       "lokot_ts": null,
       "najbolji_pl": 0.0,
       "najbolji_neto": 0.0,
-      "neto_zivo": -0.34
+      "neto_zivo": -0.44
      }
     },
     "sef": -0.76,
@@ -220,7 +220,7 @@
       "lokot_ts": null,
       "najbolji_pl": 0.08647713760674414,
       "najbolji_neto": 0.0,
-      "neto_zivo": -0.71
+      "neto_zivo": -0.81
      },
      "ADA": {
       "smjer": "SHORT",
@@ -242,7 +242,7 @@
       "neto_zivo": 1.73,
       "gorivo": 69,
       "opruga_razmak": 1.5,
-      "tajmer_h": 4.4
+      "tajmer_h": 4.5
      },
      "ARB": {
       "smjer": "SHORT",
@@ -259,12 +259,12 @@
       "stop_pct": 0.08989064398541921,
       "lokot": true,
       "lokot_ts": 1785150081.9265022,
-      "najbolji_pl": 0.24360535931788885,
-      "najbolji_neto": 0.3074294306649393,
-      "neto_zivo": 0.31,
-      "gorivo": 68,
+      "najbolji_pl": 0.3658536585365857,
+      "najbolji_neto": 0.552035385116914,
+      "neto_zivo": 0.55,
+      "gorivo": 67,
       "opruga_razmak": 1.5,
-      "tajmer_h": 0.3
+      "tajmer_h": 0.4
      }
     },
     "sef": -0.42,
@@ -282,7 +282,7 @@
    "stanje": "MIJESANO",
    "prosla_sirina": 45
   },
-  "zadnja_runda": "27.07. 11:21 UTC"
+  "zadnja_runda": "27.07. 11:24 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
