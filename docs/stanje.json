@@ -1,6 +1,6 @@
 {
- "generirano_utc": "27.07.2026 11:15:16 UTC",
- "generirano_ts": 1785150916,
+ "generirano_utc": "27.07.2026 11:18:26 UTC",
+ "generirano_ts": 1785151106,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -28,8 +28,8 @@
       "lokot_ts": 1785148742.7807703,
       "najbolji_pl": 0.40154192097656694,
       "najbolji_neto": 0.6234437843623484,
-      "neto_zivo": 0.58,
-      "gorivo": 1,
+      "neto_zivo": 0.59,
+      "gorivo": 0,
       "opruga_razmak": 0.45,
       "tajmer_h": 0.6
      },
@@ -69,7 +69,7 @@
       "lokot_ts": null,
       "najbolji_pl": 0.0,
       "najbolji_neto": 0.0,
-      "neto_zivo": -0.18
+      "neto_zivo": -0.45
      },
      "DOGE": {
       "smjer": "SHORT",
@@ -107,7 +107,7 @@
       "lokot_ts": null,
       "najbolji_pl": 0.0,
       "najbolji_neto": 0.0,
-      "neto_zivo": -0.29
+      "neto_zivo": -0.51
      },
      "ARB": {
       "smjer": "LONG",
@@ -145,7 +145,44 @@
       "lokot_ts": null,
       "najbolji_pl": 0.0,
       "najbolji_neto": 0.0,
+      "neto_zivo": -0.6
+     },
+     "INJ": {
+      "smjer": "SHORT",
+      "prvi_ulaz": 4.903,
+      "prosjek": 4.903,
+      "ulozeno": 200,
+      "kolicina": 40.791352233326535,
+      "dokupa": 0,
+      "naknade_usd": 0.09,
+      "funding_usd": 0.0,
+      "vrijeme_ulaza": "27.07. 11:15 UTC",
+      "ulaz_ts": 1785150945.9816785,
+      "zadnja_stepenica": 4.903,
+      "stop_pct": -8,
+      "lokot": false,
+      "lokot_ts": null,
+      "najbolji_pl": 0.0,
+      "najbolji_neto": 0.0,
       "neto_zivo": -0.18
+     },
+     "XRP": {
+      "smjer": "LONG",
+      "prvi_ulaz": 1.10809,
+      "prosjek": 1.10809,
+      "ulozeno": 200,
+      "kolicina": 180.49075436110786,
+      "dokupa": 0,
+      "naknade_usd": 0.09,
+      "funding_usd": 0.0,
+      "vrijeme_ulaza": "27.07. 11:17 UTC",
+      "ulaz_ts": 1785151073.6239316,
+      "zadnja_stepenica": 1.10809,
+      "stop_pct": -8,
+      "lokot": false,
+      "lokot_ts": null,
+      "najbolji_pl": 0.0,
+      "najbolji_neto": 0.0
      }
     },
     "sef": -0.76,
@@ -182,7 +219,7 @@
       "lokot_ts": null,
       "najbolji_pl": 0.08647713760674414,
       "najbolji_neto": 0.0,
-      "neto_zivo": -1.08
+      "neto_zivo": -0.55
      },
      "ADA": {
       "smjer": "SHORT",
@@ -201,10 +238,10 @@
       "lokot_ts": 1785135295.6289203,
       "najbolji_pl": 1.091401868023012,
       "najbolji_neto": 2.003775393044611,
-      "neto_zivo": 1.28,
+      "neto_zivo": 1.5,
       "gorivo": 70,
       "opruga_razmak": 1.5,
-      "tajmer_h": 4.3
+      "tajmer_h": 4.4
      },
      "ARB": {
       "smjer": "SHORT",
@@ -226,7 +263,7 @@
       "neto_zivo": 0.31,
       "gorivo": 68,
       "opruga_razmak": 1.5,
-      "tajmer_h": 0.2
+      "tajmer_h": 0.3
      }
     },
     "sef": -0.42,
@@ -244,7 +281,7 @@
    "stanje": "MIJESANO",
    "prosla_sirina": 45
   },
-  "zadnja_runda": "27.07. 11:14 UTC"
+  "zadnja_runda": "27.07. 11:17 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
