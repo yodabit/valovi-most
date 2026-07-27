@@ -1,6 +1,6 @@
 {
- "generirano_utc": "27.07.2026 08:58:02 UTC",
- "generirano_ts": 1785142682,
+ "generirano_utc": "27.07.2026 09:01:13 UTC",
+ "generirano_ts": 1785142873,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -31,7 +31,7 @@
       "neto_zivo": 0.02,
       "gorivo": 67,
       "opruga_razmak": 1.2,
-      "tajmer_h": 0.2
+      "tajmer_h": 0.3
      },
      "TRX": {
       "smjer": "SHORT",
@@ -50,7 +50,25 @@
       "lokot_ts": null,
       "najbolji_pl": 0.01630193600583585,
       "najbolji_neto": 0.0,
-      "neto_zivo": -0.15
+      "neto_zivo": -0.16
+     },
+     "LTC": {
+      "smjer": "SHORT",
+      "prvi_ulaz": 47.0,
+      "prosjek": 47.0,
+      "ulozeno": 200,
+      "kolicina": 4.25531914893617,
+      "dokupa": 0,
+      "naknade_usd": 0.09,
+      "funding_usd": 0.0,
+      "vrijeme_ulaza": "27.07. 09:00 UTC",
+      "ulaz_ts": 1785142813.3053954,
+      "zadnja_stepenica": 47.0,
+      "stop_pct": -8,
+      "lokot": false,
+      "lokot_ts": null,
+      "najbolji_pl": 0.0,
+      "najbolji_neto": 0.0
      }
     },
     "sef": 0.0,
@@ -84,7 +102,7 @@
       "lokot_ts": null,
       "najbolji_pl": 0.08647713760674414,
       "najbolji_neto": 0.0,
-      "neto_zivo": -0.96
+      "neto_zivo": -1.06
      },
      "ADA": {
       "smjer": "SHORT",
@@ -101,12 +119,12 @@
       "stop_pct": 0.08987367376994981,
       "lokot": true,
       "lokot_ts": 1785135295.6289203,
-      "najbolji_pl": 0.9968854917341119,
-      "najbolji_neto": 1.8146593246662641,
-      "neto_zivo": 1.67,
-      "gorivo": 69,
+      "najbolji_pl": 1.041666666666674,
+      "najbolji_neto": 1.9042611683848945,
+      "neto_zivo": 1.9,
+      "gorivo": 68,
       "opruga_razmak": 1.5,
-      "tajmer_h": 2.0
+      "tajmer_h": 2.1
      },
      "ARB": {
       "smjer": "SHORT",
@@ -128,7 +146,7 @@
       "neto_zivo": 1.04,
       "gorivo": 66,
       "opruga_razmak": 1.5,
-      "tajmer_h": 0.4
+      "tajmer_h": 0.5
      }
     },
     "sef": 0.0,
@@ -146,7 +164,7 @@
    "stanje": "MIJESANO",
    "prosla_sirina": 45
   },
-  "zadnja_runda": "27.07. 08:57 UTC"
+  "zadnja_runda": "27.07. 09:00 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
