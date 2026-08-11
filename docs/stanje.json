@@ -1,6 +1,6 @@
 {
- "generirano_utc": "11.08.2026 06:25:15 UTC",
- "generirano_ts": 1786429515,
+ "generirano_utc": "11.08.2026 06:28:26 UTC",
+ "generirano_ts": 1786429706,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -19,7 +19,7 @@
       "kolicina": 565.0269844278404,
       "dokupa": 1,
       "naknade_usd": 0.18,
-      "funding_usd": 0.18,
+      "funding_usd": 0.22,
       "vrijeme_ulaza": "09.08. 02:21 UTC",
       "ulaz_ts": 1786242105.581414,
       "zadnja_stepenica": 0.701,
@@ -28,7 +28,7 @@
       "lokot_ts": null,
       "najbolji_pl": 0.15103298983469848,
       "najbolji_neto": 0.06386009995709152,
-      "neto_zivo": -3.32,
+      "neto_zivo": -3.36,
       "hod": [
        -0.6965,
        -0.6965,
@@ -60,7 +60,7 @@
       "kolicina": 607.6570869526909,
       "dokupa": 0,
       "naknade_usd": 0.09,
-      "funding_usd": 0.1,
+      "funding_usd": 0.12,
       "vrijeme_ulaza": "09.08. 08:15 UTC",
       "ulaz_ts": 1786263314.8511457,
       "zadnja_stepenica": 0.329133,
@@ -69,11 +69,8 @@
       "lokot_ts": null,
       "najbolji_pl": 0.012154618907112003,
       "najbolji_neto": 0.0,
-      "neto_zivo": -1.53,
+      "neto_zivo": -1.55,
       "hod": [
-       -0.714,
-       -0.714,
-       -0.714,
        -0.714,
        -0.6886,
        -0.6886,
@@ -90,6 +87,9 @@
        -0.6718,
        -0.6718,
        -0.6352,
+       -0.6238,
+       -0.6238,
+       -0.6238,
        -0.6238
       ]
      }
@@ -171,7 +171,7 @@
       "kolicina": 561.4047131784057,
       "dokupa": 2,
       "naknade_usd": 0.27,
-      "funding_usd": 1.9,
+      "funding_usd": 1.96,
       "vrijeme_ulaza": "27.07. 06:43 UTC",
       "ulaz_ts": 1785134595.557209,
       "zadnja_stepenica": 1.03083,
@@ -180,12 +180,9 @@
       "lokot_ts": null,
       "najbolji_pl": 0.38830670209093476,
       "najbolji_neto": 0.8525278562999754,
-      "neto_zivo": -36.44,
+      "neto_zivo": -36.5,
       "hod": [
        -5.6148,
-       -5.6148,
-       -5.6148,
-       -5.6148,
        -5.5128,
        -5.5128,
        -5.5128,
@@ -201,6 +198,9 @@
        -5.4623,
        -5.4623,
        -5.4623,
+       -5.669,
+       -5.669,
+       -5.669,
        -5.669
       ]
      }
@@ -239,7 +239,7 @@
    "stanje": "OSEKA",
    "prosla_sirina": 28
   },
-  "zadnja_runda": "11.08. 06:24 UTC"
+  "zadnja_runda": "11.08. 06:27 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
