@@ -1,6 +1,6 @@
 {
- "generirano_utc": "12.08.2026 00:06:09 UTC",
- "generirano_ts": 1786493169,
+ "generirano_utc": "12.08.2026 00:09:16 UTC",
+ "generirano_ts": 1786493356,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -28,11 +28,8 @@
       "lokot_ts": null,
       "najbolji_pl": 0.012154618907112003,
       "najbolji_neto": 0.0,
-      "neto_zivo": -4.5,
+      "neto_zivo": -4.54,
       "hod": [
-       -0.9099,
-       -0.9099,
-       -0.8886,
        -0.8886,
        -0.8886,
        -0.8886,
@@ -49,7 +46,10 @@
        -0.9848,
        -0.9848,
        -0.9848,
-       -0.9848
+       -0.9848,
+       -0.9848,
+       -0.9942,
+       -0.9942
       ]
      },
      "GRT": {
@@ -68,7 +68,13 @@
       "lokot": false,
       "lokot_ts": null,
       "najbolji_pl": 0.0,
-      "najbolji_neto": 0.0
+      "najbolji_neto": 0.0,
+      "neto_zivo": -0.18,
+      "hod": [
+       0.0,
+       0.0,
+       0.0
+      ]
      }
     },
     "sef": -56.2,
@@ -158,11 +164,8 @@
       "lokot_ts": null,
       "najbolji_pl": 0.38830670209093476,
       "najbolji_neto": 0.8525278562999754,
-      "neto_zivo": -22.92,
+      "neto_zivo": -23.76,
       "hod": [
-       -2.4711,
-       -2.4711,
-       -2.5693,
        -2.5693,
        -2.5693,
        -2.5693,
@@ -179,7 +182,10 @@
        -2.5102,
        -2.514,
        -2.514,
-       -2.514
+       -2.514,
+       -2.514,
+       -2.6189,
+       -2.6189
       ]
      },
      "ALGO": {
@@ -197,12 +203,15 @@
       "stop_pct": -15,
       "lokot": false,
       "lokot_ts": null,
-      "najbolji_pl": 0.0,
+      "najbolji_pl": 0.061865874783473274,
       "najbolji_neto": 0.0,
-      "neto_zivo": -0.18,
+      "neto_zivo": -0.06,
       "hod": [
        0.0,
-       0.0
+       0.0,
+       0.0,
+       0.0,
+       0.0619
       ]
      },
      "SOL": {
@@ -220,12 +229,15 @@
       "stop_pct": -15,
       "lokot": false,
       "lokot_ts": null,
-      "najbolji_pl": 0.0,
+      "najbolji_pl": 0.013125082031772983,
       "najbolji_neto": 0.0,
-      "neto_zivo": -0.18,
+      "neto_zivo": -0.15,
       "hod": [
        0.0,
-       0.0
+       0.0,
+       0.0131,
+       0.0131,
+       0.0131
       ]
      },
      "LINK": {
@@ -247,6 +259,9 @@
       "najbolji_neto": 0.0,
       "neto_zivo": -0.32,
       "hod": [
+       -0.0705,
+       -0.0705,
+       -0.0705,
        -0.0705
       ]
      }
@@ -279,11 +294,11 @@
    }
   },
   "more": {
-   "sirina": 34,
+   "sirina": 31,
    "stanje": "MIJESANO",
    "prosla_sirina": 31
   },
-  "zadnja_runda": "12.08. 00:05 UTC"
+  "zadnja_runda": "12.08. 00:08 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
