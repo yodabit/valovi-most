@@ -1,6 +1,6 @@
 {
- "generirano_utc": "13.08.2026 22:31:26 UTC",
- "generirano_ts": 1786660286,
+ "generirano_utc": "13.08.2026 22:34:37 UTC",
+ "generirano_ts": 1786660477,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -19,7 +19,7 @@
       "kolicina": 1206.0527880779741,
       "dokupa": 1,
       "naknade_usd": 0.18,
-      "funding_usd": 0.4,
+      "funding_usd": 0.44,
       "vrijeme_ulaza": "09.08. 08:15 UTC",
       "ulaz_ts": 1786263314.8511457,
       "zadnja_stepenica": 0.334227,
@@ -28,7 +28,7 @@
       "lokot_ts": null,
       "najbolji_pl": 0.012154618907112003,
       "najbolji_neto": 0.0,
-      "neto_zivo": -3.9,
+      "neto_zivo": -3.93,
       "hod": [
        -0.7302,
        -0.7302,
@@ -37,9 +37,6 @@
        -0.7302,
        -0.7302,
        -0.7302,
-       -0.7302,
-       -0.7302,
-       -0.7302,
        -0.7937,
        -0.7937,
        -0.7937,
@@ -49,7 +46,10 @@
        -0.7884,
        -0.7836,
        -0.7836,
-       -0.7836
+       -0.7836,
+       -0.7822,
+       -0.7822,
+       -0.7822
       ]
      },
      "OP": {
@@ -60,7 +60,7 @@
       "kolicina": 11296.64007440747,
       "dokupa": 4,
       "naknade_usd": 0.45,
-      "funding_usd": 0.34,
+      "funding_usd": 0.44,
       "vrijeme_ulaza": "12.08. 05:34 UTC",
       "ulaz_ts": 1786512864.900768,
       "zadnja_stepenica": 0.0854,
@@ -69,7 +69,7 @@
       "lokot_ts": null,
       "najbolji_pl": 0.0,
       "najbolji_neto": 0.0,
-      "neto_zivo": -16.17,
+      "neto_zivo": -16.27,
       "hod": [
        -1.4933,
        -1.4933,
@@ -101,7 +101,7 @@
       "kolicina": 363765381.92637205,
       "dokupa": 4,
       "naknade_usd": 0.45,
-      "funding_usd": 0.28,
+      "funding_usd": 0.38,
       "vrijeme_ulaza": "12.08. 10:37 UTC",
       "ulaz_ts": 1786531034.485295,
       "zadnja_stepenica": 2.656e-06,
@@ -110,11 +110,8 @@
       "lokot_ts": null,
       "najbolji_pl": 0.17593244194229474,
       "najbolji_neto": 0.17170654468684143,
-      "neto_zivo": -24.46,
+      "neto_zivo": -24.56,
       "hod": [
-       -2.3654,
-       -2.5109,
-       -2.5109,
        -2.5109,
        -2.4745,
        -2.4745,
@@ -131,6 +128,9 @@
        -2.3654,
        -2.3654,
        -2.3654,
+       -2.329,
+       -2.329,
+       -2.329,
        -2.329
       ]
      },
@@ -142,7 +142,7 @@
       "kolicina": 10461.901467842537,
       "dokupa": 3,
       "naknade_usd": 0.36,
-      "funding_usd": 0.22,
+      "funding_usd": 0.3,
       "vrijeme_ulaza": "12.08. 18:01 UTC",
       "ulaz_ts": 1786557700.8037527,
       "zadnja_stepenica": 0.0745,
@@ -151,10 +151,8 @@
       "lokot_ts": null,
       "najbolji_pl": 0.17270655459229456,
       "najbolji_neto": 0.5210306931418243,
-      "neto_zivo": -6.88,
+      "neto_zivo": -6.96,
       "hod": [
-       -1.3966,
-       -1.3966,
        -1.2658,
        -1.2658,
        -1.2658,
@@ -171,7 +169,9 @@
        -1.2658,
        -1.2658,
        -1.2658,
-       -1.2658,
+       -0.7427,
+       -0.7427,
+       -0.7427,
        -0.7427
       ]
      }
@@ -246,7 +246,7 @@
       "kolicina": 762.9729137790789,
       "dokupa": 3,
       "naknade_usd": 0.36,
-      "funding_usd": 2.5,
+      "funding_usd": 2.58,
       "vrijeme_ulaza": "27.07. 06:43 UTC",
       "ulaz_ts": 1785134595.557209,
       "zadnja_stepenica": 0.99222,
@@ -255,11 +255,8 @@
       "lokot_ts": null,
       "najbolji_pl": 0.38830670209093476,
       "najbolji_neto": 0.8525278562999754,
-      "neto_zivo": -31.84,
+      "neto_zivo": -32.58,
       "hod": [
-       -3.813,
-       -3.7195,
-       -3.7195,
        -3.7195,
        -3.7195,
        -3.7195,
@@ -276,7 +273,10 @@
        -3.606,
        -3.606,
        -3.5793,
-       -3.5793
+       -3.5793,
+       -3.6623,
+       -3.6623,
+       -3.6623
       ]
      }
     },
@@ -316,7 +316,7 @@
    "stanje": "OSEKA",
    "prosla_sirina": 14
   },
-  "zadnja_runda": "13.08. 22:30 UTC"
+  "zadnja_runda": "13.08. 22:33 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
