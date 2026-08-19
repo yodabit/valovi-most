@@ -1,6 +1,6 @@
 {
- "generirano_utc": "19.08.2026 15:35:56 UTC",
- "generirano_ts": 1787153756,
+ "generirano_utc": "19.08.2026 15:39:22 UTC",
+ "generirano_ts": 1787153962,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -23,16 +23,13 @@
       "vrijeme_ulaza": "12.08. 10:37 UTC",
       "ulaz_ts": 1786531034.485295,
       "zadnja_stepenica": 2.613e-06,
-      "stop_pct": -8,
-      "lokot": false,
-      "lokot_ts": null,
-      "najbolji_pl": 0.17593244194229474,
-      "najbolji_neto": 0.17170654468684143,
-      "neto_zivo": -4.51,
+      "stop_pct": 0.2885417269306603,
+      "lokot": true,
+      "lokot_ts": 1787153855.1674073,
+      "najbolji_pl": 0.46309688294885465,
+      "najbolji_neto": 2.094661872218332,
+      "neto_zivo": 2.09,
       "hod": [
-       -1.7017,
-       -1.6284,
-       -1.6284,
        -1.665,
        -1.665,
        -1.665,
@@ -49,8 +46,14 @@
        0.0962,
        0.0962,
        -0.0873,
-       -0.0873
-      ]
+       -0.0873,
+       -0.0873,
+       0.4631,
+       0.4631
+      ],
+      "gorivo": 23,
+      "opruga_razmak": 0.2,
+      "tajmer_h": 0.0
      }
     },
     "sef": -14.97,
@@ -130,16 +133,13 @@
       "vrijeme_ulaza": "27.07. 06:43 UTC",
       "ulaz_ts": 1785134595.557209,
       "zadnja_stepenica": 0.99222,
-      "stop_pct": 0.874,
+      "stop_pct": 1.555,
       "lokot": true,
       "lokot_ts": 1787153279.8288205,
-      "najbolji_pl": 1.2407833616304043,
-      "najbolji_neto": 5.261800072941365,
-      "neto_zivo": 5.26,
+      "najbolji_pl": 2.0361826242450975,
+      "najbolji_neto": 11.622130736513498,
+      "neto_zivo": 11.62,
       "hod": [
-       -0.5522,
-       -0.5522,
-       -0.5522,
        -0.6266,
        -0.6266,
        -0.6752,
@@ -156,11 +156,14 @@
        1.0891,
        1.2408,
        1.2408,
-       1.2408
+       1.2408,
+       1.6156,
+       1.6156,
+       2.0362
       ],
-      "gorivo": 82,
-      "opruga_razmak": 0.32,
-      "tajmer_h": 0.1
+      "gorivo": 73,
+      "opruga_razmak": 0.44,
+      "tajmer_h": 0.2
      }
     },
     "sef": 12.21,
@@ -199,7 +202,7 @@
    "stanje": "OSEKA",
    "prosla_sirina": 17
   },
-  "zadnja_runda": "19.08. 15:35 UTC"
+  "zadnja_runda": "19.08. 15:38 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
