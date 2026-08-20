@@ -1,6 +1,6 @@
 {
- "generirano_utc": "20.08.2026 15:33:56 UTC",
- "generirano_ts": 1787240036,
+ "generirano_utc": "20.08.2026 15:37:10 UTC",
+ "generirano_ts": 1787240230,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -26,9 +26,9 @@
       "stop_pct": -8,
       "lokot": false,
       "lokot_ts": null,
-      "najbolji_pl": 0.2541466024612138,
-      "najbolji_neto": 0.32806447298021246,
-      "neto_zivo": 0.33,
+      "najbolji_pl": 0.2875869448903057,
+      "najbolji_neto": 0.39491506153021005,
+      "neto_zivo": 0.39,
       "hod": [
        0.0,
        0.0,
@@ -43,53 +43,19 @@
        0.107,
        0.107,
        0.2541,
-       0.2541
+       0.2541,
+       0.2876,
+       0.2876,
+       0.2876
       ]
-     },
-     "ETH": {
-      "smjer": "LONG",
-      "prvi_ulaz": 2296.64,
-      "prosjek": 2296.64,
-      "ulozeno": 200,
-      "kolicina": 0.08708373972411872,
-      "dokupa": 0,
-      "naknade_usd": 0.09,
-      "funding_usd": 0.0,
-      "vrijeme_ulaza": "20.08. 15:19 UTC",
-      "ulaz_ts": 1787239148.975416,
-      "zadnja_stepenica": 2296.64,
-      "stop_pct": 0.575,
-      "lokot": true,
-      "lokot_ts": 1787239787.5163016,
-      "najbolji_pl": 0.7698202591612135,
-      "najbolji_neto": 1.358947680089182,
-      "neto_zivo": 1.36,
-      "hod": [
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       -0.0235,
-       0.0318,
-       0.0318,
-       0.0318,
-       0.0318,
-       0.644,
-       0.644,
-       0.644,
-       0.7698
-      ],
-      "gorivo": 36,
-      "opruga_razmak": 0.15,
-      "tajmer_h": 0.1
      }
     },
-    "sef": 3.28,
-    "realizirano_period": 3.28,
+    "sef": 4.21,
+    "realizirano_period": 4.21,
     "period_od": null,
     "pauza_do": null,
-    "broj_trejdova": 195,
-    "dobitni": 170,
+    "broj_trejdova": 196,
+    "dobitni": 171,
     "gubitni": 25,
     "zadnji_izlaz_signal": {
      "INJ": "LONG",
@@ -116,13 +82,14 @@
      "FIL": "LONG",
      "TON": "LONG",
      "TRX": "LONG",
-     "APT": "LONG"
+     "APT": "LONG",
+     "ETH": "LONG"
     },
     "hladnjak": {
      "FET": 1787214495.7002726,
      "TRX": 1787227709.0630856,
      "INJ": 1786561847.3572366,
-     "ETH": 1786369091.533351,
+     "ETH": 1787240106.6579325,
      "TIA": 1787214240.4196794,
      "RENDER": 1787214240.4164805,
      "BTC": 1787210286.8316643,
@@ -195,7 +162,7 @@
    "stanje": "PLIMA",
    "prosla_sirina": 83
   },
-  "zadnja_runda": "20.08. 15:32 UTC"
+  "zadnja_runda": "20.08. 15:36 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
@@ -3617,6 +3584,22 @@
    "neto_usd": 2.96,
    "zatvorio": "CEGRTALJKA",
    "sef": 3.28,
+   "kasa": 6000
+  },
+  {
+   "vrijeme": "20.08. 15:35 UTC",
+   "knjiga": "dnevni",
+   "token": "ETH",
+   "smjer": "LONG",
+   "ulaz_po": 2296.64,
+   "izlaz_po": 2309.39,
+   "ulozeno_usd": 200,
+   "dokupa": 0,
+   "naknade_usd": 0.1805,
+   "funding_usd": 0.0,
+   "neto_usd": 0.93,
+   "zatvorio": "CEGRTALJKA",
+   "sef": 4.21,
    "kasa": 6000
   }
  ]
