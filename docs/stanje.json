@@ -1,6 +1,6 @@
 {
- "generirano_utc": "20.08.2026 04:15:15 UTC",
- "generirano_ts": 1787199315,
+ "generirano_utc": "20.08.2026 04:18:25 UTC",
+ "generirano_ts": 1787199505,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -10,7 +10,31 @@
     "valuta": "USD",
     "sredstva_pocetna": 6000,
     "kasa": 6000,
-    "pozicije": {},
+    "pozicije": {
+     "BTC": {
+      "smjer": "LONG",
+      "prvi_ulaz": 69311.3,
+      "prosjek": 69311.3,
+      "ulozeno": 200,
+      "kolicina": 0.0028855323735090814,
+      "dokupa": 0,
+      "naknade_usd": 0.09,
+      "funding_usd": 0.0,
+      "vrijeme_ulaza": "20.08. 04:15 UTC",
+      "ulaz_ts": 1787199325.4229586,
+      "zadnja_stepenica": 69311.3,
+      "stop_pct": -8,
+      "lokot": false,
+      "lokot_ts": null,
+      "najbolji_pl": 0.0,
+      "najbolji_neto": 0.0,
+      "neto_zivo": -0.18,
+      "hod": [
+       0.0,
+       0.0
+      ]
+     }
+    },
     "sef": -30.92,
     "realizirano_period": -30.92,
     "period_od": null,
@@ -117,7 +141,7 @@
    "stanje": "PLIMA",
    "prosla_sirina": 83
   },
-  "zadnja_runda": "20.08. 04:14 UTC"
+  "zadnja_runda": "20.08. 04:17 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
