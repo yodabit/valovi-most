@@ -1,6 +1,6 @@
 {
- "generirano_utc": "20.08.2026 14:20:25 UTC",
- "generirano_ts": 1787235625,
+ "generirano_utc": "20.08.2026 14:23:26 UTC",
+ "generirano_ts": 1787235806,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -10,58 +10,13 @@
     "valuta": "USD",
     "sredstva_pocetna": 6000,
     "kasa": 6000,
-    "pozicije": {
-     "APT": {
-      "smjer": "LONG",
-      "prvi_ulaz": 0.5683,
-      "prosjek": 0.5638148798439301,
-      "ulozeno": 400,
-      "kolicina": 709.4527198550066,
-      "dokupa": 1,
-      "naknade_usd": 0.18,
-      "funding_usd": 0.0,
-      "vrijeme_ulaza": "20.08. 08:15 UTC",
-      "ulaz_ts": 1787213730.0514722,
-      "zadnja_stepenica": 0.5594,
-      "stop_pct": 1.257,
-      "lokot": true,
-      "lokot_ts": 1787234288.2741253,
-      "najbolji_pl": 1.4517389392659563,
-      "najbolji_neto": 5.444342626973147,
-      "neto_zivo": 5.3,
-      "hod": [
-       0.5295,
-       0.8664,
-       0.8664,
-       0.8664,
-       0.8664,
-       0.8664,
-       0.76,
-       0.76,
-       0.76,
-       0.76,
-       0.76,
-       1.4517,
-       1.4517,
-       1.4517,
-       1.4163,
-       1.4163,
-       1.4163,
-       1.4163,
-       1.4163,
-       1.4163
-      ],
-      "gorivo": 21,
-      "opruga_razmak": 0.15,
-      "tajmer_h": 0.4
-     }
-    },
-    "sef": 0.32,
-    "realizirano_period": 0.32,
+    "pozicije": {},
+    "sef": 3.28,
+    "realizirano_period": 3.28,
     "period_od": null,
     "pauza_do": null,
-    "broj_trejdova": 194,
-    "dobitni": 169,
+    "broj_trejdova": 195,
+    "dobitni": 170,
     "gubitni": 25,
     "zadnji_izlaz_signal": {
      "ETH": "SHORT",
@@ -88,7 +43,8 @@
      "DOGE": "LONG",
      "FIL": "LONG",
      "TON": "LONG",
-     "TRX": "LONG"
+     "TRX": "LONG",
+     "APT": "LONG"
     },
     "hladnjak": {
      "FET": 1787214495.7002726,
@@ -115,7 +71,7 @@
      "ALGO": 1786624560.1605716,
      "NEAR": 1787214176.600789,
      "ATOM": 1787218387.4287183,
-     "APT": 1786258791.4148672,
+     "APT": 1787235693.5005157,
      "LINK": 1787214112.8286877,
      "LTC": 1786563443.0340295,
      "SUI": 1786593959.1865964,
@@ -167,7 +123,7 @@
    "stanje": "PLIMA",
    "prosla_sirina": 83
   },
-  "zadnja_runda": "20.08. 14:19 UTC"
+  "zadnja_runda": "20.08. 14:22 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
@@ -3573,6 +3529,22 @@
    "neto_usd": 2.05,
    "zatvorio": "OPRUGA",
    "sef": 0.32,
+   "kasa": 6000
+  },
+  {
+   "vrijeme": "20.08. 14:21 UTC",
+   "knjiga": "dnevni",
+   "token": "APT",
+   "smjer": "LONG",
+   "ulaz_po": 0.56381488,
+   "izlaz_po": 0.5685,
+   "ulozeno_usd": 400,
+   "dokupa": 1,
+   "naknade_usd": 0.3615,
+   "funding_usd": 0.0,
+   "neto_usd": 2.96,
+   "zatvorio": "CEGRTALJKA",
+   "sef": 3.28,
    "kasa": 6000
   }
  ]
