@@ -1,6 +1,6 @@
 {
- "generirano_utc": "20.08.2026 05:31:48 UTC",
- "generirano_ts": 1787203908,
+ "generirano_utc": "20.08.2026 05:34:59 UTC",
+ "generirano_ts": 1787204099,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -28,11 +28,8 @@
       "lokot_ts": null,
       "najbolji_pl": 0.4230190459564298,
       "najbolji_neto": 0.6656573747714989,
-      "neto_zivo": 0.51,
+      "neto_zivo": 0.5,
       "hod": [
-       0.2655,
-       0.2222,
-       0.2222,
        0.2222,
        0.1668,
        0.1668,
@@ -49,7 +46,33 @@
        0.423,
        0.423,
        0.423,
-       0.346
+       0.346,
+       0.346,
+       0.3398,
+       0.3398
+      ]
+     },
+     "AVAX": {
+      "smjer": "LONG",
+      "prvi_ulaz": 6.755,
+      "prosjek": 6.755,
+      "ulozeno": 200,
+      "kolicina": 29.607698001480387,
+      "dokupa": 0,
+      "naknade_usd": 0.09,
+      "funding_usd": 0.0,
+      "vrijeme_ulaza": "20.08. 05:31 UTC",
+      "ulaz_ts": 1787203912.039029,
+      "zadnja_stepenica": 6.755,
+      "stop_pct": -8,
+      "lokot": false,
+      "lokot_ts": null,
+      "najbolji_pl": 0.0,
+      "najbolji_neto": 0.0,
+      "neto_zivo": -0.18,
+      "hod": [
+       0.0,
+       0.0
       ]
      }
     },
@@ -63,7 +86,6 @@
     "zadnji_izlaz_signal": {
      "APT": "SHORT",
      "TIA": "SHORT",
-     "AVAX": "SHORT",
      "ETH": "SHORT",
      "XRP": "SHORT",
      "FIL": "SHORT",
@@ -159,7 +181,7 @@
    "stanje": "PLIMA",
    "prosla_sirina": 83
   },
-  "zadnja_runda": "20.08. 05:30 UTC"
+  "zadnja_runda": "20.08. 05:33 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
