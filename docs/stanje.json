@@ -1,6 +1,6 @@
 {
- "generirano_utc": "20.08.2026 15:21:07 UTC",
- "generirano_ts": 1787239267,
+ "generirano_utc": "20.08.2026 15:24:18 UTC",
+ "generirano_ts": 1787239458,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -26,12 +26,15 @@
       "stop_pct": -8,
       "lokot": false,
       "lokot_ts": null,
-      "najbolji_pl": 0.0,
-      "najbolji_neto": 0.0,
-      "neto_zivo": -0.18,
+      "najbolji_pl": 0.22739432851790475,
+      "najbolji_neto": 0.2745840021401434,
+      "neto_zivo": 0.27,
       "hod": [
        0.0,
-       0.0
+       0.0,
+       0.0,
+       0.0,
+       0.2274
       ]
      },
      "ETH": {
@@ -53,6 +56,9 @@
       "najbolji_neto": 0.0,
       "neto_zivo": -0.18,
       "hod": [
+       0.0,
+       0.0,
+       0.0,
        0.0
       ]
      }
@@ -168,7 +174,7 @@
    "stanje": "PLIMA",
    "prosla_sirina": 83
   },
-  "zadnja_runda": "20.08. 15:20 UTC"
+  "zadnja_runda": "20.08. 15:23 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
