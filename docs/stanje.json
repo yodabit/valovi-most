@@ -1,6 +1,6 @@
 {
- "generirano_utc": "20.08.2026 16:12:16 UTC",
- "generirano_ts": 1787242336,
+ "generirano_utc": "20.08.2026 16:15:26 UTC",
+ "generirano_ts": 1787242526,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -10,58 +10,13 @@
     "valuta": "USD",
     "sredstva_pocetna": 6000,
     "kasa": 6000,
-    "pozicije": {
-     "ATOM": {
-      "smjer": "LONG",
-      "prvi_ulaz": 1.4952,
-      "prosjek": 1.4952,
-      "ulozeno": 200,
-      "kolicina": 133.7613697164259,
-      "dokupa": 0,
-      "naknade_usd": 0.09,
-      "funding_usd": 0.0,
-      "vrijeme_ulaza": "20.08. 15:18 UTC",
-      "ulaz_ts": 1787239085.144486,
-      "zadnja_stepenica": 1.4952,
-      "stop_pct": 0.373,
-      "lokot": true,
-      "lokot_ts": 1787242213.3400784,
-      "najbolji_pl": 0.5684858212948063,
-      "najbolji_neto": 0.9564600053504473,
-      "neto_zivo": 0.96,
-      "hod": [
-       0.0669,
-       0.0669,
-       0.0669,
-       0.0401,
-       0.0401,
-       0.0401,
-       0.0401,
-       0.0401,
-       0.3612,
-       0.3612,
-       0.3612,
-       0.2809,
-       0.2809,
-       0.3077,
-       0.3077,
-       0.3077,
-       0.3077,
-       0.3612,
-       0.5685,
-       0.5685
-      ],
-      "gorivo": 21,
-      "opruga_razmak": 0.15,
-      "tajmer_h": 0.0
-     }
-    },
-    "sef": 4.21,
-    "realizirano_period": 4.21,
+    "pozicije": {},
+    "sef": 4.62,
+    "realizirano_period": 4.62,
     "period_od": null,
     "pauza_do": null,
-    "broj_trejdova": 196,
-    "dobitni": 171,
+    "broj_trejdova": 197,
+    "dobitni": 172,
     "gubitni": 25,
     "zadnji_izlaz_signal": {
      "INJ": "LONG",
@@ -115,7 +70,7 @@
      "TON": 1787217047.2994893,
      "ALGO": 1786624560.1605716,
      "NEAR": 1787214176.600789,
-     "ATOM": 1787218387.4287183,
+     "ATOM": 1787242468.591993,
      "APT": 1787235693.5005157,
      "LINK": 1787214112.8286877,
      "LTC": 1786563443.0340295,
@@ -168,7 +123,7 @@
    "stanje": "PLIMA",
    "prosla_sirina": 83
   },
-  "zadnja_runda": "20.08. 16:11 UTC"
+  "zadnja_runda": "20.08. 16:14 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
@@ -3606,6 +3561,22 @@
    "neto_usd": 0.93,
    "zatvorio": "CEGRTALJKA",
    "sef": 4.21,
+   "kasa": 6000
+  },
+  {
+   "vrijeme": "20.08. 16:14 UTC",
+   "knjiga": "dnevni",
+   "token": "ATOM",
+   "smjer": "LONG",
+   "ulaz_po": 1.4952,
+   "izlaz_po": 1.4996,
+   "ulozeno_usd": 200,
+   "dokupa": 0,
+   "naknade_usd": 0.1803,
+   "funding_usd": 0.0,
+   "neto_usd": 0.41,
+   "zatvorio": "LOKOT-IZLAZ",
+   "sef": 4.62,
    "kasa": 6000
   }
  ]
