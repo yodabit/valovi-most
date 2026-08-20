@@ -1,6 +1,6 @@
 {
- "generirano_utc": "20.08.2026 15:18:01 UTC",
- "generirano_ts": 1787239081,
+ "generirano_utc": "20.08.2026 15:21:07 UTC",
+ "generirano_ts": 1787239267,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -10,7 +10,53 @@
     "valuta": "USD",
     "sredstva_pocetna": 6000,
     "kasa": 6000,
-    "pozicije": {},
+    "pozicije": {
+     "ATOM": {
+      "smjer": "LONG",
+      "prvi_ulaz": 1.4952,
+      "prosjek": 1.4952,
+      "ulozeno": 200,
+      "kolicina": 133.7613697164259,
+      "dokupa": 0,
+      "naknade_usd": 0.09,
+      "funding_usd": 0.0,
+      "vrijeme_ulaza": "20.08. 15:18 UTC",
+      "ulaz_ts": 1787239085.144486,
+      "zadnja_stepenica": 1.4952,
+      "stop_pct": -8,
+      "lokot": false,
+      "lokot_ts": null,
+      "najbolji_pl": 0.0,
+      "najbolji_neto": 0.0,
+      "neto_zivo": -0.18,
+      "hod": [
+       0.0,
+       0.0
+      ]
+     },
+     "ETH": {
+      "smjer": "LONG",
+      "prvi_ulaz": 2296.64,
+      "prosjek": 2296.64,
+      "ulozeno": 200,
+      "kolicina": 0.08708373972411872,
+      "dokupa": 0,
+      "naknade_usd": 0.09,
+      "funding_usd": 0.0,
+      "vrijeme_ulaza": "20.08. 15:19 UTC",
+      "ulaz_ts": 1787239148.975416,
+      "zadnja_stepenica": 2296.64,
+      "stop_pct": -8,
+      "lokot": false,
+      "lokot_ts": null,
+      "najbolji_pl": 0.0,
+      "najbolji_neto": 0.0,
+      "neto_zivo": -0.18,
+      "hod": [
+       0.0
+      ]
+     }
+    },
     "sef": 3.28,
     "realizirano_period": 3.28,
     "period_od": null,
@@ -19,7 +65,6 @@
     "dobitni": 170,
     "gubitni": 25,
     "zadnji_izlaz_signal": {
-     "ETH": "SHORT",
      "INJ": "LONG",
      "LTC": "SHORT",
      "UNI": "LONG",
@@ -123,7 +168,7 @@
    "stanje": "PLIMA",
    "prosla_sirina": 83
   },
-  "zadnja_runda": "20.08. 15:17 UTC"
+  "zadnja_runda": "20.08. 15:20 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
