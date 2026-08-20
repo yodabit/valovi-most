@@ -1,6 +1,6 @@
 {
- "generirano_utc": "20.08.2026 00:51:26 UTC",
- "generirano_ts": 1787187086,
+ "generirano_utc": "20.08.2026 00:54:44 UTC",
+ "generirano_ts": 1787187284,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -76,58 +76,13 @@
     "valuta": "USD",
     "sredstva_pocetna": 4000,
     "kasa": 4000,
-    "pozicije": {
-     "DOGE": {
-      "smjer": "LONG",
-      "prvi_ulaz": 0.0750366,
-      "prosjek": 0.0750366,
-      "ulozeno": 200,
-      "kolicina": 2665.3659680742467,
-      "dokupa": 0,
-      "naknade_usd": 0.09,
-      "funding_usd": 0.0,
-      "vrijeme_ulaza": "20.08. 00:08 UTC",
-      "ulaz_ts": 1787184485.2529628,
-      "zadnja_stepenica": 0.0750366,
-      "stop_pct": 0.556,
-      "lokot": true,
-      "lokot_ts": 1787186077.5068433,
-      "najbolji_pl": 0.7508335932065124,
-      "najbolji_neto": 1.320991436179139,
-      "neto_zivo": 1.15,
-      "hod": [
-       0.4375,
-       0.4375,
-       0.4375,
-       0.4375,
-       0.5954,
-       0.5954,
-       0.5954,
-       0.5954,
-       0.5064,
-       0.5561,
-       0.5561,
-       0.5561,
-       0.5561,
-       0.5561,
-       0.5579,
-       0.7508,
-       0.7508,
-       0.7508,
-       0.7508,
-       0.6659
-      ],
-      "gorivo": 51,
-      "opruga_razmak": 0.15,
-      "tajmer_h": 0.3
-     }
-    },
-    "sef": 22.86,
-    "realizirano_period": 22.86,
+    "pozicije": {},
+    "sef": 23.47,
+    "realizirano_period": 23.47,
     "period_od": null,
     "pauza_do": null,
-    "broj_trejdova": 13,
-    "dobitni": 12,
+    "broj_trejdova": 14,
+    "dobitni": 13,
     "gubitni": 1,
     "zadnji_izlaz_signal": {
      "ADA": "SHORT",
@@ -139,7 +94,8 @@
      "LINK": "LONG",
      "SOL": "LONG",
      "ALGO": "SHORT",
-     "XRP": "LONG"
+     "XRP": "LONG",
+     "DOGE": "LONG"
     },
     "hladnjak": {
      "ADA": 1785156135.7007043,
@@ -151,7 +107,8 @@
      "AVAX": 1786154091.9805794,
      "BTC": 1786314336.696931,
      "SOL": 1786537860.6378052,
-     "XRP": 1787154876.7772317
+     "XRP": 1787154876.7772317,
+     "DOGE": 1787187223.9150023
     }
    }
   },
@@ -160,7 +117,7 @@
    "stanje": "PLIMA",
    "prosla_sirina": 83
   },
-  "zadnja_runda": "20.08. 00:50 UTC"
+  "zadnja_runda": "20.08. 00:53 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
@@ -3294,6 +3251,22 @@
    "neto_usd": 10.65,
    "zatvorio": "CEGRTALJKA",
    "sef": 22.86,
+   "kasa": 4000
+  },
+  {
+   "vrijeme": "20.08. 00:53 UTC",
+   "knjiga": "tjedni",
+   "token": "DOGE",
+   "smjer": "LONG",
+   "ulaz_po": 0.0750366,
+   "izlaz_po": 0.0753348,
+   "ulozeno_usd": 200,
+   "dokupa": 0,
+   "naknade_usd": 0.1804,
+   "funding_usd": 0.0,
+   "neto_usd": 0.61,
+   "zatvorio": "CEGRTALJKA",
+   "sef": 23.47,
    "kasa": 4000
   }
  ]
