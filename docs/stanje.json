@@ -1,6 +1,6 @@
 {
- "generirano_utc": "20.08.2026 05:44:26 UTC",
- "generirano_ts": 1787204666,
+ "generirano_utc": "20.08.2026 05:47:44 UTC",
+ "generirano_ts": 1787204864,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -28,11 +28,8 @@
       "lokot_ts": null,
       "najbolji_pl": 0.4230190459564298,
       "najbolji_neto": 0.6656573747714989,
-      "neto_zivo": 0.32,
+      "neto_zivo": 0.35,
       "hod": [
-       0.3379,
-       0.3379,
-       0.3379,
        0.3379,
        0.423,
        0.423,
@@ -49,7 +46,10 @@
        0.3467,
        0.3467,
        0.25,
-       0.25
+       0.25,
+       0.25,
+       0.2666,
+       0.2666
       ]
      },
      "AVAX": {
@@ -69,7 +69,7 @@
       "lokot_ts": null,
       "najbolji_pl": 0.0,
       "najbolji_neto": 0.0,
-      "neto_zivo": -0.21,
+      "neto_zivo": -0.3,
       "hod": [
        0.0,
        0.0,
@@ -81,7 +81,10 @@
        0.0,
        0.0,
        -0.0148,
-       -0.0148
+       -0.0148,
+       -0.0148,
+       -0.0592,
+       -0.0592
       ]
      },
      "SOL": {
@@ -99,9 +102,9 @@
       "stop_pct": -8,
       "lokot": false,
       "lokot_ts": null,
-      "najbolji_pl": 0.0,
+      "najbolji_pl": 0.023554351666477125,
       "najbolji_neto": 0.0,
-      "neto_zivo": -0.23,
+      "neto_zivo": -0.13,
       "hod": [
        0.0,
        0.0,
@@ -110,8 +113,29 @@
        -0.0118,
        -0.0118,
        -0.0236,
-       -0.0236
+       -0.0236,
+       -0.0236,
+       0.0236,
+       0.0236
       ]
+     },
+     "XRP": {
+      "smjer": "LONG",
+      "prvi_ulaz": 1.10422,
+      "prosjek": 1.10422,
+      "ulozeno": 200,
+      "kolicina": 181.123326873268,
+      "dokupa": 0,
+      "naknade_usd": 0.09,
+      "funding_usd": 0.0,
+      "vrijeme_ulaza": "20.08. 05:46 UTC",
+      "ulaz_ts": 1787204804.0059967,
+      "zadnja_stepenica": 1.10422,
+      "stop_pct": -8,
+      "lokot": false,
+      "lokot_ts": null,
+      "najbolji_pl": 0.0,
+      "najbolji_neto": 0.0
      }
     },
     "sef": -30.92,
@@ -125,7 +149,6 @@
      "APT": "SHORT",
      "TIA": "SHORT",
      "ETH": "SHORT",
-     "XRP": "SHORT",
      "FIL": "SHORT",
      "INJ": "LONG",
      "LTC": "SHORT",
@@ -219,7 +242,7 @@
    "stanje": "PLIMA",
    "prosla_sirina": 83
   },
-  "zadnja_runda": "20.08. 05:43 UTC"
+  "zadnja_runda": "20.08. 05:46 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
