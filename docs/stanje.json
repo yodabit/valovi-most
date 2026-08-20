@@ -1,6 +1,6 @@
 {
- "generirano_utc": "20.08.2026 00:06:56 UTC",
- "generirano_ts": 1787184416,
+ "generirano_utc": "20.08.2026 00:10:09 UTC",
+ "generirano_ts": 1787184609,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -76,7 +76,30 @@
     "valuta": "USD",
     "sredstva_pocetna": 4000,
     "kasa": 4000,
-    "pozicije": {},
+    "pozicije": {
+     "DOGE": {
+      "smjer": "LONG",
+      "prvi_ulaz": 0.0750366,
+      "prosjek": 0.0750366,
+      "ulozeno": 200,
+      "kolicina": 2665.3659680742467,
+      "dokupa": 0,
+      "naknade_usd": 0.09,
+      "funding_usd": 0.0,
+      "vrijeme_ulaza": "20.08. 00:08 UTC",
+      "ulaz_ts": 1787184485.2529628,
+      "zadnja_stepenica": 0.0750366,
+      "stop_pct": -15,
+      "lokot": false,
+      "lokot_ts": null,
+      "najbolji_pl": 0.021856000938202946,
+      "najbolji_neto": 0.0,
+      "neto_zivo": -0.14,
+      "hod": [
+       0.0219
+      ]
+     }
+    },
     "sef": 22.86,
     "realizirano_period": 22.86,
     "period_od": null,
@@ -111,11 +134,11 @@
    }
   },
   "more": {
-   "sirina": 69,
+   "sirina": 83,
    "stanje": "PLIMA",
-   "prosla_sirina": 59
+   "prosla_sirina": 83
   },
-  "zadnja_runda": "20.08. 00:05 UTC"
+  "zadnja_runda": "20.08. 00:09 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
