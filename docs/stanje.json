@@ -1,6 +1,6 @@
 {
- "generirano_utc": "20.08.2026 23:58:09 UTC",
- "generirano_ts": 1787270289,
+ "generirano_utc": "21.08.2026 00:01:21 UTC",
+ "generirano_ts": 1787270481,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -28,11 +28,8 @@
       "lokot_ts": null,
       "najbolji_pl": 0.4181558537874608,
       "najbolji_neto": 0.6359353673065129,
-      "neto_zivo": 0.01,
+      "neto_zivo": -0.01,
       "hod": [
-       0.1112,
-       0.1112,
-       0.1112,
        0.1112,
        0.1696,
        0.1696,
@@ -49,7 +46,10 @@
        0.183,
        0.183,
        0.1065,
-       0.1065
+       0.1065,
+       0.1065,
+       0.097,
+       0.097
       ]
      }
     },
@@ -125,7 +125,26 @@
     "valuta": "USD",
     "sredstva_pocetna": 4000,
     "kasa": 4000,
-    "pozicije": {},
+    "pozicije": {
+     "ARB": {
+      "smjer": "LONG",
+      "prvi_ulaz": 0.091,
+      "prosjek": 0.091,
+      "ulozeno": 200,
+      "kolicina": 2197.802197802198,
+      "dokupa": 0,
+      "naknade_usd": 0.09,
+      "funding_usd": 0.0,
+      "vrijeme_ulaza": "21.08. 00:00 UTC",
+      "ulaz_ts": 1787270420.9394603,
+      "zadnja_stepenica": 0.091,
+      "stop_pct": -15,
+      "lokot": false,
+      "lokot_ts": null,
+      "najbolji_pl": 0.0,
+      "najbolji_neto": 0.0
+     }
+    },
     "sef": 23.47,
     "realizirano_period": 23.47,
     "period_od": null,
@@ -135,7 +154,6 @@
     "gubitni": 1,
     "zadnji_izlaz_signal": {
      "ADA": "SHORT",
-     "ARB": "SHORT",
      "AAVE": "SHORT",
      "TRX": "SHORT",
      "AVAX": "LONG",
@@ -162,11 +180,11 @@
    }
   },
   "more": {
-   "sirina": 83,
+   "sirina": 86,
    "stanje": "PLIMA",
    "prosla_sirina": 83
   },
-  "zadnja_runda": "20.08. 23:57 UTC"
+  "zadnja_runda": "21.08. 00:00 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
