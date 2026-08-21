@@ -1,6 +1,6 @@
 {
- "generirano_utc": "21.08.2026 00:04:26 UTC",
- "generirano_ts": 1787270666,
+ "generirano_utc": "21.08.2026 00:07:43 UTC",
+ "generirano_ts": 1787270863,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -28,11 +28,8 @@
       "lokot_ts": null,
       "najbolji_pl": 0.4181558537874608,
       "najbolji_neto": 0.6359353673065129,
-      "neto_zivo": 0.01,
+      "neto_zivo": -0.71,
       "hod": [
-       -0.0757,
-       -0.0757,
-       -0.0757,
        0.232,
        0.232,
        0.232,
@@ -49,7 +46,10 @@
        0.097,
        0.1049,
        0.1049,
-       0.1049
+       0.1049,
+       0.1049,
+       0.1049,
+       -0.2548
       ]
      }
     },
@@ -147,6 +147,9 @@
       "hod": [
        0.0,
        0.1099,
+       0.1099,
+       0.1099,
+       0.1099,
        0.1099
       ]
      },
@@ -166,6 +169,48 @@
       "lokot": false,
       "lokot_ts": null,
       "najbolji_pl": 0.0,
+      "najbolji_neto": 0.0,
+      "neto_zivo": -0.31,
+      "hod": [
+       -0.0627,
+       -0.0627,
+       -0.0627
+      ]
+     },
+     "AAVE": {
+      "smjer": "LONG",
+      "prvi_ulaz": 98.98,
+      "prosjek": 98.98,
+      "ulozeno": 200,
+      "kolicina": 2.0206102242877346,
+      "dokupa": 0,
+      "naknade_usd": 0.09,
+      "funding_usd": 0.0,
+      "vrijeme_ulaza": "21.08. 00:06 UTC",
+      "ulaz_ts": 1787270803.1615279,
+      "zadnja_stepenica": 98.98,
+      "stop_pct": -15,
+      "lokot": false,
+      "lokot_ts": null,
+      "najbolji_pl": 0.0,
+      "najbolji_neto": 0.0
+     },
+     "ADA": {
+      "smjer": "LONG",
+      "prvi_ulaz": 0.198878,
+      "prosjek": 0.198878,
+      "ulozeno": 200,
+      "kolicina": 1005.6416496545621,
+      "dokupa": 0,
+      "naknade_usd": 0.09,
+      "funding_usd": 0.0,
+      "vrijeme_ulaza": "21.08. 00:06 UTC",
+      "ulaz_ts": 1787270803.1631944,
+      "zadnja_stepenica": 0.198878,
+      "stop_pct": -15,
+      "lokot": false,
+      "lokot_ts": null,
+      "najbolji_pl": 0.0,
       "najbolji_neto": 0.0
      }
     },
@@ -177,8 +222,6 @@
     "dobitni": 13,
     "gubitni": 1,
     "zadnji_izlaz_signal": {
-     "ADA": "SHORT",
-     "AAVE": "SHORT",
      "TRX": "SHORT",
      "AVAX": "LONG",
      "BTC": "LONG",
@@ -204,11 +247,11 @@
    }
   },
   "more": {
-   "sirina": 97,
+   "sirina": 100,
    "stanje": "PLIMA",
-   "prosla_sirina": 97
+   "prosla_sirina": 100
   },
-  "zadnja_runda": "21.08. 00:03 UTC"
+  "zadnja_runda": "21.08. 00:06 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
