@@ -1,6 +1,6 @@
 {
- "generirano_utc": "21.08.2026 00:10:54 UTC",
- "generirano_ts": 1787271054,
+ "generirano_utc": "21.08.2026 00:14:05 UTC",
+ "generirano_ts": 1787271245,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -28,11 +28,8 @@
       "lokot_ts": null,
       "najbolji_pl": 0.4181558537874608,
       "najbolji_neto": 0.6359353673065129,
-      "neto_zivo": -0.71,
+      "neto_zivo": 0.1,
       "hod": [
-       0.232,
-       0.183,
-       0.183,
        0.183,
        0.183,
        0.183,
@@ -49,7 +46,10 @@
        -0.2548,
        -0.2548,
        -0.2548,
-       -0.2548
+       -0.2548,
+       -0.2548,
+       0.1491,
+       0.1491
       ]
      }
     },
@@ -143,7 +143,7 @@
       "lokot_ts": null,
       "najbolji_pl": 0.1098901098901095,
       "najbolji_neto": 0.03968131868131791,
-      "neto_zivo": -1.06,
+      "neto_zivo": -0.18,
       "hod": [
        0.0,
        0.1099,
@@ -153,7 +153,10 @@
        0.1099,
        -0.4396,
        -0.4396,
-       -0.4396
+       -0.4396,
+       -0.4396,
+       -0.4396,
+       0.0
       ]
      },
      "LTC": {
@@ -171,16 +174,19 @@
       "stop_pct": -15,
       "lokot": false,
       "lokot_ts": null,
-      "najbolji_pl": 0.1463822668339665,
-      "najbolji_neto": 0.11263278962778245,
-      "neto_zivo": 0.11,
+      "najbolji_pl": 0.2718527812630711,
+      "najbolji_neto": 0.3634608950230055,
+      "neto_zivo": 0.36,
       "hod": [
        -0.0627,
        -0.0627,
        -0.0627,
        -0.0627,
        -0.0627,
-       0.1464
+       0.1464,
+       0.2719,
+       0.2719,
+       0.2719
       ]
      },
      "AAVE": {
@@ -204,6 +210,9 @@
       "hod": [
        0.0,
        0.0,
+       0.0,
+       0.0,
+       0.0,
        0.0
       ]
      },
@@ -222,13 +231,16 @@
       "stop_pct": -15,
       "lokot": false,
       "lokot_ts": null,
-      "najbolji_pl": 0.0,
-      "najbolji_neto": 0.0,
-      "neto_zivo": -0.18,
+      "najbolji_pl": 0.32683353613773836,
+      "najbolji_neto": 0.4733729220929526,
+      "neto_zivo": 0.47,
       "hod": [
        0.0,
        0.0,
-       0.0
+       0.0,
+       0.0,
+       0.3268,
+       0.3268
       ]
      }
     },
@@ -269,7 +281,7 @@
    "stanje": "PLIMA",
    "prosla_sirina": 100
   },
-  "zadnja_runda": "21.08. 00:09 UTC"
+  "zadnja_runda": "21.08. 00:13 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
