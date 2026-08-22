@@ -1,6 +1,6 @@
 {
- "generirano_utc": "22.08.2026 00:03:10 UTC",
- "generirano_ts": 1787356990,
+ "generirano_utc": "22.08.2026 00:06:20 UTC",
+ "generirano_ts": 1787357180,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -104,8 +104,69 @@
       "najbolji_neto": 0.0,
       "neto_zivo": -0.18,
       "hod": [
+       0.0,
+       0.0,
+       0.0,
        0.0
       ]
+     },
+     "FIL": {
+      "smjer": "LONG",
+      "prvi_ulaz": 0.811,
+      "prosjek": 0.811,
+      "ulozeno": 200,
+      "kolicina": 246.60912453760787,
+      "dokupa": 0,
+      "naknade_usd": 0.09,
+      "funding_usd": 0.0,
+      "vrijeme_ulaza": "22.08. 00:04 UTC",
+      "ulaz_ts": 1787357057.673382,
+      "zadnja_stepenica": 0.811,
+      "stop_pct": -15,
+      "lokot": false,
+      "lokot_ts": null,
+      "najbolji_pl": 0.0,
+      "najbolji_neto": 0.0,
+      "neto_zivo": -0.18,
+      "hod": [
+       0.0
+      ]
+     },
+     "NEAR": {
+      "smjer": "LONG",
+      "prvi_ulaz": 1.9635,
+      "prosjek": 1.9635,
+      "ulozeno": 200,
+      "kolicina": 101.85892538833716,
+      "dokupa": 0,
+      "naknade_usd": 0.09,
+      "funding_usd": 0.0,
+      "vrijeme_ulaza": "22.08. 00:05 UTC",
+      "ulaz_ts": 1787357121.3588948,
+      "zadnja_stepenica": 1.9635,
+      "stop_pct": -15,
+      "lokot": false,
+      "lokot_ts": null,
+      "najbolji_pl": 0.0,
+      "najbolji_neto": 0.0
+     },
+     "OP": {
+      "smjer": "LONG",
+      "prvi_ulaz": 0.1074,
+      "prosjek": 0.1074,
+      "ulozeno": 200,
+      "kolicina": 1862.1973929236499,
+      "dokupa": 0,
+      "naknade_usd": 0.09,
+      "funding_usd": 0.0,
+      "vrijeme_ulaza": "22.08. 00:05 UTC",
+      "ulaz_ts": 1787357121.359866,
+      "zadnja_stepenica": 0.1074,
+      "stop_pct": -15,
+      "lokot": false,
+      "lokot_ts": null,
+      "najbolji_pl": 0.0,
+      "najbolji_neto": 0.0
      }
     },
     "sef": 25.31,
@@ -150,7 +211,7 @@
    "stanje": "PLIMA",
    "prosla_sirina": 100
   },
-  "zadnja_runda": "22.08. 00:02 UTC"
+  "zadnja_runda": "22.08. 00:05 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
