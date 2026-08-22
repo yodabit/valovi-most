@@ -1,6 +1,6 @@
 {
- "generirano_utc": "22.08.2026 01:10:22 UTC",
- "generirano_ts": 1787361022,
+ "generirano_utc": "22.08.2026 01:13:26 UTC",
+ "generirano_ts": 1787361206,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -97,16 +97,13 @@
       "vrijeme_ulaza": "22.08. 00:01 UTC",
       "ulaz_ts": 1787356866.5568445,
       "zadnja_stepenica": 0.6489,
-      "stop_pct": 1.68,
+      "stop_pct": 1.722,
       "lokot": true,
       "lokot_ts": 1787360114.9029388,
-      "najbolji_pl": 1.9417475728155331,
-      "najbolji_neto": 3.701747572815532,
-      "neto_zivo": 3.7,
+      "najbolji_pl": 1.987979657882577,
+      "najbolji_neto": 3.7941701340730596,
+      "neto_zivo": 3.79,
       "hod": [
-       0.3236,
-       0.3236,
-       0.3082,
        0.3082,
        0.3082,
        0.7551,
@@ -123,11 +120,14 @@
        1.387,
        1.9417,
        1.9417,
-       1.9417
+       1.9417,
+       1.9726,
+       1.9726,
+       1.988
       ],
       "gorivo": 41,
       "opruga_razmak": 0.22,
-      "tajmer_h": 0.2
+      "tajmer_h": 0.3
      },
      "OP": {
       "smjer": "LONG",
@@ -141,18 +141,15 @@
       "vrijeme_ulaza": "22.08. 00:05 UTC",
       "ulaz_ts": 1787357121.359866,
       "zadnja_stepenica": 0.1074,
-      "stop_pct": 1.261,
+      "stop_pct": 1.342,
       "lokot": true,
       "lokot_ts": 1787360114.903918,
-      "najbolji_pl": 1.4897579143389184,
-      "najbolji_neto": 2.7981750465549315,
-      "neto_zivo": 2.8,
+      "najbolji_pl": 1.582867783985109,
+      "najbolji_neto": 2.9843109869646316,
+      "neto_zivo": 2.98,
       "hod": [
        0.0931,
        0.0931,
-       0.0931,
-       0.0931,
-       0.0931,
        1.2104,
        1.2104,
        1.2104,
@@ -167,63 +164,22 @@
        1.4898,
        1.4898,
        1.4898,
-       1.4898
+       1.4898,
+       1.5829,
+       1.5829,
+       1.5829
       ],
-      "gorivo": 42,
-      "opruga_razmak": 0.18,
-      "tajmer_h": 0.2
-     },
-     "RENDER": {
-      "smjer": "LONG",
-      "prvi_ulaz": 1.522,
-      "prosjek": 1.522,
-      "ulozeno": 200,
-      "kolicina": 131.4060446780552,
-      "dokupa": 0,
-      "naknade_usd": 0.09,
-      "funding_usd": 0.0,
-      "vrijeme_ulaza": "22.08. 00:06 UTC",
-      "ulaz_ts": 1787357185.082151,
-      "zadnja_stepenica": 1.522,
-      "stop_pct": 1.447,
-      "lokot": true,
-      "lokot_ts": 1787360114.9053364,
-      "najbolji_pl": 1.6425755584756896,
-      "najbolji_neto": 3.103672798948751,
-      "neto_zivo": 3.1,
-      "hod": [
-       0.3285,
-       0.3942,
-       0.4599,
-       0.4599,
-       0.4599,
-       0.7884,
-       0.7884,
-       0.7884,
-       0.7884,
-       0.7884,
-       1.3798,
-       1.3798,
-       1.3798,
-       1.3798,
-       1.3798,
-       1.3798,
-       1.3798,
-       1.6426,
-       1.6426,
-       1.6426
-      ],
-      "gorivo": 36,
-      "opruga_razmak": 0.15,
-      "tajmer_h": 0.2
+      "gorivo": 41,
+      "opruga_razmak": 0.2,
+      "tajmer_h": 0.3
      }
     },
-    "sef": 26.33,
-    "realizirano_period": 26.33,
+    "sef": 28.91,
+    "realizirano_period": 28.91,
     "period_od": null,
     "pauza_do": null,
-    "broj_trejdova": 20,
-    "dobitni": 18,
+    "broj_trejdova": 21,
+    "dobitni": 19,
     "gubitni": 2,
     "zadnji_izlaz_signal": {
      "TRX": "SHORT",
@@ -239,7 +195,8 @@
      "ARB": "LONG",
      "AAVE": "LONG",
      "FIL": "LONG",
-     "NEAR": "LONG"
+     "NEAR": "LONG",
+     "RENDER": "LONG"
     },
     "hladnjak": {
      "ADA": 1787272204.651525,
@@ -255,7 +212,8 @@
      "DOGE": 1787187223.9150023,
      "LTC": 1787271631.2288175,
      "FIL": 1787359350.501386,
-     "NEAR": 1787359414.1289542
+     "NEAR": 1787359414.1289542,
+     "RENDER": 1787361070.327868
     }
    }
   },
@@ -264,7 +222,7 @@
    "stanje": "PLIMA",
    "prosla_sirina": 100
   },
-  "zadnja_runda": "22.08. 01:10 UTC"
+  "zadnja_runda": "22.08. 01:13 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
@@ -3862,6 +3820,22 @@
    "neto_usd": 0.46,
    "zatvorio": "CEGRTALJKA",
    "sef": 26.33,
+   "kasa": 4000
+  },
+  {
+   "vrijeme": "22.08. 01:11 UTC",
+   "knjiga": "tjedni",
+   "token": "RENDER",
+   "smjer": "LONG",
+   "ulaz_po": 1.522,
+   "izlaz_po": 1.543,
+   "ulozeno_usd": 200,
+   "dokupa": 0,
+   "naknade_usd": 0.1812,
+   "funding_usd": 0.0,
+   "neto_usd": 2.58,
+   "zatvorio": "CEGRTALJKA",
+   "sef": 28.91,
    "kasa": 4000
   }
  ]
