@@ -1,6 +1,6 @@
 {
- "generirano_utc": "22.08.2026 00:18:31 UTC",
- "generirano_ts": 1787357911,
+ "generirano_utc": "22.08.2026 00:21:36 UTC",
+ "generirano_ts": 1787358096,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -102,7 +102,7 @@
       "lokot_ts": null,
       "najbolji_pl": 0.0,
       "najbolji_neto": 0.0,
-      "neto_zivo": -0.73,
+      "neto_zivo": -0.21,
       "hod": [
        0.0,
        0.0,
@@ -119,7 +119,10 @@
        -1.0479,
        -1.0479,
        -0.2774,
-       -0.2774
+       -0.2774,
+       -0.2774,
+       -0.2774,
+       -0.0154
       ]
      },
      "FIL": {
@@ -139,7 +142,7 @@
       "lokot_ts": null,
       "najbolji_pl": 0.0,
       "najbolji_neto": 0.0,
-      "neto_zivo": -1.17,
+      "neto_zivo": -1.41,
       "hod": [
        0.0,
        0.0,
@@ -153,7 +156,10 @@
        -0.9864,
        -0.9864,
        -0.9864,
-       -0.4932
+       -0.4932,
+       -0.6165,
+       -0.6165,
+       -0.6165
       ]
      },
      "NEAR": {
@@ -171,9 +177,9 @@
       "stop_pct": -15,
       "lokot": false,
       "lokot_ts": null,
-      "najbolji_pl": 0.0,
-      "najbolji_neto": 0.0,
-      "neto_zivo": -1.55,
+      "najbolji_pl": 0.36159918512859157,
+      "najbolji_neto": 0.5428729309905674,
+      "neto_zivo": 0.54,
       "hod": [
        0.0,
        0.0,
@@ -186,7 +192,10 @@
        -0.6875,
        -0.6875,
        -0.6875,
-       -0.6875
+       -0.6875,
+       0.2037,
+       0.2037,
+       0.3616
       ]
      },
      "OP": {
@@ -219,6 +228,9 @@
        -1.0242,
        -1.0242,
        -1.0242,
+       -1.0242,
+       -1.0242,
+       -1.0242,
        -1.0242
       ]
      },
@@ -237,9 +249,9 @@
       "stop_pct": -15,
       "lokot": false,
       "lokot_ts": null,
-      "najbolji_pl": 0.0,
-      "najbolji_neto": 0.0,
-      "neto_zivo": -1.1,
+      "najbolji_pl": 0.13140604467805073,
+      "najbolji_neto": 0.0826938239158912,
+      "neto_zivo": 0.08,
       "hod": [
        0.0,
        0.0,
@@ -251,7 +263,10 @@
        -0.4599,
        -0.4599,
        -0.4599,
-       -0.4599
+       -0.4599,
+       -0.4599,
+       0.1314,
+       0.1314
       ]
      }
     },
@@ -297,7 +312,7 @@
    "stanje": "PLIMA",
    "prosla_sirina": 100
   },
-  "zadnja_runda": "22.08. 00:18 UTC"
+  "zadnja_runda": "22.08. 00:21 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
