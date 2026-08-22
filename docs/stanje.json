@@ -1,6 +1,6 @@
 {
- "generirano_utc": "22.08.2026 18:01:40 UTC",
- "generirano_ts": 1787421700,
+ "generirano_utc": "22.08.2026 18:04:51 UTC",
+ "generirano_ts": 1787421891,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -10,52 +10,13 @@
     "valuta": "USD",
     "sredstva_pocetna": 6000,
     "kasa": 6000,
-    "pozicije": {
-     "FET": {
-      "smjer": "LONG",
-      "prvi_ulaz": 0.1642,
-      "prosjek": 0.1642,
-      "ulozeno": 200,
-      "kolicina": 1218.0267965895248,
-      "dokupa": 0,
-      "naknade_usd": 0.09,
-      "funding_usd": 0.0,
-      "vrijeme_ulaza": "22.08. 17:45 UTC",
-      "ulaz_ts": 1787420746.7693455,
-      "zadnja_stepenica": 0.1642,
-      "stop_pct": 1.327,
-      "lokot": true,
-      "lokot_ts": 1787420810.4958806,
-      "najbolji_pl": 1.5225334957368997,
-      "najbolji_neto": 2.863696711327636,
-      "neto_zivo": 2.86,
-      "hod": [
-       0.5481,
-       0.5481,
-       0.5481,
-       0.5481,
-       0.9135,
-       0.9135,
-       0.9135,
-       1.218,
-       1.218,
-       1.5225,
-       1.5225,
-       1.5225,
-       1.5225,
-       1.5225
-      ],
-      "gorivo": 31,
-      "opruga_razmak": 0.15,
-      "tajmer_h": 0.2
-     }
-    },
-    "sef": 7.64,
-    "realizirano_period": 7.64,
+    "pozicije": {},
+    "sef": 9.16,
+    "realizirano_period": 9.16,
     "period_od": null,
     "pauza_do": null,
-    "broj_trejdova": 200,
-    "dobitni": 175,
+    "broj_trejdova": 201,
+    "dobitni": 176,
     "gubitni": 25,
     "zadnji_izlaz_signal": {
      "INJ": "LONG",
@@ -85,10 +46,11 @@
      "ETH": "LONG",
      "ATOM": "LONG",
      "XRP": "LONG",
-     "LTC": "LONG"
+     "LTC": "LONG",
+     "FET": "LONG"
     },
     "hladnjak": {
-     "FET": 1787214495.7002726,
+     "FET": 1787421704.0615382,
      "TRX": 1787227709.0630856,
      "INJ": 1786561847.3572366,
      "ETH": 1787240106.6579325,
@@ -176,7 +138,7 @@
    "stanje": "PLIMA",
    "prosla_sirina": 100
   },
-  "zadnja_runda": "22.08. 18:00 UTC"
+  "zadnja_runda": "22.08. 18:03 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
@@ -3823,6 +3785,22 @@
    "zatvorio": "CEGRTALJKA",
    "sef": 34.54,
    "kasa": 4000
+  },
+  {
+   "vrijeme": "22.08. 18:01 UTC",
+   "knjiga": "dnevni",
+   "token": "FET",
+   "smjer": "LONG",
+   "ulaz_po": 0.1642,
+   "izlaz_po": 0.1656,
+   "ulozeno_usd": 200,
+   "dokupa": 0,
+   "naknade_usd": 0.1808,
+   "funding_usd": 0.0,
+   "neto_usd": 1.52,
+   "zatvorio": "CEGRTALJKA",
+   "sef": 9.16,
+   "kasa": 6000
   }
  ]
 }
