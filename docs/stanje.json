@@ -1,6 +1,6 @@
 {
- "generirano_utc": "23.08.2026 01:31:06 UTC",
- "generirano_ts": 1787448666,
+ "generirano_utc": "23.08.2026 01:34:22 UTC",
+ "generirano_ts": 1787448862,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -103,11 +103,8 @@
       "lokot_ts": null,
       "najbolji_pl": 0.2633178043346174,
       "najbolji_neto": 0.3463986226453336,
-      "neto_zivo": -0.22,
+      "neto_zivo": -0.06,
       "hod": [
-       -0.0203,
-       -0.0203,
-       -0.0203,
        0.0203,
        0.0203,
        0.0203,
@@ -124,7 +121,10 @@
        -0.0203,
        -0.0203,
        -0.0203,
-       -0.0203
+       -0.0203,
+       -0.0203,
+       -0.0203,
+       0.0608
       ]
      },
      "TON": {
@@ -142,9 +142,9 @@
       "stop_pct": -15,
       "lokot": false,
       "lokot_ts": null,
-      "najbolji_pl": 0.0,
-      "najbolji_neto": 0.0,
-      "neto_zivo": -0.87,
+      "najbolji_pl": 0.13802622498275685,
+      "najbolji_neto": 0.09592822636302922,
+      "neto_zivo": 0.1,
       "hod": [
        -0.4831,
        -0.4831,
@@ -162,10 +162,10 @@
        -0.4831,
        -0.4831,
        -0.4831,
-       -0.4831,
-       -0.4831,
-       -0.4831,
-       -0.3451
+       -0.3451,
+       -0.3451,
+       0.138,
+       0.138
       ]
      }
     },
@@ -223,7 +223,7 @@
    "stanje": "PLIMA",
    "prosla_sirina": 100
   },
-  "zadnja_runda": "23.08. 01:30 UTC"
+  "zadnja_runda": "23.08. 01:33 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
