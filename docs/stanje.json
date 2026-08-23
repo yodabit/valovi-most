@@ -1,6 +1,6 @@
 {
- "generirano_utc": "23.08.2026 02:47:26 UTC",
- "generirano_ts": 1787453246,
+ "generirano_utc": "23.08.2026 02:50:48 UTC",
+ "generirano_ts": 1787453448,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -85,58 +85,13 @@
     "valuta": "USD",
     "sredstva_pocetna": 4000,
     "kasa": 4000,
-    "pozicije": {
-     "TON": {
-      "smjer": "LONG",
-      "prvi_ulaz": 1.449,
-      "prosjek": 1.449,
-      "ulozeno": 200,
-      "kolicina": 138.02622498274673,
-      "dokupa": 0,
-      "naknade_usd": 0.09,
-      "funding_usd": 0.0,
-      "vrijeme_ulaza": "23.08. 00:08 UTC",
-      "ulaz_ts": 1787443707.112356,
-      "zadnja_stepenica": 1.449,
-      "stop_pct": 0.772,
-      "lokot": true,
-      "lokot_ts": 1787452624.3426943,
-      "najbolji_pl": 1.0351966873705987,
-      "najbolji_neto": 1.8894616977225638,
-      "neto_zivo": 1.89,
-      "hod": [
-       -0.6211,
-       -0.6211,
-       -0.6211,
-       -0.6211,
-       -0.6211,
-       0.138,
-       0.138,
-       0.5521,
-       0.5521,
-       0.5521,
-       0.8282,
-       0.8282,
-       0.8282,
-       0.8282,
-       0.8282,
-       1.0352,
-       1.0352,
-       1.0352,
-       1.0352,
-       1.0352
-      ],
-      "gorivo": 62,
-      "opruga_razmak": 0.22,
-      "tajmer_h": 0.2
-     }
-    },
-    "sef": 33.4,
-    "realizirano_period": 33.4,
+    "pozicije": {},
+    "sef": 33.91,
+    "realizirano_period": 33.91,
     "period_od": null,
     "pauza_do": null,
-    "broj_trejdova": 25,
-    "dobitni": 21,
+    "broj_trejdova": 26,
+    "dobitni": 22,
     "gubitni": 4,
     "zadnji_izlaz_signal": {
      "TRX": "SHORT",
@@ -157,7 +112,8 @@
      "OP": "LONG",
      "APT": "LONG",
      "UNI": "LONG",
-     "INJ": "LONG"
+     "INJ": "LONG",
+     "TON": "LONG"
     },
     "hladnjak": {
      "ADA": 1787272204.651525,
@@ -178,7 +134,8 @@
      "OP": 1787361325.0314891,
      "APT": 1787361516.0215166,
      "UNI": 1787444025.5278184,
-     "INJ": 1787452751.666928
+     "INJ": 1787452751.666928,
+     "TON": 1787453260.9895976
     }
    }
   },
@@ -187,7 +144,7 @@
    "stanje": "PLIMA",
    "prosla_sirina": 100
   },
-  "zadnja_runda": "23.08. 02:46 UTC"
+  "zadnja_runda": "23.08. 02:49 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
@@ -3881,6 +3838,22 @@
    "neto_usd": -0.58,
    "zatvorio": "CEGRTALJKA",
    "sef": 33.4,
+   "kasa": 4000
+  },
+  {
+   "vrijeme": "23.08. 02:47 UTC",
+   "knjiga": "tjedni",
+   "token": "TON",
+   "smjer": "LONG",
+   "ulaz_po": 1.449,
+   "izlaz_po": 1.454,
+   "ulozeno_usd": 200,
+   "dokupa": 0,
+   "naknade_usd": 0.1803,
+   "funding_usd": 0.0,
+   "neto_usd": 0.51,
+   "zatvorio": "CEGRTALJKA",
+   "sef": 33.91,
    "kasa": 4000
   }
  ]
