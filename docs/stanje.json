@@ -1,6 +1,6 @@
 {
- "generirano_utc": "31.08.2026 08:49:40 UTC",
- "generirano_ts": 1788166180,
+ "generirano_utc": "31.08.2026 08:52:47 UTC",
+ "generirano_ts": 1788166367,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -30,6 +30,32 @@
       "najbolji_neto": 0.0,
       "neto_zivo": -0.18,
       "hod": [
+       0.0,
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "TRX": {
+      "smjer": "SHORT",
+      "prvi_ulaz": 0.336482,
+      "prosjek": 0.336482,
+      "ulozeno": 200,
+      "kolicina": 594.3854351792963,
+      "dokupa": 0,
+      "naknade_usd": 0.09,
+      "funding_usd": 0.0,
+      "vrijeme_ulaza": "31.08. 08:49 UTC",
+      "ulaz_ts": 1788166184.9948304,
+      "zadnja_stepenica": 0.336482,
+      "stop_pct": -8,
+      "lokot": false,
+      "lokot_ts": null,
+      "najbolji_pl": 0.0,
+      "najbolji_neto": 0.0,
+      "neto_zivo": -0.18,
+      "hod": [
+       0.0,
        0.0
       ]
      }
@@ -63,7 +89,6 @@
      "DOGE": "LONG",
      "FIL": "LONG",
      "TON": "LONG",
-     "TRX": "LONG",
      "APT": "LONG",
      "ETH": "LONG",
      "ATOM": "LONG",
@@ -138,13 +163,13 @@
        -1.4874,
        -1.4874,
        -1.4874,
+       -1.8244,
+       -1.8244,
+       -1.8244,
+       -1.8244,
        -1.4874,
        -1.4874,
        -1.4874,
-       -1.8244,
-       -1.8244,
-       -1.8244,
-       -1.8244,
        -1.4874,
        -1.4874
       ]
@@ -207,7 +232,7 @@
    "stanje": "MIJESANO",
    "prosla_sirina": 41
   },
-  "zadnja_runda": "31.08. 08:48 UTC"
+  "zadnja_runda": "31.08. 08:51 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
