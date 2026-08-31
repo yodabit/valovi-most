@@ -1,6 +1,6 @@
 {
- "generirano_utc": "31.08.2026 09:02:16 UTC",
- "generirano_ts": 1788166936,
+ "generirano_utc": "31.08.2026 09:05:26 UTC",
+ "generirano_ts": 1788167126,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -26,9 +26,9 @@
       "stop_pct": -8,
       "lokot": false,
       "lokot_ts": null,
-      "najbolji_pl": 0.0,
+      "najbolji_pl": 0.0611995104039087,
       "najbolji_neto": 0.0,
-      "neto_zivo": -0.18,
+      "neto_zivo": -0.06,
       "hod": [
        0.0,
        0.0,
@@ -42,7 +42,10 @@
        0.0,
        0.0,
        0.0,
-       0.0
+       0.0,
+       0.0,
+       0.0612,
+       0.0612
       ]
      },
      "TRX": {
@@ -62,7 +65,7 @@
       "lokot_ts": null,
       "najbolji_pl": 0.013672734190151026,
       "najbolji_neto": 0.0,
-      "neto_zivo": -0.19,
+      "neto_zivo": -0.18,
       "hod": [
        0.0,
        0.0,
@@ -74,7 +77,10 @@
        0.0045,
        0.0045,
        -0.0051,
-       -0.0051
+       -0.0051,
+       -0.0051,
+       -0.0051,
+       0.0006
       ]
      },
      "APT": {
@@ -93,7 +99,13 @@
       "lokot": false,
       "lokot_ts": null,
       "najbolji_pl": 0.0,
-      "najbolji_neto": 0.0
+      "najbolji_neto": 0.0,
+      "neto_zivo": -0.18,
+      "hod": [
+       0.0,
+       0.0,
+       0.0
+      ]
      }
     },
     "sef": 9.16,
@@ -185,14 +197,11 @@
       "lokot_ts": null,
       "najbolji_pl": 0.0,
       "najbolji_neto": 0.0,
-      "neto_zivo": -3.18,
+      "neto_zivo": -2.95,
       "hod": [
-       -1.4874,
-       -1.4874,
        -1.8244,
        -1.8244,
        -1.8244,
-       -1.8244,
        -1.4874,
        -1.4874,
        -1.4874,
@@ -206,7 +215,10 @@
        -1.4874,
        -1.4874,
        -1.4874,
-       -1.4874
+       -1.4874,
+       -1.4874,
+       -1.3746,
+       -1.3746
       ]
      }
     },
@@ -267,7 +279,7 @@
    "stanje": "MIJESANO",
    "prosla_sirina": 41
   },
-  "zadnja_runda": "31.08. 09:01 UTC"
+  "zadnja_runda": "31.08. 09:04 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
