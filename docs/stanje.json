@@ -1,6 +1,6 @@
 {
- "generirano_utc": "31.08.2026 08:46:26 UTC",
- "generirano_ts": 1788165986,
+ "generirano_utc": "31.08.2026 08:49:40 UTC",
+ "generirano_ts": 1788166180,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -10,7 +10,30 @@
     "valuta": "USD",
     "sredstva_pocetna": 6000,
     "kasa": 6000,
-    "pozicije": {},
+    "pozicije": {
+     "GRT": {
+      "smjer": "SHORT",
+      "prvi_ulaz": 0.01635,
+      "prosjek": 0.01635,
+      "ulozeno": 200,
+      "kolicina": 12232.415902140672,
+      "dokupa": 0,
+      "naknade_usd": 0.09,
+      "funding_usd": 0.0,
+      "vrijeme_ulaza": "31.08. 08:47 UTC",
+      "ulaz_ts": 1788166057.3923,
+      "zadnja_stepenica": 0.01635,
+      "stop_pct": -8,
+      "lokot": false,
+      "lokot_ts": null,
+      "najbolji_pl": 0.0,
+      "najbolji_neto": 0.0,
+      "neto_zivo": -0.18,
+      "hod": [
+       0.0
+      ]
+     }
+    },
     "sef": 9.16,
     "realizirano_period": 9.16,
     "period_od": null,
@@ -33,7 +56,6 @@
      "AVAX": "LONG",
      "SOL": "LONG",
      "LINK": "LONG",
-     "GRT": "LONG",
      "NEAR": "LONG",
      "RENDER": "LONG",
      "TIA": "LONG",
@@ -103,7 +125,7 @@
       "lokot_ts": null,
       "najbolji_pl": 0.0,
       "najbolji_neto": 0.0,
-      "neto_zivo": -3.85,
+      "neto_zivo": -3.18,
       "hod": [
        -1.4874,
        -1.4874,
@@ -119,12 +141,12 @@
        -1.4874,
        -1.4874,
        -1.4874,
-       -1.4874,
-       -1.4874,
-       -1.4874,
        -1.8244,
        -1.8244,
-       -1.8244
+       -1.8244,
+       -1.8244,
+       -1.4874,
+       -1.4874
       ]
      }
     },
@@ -185,7 +207,7 @@
    "stanje": "MIJESANO",
    "prosla_sirina": 41
   },
-  "zadnja_runda": "31.08. 08:45 UTC"
+  "zadnja_runda": "31.08. 08:48 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
