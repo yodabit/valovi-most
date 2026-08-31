@@ -1,6 +1,6 @@
 {
- "generirano_utc": "31.08.2026 00:04:12 UTC",
- "generirano_ts": 1788134652,
+ "generirano_utc": "31.08.2026 00:07:23 UTC",
+ "generirano_ts": 1788134843,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -85,7 +85,54 @@
     "valuta": "USD",
     "sredstva_pocetna": 4000,
     "kasa": 4000,
-    "pozicije": {},
+    "pozicije": {
+     "OP": {
+      "smjer": "SHORT",
+      "prvi_ulaz": 0.0861,
+      "prosjek": 0.0861,
+      "ulozeno": 200,
+      "kolicina": 2322.8803716608595,
+      "dokupa": 0,
+      "naknade_usd": 0.09,
+      "funding_usd": 0.0,
+      "vrijeme_ulaza": "31.08. 00:04 UTC",
+      "ulaz_ts": 1788134655.820339,
+      "zadnja_stepenica": 0.0861,
+      "stop_pct": -15,
+      "lokot": false,
+      "lokot_ts": null,
+      "najbolji_pl": 0.0,
+      "najbolji_neto": 0.0,
+      "neto_zivo": -0.18,
+      "hod": [
+       0.0,
+       0.0
+      ]
+     },
+     "TON": {
+      "smjer": "SHORT",
+      "prvi_ulaz": 1.338,
+      "prosjek": 1.338,
+      "ulozeno": 200,
+      "kolicina": 149.47683109118086,
+      "dokupa": 0,
+      "naknade_usd": 0.09,
+      "funding_usd": 0.0,
+      "vrijeme_ulaza": "31.08. 00:04 UTC",
+      "ulaz_ts": 1788134655.823532,
+      "zadnja_stepenica": 1.338,
+      "stop_pct": -15,
+      "lokot": false,
+      "lokot_ts": null,
+      "najbolji_pl": 0.14970059880239361,
+      "najbolji_neto": 0.1195357267527693,
+      "neto_zivo": 0.12,
+      "hod": [
+       0.1497,
+       0.1497
+      ]
+     }
+    },
     "sef": 33.91,
     "realizirano_period": 33.91,
     "period_od": null,
@@ -109,11 +156,9 @@
      "FIL": "LONG",
      "NEAR": "LONG",
      "RENDER": "LONG",
-     "OP": "LONG",
      "APT": "LONG",
      "UNI": "LONG",
-     "INJ": "LONG",
-     "TON": "LONG"
+     "INJ": "LONG"
     },
     "hladnjak": {
      "ADA": 1787272204.651525,
@@ -140,11 +185,11 @@
    }
   },
   "more": {
-   "sirina": 62,
-   "stanje": "PLIMA",
-   "prosla_sirina": 69
+   "sirina": 45,
+   "stanje": "MIJESANO",
+   "prosla_sirina": 52
   },
-  "zadnja_runda": "31.08. 00:03 UTC"
+  "zadnja_runda": "31.08. 00:06 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
