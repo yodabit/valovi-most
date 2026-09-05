@@ -1,6 +1,6 @@
 {
- "generirano_utc": "05.09.2026 22:33:26 UTC",
- "generirano_ts": 1788647606,
+ "generirano_utc": "05.09.2026 22:36:36 UTC",
+ "generirano_ts": 1788647796,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -144,7 +144,7 @@
    "stanje": "PLIMA",
    "prosla_sirina": 93
   },
-  "zadnja_runda": "05.09. 22:32 UTC"
+  "zadnja_runda": "05.09. 22:35 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
