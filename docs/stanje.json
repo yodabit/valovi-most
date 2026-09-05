@@ -1,6 +1,6 @@
 {
- "generirano_utc": "05.09.2026 21:58:26 UTC",
- "generirano_ts": 1788645506,
+ "generirano_utc": "05.09.2026 22:01:36 UTC",
+ "generirano_ts": 1788645696,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -85,56 +85,14 @@
     "valuta": "USD",
     "sredstva_pocetna": 4000,
     "kasa": 4000,
-    "pozicije": {
-     "OP": {
-      "smjer": "SHORT",
-      "prvi_ulaz": 0.0861,
-      "prosjek": 0.09398196094079253,
-      "ulozeno": 1200,
-      "kolicina": 12768.407766634973,
-      "dokupa": 5,
-      "naknade_usd": 0.54,
-      "funding_usd": 1.58,
-      "vrijeme_ulaza": "31.08. 00:04 UTC",
-      "ulaz_ts": 1788134655.820339,
-      "zadnja_stepenica": 0.1029,
-      "stop_pct": -15,
-      "lokot": false,
-      "lokot_ts": null,
-      "najbolji_pl": 0.0,
-      "najbolji_neto": 0.0,
-      "neto_zivo": -176.56,
-      "hod": [
-       -13.3008,
-       -13.3008,
-       -13.4604,
-       -13.4604,
-       -13.4604,
-       -13.4604,
-       -13.857,
-       -13.857,
-       -13.857,
-       -13.857,
-       -13.857,
-       -13.6195,
-       -13.6195,
-       -14.4062,
-       -14.4062,
-       -14.4062,
-       -14.4841,
-       -14.4841,
-       -14.4841,
-       -14.4841
-      ]
-     }
-    },
-    "sef": 35.52,
-    "realizirano_period": 35.52,
+    "pozicije": {},
+    "sef": -179.42,
+    "realizirano_period": -179.42,
     "period_od": null,
     "pauza_do": null,
-    "broj_trejdova": 27,
+    "broj_trejdova": 28,
     "dobitni": 23,
-    "gubitni": 4,
+    "gubitni": 5,
     "zadnji_izlaz_signal": {
      "TRX": "SHORT",
      "AVAX": "LONG",
@@ -154,7 +112,8 @@
      "APT": "LONG",
      "UNI": "LONG",
      "INJ": "LONG",
-     "TON": "SHORT"
+     "TON": "SHORT",
+     "OP": "SHORT"
     },
     "hladnjak": {
      "ADA": 1787272204.651525,
@@ -172,7 +131,7 @@
      "FIL": 1787359350.501386,
      "NEAR": 1787359414.1289542,
      "RENDER": 1787361070.327868,
-     "OP": 1787361325.0314891,
+     "OP": 1788645581.4497526,
      "APT": 1787361516.0215166,
      "UNI": 1787444025.5278184,
      "INJ": 1787452751.666928,
@@ -185,7 +144,7 @@
    "stanje": "PLIMA",
    "prosla_sirina": 93
   },
-  "zadnja_runda": "05.09. 21:57 UTC"
+  "zadnja_runda": "05.09. 22:00 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
@@ -5656,6 +5615,22 @@
    "zatvorio": "OPRUGA",
    "sef": 9.95,
    "kasa": 6000
+  },
+  {
+   "vrijeme": "05.09. 21:59 UTC",
+   "knjiga": "tjedni",
+   "token": "OP",
+   "smjer": "SHORT",
+   "ulaz_po": 0.09398196,
+   "izlaz_po": 0.1106,
+   "ulozeno_usd": 1200,
+   "dokupa": 5,
+   "naknade_usd": 1.1755,
+   "funding_usd": 1.58,
+   "neto_usd": -214.94,
+   "zatvorio": "STOP",
+   "sef": -179.42,
+   "kasa": 4000
   }
  ]
 }
