@@ -1,6 +1,6 @@
 {
- "generirano_utc": "07.09.2026 00:02:26 UTC",
- "generirano_ts": 1788739346,
+ "generirano_utc": "07.09.2026 00:05:52 UTC",
+ "generirano_ts": 1788739552,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -85,7 +85,30 @@
     "valuta": "USD",
     "sredstva_pocetna": 4000,
     "kasa": 4000,
-    "pozicije": {},
+    "pozicije": {
+     "TON": {
+      "smjer": "LONG",
+      "prvi_ulaz": 1.431,
+      "prosjek": 1.431,
+      "ulozeno": 200,
+      "kolicina": 139.7624039133473,
+      "dokupa": 0,
+      "naknade_usd": 0.09,
+      "funding_usd": 0.0,
+      "vrijeme_ulaza": "07.09. 00:03 UTC",
+      "ulaz_ts": 1788739428.6197817,
+      "zadnja_stepenica": 1.431,
+      "stop_pct": -15,
+      "lokot": false,
+      "lokot_ts": null,
+      "najbolji_pl": 0.0,
+      "najbolji_neto": 0.0,
+      "neto_zivo": -0.18,
+      "hod": [
+       0.0
+      ]
+     }
+    },
     "sef": -179.42,
     "realizirano_period": -179.42,
     "period_od": null,
@@ -112,7 +135,6 @@
      "APT": "LONG",
      "UNI": "LONG",
      "INJ": "LONG",
-     "TON": "SHORT",
      "OP": "SHORT"
     },
     "hladnjak": {
@@ -144,7 +166,7 @@
    "stanje": "PLIMA",
    "prosla_sirina": 100
   },
-  "zadnja_runda": "07.09. 00:01 UTC"
+  "zadnja_runda": "07.09. 00:04 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
