@@ -1,6 +1,6 @@
 {
- "generirano_utc": "08.09.2026 16:15:09 UTC",
- "generirano_ts": 1788884109,
+ "generirano_utc": "08.09.2026 16:18:26 UTC",
+ "generirano_ts": 1788884306,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -85,59 +85,14 @@
     "valuta": "USD",
     "sredstva_pocetna": 4000,
     "kasa": 4000,
-    "pozicije": {
-     "TON": {
-      "smjer": "LONG",
-      "prvi_ulaz": 1.431,
-      "prosjek": 1.4045188612099644,
-      "ulozeno": 400,
-      "kolicina": 284.7950362556243,
-      "dokupa": 1,
-      "naknade_usd": 0.18,
-      "funding_usd": 0.14,
-      "vrijeme_ulaza": "07.09. 00:03 UTC",
-      "ulaz_ts": 1788739428.6197817,
-      "zadnja_stepenica": 1.379,
-      "stop_pct": 0.338,
-      "lokot": true,
-      "lokot_ts": 1788882655.574465,
-      "najbolji_pl": 0.5326477982353861,
-      "najbolji_neto": 1.6296324269047207,
-      "neto_zivo": 1.06,
-      "hod": [
-       0.4614,
-       0.4614,
-       0.5326,
-       0.5326,
-       0.5326,
-       0.5326,
-       0.3903,
-       0.3903,
-       0.3903,
-       0.3903,
-       0.3903,
-       0.3903,
-       0.3903,
-       0.3903,
-       0.3903,
-       0.3903,
-       0.3903,
-       0.3903,
-       0.3903,
-       0.3903
-      ],
-      "gorivo": 76,
-      "opruga_razmak": 0.15,
-      "tajmer_h": 0.4
-     }
-    },
-    "sef": -179.42,
-    "realizirano_period": -179.42,
+    "pozicije": {},
+    "sef": -179.5,
+    "realizirano_period": -179.5,
     "period_od": null,
     "pauza_do": null,
-    "broj_trejdova": 28,
+    "broj_trejdova": 29,
     "dobitni": 23,
-    "gubitni": 5,
+    "gubitni": 6,
     "zadnji_izlaz_signal": {
      "TRX": "SHORT",
      "AVAX": "LONG",
@@ -157,7 +112,8 @@
      "APT": "LONG",
      "UNI": "LONG",
      "INJ": "LONG",
-     "OP": "SHORT"
+     "OP": "SHORT",
+     "TON": "LONG"
     },
     "hladnjak": {
      "ADA": 1787272204.651525,
@@ -179,7 +135,7 @@
      "APT": 1787361516.0215166,
      "UNI": 1787444025.5278184,
      "INJ": 1787452751.666928,
-     "TON": 1788142426.895666
+     "TON": 1788884188.354059
     }
    }
   },
@@ -188,7 +144,7 @@
    "stanje": "PLIMA",
    "prosla_sirina": 97
   },
-  "zadnja_runda": "08.09. 16:14 UTC"
+  "zadnja_runda": "08.09. 16:17 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
@@ -5674,6 +5630,22 @@
    "neto_usd": -214.94,
    "zatvorio": "STOP",
    "sef": -179.42,
+   "kasa": 4000
+  },
+  {
+   "vrijeme": "08.09. 16:16 UTC",
+   "knjiga": "tjedni",
+   "token": "TON",
+   "smjer": "LONG",
+   "ulaz_po": 1.40451886,
+   "izlaz_po": 1.406,
+   "ulozeno_usd": 400,
+   "dokupa": 1,
+   "naknade_usd": 0.3602,
+   "funding_usd": 0.14,
+   "neto_usd": -0.08,
+   "zatvorio": "CEGRTALJKA",
+   "sef": -179.5,
    "kasa": 4000
   }
  ]
