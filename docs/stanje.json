@@ -1,6 +1,6 @@
 {
- "generirano_utc": "09.09.2026 00:05:19 UTC",
- "generirano_ts": 1788912319,
+ "generirano_utc": "09.09.2026 00:08:26 UTC",
+ "generirano_ts": 1788912506,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -85,7 +85,30 @@
     "valuta": "USD",
     "sredstva_pocetna": 4000,
     "kasa": 4000,
-    "pozicije": {},
+    "pozicije": {
+     "TRX": {
+      "smjer": "LONG",
+      "prvi_ulaz": 0.33898,
+      "prosjek": 0.33898,
+      "ulozeno": 200,
+      "kolicina": 590.0053100477904,
+      "dokupa": 0,
+      "naknade_usd": 0.09,
+      "funding_usd": 0.0,
+      "vrijeme_ulaza": "09.09. 00:06 UTC",
+      "ulaz_ts": 1788912387.0611641,
+      "zadnja_stepenica": 0.33898,
+      "stop_pct": -15,
+      "lokot": false,
+      "lokot_ts": null,
+      "najbolji_pl": 0.0,
+      "najbolji_neto": 0.0,
+      "neto_zivo": -0.18,
+      "hod": [
+       0.0
+      ]
+     }
+    },
     "sef": -179.5,
     "realizirano_period": -179.5,
     "period_od": null,
@@ -94,7 +117,6 @@
     "dobitni": 23,
     "gubitni": 6,
     "zadnji_izlaz_signal": {
-     "TRX": "SHORT",
      "AVAX": "LONG",
      "BTC": "LONG",
      "LINK": "LONG",
@@ -140,11 +162,11 @@
    }
   },
   "more": {
-   "sirina": 97,
+   "sirina": 100,
    "stanje": "PLIMA",
-   "prosla_sirina": 97
+   "prosla_sirina": 100
   },
-  "zadnja_runda": "09.09. 00:04 UTC"
+  "zadnja_runda": "09.09. 00:07 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
