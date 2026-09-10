@@ -1,6 +1,6 @@
 {
- "generirano_utc": "10.09.2026 22:35:42 UTC",
- "generirano_ts": 1789079742,
+ "generirano_utc": "10.09.2026 22:38:51 UTC",
+ "generirano_ts": 1789079931,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -85,58 +85,13 @@
     "valuta": "USD",
     "sredstva_pocetna": 4000,
     "kasa": 4000,
-    "pozicije": {
-     "TRX": {
-      "smjer": "LONG",
-      "prvi_ulaz": 0.33898,
-      "prosjek": 0.33898,
-      "ulozeno": 200,
-      "kolicina": 590.0053100477904,
-      "dokupa": 0,
-      "naknade_usd": 0.09,
-      "funding_usd": 0.08,
-      "vrijeme_ulaza": "09.09. 00:06 UTC",
-      "ulaz_ts": 1788912387.0611641,
-      "zadnja_stepenica": 0.33898,
-      "stop_pct": 0.436,
-      "lokot": true,
-      "lokot_ts": 1789078344.4204893,
-      "najbolji_pl": 0.6307156764410848,
-      "najbolji_neto": 1.0008637087733727,
-      "neto_zivo": 0.73,
-      "hod": [
-       0.6307,
-       0.6307,
-       0.5254,
-       0.5257,
-       0.5257,
-       0.5257,
-       0.5257,
-       0.554,
-       0.554,
-       0.554,
-       0.4688,
-       0.4688,
-       0.4682,
-       0.4682,
-       0.4682,
-       0.4682,
-       0.4682,
-       0.4947,
-       0.4947,
-       0.4947
-      ],
-      "gorivo": 58,
-      "opruga_razmak": 0.15,
-      "tajmer_h": 0.4
-     }
-    },
-    "sef": -179.5,
-    "realizirano_period": -179.5,
+    "pozicije": {},
+    "sef": -178.93,
+    "realizirano_period": -178.93,
     "period_od": null,
     "pauza_do": null,
-    "broj_trejdova": 29,
-    "dobitni": 23,
+    "broj_trejdova": 30,
+    "dobitni": 24,
     "gubitni": 6,
     "zadnji_izlaz_signal": {
      "AVAX": "LONG",
@@ -157,13 +112,14 @@
      "UNI": "LONG",
      "INJ": "LONG",
      "OP": "SHORT",
-     "TON": "LONG"
+     "TON": "LONG",
+     "TRX": "LONG"
     },
     "hladnjak": {
      "ADA": 1787272204.651525,
      "ARB": 1787272268.3350892,
      "AAVE": 1787275453.0124876,
-     "TRX": 1785893093.911923,
+     "TRX": 1789079873.6331546,
      "ALGO": 1786539902.4070659,
      "LINK": 1786531927.4212985,
      "AVAX": 1786154091.9805794,
@@ -188,7 +144,7 @@
    "stanje": "PLIMA",
    "prosla_sirina": 90
   },
-  "zadnja_runda": "10.09. 22:34 UTC"
+  "zadnja_runda": "10.09. 22:37 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
@@ -5690,6 +5646,22 @@
    "neto_usd": -0.08,
    "zatvorio": "CEGRTALJKA",
    "sef": -179.5,
+   "kasa": 4000
+  },
+  {
+   "vrijeme": "10.09. 22:37 UTC",
+   "knjiga": "tjedni",
+   "token": "TRX",
+   "smjer": "LONG",
+   "ulaz_po": 0.33898,
+   "izlaz_po": 0.340385,
+   "ulozeno_usd": 200,
+   "dokupa": 0,
+   "naknade_usd": 0.1804,
+   "funding_usd": 0.08,
+   "neto_usd": 0.57,
+   "zatvorio": "CEGRTALJKA",
+   "sef": -178.93,
    "kasa": 4000
   }
  ]
