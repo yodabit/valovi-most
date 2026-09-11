@@ -1,6 +1,6 @@
 {
- "generirano_utc": "11.09.2026 17:38:48 UTC",
- "generirano_ts": 1789148328,
+ "generirano_utc": "11.09.2026 17:41:52 UTC",
+ "generirano_ts": 1789148512,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -28,11 +28,8 @@
       "lokot_ts": null,
       "najbolji_pl": 0.14331210191083077,
       "najbolji_neto": 0.10649522292994179,
-      "neto_zivo": -5.59,
+      "neto_zivo": -7.05,
       "hod": [
-       -0.9035,
-       -0.8548,
-       -0.8548,
        -0.8548,
        -0.8548,
        -1.0333,
@@ -49,7 +46,10 @@
        -0.8386,
        -0.8386,
        -0.8386,
-       -0.8386
+       -0.8386,
+       -1.0819,
+       -1.0819,
+       -1.0819
       ]
      },
      "PEPE": {
@@ -67,16 +67,19 @@
       "stop_pct": -8,
       "lokot": false,
       "lokot_ts": null,
-      "najbolji_pl": 0.17937219730941312,
-      "najbolji_neto": 0.17890554054541533,
-      "neto_zivo": 0.18,
+      "najbolji_pl": 0.3593890386343279,
+      "najbolji_neto": 0.539100369121834,
+      "neto_zivo": 0.54,
       "hod": [
        0.0,
        0.0,
        0.0,
        0.0,
        0.1794,
-       0.1794
+       0.1794,
+       0.3594,
+       0.3594,
+       0.3594
       ]
      },
      "UNI": {
@@ -91,22 +94,25 @@
       "vrijeme_ulaza": "11.09. 17:32 UTC",
       "ulaz_ts": 1789147949.8275735,
       "zadnja_stepenica": 6.1462,
-      "stop_pct": 0.383,
+      "stop_pct": 0.797,
       "lokot": true,
       "lokot_ts": 1789148268.8495,
-      "najbolji_pl": 0.7772020725388629,
-      "najbolji_neto": 1.3750982324813248,
-      "neto_zivo": 1.38,
+      "najbolji_pl": 1.1320630532793752,
+      "najbolji_neto": 2.0851335583175605,
+      "neto_zivo": 2.09,
       "hod": [
        0.0,
        0.0,
        0.0,
        0.0,
-       0.7772
+       0.7772,
+       0.7772,
+       1.1321,
+       1.1321
       ],
-      "gorivo": 58,
-      "opruga_razmak": 0.35,
-      "tajmer_h": 0.0
+      "gorivo": 51,
+      "opruga_razmak": 0.29,
+      "tajmer_h": 0.1
      }
     },
     "sef": 141.19,
@@ -233,7 +239,7 @@
    "stanje": "MIJESANO",
    "prosla_sirina": 45
   },
-  "zadnja_runda": "11.09. 17:37 UTC"
+  "zadnja_runda": "11.09. 17:41 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
