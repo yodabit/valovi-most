@@ -1,6 +1,6 @@
 {
- "generirano_utc": "11.09.2026 20:57:26 UTC",
- "generirano_ts": 1789160246,
+ "generirano_utc": "11.09.2026 21:00:26 UTC",
+ "generirano_ts": 1789160426,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -28,11 +28,8 @@
       "lokot_ts": null,
       "najbolji_pl": 0.14331210191083077,
       "najbolji_neto": 0.10649522292994179,
-      "neto_zivo": -14.78,
+      "neto_zivo": -16.35,
       "hod": [
-       -1.8047,
-       -1.8047,
-       -1.0678,
        -1.0678,
        -1.0678,
        -1.0678,
@@ -49,7 +46,10 @@
        -1.6082,
        -1.7556,
        -1.7556,
-       -1.7556
+       -1.7556,
+       -1.7556,
+       -1.9521,
+       -1.9521
       ]
      },
      "SOL": {
@@ -69,11 +69,8 @@
       "lokot_ts": null,
       "najbolji_pl": 0.39635354736424766,
       "najbolji_neto": 0.6130624046376939,
-      "neto_zivo": -0.05,
+      "neto_zivo": -1.96,
       "hod": [
-       -0.3524,
-       -0.3524,
-       -0.3524,
        -0.3524,
        -0.3524,
        -0.6723,
@@ -90,7 +87,10 @@
        0.0774,
        0.0774,
        0.0774,
-       0.0774
+       0.0774,
+       -0.2258,
+       -0.2258,
+       -0.401
       ]
      },
      "ETH": {
@@ -112,9 +112,6 @@
       "najbolji_neto": 0.29105656958539683,
       "neto_zivo": 0.29,
       "hod": [
-       0.0032,
-       0.0032,
-       0.0032,
        -0.1565,
        -0.1852,
        -0.1852,
@@ -131,6 +128,9 @@
        0.2223,
        0.2223,
        0.1954,
+       0.2354,
+       0.2354,
+       0.2354,
        0.2354
       ]
      },
@@ -151,12 +151,9 @@
       "lokot_ts": null,
       "najbolji_pl": 0.0,
       "najbolji_neto": 0.0,
-      "neto_zivo": -2.2,
+      "neto_zivo": -2.31,
       "hod": [
        -1.378,
-       -1.378,
-       -1.378,
-       -1.378,
        -1.4698,
        -1.4698,
        -1.378,
@@ -172,52 +169,11 @@
        -1.1018,
        -1.1018,
        -1.1018,
-       -1.0093
+       -1.0093,
+       -1.0648,
+       -1.0648,
+       -1.0648
       ]
-     },
-     "TRX": {
-      "smjer": "LONG",
-      "prvi_ulaz": 0.336728,
-      "prosjek": 0.336728,
-      "ulozeno": 200,
-      "kolicina": 593.9512009693283,
-      "dokupa": 0,
-      "naknade_usd": 0.09,
-      "funding_usd": 0.0,
-      "vrijeme_ulaza": "11.09. 19:46 UTC",
-      "ulaz_ts": 1789155986.0800655,
-      "zadnja_stepenica": 0.336728,
-      "stop_pct": 0.471,
-      "lokot": true,
-      "lokot_ts": 1789159684.0900238,
-      "najbolji_pl": 0.6658192962865961,
-      "najbolji_neto": 1.1510393552065343,
-      "neto_zivo": 1.15,
-      "hod": [
-       0.2254,
-       0.3308,
-       0.3308,
-       0.3308,
-       0.3308,
-       0.3308,
-       0.3198,
-       0.3198,
-       0.4086,
-       0.4086,
-       0.4086,
-       0.5637,
-       0.5637,
-       0.5637,
-       0.5637,
-       0.6046,
-       0.6658,
-       0.6658,
-       0.6658,
-       0.6658
-      ],
-      "gorivo": 4,
-      "opruga_razmak": 0.15,
-      "tajmer_h": 0.1
      },
      "INJ": {
       "smjer": "LONG",
@@ -236,7 +192,7 @@
       "lokot_ts": null,
       "najbolji_pl": 0.0,
       "najbolji_neto": 0.0,
-      "neto_zivo": -1.97,
+      "neto_zivo": -2.24,
       "hod": [
        0.0,
        0.0,
@@ -247,16 +203,19 @@
        -0.3878,
        -0.3878,
        -0.3878,
-       -0.8936
+       -0.8936,
+       -1.0285,
+       -1.0285,
+       -1.0285
       ]
      }
     },
-    "sef": 161.67,
-    "realizirano_period": 161.67,
+    "sef": 162.39,
+    "realizirano_period": 162.39,
     "period_od": null,
     "pauza_do": null,
-    "broj_trejdova": 381,
-    "dobitni": 337,
+    "broj_trejdova": 382,
+    "dobitni": 338,
     "gubitni": 44,
     "zadnji_izlaz_signal": {
      "ATOM": "SHORT",
@@ -277,11 +236,12 @@
      "GRT": "SHORT",
      "LINK": "SHORT",
      "OP": "SHORT",
-     "ALGO": "LONG"
+     "ALGO": "LONG",
+     "TRX": "LONG"
     },
     "hladnjak": {
      "FET": 1789142271.8661933,
-     "TRX": 1789130086.7073326,
+     "TRX": 1789160258.0311809,
      "INJ": 1789147503.3279326,
      "ETH": 1789135764.7578743,
      "TIA": 1789147630.875954,
@@ -374,7 +334,7 @@
    "stanje": "MIJESANO",
    "prosla_sirina": 45
   },
-  "zadnja_runda": "11.09. 20:56 UTC"
+  "zadnja_runda": "11.09. 20:59 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
@@ -7044,6 +7004,22 @@
    "neto_usd": 0.11,
    "zatvorio": "LOKOT-IZLAZ",
    "sef": 161.67,
+   "kasa": 6000
+  },
+  {
+   "vrijeme": "11.09. 20:57 UTC",
+   "knjiga": "dnevni",
+   "token": "TRX",
+   "smjer": "LONG",
+   "ulaz_po": 0.336728,
+   "izlaz_po": 0.338238,
+   "ulozeno_usd": 200,
+   "dokupa": 0,
+   "naknade_usd": 0.1804,
+   "funding_usd": 0.0,
+   "neto_usd": 0.72,
+   "zatvorio": "CEGRTALJKA",
+   "sef": 162.39,
    "kasa": 6000
   }
  ]
