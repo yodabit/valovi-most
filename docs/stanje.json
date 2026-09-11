@@ -1,6 +1,6 @@
 {
- "generirano_utc": "11.09.2026 17:26:03 UTC",
- "generirano_ts": 1789147563,
+ "generirano_utc": "11.09.2026 17:29:04 UTC",
+ "generirano_ts": 1789147744,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -28,11 +28,8 @@
       "lokot_ts": null,
       "najbolji_pl": 0.14331210191083077,
       "najbolji_neto": 0.10649522292994179,
-      "neto_zivo": -6.76,
+      "neto_zivo": -4.23,
       "hod": [
-       -0.7899,
-       -0.7899,
-       -0.7899,
        -0.4816,
        -0.4816,
        -0.4816,
@@ -49,49 +46,20 @@
        -0.8548,
        -1.0333,
        -1.0333,
-       -1.0333
+       -1.0333,
+       -0.6114,
+       -0.6114,
+       -0.6114
       ]
-     },
-     "TIA": {
-      "smjer": "SHORT",
-      "prvi_ulaz": 0.3683,
-      "prosjek": 0.3683,
-      "ulozeno": 200,
-      "kolicina": 543.0355688297583,
-      "dokupa": 0,
-      "naknade_usd": 0.09,
-      "funding_usd": 0.0,
-      "vrijeme_ulaza": "11.09. 17:16 UTC",
-      "ulaz_ts": 1789146993.257197,
-      "zadnja_stepenica": 0.3683,
-      "stop_pct": 0.324,
-      "lokot": true,
-      "lokot_ts": 1789147439.5120368,
-      "najbolji_pl": 0.5185589519650646,
-      "najbolji_neto": 0.8575821993414787,
-      "neto_zivo": 0.86,
-      "hod": [
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.2177,
-       0.2177,
-       0.5186,
-       0.5186
-      ],
-      "gorivo": 62,
-      "opruga_razmak": 0.15,
-      "tajmer_h": 0.0
      }
     },
-    "sef": 141.53,
-    "realizirano_period": 141.53,
+    "sef": 141.19,
+    "realizirano_period": 141.19,
     "period_od": null,
     "pauza_do": null,
-    "broj_trejdova": 361,
+    "broj_trejdova": 362,
     "dobitni": 320,
-    "gubitni": 41,
+    "gubitni": 42,
     "zadnji_izlaz_signal": {
      "ATOM": "SHORT",
      "DOT": "SHORT",
@@ -121,7 +89,7 @@
      "TRX": 1789130086.7073326,
      "INJ": 1789147503.3279326,
      "ETH": 1789135764.7578743,
-     "TIA": 1789113697.3222575,
+     "TIA": 1789147630.875954,
      "RENDER": 1789135637.0598633,
      "BTC": 1789135637.050518,
      "AAVE": 1789135509.4466555,
@@ -211,7 +179,7 @@
    "stanje": "MIJESANO",
    "prosla_sirina": 45
   },
-  "zadnja_runda": "11.09. 17:25 UTC"
+  "zadnja_runda": "11.09. 17:28 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
@@ -6561,6 +6529,22 @@
    "neto_usd": 0.4,
    "zatvorio": "LOKOT-IZLAZ",
    "sef": 141.53,
+   "kasa": 6000
+  },
+  {
+   "vrijeme": "11.09. 17:27 UTC",
+   "knjiga": "dnevni",
+   "token": "TIA",
+   "smjer": "SHORT",
+   "ulaz_po": 0.3683,
+   "izlaz_po": 0.3686,
+   "ulozeno_usd": 200,
+   "dokupa": 0,
+   "naknade_usd": 0.1801,
+   "funding_usd": 0.0,
+   "neto_usd": -0.34,
+   "zatvorio": "LOKOT-IZLAZ",
+   "sef": 141.19,
    "kasa": 6000
   }
  ]
