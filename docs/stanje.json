@@ -1,6 +1,6 @@
 {
- "generirano_utc": "11.09.2026 01:46:26 UTC",
- "generirano_ts": 1789091186,
+ "generirano_utc": "11.09.2026 01:49:45 UTC",
+ "generirano_ts": 1789091385,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -28,11 +28,8 @@
       "lokot_ts": null,
       "najbolji_pl": 0.0,
       "najbolji_neto": 0.0,
-      "neto_zivo": -3.74,
+      "neto_zivo": -2.31,
       "hod": [
-       -1.0744,
-       -1.0744,
-       -1.0744,
        -1.0744,
        -0.4705,
        -0.4705,
@@ -49,7 +46,10 @@
        -0.933,
        -0.933,
        -0.8444,
-       -0.8444
+       -0.8444,
+       -0.8444,
+       -0.4884,
+       -0.4884
       ]
      },
      "INJ": {
@@ -80,7 +80,32 @@
        -0.2368,
        -0.2368,
        -0.2368,
+       -0.3717,
+       -0.3717,
+       -0.3717,
        -0.3717
+      ]
+     },
+     "UNI": {
+      "smjer": "SHORT",
+      "prvi_ulaz": 5.9713,
+      "prosjek": 5.9713,
+      "ulozeno": 200,
+      "kolicina": 33.49354411937099,
+      "dokupa": 0,
+      "naknade_usd": 0.09,
+      "funding_usd": 0.0,
+      "vrijeme_ulaza": "11.09. 01:47 UTC",
+      "ulaz_ts": 1789091274.3163989,
+      "zadnja_stepenica": 5.9713,
+      "stop_pct": -8,
+      "lokot": false,
+      "lokot_ts": null,
+      "najbolji_pl": 0.0,
+      "najbolji_neto": 0.0,
+      "neto_zivo": -0.18,
+      "hod": [
+       0.0
       ]
      }
     },
@@ -112,7 +137,6 @@
      "AVAX": "LONG",
      "TON": "LONG",
      "PEPE": "LONG",
-     "UNI": "LONG",
      "LINK": "LONG",
      "ATOM": "LONG",
      "NEAR": "LONG",
@@ -179,9 +203,6 @@
        -0.7364,
        -0.7364,
        -0.7364,
-       -0.7364,
-       -0.7364,
-       -0.7364,
        -0.6632,
        -0.6632,
        -0.6632,
@@ -192,6 +213,9 @@
        -0.5166,
        -0.5166,
        -0.5166,
+       -0.59,
+       -0.59,
+       -0.59,
        -0.59,
        -0.59,
        -0.59,
@@ -256,7 +280,7 @@
    "stanje": "MIJESANO",
    "prosla_sirina": 45
   },
-  "zadnja_runda": "11.09. 01:45 UTC"
+  "zadnja_runda": "11.09. 01:48 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
