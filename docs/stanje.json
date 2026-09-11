@@ -1,6 +1,6 @@
 {
- "generirano_utc": "11.09.2026 00:05:52 UTC",
- "generirano_ts": 1789085152,
+ "generirano_utc": "11.09.2026 00:09:06 UTC",
+ "generirano_ts": 1789085346,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -10,7 +10,31 @@
     "valuta": "USD",
     "sredstva_pocetna": 6000,
     "kasa": 6000,
-    "pozicije": {},
+    "pozicije": {
+     "DOT": {
+      "smjer": "SHORT",
+      "prvi_ulaz": 1.0987,
+      "prosjek": 1.0987,
+      "ulozeno": 200,
+      "kolicina": 182.03331209611358,
+      "dokupa": 0,
+      "naknade_usd": 0.09,
+      "funding_usd": 0.0,
+      "vrijeme_ulaza": "11.09. 00:06 UTC",
+      "ulaz_ts": 1789085160.7274144,
+      "zadnja_stepenica": 1.0987,
+      "stop_pct": -8,
+      "lokot": false,
+      "lokot_ts": null,
+      "najbolji_pl": 0.0,
+      "najbolji_neto": 0.0,
+      "neto_zivo": -1.16,
+      "hod": [
+       -0.3085,
+       -0.4891
+      ]
+     }
+    },
     "sef": 9.95,
     "realizirano_period": 9.95,
     "period_od": null,
@@ -27,7 +51,6 @@
      "FET": "LONG",
      "TIA": "LONG",
      "ADA": "LONG",
-     "DOT": "LONG",
      "ALGO": "LONG",
      "INJ": "LONG",
      "APT": "LONG",
@@ -85,7 +108,31 @@
     "valuta": "USD",
     "sredstva_pocetna": 4000,
     "kasa": 4000,
-    "pozicije": {},
+    "pozicije": {
+     "TON": {
+      "smjer": "SHORT",
+      "prvi_ulaz": 1.348,
+      "prosjek": 1.348,
+      "ulozeno": 200,
+      "kolicina": 148.3679525222552,
+      "dokupa": 0,
+      "naknade_usd": 0.09,
+      "funding_usd": 0.0,
+      "vrijeme_ulaza": "11.09. 00:06 UTC",
+      "ulaz_ts": 1789085160.7557929,
+      "zadnja_stepenica": 1.348,
+      "stop_pct": -15,
+      "lokot": false,
+      "lokot_ts": null,
+      "najbolji_pl": 0.0,
+      "najbolji_neto": 0.0,
+      "neto_zivo": -0.18,
+      "hod": [
+       0.0,
+       0.0
+      ]
+     }
+    },
     "sef": -178.93,
     "realizirano_period": -178.93,
     "period_od": null,
@@ -112,7 +159,6 @@
      "UNI": "LONG",
      "INJ": "LONG",
      "OP": "SHORT",
-     "TON": "LONG",
      "TRX": "LONG"
     },
     "hladnjak": {
@@ -140,11 +186,11 @@
    }
   },
   "more": {
-   "sirina": 66,
-   "stanje": "PLIMA",
-   "prosla_sirina": 69
+   "sirina": 45,
+   "stanje": "MIJESANO",
+   "prosla_sirina": 48
   },
-  "zadnja_runda": "11.09. 00:04 UTC"
+  "zadnja_runda": "11.09. 00:08 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
