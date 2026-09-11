@@ -1,6 +1,6 @@
 {
- "generirano_utc": "11.09.2026 18:07:22 UTC",
- "generirano_ts": 1789150042,
+ "generirano_utc": "11.09.2026 18:10:23 UTC",
+ "generirano_ts": 1789150223,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -28,11 +28,8 @@
       "lokot_ts": null,
       "najbolji_pl": 0.14331210191083077,
       "najbolji_neto": 0.10649522292994179,
-      "neto_zivo": -10.36,
+      "neto_zivo": -13.28,
       "hod": [
-       -1.1955,
-       -1.1955,
-       -1.1955,
        -0.9359,
        -0.9359,
        -0.9359,
@@ -49,52 +46,11 @@
        -1.1793,
        -1.6335,
        -1.6335,
-       -1.6335
+       -1.6335,
+       -1.6335,
+       -1.6335,
+       -2.1203
       ]
-     },
-     "PEPE": {
-      "smjer": "SHORT",
-      "prvi_ulaz": 3.351e-06,
-      "prosjek": 3.351e-06,
-      "ulozeno": 200,
-      "kolicina": 59683676.51447329,
-      "dokupa": 0,
-      "naknade_usd": 0.09,
-      "funding_usd": 0.0,
-      "vrijeme_ulaza": "11.09. 17:31 UTC",
-      "ulaz_ts": 1789147886.0426795,
-      "zadnja_stepenica": 3.351e-06,
-      "stop_pct": 0.861,
-      "lokot": true,
-      "lokot_ts": 1789148524.0553322,
-      "najbolji_pl": 1.0554885404101322,
-      "najbolji_neto": 1.9319170987253673,
-      "neto_zivo": 1.93,
-      "hod": [
-       0.4195,
-       0.4496,
-       0.4496,
-       0.4496,
-       0.4496,
-       0.3895,
-       0.3895,
-       0.5702,
-       0.5702,
-       0.5702,
-       0.782,
-       0.782,
-       0.782,
-       0.782,
-       0.9337,
-       1.0555,
-       1.0555,
-       1.0555,
-       1.0555,
-       1.0555
-      ],
-      "gorivo": 42,
-      "opruga_razmak": 0.15,
-      "tajmer_h": 0.4
      },
      "BTC": {
       "smjer": "SHORT",
@@ -115,9 +71,6 @@
       "najbolji_neto": 1.2665329641494512,
       "neto_zivo": 1.15,
       "hod": [
-       0.0,
-       0.0,
-       0.0,
        0.0299,
        0.0569,
        0.0569,
@@ -134,55 +87,14 @@
        0.1057,
        0.1057,
        0.7229,
+       0.6664,
+       0.6664,
+       0.6664,
        0.6664
       ],
       "gorivo": 32,
       "opruga_razmak": 0.15,
-      "tajmer_h": 0.0
-     },
-     "FIL": {
-      "smjer": "SHORT",
-      "prvi_ulaz": 0.793,
-      "prosjek": 0.793,
-      "ulozeno": 200,
-      "kolicina": 252.20680958385876,
-      "dokupa": 0,
-      "naknade_usd": 0.09,
-      "funding_usd": 0.0,
-      "vrijeme_ulaza": "11.09. 17:45 UTC",
-      "ulaz_ts": 1789148715.1910412,
-      "zadnja_stepenica": 0.793,
-      "stop_pct": 1.172,
-      "lokot": true,
-      "lokot_ts": 1789149990.7362695,
-      "najbolji_pl": 1.406649616368294,
-      "najbolji_neto": 2.634547656444028,
-      "neto_zivo": 2.63,
-      "hod": [
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       -0.2516,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.3797,
-       0.3797,
-       0.3797,
-       0.3797,
-       0.1263,
-       0.1263,
-       0.1263,
-       0.1263,
-       0.1263,
-       0.1263,
-       1.4066
-      ],
-      "gorivo": 27,
-      "opruga_razmak": 0.19,
-      "tajmer_h": 0.0
+      "tajmer_h": 0.1
      },
      "ADA": {
       "smjer": "SHORT",
@@ -199,12 +111,15 @@
       "stop_pct": -8,
       "lokot": false,
       "lokot_ts": null,
-      "najbolji_pl": 0.0,
-      "najbolji_neto": 0.0,
-      "neto_zivo": -0.18,
+      "najbolji_pl": 0.26282878023997647,
+      "najbolji_neto": 0.34589348630121064,
+      "neto_zivo": 0.35,
       "hod": [
        0.0,
-       0.0
+       0.0,
+       0.0,
+       0.0,
+       0.2628
       ]
      },
      "ARB": {
@@ -219,24 +134,30 @@
       "vrijeme_ulaza": "11.09. 18:04 UTC",
       "ulaz_ts": 1789149863.2550316,
       "zadnja_stepenica": 0.1426,
-      "stop_pct": -8,
-      "lokot": false,
-      "lokot_ts": null,
-      "najbolji_pl": 0.2812939521800395,
-      "najbolji_neto": 0.38284035877803135,
-      "neto_zivo": 0.38,
+      "stop_pct": 0.299,
+      "lokot": true,
+      "lokot_ts": 1789150182.0323055,
+      "najbolji_pl": 0.49330514446794815,
+      "najbolji_neto": 0.8070520841673129,
+      "neto_zivo": 0.81,
       "hod": [
        0.2813,
-       0.2813
-      ]
+       0.2813,
+       0.2813,
+       0.2813,
+       0.4933
+      ],
+      "gorivo": 63,
+      "opruga_razmak": 0.15,
+      "tajmer_h": 0.0
      }
     },
-    "sef": 142.88,
-    "realizirano_period": 142.88,
+    "sef": 148.3,
+    "realizirano_period": 148.3,
     "period_od": null,
     "pauza_do": null,
-    "broj_trejdova": 363,
-    "dobitni": 321,
+    "broj_trejdova": 365,
+    "dobitni": 323,
     "gubitni": 42,
     "zadnji_izlaz_signal": {
      "ATOM": "SHORT",
@@ -257,7 +178,9 @@
      "OP": "LONG",
      "GRT": "LONG",
      "FET": "SHORT",
-     "UNI": "SHORT"
+     "UNI": "SHORT",
+     "FIL": "SHORT",
+     "PEPE": "SHORT"
     },
     "hladnjak": {
      "FET": 1789142271.8661933,
@@ -269,7 +192,7 @@
      "BTC": 1789135637.050518,
      "AAVE": 1789135509.4466555,
      "DOGE": 1789131426.74303,
-     "FIL": 1789135700.8797064,
+     "FIL": 1789150054.4593575,
      "AVAX": 1789135573.3150961,
      "GRT": 1789136083.6327739,
      "SOL": 1789131681.9136004,
@@ -279,7 +202,7 @@
      "XRP": 1789135637.0552433,
      "ARB": 1789114717.2191205,
      "OP": 1789135828.5434275,
-     "PEPE": 1789135573.3195243,
+     "PEPE": 1789150182.0280223,
      "TON": 1789135637.053241,
      "ALGO": 1789119944.739676,
      "NEAR": 1789133276.52944,
@@ -354,7 +277,7 @@
    "stanje": "MIJESANO",
    "prosla_sirina": 45
   },
-  "zadnja_runda": "11.09. 18:06 UTC"
+  "zadnja_runda": "11.09. 18:09 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
@@ -6736,6 +6659,38 @@
    "neto_usd": 1.69,
    "zatvorio": "OPRUGA",
    "sef": 142.88,
+   "kasa": 6000
+  },
+  {
+   "vrijeme": "11.09. 18:07 UTC",
+   "knjiga": "dnevni",
+   "token": "FIL",
+   "smjer": "SHORT",
+   "ulaz_po": 0.793,
+   "izlaz_po": 0.785,
+   "ulozeno_usd": 200,
+   "dokupa": 0,
+   "naknade_usd": 0.1791,
+   "funding_usd": 0.0,
+   "neto_usd": 1.84,
+   "zatvorio": "CEGRTALJKA",
+   "sef": 144.72,
+   "kasa": 6000
+  },
+  {
+   "vrijeme": "11.09. 18:09 UTC",
+   "knjiga": "dnevni",
+   "token": "PEPE",
+   "smjer": "SHORT",
+   "ulaz_po": 3.35e-06,
+   "izlaz_po": 3.29e-06,
+   "ulozeno_usd": 200,
+   "dokupa": 0,
+   "naknade_usd": 0.1783,
+   "funding_usd": 0.0,
+   "neto_usd": 3.58,
+   "zatvorio": "OPRUGA",
+   "sef": 148.3,
    "kasa": 6000
   }
  ]
