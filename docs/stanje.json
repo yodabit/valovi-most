@@ -1,6 +1,6 @@
 {
- "generirano_utc": "11.09.2026 18:04:19 UTC",
- "generirano_ts": 1789149859,
+ "generirano_utc": "11.09.2026 18:07:22 UTC",
+ "generirano_ts": 1789150042,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -28,11 +28,8 @@
       "lokot_ts": null,
       "najbolji_pl": 0.14331210191083077,
       "najbolji_neto": 0.10649522292994179,
-      "neto_zivo": -7.63,
+      "neto_zivo": -10.36,
       "hod": [
-       -1.0657,
-       -1.1955,
-       -1.1955,
        -1.1955,
        -1.1955,
        -1.1955,
@@ -49,7 +46,10 @@
        -1.1793,
        -1.1793,
        -1.1793,
-       -1.1793
+       -1.1793,
+       -1.6335,
+       -1.6335,
+       -1.6335
       ]
      },
      "PEPE": {
@@ -71,9 +71,6 @@
       "najbolji_neto": 1.9319170987253673,
       "neto_zivo": 1.93,
       "hod": [
-       0.5401,
-       0.5401,
-       0.5401,
        0.4195,
        0.4496,
        0.4496,
@@ -89,6 +86,9 @@
        0.782,
        0.782,
        0.9337,
+       1.0555,
+       1.0555,
+       1.0555,
        1.0555,
        1.0555
       ],
@@ -108,12 +108,12 @@
       "vrijeme_ulaza": "11.09. 17:45 UTC",
       "ulaz_ts": 1789148715.1857765,
       "zadnja_stepenica": 77589.2,
-      "stop_pct": -8,
-      "lokot": false,
-      "lokot_ts": null,
-      "najbolji_pl": 0.11509677419354603,
-      "najbolji_neto": 0.05029701639552622,
-      "neto_zivo": 0.03,
+      "stop_pct": 0.529,
+      "lokot": true,
+      "lokot_ts": 1789149927.006197,
+      "najbolji_pl": 0.7229434925349443,
+      "najbolji_neto": 1.2665329641494512,
+      "neto_zivo": 1.15,
       "hod": [
        0.0,
        0.0,
@@ -131,8 +131,14 @@
        0.1057,
        0.1057,
        0.1057,
-       0.1057
-      ]
+       0.1057,
+       0.1057,
+       0.7229,
+       0.6664
+      ],
+      "gorivo": 32,
+      "opruga_razmak": 0.15,
+      "tajmer_h": 0.0
      },
      "FIL": {
       "smjer": "SHORT",
@@ -146,12 +152,12 @@
       "vrijeme_ulaza": "11.09. 17:45 UTC",
       "ulaz_ts": 1789148715.1910412,
       "zadnja_stepenica": 0.793,
-      "stop_pct": -8,
-      "lokot": false,
-      "lokot_ts": null,
-      "najbolji_pl": 0.37974683544304,
-      "najbolji_neto": 0.5798341500790182,
-      "neto_zivo": 0.07,
+      "stop_pct": 1.172,
+      "lokot": true,
+      "lokot_ts": 1789149990.7362695,
+      "najbolji_pl": 1.406649616368294,
+      "najbolji_neto": 2.634547656444028,
+      "neto_zivo": 2.63,
       "hod": [
        0.0,
        0.0,
@@ -169,7 +175,59 @@
        0.1263,
        0.1263,
        0.1263,
-       0.1263
+       0.1263,
+       0.1263,
+       0.1263,
+       1.4066
+      ],
+      "gorivo": 27,
+      "opruga_razmak": 0.19,
+      "tajmer_h": 0.0
+     },
+     "ADA": {
+      "smjer": "SHORT",
+      "prvi_ulaz": 0.205234,
+      "prosjek": 0.205234,
+      "ulozeno": 200,
+      "kolicina": 974.4974029644211,
+      "dokupa": 0,
+      "naknade_usd": 0.09,
+      "funding_usd": 0.0,
+      "vrijeme_ulaza": "11.09. 18:04 UTC",
+      "ulaz_ts": 1789149863.2527225,
+      "zadnja_stepenica": 0.205234,
+      "stop_pct": -8,
+      "lokot": false,
+      "lokot_ts": null,
+      "najbolji_pl": 0.0,
+      "najbolji_neto": 0.0,
+      "neto_zivo": -0.18,
+      "hod": [
+       0.0,
+       0.0
+      ]
+     },
+     "ARB": {
+      "smjer": "SHORT",
+      "prvi_ulaz": 0.1426,
+      "prosjek": 0.1426,
+      "ulozeno": 200,
+      "kolicina": 1402.524544179523,
+      "dokupa": 0,
+      "naknade_usd": 0.09,
+      "funding_usd": 0.0,
+      "vrijeme_ulaza": "11.09. 18:04 UTC",
+      "ulaz_ts": 1789149863.2550316,
+      "zadnja_stepenica": 0.1426,
+      "stop_pct": -8,
+      "lokot": false,
+      "lokot_ts": null,
+      "najbolji_pl": 0.2812939521800395,
+      "najbolji_neto": 0.38284035877803135,
+      "neto_zivo": 0.38,
+      "hod": [
+       0.2813,
+       0.2813
       ]
      }
     },
@@ -296,7 +354,7 @@
    "stanje": "MIJESANO",
    "prosla_sirina": 45
   },
-  "zadnja_runda": "11.09. 18:03 UTC"
+  "zadnja_runda": "11.09. 18:06 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
