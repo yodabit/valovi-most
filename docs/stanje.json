@@ -1,6 +1,6 @@
 {
- "generirano_utc": "11.09.2026 12:52:47 UTC",
- "generirano_ts": 1789131167,
+ "generirano_utc": "11.09.2026 12:55:59 UTC",
+ "generirano_ts": 1789131359,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -28,11 +28,8 @@
       "lokot_ts": null,
       "najbolji_pl": 0.05963029218845062,
       "najbolji_neto": 0.0,
-      "neto_zivo": -4.37,
+      "neto_zivo": -8.5,
       "hod": [
-       0.0596,
-       0.0596,
-       0.0596,
        0.0596,
        -1.1196,
        -1.0613,
@@ -49,7 +46,10 @@
        -1.117,
        -1.117,
        -1.0012,
-       -1.0012
+       -1.0012,
+       -2.0336,
+       -2.0336,
+       -2.0336
       ]
      },
      "AAVE": {
@@ -76,6 +76,9 @@
        0.1846,
        0.1846,
        0.2167,
+       0.2167,
+       0.2167,
+       0.2167,
        0.2167
       ]
      },
@@ -91,7 +94,7 @@
       "vrijeme_ulaza": "11.09. 12:46 UTC",
       "ulaz_ts": 1789130788.9629238,
       "zadnja_stepenica": 0.0846095,
-      "stop_pct": 0.318,
+      "stop_pct": 0.386,
       "lokot": true,
       "lokot_ts": 1789131107.8253827,
       "najbolji_pl": 0.5811404156743638,
@@ -102,11 +105,14 @@
        0.0,
        0.0,
        0.3688,
+       0.5811,
+       0.5811,
+       0.5811,
        0.5811
       ],
       "gorivo": 30,
-      "opruga_razmak": 0.22,
-      "tajmer_h": 0.0
+      "opruga_razmak": 0.15,
+      "tajmer_h": 0.1
      },
      "NEAR": {
       "smjer": "LONG",
@@ -120,17 +126,23 @@
       "vrijeme_ulaza": "11.09. 12:48 UTC",
       "ulaz_ts": 1789130916.5551736,
       "zadnja_stepenica": 2.555,
-      "stop_pct": -8,
-      "lokot": false,
-      "lokot_ts": null,
-      "najbolji_pl": 0.0,
-      "najbolji_neto": 0.0,
-      "neto_zivo": -0.18,
+      "stop_pct": 0.299,
+      "lokot": true,
+      "lokot_ts": 1789131171.6413245,
+      "najbolji_pl": 0.7005870841487294,
+      "najbolji_neto": 1.2205436399217249,
+      "neto_zivo": 0.64,
       "hod": [
        0.0,
        0.0,
-       0.0
-      ]
+       0.0,
+       0.7006,
+       0.411,
+       0.411
+      ],
+      "gorivo": 50,
+      "opruga_razmak": 0.36,
+      "tajmer_h": 0.0
      },
      "SOL": {
       "smjer": "LONG",
@@ -144,16 +156,22 @@
       "vrijeme_ulaza": "11.09. 12:49 UTC",
       "ulaz_ts": 1789130980.3534353,
       "zadnja_stepenica": 101.27,
-      "stop_pct": -8,
-      "lokot": false,
-      "lokot_ts": null,
-      "najbolji_pl": 0.0,
-      "najbolji_neto": 0.0,
-      "neto_zivo": -0.18,
+      "stop_pct": 0.251,
+      "lokot": true,
+      "lokot_ts": 1789131235.3924804,
+      "najbolji_pl": 0.4739804483065102,
+      "najbolji_neto": 0.7675343142095444,
+      "neto_zivo": 0.77,
       "hod": [
        0.0,
-       0.0
-      ]
+       0.0,
+       0.0,
+       0.474,
+       0.474
+      ],
+      "gorivo": 30,
+      "opruga_razmak": 0.18,
+      "tajmer_h": 0.0
      },
      "BTC": {
       "smjer": "LONG",
@@ -174,6 +192,9 @@
       "najbolji_neto": 0.1991350492892023,
       "neto_zivo": 0.2,
       "hod": [
+       0.1897,
+       0.1897,
+       0.1897,
        0.1897
       ]
      },
@@ -192,8 +213,14 @@
       "stop_pct": -8,
       "lokot": false,
       "lokot_ts": null,
-      "najbolji_pl": 0.0,
-      "najbolji_neto": 0.0
+      "najbolji_pl": 0.040633564918102216,
+      "najbolji_neto": 0.0,
+      "neto_zivo": -0.1,
+      "hod": [
+       0.0406,
+       0.0406,
+       0.0406
+      ]
      }
     },
     "sef": 45.08,
@@ -321,7 +348,7 @@
    "stanje": "MIJESANO",
    "prosla_sirina": 45
   },
-  "zadnja_runda": "11.09. 12:51 UTC"
+  "zadnja_runda": "11.09. 12:54 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
