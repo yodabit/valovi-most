@@ -1,6 +1,6 @@
 {
- "generirano_utc": "11.09.2026 17:29:04 UTC",
- "generirano_ts": 1789147744,
+ "generirano_utc": "11.09.2026 17:32:16 UTC",
+ "generirano_ts": 1789147936,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -30,9 +30,6 @@
       "najbolji_neto": 0.10649522292994179,
       "neto_zivo": -4.23,
       "hod": [
-       -0.4816,
-       -0.4816,
-       -0.4816,
        -0.9197,
        -0.9197,
        -0.9035,
@@ -47,10 +44,31 @@
        -1.0333,
        -1.0333,
        -1.0333,
+       -0.6114,
+       -0.6114,
+       -0.6114,
        -0.6114,
        -0.6114,
        -0.6114
       ]
+     },
+     "PEPE": {
+      "smjer": "SHORT",
+      "prvi_ulaz": 3.351e-06,
+      "prosjek": 3.351e-06,
+      "ulozeno": 200,
+      "kolicina": 59683676.51447329,
+      "dokupa": 0,
+      "naknade_usd": 0.09,
+      "funding_usd": 0.0,
+      "vrijeme_ulaza": "11.09. 17:31 UTC",
+      "ulaz_ts": 1789147886.0426795,
+      "zadnja_stepenica": 3.351e-06,
+      "stop_pct": -8,
+      "lokot": false,
+      "lokot_ts": null,
+      "najbolji_pl": 0.0,
+      "najbolji_neto": 0.0
      }
     },
     "sef": 141.19,
@@ -70,7 +88,6 @@
      "LTC": "LONG",
      "AAVE": "LONG",
      "AVAX": "LONG",
-     "PEPE": "LONG",
      "BTC": "LONG",
      "TON": "LONG",
      "UNI": "LONG",
@@ -179,7 +196,7 @@
    "stanje": "MIJESANO",
    "prosla_sirina": 45
   },
-  "zadnja_runda": "11.09. 17:28 UTC"
+  "zadnja_runda": "11.09. 17:31 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
