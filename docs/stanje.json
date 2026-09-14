@@ -1,6 +1,6 @@
 {
- "generirano_utc": "14.09.2026 02:38:16 UTC",
- "generirano_ts": 1789353496,
+ "generirano_utc": "14.09.2026 02:41:26 UTC",
+ "generirano_ts": 1789353686,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -28,11 +28,8 @@
       "lokot_ts": null,
       "najbolji_pl": 0.37087912087911956,
       "najbolji_neto": 0.5014244505494481,
-      "neto_zivo": -2.07,
+      "neto_zivo": -2.66,
       "hod": [
-       -0.4351,
-       -0.4351,
-       -0.4351,
        -0.4071,
        -0.4071,
        -0.3233,
@@ -49,7 +46,10 @@
        -0.0857,
        -0.0438,
        -0.0438,
-       -0.2254
+       -0.2254,
+       -0.2254,
+       -0.2254,
+       -0.3233
       ]
      },
      "BTC": {
@@ -69,11 +69,8 @@
       "lokot_ts": null,
       "najbolji_pl": 0.3191661332143658,
       "najbolji_neto": 0.3580450169088387,
-      "neto_zivo": 0.36,
+      "neto_zivo": -0.05,
       "hod": [
-       -0.1076,
-       -0.0953,
-       -0.0953,
        -0.0953,
        -0.0953,
        -0.0056,
@@ -90,7 +87,10 @@
        0.3192,
        0.3192,
        0.3192,
-       0.3192
+       0.3192,
+       0.1157,
+       0.1157,
+       0.1157
       ]
      },
      "DOT": {
@@ -110,11 +110,8 @@
       "lokot_ts": null,
       "najbolji_pl": 0.2282453637660442,
       "najbolji_neto": 0.276285306704699,
-      "neto_zivo": -4.07,
+      "neto_zivo": -2.98,
       "hod": [
-       -0.6124,
-       -0.9242,
-       -0.7488,
        -0.7488,
        -0.7488,
        -0.7488,
@@ -131,52 +128,11 @@
        -0.3785,
        -0.3785,
        -0.3785,
-       -0.3785
+       -0.3785,
+       -0.2421,
+       -0.2421,
+       -0.2421
       ]
-     },
-     "XRP": {
-      "smjer": "LONG",
-      "prvi_ulaz": 1.36961,
-      "prosjek": 1.3592268769702163,
-      "ulozeno": 400,
-      "kolicina": 294.2849400474038,
-      "dokupa": 1,
-      "naknade_usd": 0.18,
-      "funding_usd": 0.14,
-      "vrijeme_ulaza": "12.09. 14:45 UTC",
-      "ulaz_ts": 1789224337.9917932,
-      "zadnja_stepenica": 1.349,
-      "stop_pct": 0.194,
-      "lokot": true,
-      "lokot_ts": 1789352818.2066867,
-      "najbolji_pl": 0.3886858860207232,
-      "najbolji_neto": 1.0540439094880556,
-      "neto_zivo": 0.33,
-      "hod": [
-       -0.1388,
-       -0.1388,
-       -0.1388,
-       -0.1388,
-       -0.1616,
-       -0.1616,
-       0.0436,
-       0.0436,
-       0.0436,
-       0.3342,
-       0.3342,
-       0.3342,
-       0.3342,
-       0.3887,
-       0.3887,
-       0.3887,
-       0.3887,
-       0.3887,
-       0.2084,
-       0.2084
-      ],
-      "gorivo": 45,
-      "opruga_razmak": 0.15,
-      "tajmer_h": 0.2
      },
      "ADA": {
       "smjer": "LONG",
@@ -195,13 +151,16 @@
       "lokot_ts": null,
       "najbolji_pl": 0.0,
       "najbolji_neto": 0.0,
-      "neto_zivo": -0.73,
+      "neto_zivo": -1.11,
       "hod": [
        0.0,
        0.0,
        0.0,
        0.0,
-       -0.2746
+       -0.2746,
+       -0.2746,
+       -0.4671,
+       -0.4671
       ]
      },
      "ETH": {
@@ -221,22 +180,25 @@
       "lokot_ts": null,
       "najbolji_pl": 0.017972250844677795,
       "najbolji_neto": 0.0,
-      "neto_zivo": -0.14,
+      "neto_zivo": -0.51,
       "hod": [
        0.018,
        0.018,
        0.018,
-       0.018
+       0.018,
+       -0.1633,
+       -0.1633,
+       -0.1633
       ]
      }
     },
-    "sef": 184.71,
-    "realizirano_period": 184.71,
+    "sef": 184.44,
+    "realizirano_period": 184.44,
     "period_od": null,
     "pauza_do": null,
-    "broj_trejdova": 418,
+    "broj_trejdova": 419,
     "dobitni": 369,
-    "gubitni": 49,
+    "gubitni": 50,
     "zadnji_izlaz_signal": {
      "ALGO": "LONG",
      "TRX": "LONG",
@@ -258,7 +220,8 @@
      "ATOM": "LONG",
      "BCH": "LONG",
      "AVAX": "LONG",
-     "PEPE": "LONG"
+     "PEPE": "LONG",
+     "XRP": "LONG"
     },
     "hladnjak": {
      "FET": 1789192736.1865091,
@@ -277,7 +240,7 @@
      "BCH": 1789310220.164656,
      "UNI": 1789183376.5374005,
      "ADA": 1789310156.5026944,
-     "XRP": 1789200952.3194008,
+     "XRP": 1789353582.22015,
      "ARB": 1789195729.2180903,
      "OP": 1789207642.2480893,
      "PEPE": 1789353327.5667846,
@@ -357,7 +320,7 @@
    "stanje": "MIJESANO",
    "prosla_sirina": 45
   },
-  "zadnja_runda": "14.09. 02:37 UTC"
+  "zadnja_runda": "14.09. 02:40 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
@@ -7635,6 +7598,22 @@
    "neto_usd": 3.24,
    "zatvorio": "CEGRTALJKA",
    "sef": 184.71,
+   "kasa": 6000
+  },
+  {
+   "vrijeme": "14.09. 02:39 UTC",
+   "knjiga": "dnevni",
+   "token": "XRP",
+   "smjer": "LONG",
+   "ulaz_po": 1.35922688,
+   "izlaz_po": 1.36,
+   "ulozeno_usd": 400,
+   "dokupa": 1,
+   "naknade_usd": 0.3601,
+   "funding_usd": 0.14,
+   "neto_usd": -0.27,
+   "zatvorio": "CEGRTALJKA",
+   "sef": 184.44,
    "kasa": 6000
   }
  ]
