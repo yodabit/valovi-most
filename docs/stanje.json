@@ -1,6 +1,6 @@
 {
- "generirano_utc": "15.09.2026 09:51:21 UTC",
- "generirano_ts": 1789465881,
+ "generirano_utc": "15.09.2026 09:54:23 UTC",
+ "generirano_ts": 1789466063,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -28,11 +28,8 @@
       "lokot_ts": null,
       "najbolji_pl": 0.43342469245968296,
       "najbolji_neto": 0.6472377837262454,
-      "neto_zivo": -1.9,
+      "neto_zivo": -2.25,
       "hod": [
-       -0.6547,
-       -0.6547,
-       -0.6547,
        -0.5242,
        -0.5242,
        -0.5242,
@@ -49,7 +46,10 @@
        -0.6175,
        -0.6175,
        -0.3746,
-       -0.3746
+       -0.3746,
+       -0.3746,
+       -0.4619,
+       -0.4619
       ]
      },
      "ALGO": {
@@ -69,11 +69,8 @@
       "lokot_ts": null,
       "najbolji_pl": 0.0,
       "najbolji_neto": 0.0,
-      "neto_zivo": -4.2,
+      "neto_zivo": -4.24,
       "hod": [
-       -1.023,
-       -1.023,
-       -1.023,
        -0.918,
        -0.918,
        -0.918,
@@ -90,7 +87,10 @@
        -0.897,
        -0.96,
        -0.96,
-       -0.96
+       -0.96,
+       -0.981,
+       -0.981,
+       -0.9705
       ]
      },
      "TRX": {
@@ -108,13 +108,16 @@
       "stop_pct": -8,
       "lokot": false,
       "lokot_ts": null,
-      "najbolji_pl": 0.0005901080192716179,
+      "najbolji_pl": 0.021833996713094272,
       "najbolji_neto": 0.0,
-      "neto_zivo": -0.18,
+      "neto_zivo": -0.14,
       "hod": [
        0.0,
        0.0,
-       0.0006
+       0.0006,
+       0.0006,
+       0.0218,
+       0.0218
       ]
      },
      "ARB": {
@@ -134,9 +137,12 @@
       "lokot_ts": null,
       "najbolji_pl": 0.0,
       "najbolji_neto": 0.0,
-      "neto_zivo": -0.18,
+      "neto_zivo": -0.48,
       "hod": [
-       0.0
+       0.0,
+       -0.2222,
+       -0.2222,
+       -0.1481
       ]
      }
     },
@@ -269,7 +275,7 @@
    "stanje": "PLIMA",
    "prosla_sirina": 69
   },
-  "zadnja_runda": "15.09. 09:50 UTC"
+  "zadnja_runda": "15.09. 09:53 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
