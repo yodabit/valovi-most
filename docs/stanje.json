@@ -1,6 +1,6 @@
 {
- "generirano_utc": "15.09.2026 09:48:10 UTC",
- "generirano_ts": 1789465690,
+ "generirano_utc": "15.09.2026 09:51:21 UTC",
+ "generirano_ts": 1789465881,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -28,11 +28,8 @@
       "lokot_ts": null,
       "najbolji_pl": 0.43342469245968296,
       "najbolji_neto": 0.6472377837262454,
-      "neto_zivo": -2.87,
+      "neto_zivo": -1.9,
       "hod": [
-       -0.574,
-       -0.5491,
-       -0.6547,
        -0.6547,
        -0.6547,
        -0.6547,
@@ -49,7 +46,10 @@
        -0.6175,
        -0.6175,
        -0.6175,
-       -0.6175
+       -0.6175,
+       -0.6175,
+       -0.3746,
+       -0.3746
       ]
      },
      "ALGO": {
@@ -69,11 +69,8 @@
       "lokot_ts": null,
       "najbolji_pl": 0.0,
       "najbolji_neto": 0.0,
-      "neto_zivo": -3.95,
+      "neto_zivo": -4.2,
       "hod": [
-       -1.0335,
-       -1.023,
-       -1.023,
        -1.023,
        -1.023,
        -1.023,
@@ -90,7 +87,10 @@
        -0.897,
        -0.897,
        -0.897,
-       -0.897
+       -0.897,
+       -0.96,
+       -0.96,
+       -0.96
       ]
      },
      "TRX": {
@@ -108,8 +108,36 @@
       "stop_pct": -8,
       "lokot": false,
       "lokot_ts": null,
+      "najbolji_pl": 0.0005901080192716179,
+      "najbolji_neto": 0.0,
+      "neto_zivo": -0.18,
+      "hod": [
+       0.0,
+       0.0,
+       0.0006
+      ]
+     },
+     "ARB": {
+      "smjer": "LONG",
+      "prvi_ulaz": 0.135,
+      "prosjek": 0.135,
+      "ulozeno": 200,
+      "kolicina": 1481.4814814814813,
+      "dokupa": 0,
+      "naknade_usd": 0.09,
+      "funding_usd": 0.0,
+      "vrijeme_ulaza": "15.09. 09:49 UTC",
+      "ulaz_ts": 1789465761.6698663,
+      "zadnja_stepenica": 0.135,
+      "stop_pct": -8,
+      "lokot": false,
+      "lokot_ts": null,
       "najbolji_pl": 0.0,
-      "najbolji_neto": 0.0
+      "najbolji_neto": 0.0,
+      "neto_zivo": -0.18,
+      "hod": [
+       0.0
+      ]
      }
     },
     "sef": 259.54,
@@ -128,7 +156,6 @@
      "FET": "SHORT",
      "PEPE": "SHORT",
      "TIA": "SHORT",
-     "ARB": "SHORT",
      "ADA": "SHORT",
      "GRT": "SHORT",
      "SOL": "SHORT",
@@ -242,7 +269,7 @@
    "stanje": "PLIMA",
    "prosla_sirina": 69
   },
-  "zadnja_runda": "15.09. 09:47 UTC"
+  "zadnja_runda": "15.09. 09:50 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
