@@ -1,6 +1,6 @@
 {
- "generirano_utc": "15.09.2026 05:19:59 UTC",
- "generirano_ts": 1789449599,
+ "generirano_utc": "15.09.2026 05:23:26 UTC",
+ "generirano_ts": 1789449806,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -28,11 +28,8 @@
       "lokot_ts": null,
       "najbolji_pl": 0.019042782785327894,
       "najbolji_neto": 0.0,
-      "neto_zivo": -0.63,
+      "neto_zivo": -0.58,
       "hod": [
-       -0.6682,
-       -0.6682,
-       -0.6118,
        -0.6118,
        -0.6118,
        -0.6118,
@@ -49,7 +46,10 @@
        -0.3415,
        -0.2153,
        -0.2153,
-       -0.2153
+       -0.2153,
+       -0.2153,
+       -0.19,
+       -0.19
       ]
      },
      "UNI": {
@@ -69,11 +69,8 @@
       "lokot_ts": null,
       "najbolji_pl": 0.0,
       "najbolji_neto": 0.0,
-      "neto_zivo": -1.24,
+      "neto_zivo": -1.31,
       "hod": [
-       -0.0437,
-       -0.2122,
-       -0.2122,
        -0.2122,
        -0.2122,
        -0.2122,
@@ -90,7 +87,10 @@
        -0.5314,
        -0.5314,
        -0.5314,
-       -0.5314
+       -0.5314,
+       -0.566,
+       -0.566,
+       -0.566
       ]
      }
     },
@@ -225,7 +225,7 @@
    "stanje": "PLIMA",
    "prosla_sirina": 69
   },
-  "zadnja_runda": "15.09. 05:19 UTC"
+  "zadnja_runda": "15.09. 05:22 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
