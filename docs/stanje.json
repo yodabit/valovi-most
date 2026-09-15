@@ -1,6 +1,6 @@
 {
- "generirano_utc": "15.09.2026 04:48:43 UTC",
- "generirano_ts": 1789447723,
+ "generirano_utc": "15.09.2026 04:51:46 UTC",
+ "generirano_ts": 1789447906,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -28,11 +28,8 @@
       "lokot_ts": null,
       "najbolji_pl": 0.019042782785327894,
       "najbolji_neto": 0.0,
-      "neto_zivo": -2.17,
+      "neto_zivo": -1.54,
       "hod": [
-       -0.7058,
-       -0.5993,
-       -0.5993,
        -0.6682,
        -0.6682,
        -0.6682,
@@ -49,7 +46,32 @@
        -0.8245,
        -0.8245,
        -0.9866,
-       -0.9866
+       -0.9866,
+       -0.9866,
+       -0.9866,
+       -0.6682
+      ]
+     },
+     "UNI": {
+      "smjer": "LONG",
+      "prvi_ulaz": 6.6433,
+      "prosjek": 6.6433,
+      "ulozeno": 200,
+      "kolicina": 30.10551984706396,
+      "dokupa": 0,
+      "naknade_usd": 0.09,
+      "funding_usd": 0.0,
+      "vrijeme_ulaza": "15.09. 04:49 UTC",
+      "ulaz_ts": 1789447791.9515111,
+      "zadnja_stepenica": 6.6433,
+      "stop_pct": -8,
+      "lokot": false,
+      "lokot_ts": null,
+      "najbolji_pl": 0.0,
+      "najbolji_neto": 0.0,
+      "neto_zivo": -0.18,
+      "hod": [
+       0.0
       ]
      }
     },
@@ -84,7 +106,6 @@
      "BTC": "SHORT",
      "TON": "SHORT",
      "RENDER": "SHORT",
-     "UNI": "SHORT",
      "AVAX": "SHORT",
      "LINK": "SHORT"
     },
@@ -185,7 +206,7 @@
    "stanje": "PLIMA",
    "prosla_sirina": 69
   },
-  "zadnja_runda": "15.09. 04:47 UTC"
+  "zadnja_runda": "15.09. 04:50 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
