@@ -1,6 +1,6 @@
 {
- "generirano_utc": "15.09.2026 09:44:55 UTC",
- "generirano_ts": 1789465495,
+ "generirano_utc": "15.09.2026 09:48:10 UTC",
+ "generirano_ts": 1789465690,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -31,9 +31,6 @@
       "neto_zivo": -2.87,
       "hod": [
        -0.574,
-       -0.574,
-       -0.574,
-       -0.574,
        -0.5491,
        -0.6547,
        -0.6547,
@@ -49,6 +46,9 @@
        -0.8097,
        -0.8097,
        -0.8097,
+       -0.6175,
+       -0.6175,
+       -0.6175,
        -0.6175
       ]
      },
@@ -72,9 +72,6 @@
       "neto_zivo": -3.95,
       "hod": [
        -1.0335,
-       -1.0335,
-       -1.0335,
-       -1.0335,
        -1.023,
        -1.023,
        -1.023,
@@ -85,6 +82,9 @@
        -0.918,
        -0.918,
        -0.918,
+       -0.897,
+       -0.897,
+       -0.897,
        -0.897,
        -0.897,
        -0.897,
@@ -92,6 +92,24 @@
        -0.897,
        -0.897
       ]
+     },
+     "TRX": {
+      "smjer": "LONG",
+      "prvi_ulaz": 0.338921,
+      "prosjek": 0.338921,
+      "ulozeno": 200,
+      "kolicina": 590.108019272928,
+      "dokupa": 0,
+      "naknade_usd": 0.09,
+      "funding_usd": 0.0,
+      "vrijeme_ulaza": "15.09. 09:47 UTC",
+      "ulaz_ts": 1789465634.2522268,
+      "zadnja_stepenica": 0.338921,
+      "stop_pct": -8,
+      "lokot": false,
+      "lokot_ts": null,
+      "najbolji_pl": 0.0,
+      "najbolji_neto": 0.0
      }
     },
     "sef": 259.54,
@@ -120,7 +138,6 @@
      "INJ": "SHORT",
      "APT": "SHORT",
      "BCH": "SHORT",
-     "TRX": "SHORT",
      "BTC": "SHORT",
      "TON": "SHORT",
      "RENDER": "SHORT",
@@ -225,7 +242,7 @@
    "stanje": "PLIMA",
    "prosla_sirina": 69
   },
-  "zadnja_runda": "15.09. 09:44 UTC"
+  "zadnja_runda": "15.09. 09:47 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
