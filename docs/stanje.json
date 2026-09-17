@@ -1,6 +1,6 @@
 {
- "generirano_utc": "17.09.2026 02:57:24 UTC",
- "generirano_ts": 1789613844,
+ "generirano_utc": "17.09.2026 03:00:26 UTC",
+ "generirano_ts": 1789614026,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -28,11 +28,8 @@
       "lokot_ts": null,
       "najbolji_pl": 0.021833996713094272,
       "najbolji_neto": 0.0,
-      "neto_zivo": -1.45,
+      "neto_zivo": -1.41,
       "hod": [
-       -0.1521,
-       -0.1542,
-       -0.1542,
        -0.148,
        -0.148,
        -0.148,
@@ -49,7 +46,10 @@
        -0.194,
        -0.194,
        -0.2288,
-       -0.2288
+       -0.2288,
+       -0.2169,
+       -0.2169,
+       -0.2169
       ]
      }
     },
@@ -187,7 +187,7 @@
    "stanje": "OSEKA",
    "prosla_sirina": 28
   },
-  "zadnja_runda": "17.09. 02:56 UTC"
+  "zadnja_runda": "17.09. 02:59 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
