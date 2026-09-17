@@ -1,6 +1,6 @@
 {
- "generirano_utc": "17.09.2026 02:50:58 UTC",
- "generirano_ts": 1789613458,
+ "generirano_utc": "17.09.2026 02:54:13 UTC",
+ "generirano_ts": 1789613653,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -28,11 +28,8 @@
       "lokot_ts": null,
       "najbolji_pl": 0.021833996713094272,
       "najbolji_neto": 0.0,
-      "neto_zivo": -1.43,
+      "neto_zivo": -1.32,
       "hod": [
-       -0.1833,
-       -0.1833,
-       -0.1521,
        -0.1521,
        -0.1521,
        -0.1521,
@@ -49,7 +46,10 @@
        -0.2217,
        -0.222,
        -0.222,
-       -0.222
+       -0.222,
+       -0.222,
+       -0.194,
+       -0.194
       ]
      },
      "SOL": {
@@ -64,16 +64,13 @@
       "vrijeme_ulaza": "15.09. 13:01 UTC",
       "ulaz_ts": 1789477303.532681,
       "zadnja_stepenica": 97.19,
-      "stop_pct": 0.203,
+      "stop_pct": 0.273,
       "lokot": true,
       "lokot_ts": 1789612702.2958984,
-      "najbolji_pl": 0.3977564077425111,
-      "najbolji_neto": 1.5654645041541617,
-      "neto_zivo": 1.08,
+      "najbolji_pl": 0.4683454289211131,
+      "najbolji_neto": 1.9888080408685915,
+      "neto_zivo": 1.99,
       "hod": [
-       -0.0964,
-       -0.177,
-       -0.177,
        -0.177,
        -0.177,
        -0.177,
@@ -90,9 +87,12 @@
        0.3171,
        0.3171,
        0.3171,
-       0.3171
+       0.3171,
+       0.3171,
+       0.4683,
+       0.4683
       ],
-      "gorivo": 36,
+      "gorivo": 28,
       "opruga_razmak": 0.15,
       "tajmer_h": 0.2
      }
@@ -230,7 +230,7 @@
    "stanje": "OSEKA",
    "prosla_sirina": 28
   },
-  "zadnja_runda": "17.09. 02:50 UTC"
+  "zadnja_runda": "17.09. 02:53 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
