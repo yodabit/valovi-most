@@ -1,6 +1,6 @@
 {
- "generirano_utc": "18.09.2026 13:28:59 UTC",
- "generirano_ts": 1789738139,
+ "generirano_utc": "18.09.2026 13:32:01 UTC",
+ "generirano_ts": 1789738321,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -31,9 +31,6 @@
       "neto_zivo": 1.22,
       "hod": [
        0.4416,
-       0.4416,
-       0.4416,
-       0.4416,
        0.4713,
        0.4496,
        0.4496,
@@ -49,11 +46,32 @@
        0.4812,
        0.4812,
        0.4812,
+       0.4791,
+       0.4791,
+       0.4791,
        0.4791
       ],
       "gorivo": 0,
       "opruga_razmak": 0.15,
       "tajmer_h": 1.5
+     },
+     "FIL": {
+      "smjer": "LONG",
+      "prvi_ulaz": 0.874,
+      "prosjek": 0.874,
+      "ulozeno": 200,
+      "kolicina": 228.83295194508008,
+      "dokupa": 0,
+      "naknade_usd": 0.09,
+      "funding_usd": 0.0,
+      "vrijeme_ulaza": "18.09. 13:31 UTC",
+      "ulaz_ts": 1789738301.699056,
+      "zadnja_stepenica": 0.874,
+      "stop_pct": -8,
+      "lokot": false,
+      "lokot_ts": null,
+      "najbolji_pl": 0.0,
+      "najbolji_neto": 0.0
      }
     },
     "sef": 277.87,
@@ -64,7 +82,6 @@
     "dobitni": 457,
     "gubitni": 59,
     "zadnji_izlaz_signal": {
-     "FIL": "SHORT",
      "ETH": "LONG",
      "LTC": "SHORT",
      "FET": "SHORT",
@@ -149,9 +166,6 @@
       "hod": [
        -2.0305,
        -2.0305,
-       -2.0305,
-       -2.0305,
-       -2.0305,
        -1.9326,
        -1.9326,
        -1.9326,
@@ -166,6 +180,9 @@
        -2.1371,
        -2.1371,
        -2.1371,
+       -2.2634,
+       -2.2634,
+       -2.2634,
        -2.2634
       ]
      }
@@ -233,7 +250,7 @@
    "stanje": "PLIMA",
    "prosla_sirina": 62
   },
-  "zadnja_runda": "18.09. 13:28 UTC"
+  "zadnja_runda": "18.09. 13:31 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
