@@ -1,6 +1,6 @@
 {
- "generirano_utc": "18.09.2026 21:46:18 UTC",
- "generirano_ts": 1789767978,
+ "generirano_utc": "18.09.2026 21:49:19 UTC",
+ "generirano_ts": 1789768159,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -10,7 +10,30 @@
     "valuta": "USD",
     "sredstva_pocetna": 6000,
     "kasa": 6000,
-    "pozicije": {},
+    "pozicije": {
+     "NEAR": {
+      "smjer": "LONG",
+      "prvi_ulaz": 3.7668,
+      "prosjek": 3.7668,
+      "ulozeno": 200,
+      "kolicina": 53.09546564723373,
+      "dokupa": 0,
+      "naknade_usd": 0.09,
+      "funding_usd": 0.0,
+      "vrijeme_ulaza": "18.09. 21:48 UTC",
+      "ulaz_ts": 1789768088.6036777,
+      "zadnja_stepenica": 3.7668,
+      "stop_pct": -8,
+      "lokot": false,
+      "lokot_ts": null,
+      "najbolji_pl": 0.0,
+      "najbolji_neto": 0.0,
+      "neto_zivo": -0.59,
+      "hod": [
+       -0.2044
+      ]
+     }
+    },
     "sef": 283.46,
     "realizirano_period": 283.46,
     "period_od": null,
@@ -100,11 +123,8 @@
       "lokot_ts": null,
       "najbolji_pl": 0.28264775120803165,
       "najbolji_neto": 0.38554916841092046,
-      "neto_zivo": -24.43,
+      "neto_zivo": -24.63,
       "hod": [
-       -4.091,
-       -4.091,
-       -4.091,
        -4.0698,
        -4.0698,
        -4.0698,
@@ -121,7 +141,10 @@
        -4.1307,
        -3.9663,
        -3.9663,
-       -3.9663
+       -3.9663,
+       -3.9663,
+       -3.9663,
+       -3.9992
       ]
      }
     },
@@ -188,7 +211,7 @@
    "stanje": "PLIMA",
    "prosla_sirina": 62
   },
-  "zadnja_runda": "18.09. 21:46 UTC"
+  "zadnja_runda": "18.09. 21:49 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
