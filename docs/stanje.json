@@ -1,6 +1,6 @@
 {
- "generirano_utc": "18.09.2026 14:58:31 UTC",
- "generirano_ts": 1789743511,
+ "generirano_utc": "18.09.2026 15:01:33 UTC",
+ "generirano_ts": 1789743693,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -19,20 +19,17 @@
       "kolicina": 1189.2386806832217,
       "dokupa": 1,
       "naknade_usd": 0.18,
-      "funding_usd": 0.34,
+      "funding_usd": 0.38,
       "vrijeme_ulaza": "15.09. 09:47 UTC",
       "ulaz_ts": 1789465634.2522268,
       "zadnja_stepenica": 0.333817,
-      "stop_pct": 0.702,
+      "stop_pct": 0.712,
       "lokot": true,
       "lokot_ts": 1789732819.5838206,
       "najbolji_pl": 0.8970908368557184,
       "najbolji_neto": 2.8867485839165337,
-      "neto_zivo": 2.63,
+      "neto_zivo": 2.59,
       "hod": [
-       0.826,
-       0.826,
-       0.8112,
        0.8112,
        0.8112,
        0.8242,
@@ -49,6 +46,9 @@
        0.8159,
        0.8076,
        0.8076,
+       0.8332,
+       0.8332,
+       0.8332,
        0.8332
       ],
       "gorivo": 0,
@@ -63,24 +63,21 @@
       "kolicina": 3.5938903863432166,
       "dokupa": 0,
       "naknade_usd": 0.09,
-      "funding_usd": 0.0,
+      "funding_usd": 0.02,
       "vrijeme_ulaza": "18.09. 13:48 UTC",
       "ulaz_ts": 1789739296.8150523,
       "zadnja_stepenica": 55.65,
-      "stop_pct": 0.29,
+      "stop_pct": 0.3,
       "lokot": true,
       "lokot_ts": 1789743098.35901,
       "najbolji_pl": 0.48517520215634047,
       "najbolji_neto": 0.7899137466307403,
-      "neto_zivo": 0.79,
+      "neto_zivo": 0.7,
       "hod": [
        -0.0719,
        -0.0719,
        -0.0719,
        -0.0719,
-       -0.0719,
-       -0.0719,
-       -0.0719,
        0.1797,
        0.1797,
        0.1797,
@@ -93,11 +90,14 @@
        0.3774,
        0.3774,
        0.4852,
-       0.4852
+       0.4852,
+       0.4852,
+       0.4852,
+       0.4492
       ],
-      "gorivo": 27,
+      "gorivo": 29,
       "opruga_razmak": 0.15,
-      "tajmer_h": 0.1
+      "tajmer_h": 0.2
      }
     },
     "sef": 279.52,
@@ -179,7 +179,7 @@
       "kolicina": 446.33250930793304,
       "dokupa": 2,
       "naknade_usd": 0.27,
-      "funding_usd": 0.02,
+      "funding_usd": 0.08,
       "vrijeme_ulaza": "18.09. 00:05 UTC",
       "ulaz_ts": 1789689949.6610863,
       "zadnja_stepenica": 1.3947,
@@ -188,11 +188,8 @@
       "lokot_ts": null,
       "najbolji_pl": 0.28264775120803165,
       "najbolji_neto": 0.38554916841092046,
-      "neto_zivo": -23.54,
+      "neto_zivo": -23.47,
       "hod": [
-       -4.0472,
-       -4.0472,
-       -4.0472,
        -4.0039,
        -4.0039,
        -4.0681,
@@ -209,7 +206,10 @@
        -3.6145,
        -3.8275,
        -3.8275,
-       -3.8275
+       -3.8275,
+       -3.8069,
+       -3.8069,
+       -3.8069
       ]
      }
     },
@@ -276,7 +276,7 @@
    "stanje": "PLIMA",
    "prosla_sirina": 62
   },
-  "zadnja_runda": "18.09. 14:58 UTC"
+  "zadnja_runda": "18.09. 15:01 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
