@@ -1,6 +1,6 @@
 {
- "generirano_utc": "18.09.2026 23:47:39 UTC",
- "generirano_ts": 1789775259,
+ "generirano_utc": "18.09.2026 23:50:56 UTC",
+ "generirano_ts": 1789775456,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -10,7 +10,26 @@
     "valuta": "USD",
     "sredstva_pocetna": 6000,
     "kasa": 6000,
-    "pozicije": {},
+    "pozicije": {
+     "INJ": {
+      "smjer": "LONG",
+      "prvi_ulaz": 6.722,
+      "prosjek": 6.722,
+      "ulozeno": 200,
+      "kolicina": 29.753049687592977,
+      "dokupa": 0,
+      "naknade_usd": 0.09,
+      "funding_usd": 0.0,
+      "vrijeme_ulaza": "18.09. 23:50 UTC",
+      "ulaz_ts": 1789775413.089735,
+      "zadnja_stepenica": 6.722,
+      "stop_pct": -8,
+      "lokot": false,
+      "lokot_ts": null,
+      "najbolji_pl": 0.0,
+      "najbolji_neto": 0.0
+     }
+    },
     "sef": 282.16,
     "realizirano_period": 282.16,
     "period_od": null,
@@ -21,7 +40,6 @@
     "zadnji_izlaz_signal": {
      "ETH": "LONG",
      "TIA": "SHORT",
-     "INJ": "SHORT",
      "RENDER": "SHORT",
      "UNI": "LONG",
      "ARB": "LONG",
@@ -105,9 +123,6 @@
       "hod": [
        -3.7766,
        -3.7766,
-       -3.7766,
-       -3.7766,
-       -3.7766,
        -3.7449,
        -3.7449,
        -3.7449,
@@ -122,6 +137,9 @@
        -3.7421,
        -3.7421,
        -3.7421,
+       -3.7525,
+       -3.7525,
+       -3.7525,
        -3.7525
       ]
      }
@@ -189,7 +207,7 @@
    "stanje": "PLIMA",
    "prosla_sirina": 62
   },
-  "zadnja_runda": "18.09. 23:47 UTC"
+  "zadnja_runda": "18.09. 23:50 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
