@@ -1,6 +1,6 @@
 {
- "generirano_utc": "18.09.2026 22:29:04 UTC",
- "generirano_ts": 1789770544,
+ "generirano_utc": "18.09.2026 22:32:09 UTC",
+ "generirano_ts": 1789770729,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -23,16 +23,13 @@
       "vrijeme_ulaza": "18.09. 21:48 UTC",
       "ulaz_ts": 1789768088.6036777,
       "zadnja_stepenica": 3.7091,
-      "stop_pct": 0.09024647867167127,
+      "stop_pct": 0.156,
       "lokot": true,
       "lokot_ts": 1789770445.1141396,
       "najbolji_pl": 0.5477303814916956,
       "najbolji_neto": 1.8299356112800975,
       "neto_zivo": 0.64,
       "hod": [
-       -1.5318,
-       -0.7659,
-       -0.7659,
        -0.7659,
        -1.0495,
        -1.2823,
@@ -49,11 +46,14 @@
        0.1009,
        0.1009,
        0.5477,
+       0.2508,
+       0.2508,
+       0.2508,
        0.2508
       ],
       "gorivo": 73,
-      "opruga_razmak": 0.44,
-      "tajmer_h": 0.0
+      "opruga_razmak": 0.35,
+      "tajmer_h": 0.1
      }
     },
     "sef": 283.46,
@@ -145,11 +145,8 @@
       "lokot_ts": null,
       "najbolji_pl": 0.28264775120803165,
       "najbolji_neto": 0.38554916841092046,
-      "neto_zivo": -24.62,
+      "neto_zivo": -24.21,
       "hod": [
-       -4.1115,
-       -4.1115,
-       -4.1826,
        -4.1826,
        -4.1826,
        -4.1826,
@@ -166,7 +163,10 @@
        -3.9979,
        -3.9979,
        -3.9979,
-       -3.9979
+       -3.9979,
+       -3.9979,
+       -3.9306,
+       -3.9306
       ]
      }
     },
@@ -233,7 +233,7 @@
    "stanje": "PLIMA",
    "prosla_sirina": 62
   },
-  "zadnja_runda": "18.09. 22:28 UTC"
+  "zadnja_runda": "18.09. 22:31 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
