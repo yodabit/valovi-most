@@ -1,6 +1,6 @@
 {
- "generirano_utc": "18.09.2026 22:32:09 UTC",
- "generirano_ts": 1789770729,
+ "generirano_utc": "18.09.2026 22:35:11 UTC",
+ "generirano_ts": 1789770911,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -10,59 +10,14 @@
     "valuta": "USD",
     "sredstva_pocetna": 6000,
     "kasa": 6000,
-    "pozicije": {
-     "NEAR": {
-      "smjer": "LONG",
-      "prvi_ulaz": 3.7668,
-      "prosjek": 3.7377273318262683,
-      "ulozeno": 400,
-      "kolicina": 107.01690211430122,
-      "dokupa": 1,
-      "naknade_usd": 0.18,
-      "funding_usd": 0.0,
-      "vrijeme_ulaza": "18.09. 21:48 UTC",
-      "ulaz_ts": 1789768088.6036777,
-      "zadnja_stepenica": 3.7091,
-      "stop_pct": 0.156,
-      "lokot": true,
-      "lokot_ts": 1789770445.1141396,
-      "najbolji_pl": 0.5477303814916956,
-      "najbolji_neto": 1.8299356112800975,
-      "neto_zivo": 0.64,
-      "hod": [
-       -0.7659,
-       -1.0495,
-       -1.2823,
-       -1.2823,
-       -1.2823,
-       -1.2823,
-       -1.2823,
-       -0.683,
-       -0.7927,
-       -0.7927,
-       -0.7927,
-       0.1009,
-       0.1009,
-       0.1009,
-       0.1009,
-       0.5477,
-       0.2508,
-       0.2508,
-       0.2508,
-       0.2508
-      ],
-      "gorivo": 73,
-      "opruga_razmak": 0.35,
-      "tajmer_h": 0.1
-     }
-    },
-    "sef": 283.46,
-    "realizirano_period": 283.46,
+    "pozicije": {},
+    "sef": 282.16,
+    "realizirano_period": 282.16,
     "period_od": null,
     "pauza_do": null,
-    "broj_trejdova": 521,
+    "broj_trejdova": 522,
     "dobitni": 462,
-    "gubitni": 59,
+    "gubitni": 60,
     "zadnji_izlaz_signal": {
      "ETH": "LONG",
      "TIA": "SHORT",
@@ -89,7 +44,8 @@
      "FIL": "LONG",
      "APT": "LONG",
      "TRX": "LONG",
-     "FET": "LONG"
+     "FET": "LONG",
+     "NEAR": "LONG"
     },
     "hladnjak": {
      "FET": 1789764583.9946084,
@@ -114,7 +70,7 @@
      "PEPE": 1789529389.712005,
      "TON": 1789702894.7226381,
      "ALGO": 1789476219.0501442,
-     "NEAR": 1789536776.8355243,
+     "NEAR": 1789770827.5363507,
      "ATOM": 1789467928.6802232,
      "APT": 1789749919.650541,
      "LINK": 1789494211.0092146,
@@ -147,9 +103,6 @@
       "najbolji_neto": 0.38554916841092046,
       "neto_zivo": -24.21,
       "hod": [
-       -4.1826,
-       -4.1826,
-       -4.1826,
        -4.1703,
        -4.1703,
        -4.1703,
@@ -165,6 +118,9 @@
        -3.9979,
        -3.9979,
        -3.9979,
+       -3.9306,
+       -3.9306,
+       -3.9306,
        -3.9306,
        -3.9306
       ]
@@ -233,7 +189,7 @@
    "stanje": "PLIMA",
    "prosla_sirina": 62
   },
-  "zadnja_runda": "18.09. 22:31 UTC"
+  "zadnja_runda": "18.09. 22:34 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
@@ -9223,6 +9179,22 @@
    "neto_usd": 0.36,
    "zatvorio": "CEGRTALJKA",
    "sef": 283.46,
+   "kasa": 6000
+  },
+  {
+   "vrijeme": "18.09. 22:33 UTC",
+   "knjiga": "dnevni",
+   "token": "NEAR",
+   "smjer": "LONG",
+   "ulaz_po": 3.73772733,
+   "izlaz_po": 3.7289,
+   "ulozeno_usd": 400,
+   "dokupa": 1,
+   "naknade_usd": 0.3596,
+   "funding_usd": 0.0,
+   "neto_usd": -1.3,
+   "zatvorio": "CEGRTALJKA",
+   "sef": 282.16,
    "kasa": 6000
   }
  ]
