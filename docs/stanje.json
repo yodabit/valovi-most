@@ -1,6 +1,6 @@
 {
- "generirano_utc": "19.09.2026 15:01:02 UTC",
- "generirano_ts": 1789830062,
+ "generirano_utc": "19.09.2026 15:04:02 UTC",
+ "generirano_ts": 1789830242,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -19,7 +19,7 @@
       "kolicina": 3.4447123665173955,
       "dokupa": 0,
       "naknade_usd": 0.09,
-      "funding_usd": 0.0,
+      "funding_usd": 0.02,
       "vrijeme_ulaza": "19.09. 12:04 UTC",
       "ulaz_ts": 1789819485.6974466,
       "zadnja_stepenica": 58.06,
@@ -28,11 +28,8 @@
       "lokot_ts": null,
       "najbolji_pl": 0.22390630382362886,
       "najbolji_neto": 0.2676110919738165,
-      "neto_zivo": -1.01,
+      "neto_zivo": -1.03,
       "hod": [
-       -0.5684,
-       -0.5684,
-       -0.5684,
        -0.4306,
        -0.4306,
        -0.465,
@@ -49,6 +46,9 @@
        -0.5167,
        -0.5167,
        -0.3789,
+       -0.4134,
+       -0.4134,
+       -0.4134,
        -0.4134
       ]
      }
@@ -134,7 +134,7 @@
       "kolicina": 584.8740821704098,
       "dokupa": 3,
       "naknade_usd": 0.36,
-      "funding_usd": 0.2,
+      "funding_usd": 0.28,
       "vrijeme_ulaza": "18.09. 00:05 UTC",
       "ulaz_ts": 1789689949.6610863,
       "zadnja_stepenica": 1.44361,
@@ -143,13 +143,10 @@
       "lokot_ts": null,
       "najbolji_pl": 0.28264775120803165,
       "najbolji_neto": 0.38554916841092046,
-      "neto_zivo": -40.77,
+      "neto_zivo": -40.11,
       "hod": [
        -4.786,
        -4.786,
-       -4.786,
-       -4.786,
-       -4.786,
        -4.8807,
        -4.8807,
        -4.8807,
@@ -164,7 +161,10 @@
        -4.9785,
        -4.9785,
        -4.9785,
-       -4.9785
+       -4.9785,
+       -4.9276,
+       -4.9276,
+       -4.8866
       ]
      }
     },
@@ -231,7 +231,7 @@
    "stanje": "PLIMA",
    "prosla_sirina": 100
   },
-  "zadnja_runda": "19.09. 15:00 UTC"
+  "zadnja_runda": "19.09. 15:03 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
