@@ -1,6 +1,6 @@
 {
- "generirano_utc": "19.09.2026 00:00:26 UTC",
- "generirano_ts": 1789776026,
+ "generirano_utc": "19.09.2026 00:03:39 UTC",
+ "generirano_ts": 1789776219,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -38,7 +38,32 @@
        -0.6546,
        -0.6546,
        -0.6546,
+       -0.6992,
+       -0.6992,
+       -0.6992,
        -0.6992
+      ]
+     },
+     "RENDER": {
+      "smjer": "LONG",
+      "prvi_ulaz": 1.551,
+      "prosjek": 1.551,
+      "ulozeno": 200,
+      "kolicina": 128.9490651192779,
+      "dokupa": 0,
+      "naknade_usd": 0.09,
+      "funding_usd": 0.0,
+      "vrijeme_ulaza": "19.09. 00:01 UTC",
+      "ulaz_ts": 1789776113.6073687,
+      "zadnja_stepenica": 1.551,
+      "stop_pct": -8,
+      "lokot": false,
+      "lokot_ts": null,
+      "najbolji_pl": 0.0,
+      "najbolji_neto": 0.0,
+      "neto_zivo": -0.18,
+      "hod": [
+       0.0
       ]
      }
     },
@@ -52,7 +77,6 @@
     "zadnji_izlaz_signal": {
      "ETH": "LONG",
      "TIA": "SHORT",
-     "RENDER": "SHORT",
      "UNI": "LONG",
      "ARB": "LONG",
      "AAVE": "LONG",
@@ -131,11 +155,8 @@
       "lokot_ts": null,
       "najbolji_pl": 0.28264775120803165,
       "najbolji_neto": 0.38554916841092046,
-      "neto_zivo": -23.28,
+      "neto_zivo": -23.11,
       "hod": [
-       -3.7628,
-       -3.7628,
-       -3.7628,
        -3.7421,
        -3.7421,
        -3.7421,
@@ -152,7 +173,32 @@
        -3.7256,
        -3.7649,
        -3.7649,
-       -3.7649
+       -3.7649,
+       -3.7649,
+       -3.7649,
+       -3.7373
+      ]
+     },
+     "TIA": {
+      "smjer": "LONG",
+      "prvi_ulaz": 0.4078,
+      "prosjek": 0.4078,
+      "ulozeno": 200,
+      "kolicina": 490.43648847474253,
+      "dokupa": 0,
+      "naknade_usd": 0.09,
+      "funding_usd": 0.0,
+      "vrijeme_ulaza": "19.09. 00:01 UTC",
+      "ulaz_ts": 1789776113.6237628,
+      "zadnja_stepenica": 0.4078,
+      "stop_pct": -15,
+      "lokot": false,
+      "lokot_ts": null,
+      "najbolji_pl": 0.0,
+      "najbolji_neto": 0.0,
+      "neto_zivo": -0.18,
+      "hod": [
+       0.0
       ]
      }
     },
@@ -182,7 +228,6 @@
      "TRX": "LONG",
      "TON": "SHORT",
      "BCH": "SHORT",
-     "TIA": "SHORT",
      "DOGE": "SHORT",
      "OP": "LONG",
      "PEPE": "LONG"
@@ -215,11 +260,11 @@
    }
   },
   "more": {
-   "sirina": 62,
+   "sirina": 79,
    "stanje": "PLIMA",
-   "prosla_sirina": 62
+   "prosla_sirina": 72
   },
-  "zadnja_runda": "18.09. 23:59 UTC"
+  "zadnja_runda": "19.09. 00:02 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
