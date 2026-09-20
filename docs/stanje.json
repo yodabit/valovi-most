@@ -1,6 +1,6 @@
 {
- "generirano_utc": "20.09.2026 00:14:22 UTC",
- "generirano_ts": 1789863262,
+ "generirano_utc": "20.09.2026 00:17:26 UTC",
+ "generirano_ts": 1789863446,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -103,11 +103,8 @@
       "lokot_ts": null,
       "najbolji_pl": 0.28264775120803165,
       "najbolji_neto": 0.38554916841092046,
-      "neto_zivo": -23.41,
+      "neto_zivo": -24.33,
       "hod": [
-       -3.077,
-       -3.0337,
-       -3.0337,
        -3.0337,
        -3.0337,
        -3.0337,
@@ -124,7 +121,10 @@
        -2.7898,
        -2.7898,
        -2.7898,
-       -2.7898
+       -2.7898,
+       -2.7898,
+       -2.905,
+       -2.905
       ]
      },
      "SUI": {
@@ -142,9 +142,9 @@
       "stop_pct": -15,
       "lokot": false,
       "lokot_ts": null,
-      "najbolji_pl": 0.0,
-      "najbolji_neto": 0.0,
-      "neto_zivo": -0.79,
+      "najbolji_pl": 0.3847947761193904,
+      "najbolji_neto": 0.5892432369402734,
+      "neto_zivo": 0.59,
       "hod": [
        0.0,
        0.0,
@@ -157,7 +157,10 @@
        -0.3032,
        -0.3032,
        -0.3032,
-       -0.3032
+       -0.3032,
+       0.0233,
+       0.0233,
+       0.3848
       ]
      },
      "DOGE": {
@@ -175,9 +178,9 @@
       "stop_pct": -15,
       "lokot": false,
       "lokot_ts": null,
-      "najbolji_pl": 0.051057238934171245,
-      "najbolji_neto": 0.0,
-      "neto_zivo": -0.08,
+      "najbolji_pl": 0.1776152271647291,
+      "najbolji_neto": 0.17507060062500995,
+      "neto_zivo": 0.18,
       "hod": [
        0.0,
        -0.0129,
@@ -186,7 +189,10 @@
        -0.0129,
        -0.0129,
        0.0511,
-       0.0511
+       0.0511,
+       0.0511,
+       0.0511,
+       0.1776
       ]
      }
     },
@@ -252,7 +258,7 @@
    "stanje": "PLIMA",
    "prosla_sirina": 100
   },
-  "zadnja_runda": "20.09. 00:13 UTC"
+  "zadnja_runda": "20.09. 00:16 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
