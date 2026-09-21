@@ -1,6 +1,6 @@
 {
- "generirano_utc": "21.09.2026 00:08:29 UTC",
- "generirano_ts": 1789949309,
+ "generirano_utc": "21.09.2026 00:11:33 UTC",
+ "generirano_ts": 1789949493,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -103,11 +103,8 @@
       "lokot_ts": null,
       "najbolji_pl": 0.28264775120803165,
       "najbolji_neto": 0.38554916841092046,
-      "neto_zivo": -32.39,
+      "neto_zivo": -29.87,
       "hod": [
-       -3.3346,
-       -3.3346,
-       -3.3346,
        -3.3346,
        -3.1799,
        -3.1799,
@@ -124,7 +121,10 @@
        -3.2559,
        -3.2559,
        -3.8821,
-       -3.8821
+       -3.8821,
+       -3.8821,
+       -3.5676,
+       -3.5676
       ]
      },
      "DOGE": {
@@ -142,13 +142,10 @@
       "stop_pct": -15,
       "lokot": false,
       "lokot_ts": null,
-      "najbolji_pl": 0.31216875616799644,
-      "najbolji_neto": 0.44405656045544173,
-      "neto_zivo": 0.18,
+      "najbolji_pl": 0.5842455864614848,
+      "najbolji_neto": 0.9279653518951544,
+      "neto_zivo": 0.93,
       "hod": [
-       -0.123,
-       -0.2327,
-       -0.2327,
        -0.2327,
        -0.2327,
        -0.2022,
@@ -165,7 +162,10 @@
        0.2106,
        0.2106,
        0.2106,
-       0.2106
+       0.2106,
+       0.5842,
+       0.5842,
+       0.5842
       ]
      },
      "BCH": {
@@ -180,18 +180,24 @@
       "vrijeme_ulaza": "21.09. 00:03 UTC",
       "ulaz_ts": 1789949025.9895053,
       "zadnja_stepenica": 253.15,
-      "stop_pct": -15,
-      "lokot": false,
-      "lokot_ts": null,
-      "najbolji_pl": 0.0,
-      "najbolji_neto": 0.0,
-      "neto_zivo": -0.18,
+      "stop_pct": 0.876,
+      "lokot": true,
+      "lokot_ts": 1789949344.243697,
+      "najbolji_pl": 1.58009085522417,
+      "najbolji_neto": 2.978759628678638,
+      "neto_zivo": 2.98,
       "hod": [
        0.0,
        0.0,
        0.0,
-       0.0
-      ]
+       0.0,
+       1.5801,
+       1.5801,
+       1.5801
+      ],
+      "gorivo": 60,
+      "opruga_razmak": 0.66,
+      "tajmer_h": 0.0
      }
     },
     "sef": -169.84,
@@ -257,7 +263,7 @@
    "stanje": "PLIMA",
    "prosla_sirina": 100
   },
-  "zadnja_runda": "21.09. 00:08 UTC"
+  "zadnja_runda": "21.09. 00:11 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
