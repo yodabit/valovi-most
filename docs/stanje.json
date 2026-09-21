@@ -1,6 +1,6 @@
 {
- "generirano_utc": "21.09.2026 22:01:52 UTC",
- "generirano_ts": 1790028112,
+ "generirano_utc": "21.09.2026 22:05:03 UTC",
+ "generirano_ts": 1790028303,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -89,25 +89,22 @@
      "XRP": {
       "smjer": "SHORT",
       "prvi_ulaz": 1.29501,
-      "prosjek": 1.3914152135885691,
-      "ulozeno": 1000,
-      "kolicina": 718.6927311373298,
-      "dokupa": 4,
-      "naknade_usd": 0.45,
+      "prosjek": 1.4156590126507769,
+      "ulozeno": 1200,
+      "kolicina": 847.6617527783317,
+      "dokupa": 5,
+      "naknade_usd": 0.54,
       "funding_usd": 0.78,
       "vrijeme_ulaza": "18.09. 00:05 UTC",
       "ulaz_ts": 1789689949.6610863,
-      "zadnja_stepenica": 1.49456,
+      "zadnja_stepenica": 1.55076,
       "stop_pct": -15,
       "lokot": false,
       "lokot_ts": null,
       "najbolji_pl": 0.28264775120803165,
       "najbolji_neto": 0.38554916841092046,
-      "neto_zivo": -102.21,
+      "neto_zivo": -106.45,
       "hod": [
-       -9.8416,
-       -9.8416,
-       -9.8416,
        -9.8988,
        -9.8988,
        -10.0136,
@@ -124,7 +121,10 @@
        -9.7954,
        -10.0479,
        -10.0479,
-       -10.0479
+       -10.0479,
+       -10.2753,
+       -8.7119,
+       -8.7119
       ]
      }
     },
@@ -193,7 +193,7 @@
    "stanje": "PLIMA",
    "prosla_sirina": 100
   },
-  "zadnja_runda": "21.09. 22:00 UTC"
+  "zadnja_runda": "21.09. 22:04 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
