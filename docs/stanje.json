@@ -1,6 +1,6 @@
 {
- "generirano_utc": "05.10.2026 22:33:26 UTC",
- "generirano_ts": 1791239606,
+ "generirano_utc": "05.10.2026 22:36:40 UTC",
+ "generirano_ts": 1791239800,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -94,7 +94,7 @@
       "kolicina": 847.6617527783317,
       "dokupa": 5,
       "naknade_usd": 0.54,
-      "funding_usd": 5.46,
+      "funding_usd": 5.58,
       "vrijeme_ulaza": "18.09. 00:05 UTC",
       "ulaz_ts": 1789689949.6610863,
       "zadnja_stepenica": 1.55076,
@@ -103,13 +103,10 @@
       "lokot_ts": null,
       "najbolji_pl": 0.28264775120803165,
       "najbolji_neto": 0.38554916841092046,
-      "neto_zivo": -82.76,
+      "neto_zivo": -82.88,
       "hod": [
        -6.4985,
        -6.4985,
-       -6.4985,
-       -6.4985,
-       -6.4985,
        -6.4553,
        -6.4553,
        -6.4553,
@@ -124,6 +121,9 @@
        -6.3303,
        -6.3303,
        -6.3303,
+       -6.3482,
+       -6.3482,
+       -6.3482,
        -6.3482
       ]
      }
@@ -193,7 +193,7 @@
    "stanje": "PLIMA",
    "prosla_sirina": 97
   },
-  "zadnja_runda": "05.10. 22:32 UTC"
+  "zadnja_runda": "05.10. 22:35 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
