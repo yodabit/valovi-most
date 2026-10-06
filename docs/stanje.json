@@ -1,6 +1,6 @@
 {
- "generirano_utc": "06.10.2026 19:38:53 UTC",
- "generirano_ts": 1791315533,
+ "generirano_utc": "06.10.2026 19:42:05 UTC",
+ "generirano_ts": 1791315725,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -107,9 +107,6 @@
       "hod": [
        -5.4967,
        -5.4967,
-       -5.4967,
-       -5.4967,
-       -5.4967,
        -5.4866,
        -5.4866,
        -5.4866,
@@ -124,6 +121,9 @@
        -5.6888,
        -5.6888,
        -5.6888,
+       -5.5982,
+       -5.5982,
+       -5.5982,
        -5.5982
       ]
      }
@@ -193,7 +193,7 @@
    "stanje": "PLIMA",
    "prosla_sirina": 97
   },
-  "zadnja_runda": "06.10. 19:37 UTC"
+  "zadnja_runda": "06.10. 19:41 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
