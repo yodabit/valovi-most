@@ -1,6 +1,6 @@
 {
- "generirano_utc": "08.10.2026 07:46:26 UTC",
- "generirano_ts": 1791445586,
+ "generirano_utc": "08.10.2026 07:49:40 UTC",
+ "generirano_ts": 1791445780,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -30,9 +30,6 @@
       "najbolji_neto": 0.0748001412095814,
       "neto_zivo": -0.08,
       "hod": [
-       0.0926,
-       0.0926,
-       0.1013,
        0.1013,
        0.1246,
        0.1246,
@@ -49,6 +46,9 @@
        0.1208,
        0.1208,
        0.1208,
+       0.0603,
+       0.0603,
+       0.0603,
        0.0603
       ]
      },
@@ -69,11 +69,8 @@
       "lokot_ts": null,
       "najbolji_pl": 0.0698608604529305,
       "najbolji_neto": 0.0,
-      "neto_zivo": -10.25,
+      "neto_zivo": -8.59,
       "hod": [
-       -1.6095,
-       -1.8528,
-       -1.8528,
        -1.8528,
        -1.8418,
        -1.8418,
@@ -90,7 +87,10 @@
        -1.6649,
        -1.6649,
        -1.615,
-       -1.615
+       -1.615,
+       -1.3371,
+       -1.3371,
+       -1.3371
       ]
      },
      "APT": {
@@ -110,11 +110,8 @@
       "lokot_ts": null,
       "najbolji_pl": 0.0,
       "najbolji_neto": 0.0,
-      "neto_zivo": -4.83,
+      "neto_zivo": -3.7,
       "hod": [
-       -1.047,
-       -1.047,
-       -1.047,
        -0.7389,
        -0.7389,
        -0.7389,
@@ -131,52 +128,11 @@
        -1.111,
        -1.111,
        -1.111,
-       -1.111
+       -1.111,
+       -0.829,
+       -0.829,
+       -0.829
       ]
-     },
-     "ALGO": {
-      "smjer": "LONG",
-      "prvi_ulaz": 0.11967,
-      "prosjek": 0.11967,
-      "ulozeno": 200,
-      "kolicina": 1671.2626389237068,
-      "dokupa": 0,
-      "naknade_usd": 0.09,
-      "funding_usd": 0.0,
-      "vrijeme_ulaza": "08.10. 07:15 UTC",
-      "ulaz_ts": 1791443743.1612234,
-      "zadnja_stepenica": 0.11967,
-      "stop_pct": 5.172,
-      "lokot": true,
-      "lokot_ts": 1791443998.286877,
-      "najbolji_pl": 5.398178323723557,
-      "najbolji_neto": 10.611498286955763,
-      "neto_zivo": 10.61,
-      "hod": [
-       3.1002,
-       3.1002,
-       3.1002,
-       3.3007,
-       3.3007,
-       3.6099,
-       3.6099,
-       3.6099,
-       3.6099,
-       3.6099,
-       3.986,
-       3.986,
-       3.986,
-       3.986,
-       3.986,
-       5.0389,
-       5.0389,
-       5.3982,
-       5.3982,
-       5.3982
-      ],
-      "gorivo": 0,
-      "opruga_razmak": 0.18,
-      "tajmer_h": 0.4
      },
      "SUI": {
       "smjer": "LONG",
@@ -206,16 +162,37 @@
        0.0264,
        0.0264,
        -0.2551,
+       -0.2551,
+       -0.2551,
+       -0.2551,
        -0.2551
       ]
+     },
+     "OP": {
+      "smjer": "LONG",
+      "prvi_ulaz": 0.122,
+      "prosjek": 0.122,
+      "ulozeno": 200,
+      "kolicina": 1639.344262295082,
+      "dokupa": 0,
+      "naknade_usd": 0.09,
+      "funding_usd": 0.0,
+      "vrijeme_ulaza": "08.10. 07:48 UTC",
+      "ulaz_ts": 1791445720.3769646,
+      "zadnja_stepenica": 0.122,
+      "stop_pct": -8,
+      "lokot": false,
+      "lokot_ts": null,
+      "najbolji_pl": 0.0,
+      "najbolji_neto": 0.0
      }
     },
-    "sef": 309.4,
-    "realizirano_period": 309.4,
+    "sef": 318.16,
+    "realizirano_period": 318.16,
     "period_od": null,
     "pauza_do": null,
-    "broj_trejdova": 553,
-    "dobitni": 486,
+    "broj_trejdova": 554,
+    "dobitni": 487,
     "gubitni": 67,
     "zadnji_izlaz_signal": {
      "LINK": "LONG",
@@ -232,10 +209,10 @@
      "XRP": "SHORT",
      "INJ": "SHORT",
      "LTC": "SHORT",
-     "OP": "SHORT",
      "AAVE": "SHORT",
      "ARB": "SHORT",
-     "RENDER": "LONG"
+     "RENDER": "LONG",
+     "ALGO": "LONG"
     },
     "hladnjak": {
      "FET": 1791440428.6395073,
@@ -259,7 +236,7 @@
      "OP": 1791433678.8309023,
      "PEPE": 1791432532.8098073,
      "TON": 1791425784.9477549,
-     "ALGO": 1791433551.5159686,
+     "ALGO": 1791445592.6592994,
      "NEAR": 1789770827.5363507,
      "ATOM": 1789814389.1999693,
      "APT": 1789749919.650541,
@@ -340,7 +317,7 @@
    "stanje": "MIJESANO",
    "prosla_sirina": 48
   },
-  "zadnja_runda": "08.10. 07:45 UTC"
+  "zadnja_runda": "08.10. 07:48 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
@@ -9938,6 +9915,22 @@
    "neto_usd": 2.49,
    "zatvorio": "CEGRTALJKA",
    "sef": 309.4,
+   "kasa": 6000
+  },
+  {
+   "vrijeme": "08.10. 07:46 UTC",
+   "knjiga": "dnevni",
+   "token": "ALGO",
+   "smjer": "LONG",
+   "ulaz_po": 0.11967,
+   "izlaz_po": 0.12502,
+   "ulozeno_usd": 200,
+   "dokupa": 0,
+   "naknade_usd": 0.184,
+   "funding_usd": 0.0,
+   "neto_usd": 8.76,
+   "zatvorio": "CEGRTALJKA",
+   "sef": 318.16,
    "kasa": 6000
   }
  ]
