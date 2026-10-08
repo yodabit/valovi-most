@@ -1,6 +1,6 @@
 {
- "generirano_utc": "08.10.2026 04:52:15 UTC",
- "generirano_ts": 1791435135,
+ "generirano_utc": "08.10.2026 04:55:15 UTC",
+ "generirano_ts": 1791435315,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -28,11 +28,8 @@
       "lokot_ts": null,
       "najbolji_pl": 0.42999730028994154,
       "najbolji_neto": 0.6803799411958982,
-      "neto_zivo": 0.57,
+      "neto_zivo": 0.14,
       "hod": [
-       -0.0919,
-       -0.0444,
-       -0.0393,
        -0.0393,
        -0.0393,
        -0.0393,
@@ -49,7 +46,10 @@
        0.43,
        0.3742,
        0.3742,
-       0.3742
+       0.3742,
+       0.3742,
+       0.1576,
+       0.1576
       ]
      },
      "TRX": {
@@ -69,11 +69,8 @@
       "lokot_ts": null,
       "najbolji_pl": 0.127342839207234,
       "najbolji_neto": 0.0748001412095814,
-      "neto_zivo": -0.17,
+      "neto_zivo": -0.25,
       "hod": [
-       0.0,
-       0.0,
-       0.0,
        0.0,
        0.0594,
        0.0594,
@@ -90,51 +87,11 @@
        0.1273,
        0.1273,
        0.0066,
-       0.0066
+       0.0066,
+       0.0066,
+       -0.0328,
+       -0.0328
       ]
-     },
-     "ARB": {
-      "smjer": "SHORT",
-      "prvi_ulaz": 0.1835,
-      "prosjek": 0.1835,
-      "ulozeno": 200,
-      "kolicina": 1089.9182561307903,
-      "dokupa": 0,
-      "naknade_usd": 0.09,
-      "funding_usd": 0.0,
-      "vrijeme_ulaza": "08.10. 04:31 UTC",
-      "ulaz_ts": 1791433869.7885833,
-      "zadnja_stepenica": 0.1835,
-      "stop_pct": 1.131,
-      "lokot": true,
-      "lokot_ts": 1791434188.121331,
-      "najbolji_pl": 1.3252346769740297,
-      "najbolji_neto": 2.471646465664681,
-      "neto_zivo": 2.47,
-      "hod": [
-       0.1091,
-       0.1091,
-       0.1091,
-       0.1091,
-       0.7688,
-       0.7688,
-       0.7688,
-       1.0463,
-       1.0463,
-       1.2135,
-       1.2135,
-       1.2135,
-       1.2135,
-       1.2135,
-       1.3252,
-       1.3252,
-       1.3252,
-       1.3252,
-       1.3252
-      ],
-      "gorivo": 3,
-      "opruga_razmak": 0.15,
-      "tajmer_h": 0.2
      },
      "FIL": {
       "smjer": "SHORT",
@@ -153,11 +110,14 @@
       "lokot_ts": null,
       "najbolji_pl": 0.0,
       "najbolji_neto": 0.0,
-      "neto_zivo": -0.56,
+      "neto_zivo": -1.51,
       "hod": [
        -0.1908,
        -0.1908,
-       -0.1908
+       -0.1908,
+       -0.1908,
+       -0.6648,
+       -0.6648
       ]
      },
      "SUI": {
@@ -177,18 +137,21 @@
       "lokot_ts": null,
       "najbolji_pl": 0.0,
       "najbolji_neto": 0.0,
-      "neto_zivo": -0.18,
+      "neto_zivo": -0.48,
       "hod": [
-       0.0
+       0.0,
+       -0.1509,
+       -0.1509,
+       -0.1509
       ]
      }
     },
-    "sef": 305.52,
-    "realizirano_period": 305.52,
+    "sef": 306.43,
+    "realizirano_period": 306.43,
     "period_od": null,
     "pauza_do": null,
-    "broj_trejdova": 545,
-    "dobitni": 481,
+    "broj_trejdova": 546,
+    "dobitni": 482,
     "gubitni": 64,
     "zadnji_izlaz_signal": {
      "LINK": "LONG",
@@ -212,7 +175,8 @@
      "GRT": "SHORT",
      "LTC": "SHORT",
      "OP": "SHORT",
-     "AAVE": "SHORT"
+     "AAVE": "SHORT",
+     "ARB": "SHORT"
     },
     "hladnjak": {
      "FET": 1791433551.5150945,
@@ -232,7 +196,7 @@
      "UNI": 1791433360.5544655,
      "ADA": 1791433424.147441,
      "XRP": 1791433551.5140266,
-     "ARB": 1789470096.271091,
+     "ARB": 1791435143.156087,
      "OP": 1791433678.8309023,
      "PEPE": 1791432532.8098073,
      "TON": 1791425784.9477549,
@@ -317,7 +281,7 @@
    "stanje": "MIJESANO",
    "prosla_sirina": 48
   },
-  "zadnja_runda": "08.10. 04:51 UTC"
+  "zadnja_runda": "08.10. 04:54 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
@@ -9787,6 +9751,22 @@
    "neto_usd": 0.86,
    "zatvorio": "CEGRTALJKA",
    "sef": 305.52,
+   "kasa": 6000
+  },
+  {
+   "vrijeme": "08.10. 04:52 UTC",
+   "knjiga": "dnevni",
+   "token": "ARB",
+   "smjer": "SHORT",
+   "ulaz_po": 0.1835,
+   "izlaz_po": 0.1825,
+   "ulozeno_usd": 200,
+   "dokupa": 0,
+   "naknade_usd": 0.1795,
+   "funding_usd": 0.0,
+   "neto_usd": 0.91,
+   "zatvorio": "CEGRTALJKA",
+   "sef": 306.43,
    "kasa": 6000
   }
  ]
