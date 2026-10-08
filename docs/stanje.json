@@ -1,6 +1,6 @@
 {
- "generirano_utc": "08.10.2026 04:33:38 UTC",
- "generirano_ts": 1791434018,
+ "generirano_utc": "08.10.2026 04:36:46 UTC",
+ "generirano_ts": 1791434206,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -31,9 +31,6 @@
       "neto_zivo": -0.26,
       "hod": [
        0.1362,
-       0.1362,
-       0.1362,
-       0.1362,
        0.3173,
        0.3173,
        0.3173,
@@ -49,6 +46,9 @@
        -0.0919,
        -0.0919,
        -0.0444,
+       -0.0393,
+       -0.0393,
+       -0.0393,
        -0.0393
       ]
      },
@@ -67,13 +67,16 @@
       "stop_pct": -8,
       "lokot": false,
       "lokot_ts": null,
-      "najbolji_pl": 0.0,
+      "najbolji_pl": 0.059446105682603445,
       "najbolji_neto": 0.0,
-      "neto_zivo": -0.18,
+      "neto_zivo": -0.06,
       "hod": [
        0.0,
        0.0,
-       0.0
+       0.0,
+       0.0,
+       0.0594,
+       0.0594
       ]
      },
      "AAVE": {
@@ -91,12 +94,15 @@
       "stop_pct": -8,
       "lokot": false,
       "lokot_ts": null,
-      "najbolji_pl": 0.0,
-      "najbolji_neto": 0.0,
-      "neto_zivo": -0.18,
+      "najbolji_pl": 0.3522753522753552,
+      "najbolji_neto": 0.52486663940713,
+      "neto_zivo": 0.52,
       "hod": [
        0.0,
-       0.0
+       0.0,
+       0.0,
+       0.3523,
+       0.3523
       ]
      },
      "ARB": {
@@ -111,16 +117,22 @@
       "vrijeme_ulaza": "08.10. 04:31 UTC",
       "ulaz_ts": 1791433869.7885833,
       "zadnja_stepenica": 0.1835,
-      "stop_pct": -8,
-      "lokot": false,
-      "lokot_ts": null,
-      "najbolji_pl": 0.10911074740862503,
-      "najbolji_neto": 0.03831958746030184,
-      "neto_zivo": 0.04,
+      "stop_pct": 0.477,
+      "lokot": true,
+      "lokot_ts": 1791434188.121331,
+      "najbolji_pl": 0.7688083470620555,
+      "najbolji_neto": 1.3583033426254734,
+      "neto_zivo": 1.36,
       "hod": [
        0.1091,
-       0.1091
-      ]
+       0.1091,
+       0.1091,
+       0.1091,
+       0.7688
+      ],
+      "gorivo": 24,
+      "opruga_razmak": 0.25,
+      "tajmer_h": 0.0
      }
     },
     "sef": 304.66,
@@ -258,7 +270,7 @@
    "stanje": "MIJESANO",
    "prosla_sirina": 48
   },
-  "zadnja_runda": "08.10. 04:33 UTC"
+  "zadnja_runda": "08.10. 04:36 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
