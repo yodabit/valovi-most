@@ -1,6 +1,6 @@
 {
- "generirano_utc": "08.10.2026 04:30:33 UTC",
- "generirano_ts": 1791433833,
+ "generirano_utc": "08.10.2026 04:33:38 UTC",
+ "generirano_ts": 1791434018,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -28,11 +28,8 @@
       "lokot_ts": null,
       "najbolji_pl": 0.4205675118443608,
       "najbolji_neto": 0.6615119492230404,
-      "neto_zivo": -0.36,
+      "neto_zivo": -0.26,
       "hod": [
-       0.133,
-       0.0359,
-       0.1362,
        0.1362,
        0.1362,
        0.1362,
@@ -49,7 +46,10 @@
        -0.0456,
        -0.0919,
        -0.0919,
-       -0.0919
+       -0.0919,
+       -0.0919,
+       -0.0444,
+       -0.0393
       ]
      },
      "TRX": {
@@ -68,7 +68,59 @@
       "lokot": false,
       "lokot_ts": null,
       "najbolji_pl": 0.0,
-      "najbolji_neto": 0.0
+      "najbolji_neto": 0.0,
+      "neto_zivo": -0.18,
+      "hod": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "AAVE": {
+      "smjer": "SHORT",
+      "prvi_ulaz": 173.77,
+      "prosjek": 173.77,
+      "ulozeno": 200,
+      "kolicina": 1.1509466536226045,
+      "dokupa": 0,
+      "naknade_usd": 0.09,
+      "funding_usd": 0.0,
+      "vrijeme_ulaza": "08.10. 04:31 UTC",
+      "ulaz_ts": 1791433869.783696,
+      "zadnja_stepenica": 173.77,
+      "stop_pct": -8,
+      "lokot": false,
+      "lokot_ts": null,
+      "najbolji_pl": 0.0,
+      "najbolji_neto": 0.0,
+      "neto_zivo": -0.18,
+      "hod": [
+       0.0,
+       0.0
+      ]
+     },
+     "ARB": {
+      "smjer": "SHORT",
+      "prvi_ulaz": 0.1835,
+      "prosjek": 0.1835,
+      "ulozeno": 200,
+      "kolicina": 1089.9182561307903,
+      "dokupa": 0,
+      "naknade_usd": 0.09,
+      "funding_usd": 0.0,
+      "vrijeme_ulaza": "08.10. 04:31 UTC",
+      "ulaz_ts": 1791433869.7885833,
+      "zadnja_stepenica": 0.1835,
+      "stop_pct": -8,
+      "lokot": false,
+      "lokot_ts": null,
+      "najbolji_pl": 0.10911074740862503,
+      "najbolji_neto": 0.03831958746030184,
+      "neto_zivo": 0.04,
+      "hod": [
+       0.1091,
+       0.1091
+      ]
      }
     },
     "sef": 304.66,
@@ -79,8 +131,6 @@
     "dobitni": 480,
     "gubitni": 64,
     "zadnji_izlaz_signal": {
-     "ARB": "LONG",
-     "AAVE": "LONG",
      "LINK": "LONG",
      "SUI": "LONG",
      "AVAX": "LONG",
@@ -208,7 +258,7 @@
    "stanje": "MIJESANO",
    "prosla_sirina": 48
   },
-  "zadnja_runda": "08.10. 04:30 UTC"
+  "zadnja_runda": "08.10. 04:33 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
