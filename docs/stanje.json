@@ -1,6 +1,6 @@
 {
- "generirano_utc": "08.10.2026 02:16:11 UTC",
- "generirano_ts": 1791425771,
+ "generirano_utc": "08.10.2026 02:19:12 UTC",
+ "generirano_ts": 1791425952,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -11,50 +11,6 @@
     "sredstva_pocetna": 6000,
     "kasa": 6000,
     "pozicije": {
-     "TON": {
-      "smjer": "SHORT",
-      "prvi_ulaz": 1.433,
-      "prosjek": 1.433,
-      "ulozeno": 200,
-      "kolicina": 139.56734124214933,
-      "dokupa": 0,
-      "naknade_usd": 0.09,
-      "funding_usd": 0.0,
-      "vrijeme_ulaza": "08.10. 01:30 UTC",
-      "ulaz_ts": 1791423048.3073332,
-      "zadnja_stepenica": 1.433,
-      "stop_pct": 0.296,
-      "lokot": true,
-      "lokot_ts": 1791425466.7711997,
-      "najbolji_pl": 0.4908835904628317,
-      "najbolji_neto": 0.8022068180505764,
-      "neto_zivo": 0.8,
-      "hod": [
-       0.0698,
-       0.2799,
-       0.2799,
-       0.2799,
-       0.2799,
-       0.2799,
-       0.3501,
-       0.3501,
-       0.2799,
-       0.2799,
-       0.2799,
-       0.3501,
-       0.3501,
-       0.3501,
-       0.3501,
-       0.4909,
-       0.4909,
-       0.4909,
-       0.4909,
-       0.4909
-      ],
-      "gorivo": 16,
-      "opruga_razmak": 0.15,
-      "tajmer_h": 0.1
-     },
      "BCH": {
       "smjer": "SHORT",
       "prvi_ulaz": 299.84,
@@ -74,9 +30,6 @@
       "najbolji_neto": 0.28151414706260897,
       "neto_zivo": 0.28,
       "hod": [
-       -0.203,
-       -0.203,
-       -0.203,
        -0.0533,
        -0.0533,
        -0.0533,
@@ -92,6 +45,9 @@
        0.1002,
        0.1002,
        0.2039,
+       0.2307,
+       0.2307,
+       0.2307,
        0.2307,
        0.2307
       ]
@@ -113,7 +69,7 @@
       "lokot_ts": null,
       "najbolji_pl": 0.0,
       "najbolji_neto": 0.0,
-      "neto_zivo": -0.58,
+      "neto_zivo": -0.77,
       "hod": [
        0.0,
        -0.3465,
@@ -128,7 +84,10 @@
        -0.1983,
        -0.1983,
        -0.1983,
-       -0.1983
+       -0.1983,
+       -0.2972,
+       -0.2972,
+       -0.2972
       ]
      },
      "INJ": {
@@ -147,15 +106,21 @@
       "lokot": false,
       "lokot_ts": null,
       "najbolji_pl": 0.0,
-      "najbolji_neto": 0.0
+      "najbolji_neto": 0.0,
+      "neto_zivo": -0.45,
+      "hod": [
+       -0.1347,
+       -0.1347,
+       -0.1347
+      ]
      }
     },
-    "sef": 288.41,
-    "realizirano_period": 288.41,
+    "sef": 288.79,
+    "realizirano_period": 288.79,
     "period_od": null,
     "pauza_do": null,
-    "broj_trejdova": 528,
-    "dobitni": 468,
+    "broj_trejdova": 529,
+    "dobitni": 469,
     "gubitni": 60,
     "zadnji_izlaz_signal": {
      "ETH": "LONG",
@@ -205,7 +170,7 @@
      "ARB": 1789470096.271091,
      "OP": 1789479089.6767945,
      "PEPE": 1789529389.712005,
-     "TON": 1789702894.7226381,
+     "TON": 1791425784.9477549,
      "ALGO": 1789476219.0501442,
      "NEAR": 1789770827.5363507,
      "ATOM": 1789814389.1999693,
@@ -238,11 +203,8 @@
       "lokot_ts": null,
       "najbolji_pl": 0.34512667730681734,
       "najbolji_neto": 0.38554916841092046,
-      "neto_zivo": -13.05,
+      "neto_zivo": -12.19,
       "hod": [
-       -0.6681,
-       -0.5864,
-       -0.5864,
        -0.5864,
        -0.5864,
        -0.5864,
@@ -259,7 +221,10 @@
        -0.4725,
        -0.4725,
        -0.4725,
-       -0.4725
+       -0.4725,
+       -0.4725,
+       -0.4004,
+       -0.4004
       ]
      }
     },
@@ -328,7 +293,7 @@
    "stanje": "MIJESANO",
    "prosla_sirina": 48
   },
-  "zadnja_runda": "08.10. 02:15 UTC"
+  "zadnja_runda": "08.10. 02:18 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
@@ -9511,6 +9476,22 @@
    "zatvorio": "CEGRTALJKA",
    "sef": -165.54,
    "kasa": 4000
+  },
+  {
+   "vrijeme": "08.10. 02:16 UTC",
+   "knjiga": "dnevni",
+   "token": "TON",
+   "smjer": "SHORT",
+   "ulaz_po": 1.433,
+   "izlaz_po": 1.429,
+   "ulozeno_usd": 200,
+   "dokupa": 0,
+   "naknade_usd": 0.1797,
+   "funding_usd": 0.0,
+   "neto_usd": 0.38,
+   "zatvorio": "LOKOT-IZLAZ",
+   "sef": 288.79,
+   "kasa": 6000
   }
  ]
 }
