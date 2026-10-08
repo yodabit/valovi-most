@@ -1,6 +1,6 @@
 {
- "generirano_utc": "08.10.2026 04:43:10 UTC",
- "generirano_ts": 1791434590,
+ "generirano_utc": "08.10.2026 04:46:13 UTC",
+ "generirano_ts": 1791434773,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -30,9 +30,6 @@
       "najbolji_neto": 0.6615119492230404,
       "neto_zivo": 0.4,
       "hod": [
-       0.4206,
-       0.4206,
-       0.4206,
        -0.0456,
        -0.0456,
        -0.0919,
@@ -49,6 +46,9 @@
        0.1518,
        0.1518,
        0.3566,
+       0.2907,
+       0.2907,
+       0.2907,
        0.2907
       ]
      },
@@ -67,9 +67,9 @@
       "stop_pct": -8,
       "lokot": false,
       "lokot_ts": null,
-      "najbolji_pl": 0.120758506898766,
-      "najbolji_neto": 0.0616255653684846,
-      "neto_zivo": 0.06,
+      "najbolji_pl": 0.127342839207234,
+      "najbolji_neto": 0.0748001412095814,
+      "neto_zivo": 0.07,
       "hod": [
        0.0,
        0.0,
@@ -82,7 +82,10 @@
        0.0867,
        0.1208,
        0.1208,
-       0.1208
+       0.1208,
+       0.1208,
+       0.1273,
+       0.1273
       ]
      },
      "AAVE": {
@@ -97,12 +100,12 @@
       "vrijeme_ulaza": "08.10. 04:31 UTC",
       "ulaz_ts": 1791433869.783696,
       "zadnja_stepenica": 173.77,
-      "stop_pct": 0.501,
+      "stop_pct": 0.759,
       "lokot": true,
       "lokot_ts": 1791434315.4550984,
-      "najbolji_pl": 0.6953699947847447,
-      "najbolji_neto": 1.2113615007624456,
-      "neto_zivo": 1.21,
+      "najbolji_pl": 0.9527682565502849,
+      "najbolji_neto": 1.7263859117309432,
+      "neto_zivo": 1.73,
       "hod": [
        0.0,
        0.0,
@@ -114,9 +117,12 @@
        0.6254,
        0.6954,
        0.6954,
-       0.6954
+       0.6954,
+       0.6954,
+       0.6954,
+       0.9528
       ],
-      "gorivo": 43,
+      "gorivo": 24,
       "opruga_razmak": 0.15,
       "tajmer_h": 0.1
      },
@@ -132,7 +138,7 @@
       "vrijeme_ulaza": "08.10. 04:31 UTC",
       "ulaz_ts": 1791433869.7885833,
       "zadnja_stepenica": 0.1835,
-      "stop_pct": 1.004,
+      "stop_pct": 1.019,
       "lokot": true,
       "lokot_ts": 1791434188.121331,
       "najbolji_pl": 1.2134583563155,
@@ -149,11 +155,14 @@
        1.0463,
        1.0463,
        1.2135,
+       1.2135,
+       1.2135,
+       1.2135,
        1.2135
       ],
       "gorivo": 18,
-      "opruga_razmak": 0.17,
-      "tajmer_h": 0.1
+      "opruga_razmak": 0.15,
+      "tajmer_h": 0.2
      }
     },
     "sef": 304.66,
@@ -291,7 +300,7 @@
    "stanje": "MIJESANO",
    "prosla_sirina": 48
   },
-  "zadnja_runda": "08.10. 04:42 UTC"
+  "zadnja_runda": "08.10. 04:46 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
