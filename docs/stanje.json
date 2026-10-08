@@ -1,6 +1,6 @@
 {
- "generirano_utc": "08.10.2026 02:13:10 UTC",
- "generirano_ts": 1791425590,
+ "generirano_utc": "08.10.2026 02:16:11 UTC",
+ "generirano_ts": 1791425771,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -31,9 +31,6 @@
       "neto_zivo": 0.8,
       "hod": [
        0.0698,
-       0.0698,
-       0.0698,
-       0.0698,
        0.2799,
        0.2799,
        0.2799,
@@ -49,11 +46,14 @@
        0.3501,
        0.3501,
        0.4909,
+       0.4909,
+       0.4909,
+       0.4909,
        0.4909
       ],
       "gorivo": 16,
       "opruga_razmak": 0.15,
-      "tajmer_h": 0.0
+      "tajmer_h": 0.1
      },
      "BCH": {
       "smjer": "SHORT",
@@ -70,16 +70,13 @@
       "stop_pct": -8,
       "lokot": false,
       "lokot_ts": null,
-      "najbolji_pl": 0.10015356880548332,
-      "najbolji_neto": 0.0203971856365803,
-      "neto_zivo": 0.02,
+      "najbolji_pl": 0.23065351830184877,
+      "najbolji_neto": 0.28151414706260897,
+      "neto_zivo": 0.28,
       "hod": [
        -0.203,
        -0.203,
        -0.203,
-       -0.203,
-       -0.203,
-       -0.203,
        -0.0533,
        -0.0533,
        -0.0533,
@@ -93,7 +90,10 @@
        0.1002,
        0.1002,
        0.1002,
-       0.1002
+       0.1002,
+       0.2039,
+       0.2307,
+       0.2307
       ]
      },
      "RENDER": {
@@ -125,8 +125,29 @@
        -0.2972,
        -0.2478,
        -0.1983,
+       -0.1983,
+       -0.1983,
+       -0.1983,
        -0.1983
       ]
+     },
+     "INJ": {
+      "smjer": "SHORT",
+      "prvi_ulaz": 7.412,
+      "prosjek": 7.412,
+      "ulozeno": 200,
+      "kolicina": 26.98327037236913,
+      "dokupa": 0,
+      "naknade_usd": 0.09,
+      "funding_usd": 0.0,
+      "vrijeme_ulaza": "08.10. 02:15 UTC",
+      "ulaz_ts": 1791425721.3552487,
+      "zadnja_stepenica": 7.412,
+      "stop_pct": -8,
+      "lokot": false,
+      "lokot_ts": null,
+      "najbolji_pl": 0.0,
+      "najbolji_neto": 0.0
      }
     },
     "sef": 288.41,
@@ -159,7 +180,6 @@
      "TRX": "LONG",
      "FET": "LONG",
      "NEAR": "LONG",
-     "INJ": "LONG",
      "ATOM": "LONG",
      "TIA": "LONG",
      "LTC": "LONG"
@@ -221,9 +241,6 @@
       "neto_zivo": -13.05,
       "hod": [
        -0.6681,
-       -0.6681,
-       -0.6681,
-       -0.6681,
        -0.5864,
        -0.5864,
        -0.5864,
@@ -239,6 +256,9 @@
        -0.4123,
        -0.4123,
        -0.4123,
+       -0.4725,
+       -0.4725,
+       -0.4725,
        -0.4725
       ]
      }
@@ -308,7 +328,7 @@
    "stanje": "MIJESANO",
    "prosla_sirina": 48
   },
-  "zadnja_runda": "08.10. 02:12 UTC"
+  "zadnja_runda": "08.10. 02:15 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
