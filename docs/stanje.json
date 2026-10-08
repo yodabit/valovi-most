@@ -1,6 +1,6 @@
 {
- "generirano_utc": "08.10.2026 01:29:51 UTC",
- "generirano_ts": 1791422991,
+ "generirano_utc": "08.10.2026 01:32:51 UTC",
+ "generirano_ts": 1791423171,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -10,7 +10,30 @@
     "valuta": "USD",
     "sredstva_pocetna": 6000,
     "kasa": 6000,
-    "pozicije": {},
+    "pozicije": {
+     "TON": {
+      "smjer": "SHORT",
+      "prvi_ulaz": 1.433,
+      "prosjek": 1.433,
+      "ulozeno": 200,
+      "kolicina": 139.56734124214933,
+      "dokupa": 0,
+      "naknade_usd": 0.09,
+      "funding_usd": 0.0,
+      "vrijeme_ulaza": "08.10. 01:30 UTC",
+      "ulaz_ts": 1791423048.3073332,
+      "zadnja_stepenica": 1.433,
+      "stop_pct": -8,
+      "lokot": false,
+      "lokot_ts": null,
+      "najbolji_pl": 0.0,
+      "najbolji_neto": 0.0,
+      "neto_zivo": -0.18,
+      "hod": [
+       0.0
+      ]
+     }
+    },
     "sef": 288.41,
     "realizirano_period": 288.41,
     "period_od": null,
@@ -37,7 +60,6 @@
      "DOGE": "LONG",
      "BTC": "LONG",
      "SOL": "LONG",
-     "TON": "LONG",
      "FIL": "LONG",
      "APT": "LONG",
      "TRX": "LONG",
@@ -103,10 +125,8 @@
       "lokot_ts": null,
       "najbolji_pl": 0.34512667730681734,
       "najbolji_neto": 0.38554916841092046,
-      "neto_zivo": -14.42,
+      "neto_zivo": -14.56,
       "hod": [
-       -0.7099,
-       -0.7753,
        -0.7753,
        -0.7753,
        -0.7753,
@@ -124,7 +144,9 @@
        -0.5864,
        -0.5864,
        -0.5864,
-       -0.5864
+       -0.5864,
+       -0.5983,
+       -0.5983
       ]
      }
     },
@@ -193,7 +215,7 @@
    "stanje": "MIJESANO",
    "prosla_sirina": 48
   },
-  "zadnja_runda": "08.10. 01:29 UTC"
+  "zadnja_runda": "08.10. 01:31 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
