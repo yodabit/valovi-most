@@ -1,6 +1,6 @@
 {
- "generirano_utc": "08.10.2026 07:01:50 UTC",
- "generirano_ts": 1791442910,
+ "generirano_utc": "08.10.2026 07:05:01 UTC",
+ "generirano_ts": 1791443101,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -28,11 +28,8 @@
       "lokot_ts": null,
       "najbolji_pl": 0.127342839207234,
       "najbolji_neto": 0.0748001412095814,
-      "neto_zivo": -0.11,
+      "neto_zivo": -0.13,
       "hod": [
-       0.0618,
-       0.0618,
-       0.0618,
        0.0448,
        0.0448,
        0.0448,
@@ -49,7 +46,10 @@
        0.0227,
        0.0466,
        0.0466,
-       0.0466
+       0.0466,
+       0.0466,
+       0.0466,
+       0.0367
       ]
      },
      "ATOM": {
@@ -71,9 +71,6 @@
       "najbolji_neto": 0.0,
       "neto_zivo": -3.77,
       "hod": [
-       -0.7964,
-       -0.7964,
-       -1.0648,
        -1.0648,
        -1.0648,
        -1.0648,
@@ -88,6 +85,9 @@
        -1.5465,
        -0.7793,
        -0.7793,
+       -0.8474,
+       -0.8474,
+       -0.8474,
        -0.8474,
        -0.8474,
        -0.8474
@@ -112,9 +112,6 @@
       "najbolji_neto": 0.0,
       "neto_zivo": -3.44,
       "hod": [
-       -0.2627,
-       -0.2627,
-       -0.2365,
        -0.2365,
        -0.2365,
        -0.2365,
@@ -129,6 +126,9 @@
        -0.6803,
        -0.6803,
        -1.5177,
+       -0.7647,
+       -0.7647,
+       -0.7647,
        -0.7647,
        -0.7647,
        -0.7647
@@ -155,7 +155,32 @@
       "hod": [
        0.0,
        0.0,
+       -0.1883,
+       -0.1883,
+       -0.1883,
        -0.1883
+      ]
+     },
+     "RENDER": {
+      "smjer": "LONG",
+      "prvi_ulaz": 2.019,
+      "prosjek": 2.019,
+      "ulozeno": 200,
+      "kolicina": 99.05894006934125,
+      "dokupa": 0,
+      "naknade_usd": 0.09,
+      "funding_usd": 0.0,
+      "vrijeme_ulaza": "08.10. 07:02 UTC",
+      "ulaz_ts": 1791442977.906204,
+      "zadnja_stepenica": 2.019,
+      "stop_pct": -8,
+      "lokot": false,
+      "lokot_ts": null,
+      "najbolji_pl": 0.0,
+      "najbolji_neto": 0.0,
+      "neto_zivo": -0.18,
+      "hod": [
+       0.0
       ]
      }
     },
@@ -172,7 +197,6 @@
      "BTC": "LONG",
      "NEAR": "LONG",
      "TIA": "LONG",
-     "RENDER": "SHORT",
      "UNI": "SHORT",
      "ADA": "SHORT",
      "BCH": "SHORT",
@@ -292,7 +316,7 @@
    "stanje": "MIJESANO",
    "prosla_sirina": 48
   },
-  "zadnja_runda": "08.10. 07:00 UTC"
+  "zadnja_runda": "08.10. 07:04 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
