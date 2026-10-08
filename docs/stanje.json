@@ -1,6 +1,6 @@
 {
- "generirano_utc": "08.10.2026 06:58:30 UTC",
- "generirano_ts": 1791442710,
+ "generirano_utc": "08.10.2026 07:01:50 UTC",
+ "generirano_ts": 1791442910,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -28,11 +28,8 @@
       "lokot_ts": null,
       "najbolji_pl": 0.127342839207234,
       "najbolji_neto": 0.0748001412095814,
-      "neto_zivo": -0.15,
+      "neto_zivo": -0.11,
       "hod": [
-       0.0642,
-       0.0618,
-       0.0618,
        0.0618,
        0.0618,
        0.0618,
@@ -49,7 +46,10 @@
        0.0191,
        0.0191,
        0.0227,
-       0.0227
+       0.0227,
+       0.0466,
+       0.0466,
+       0.0466
       ]
      },
      "ATOM": {
@@ -69,11 +69,8 @@
       "lokot_ts": null,
       "najbolji_pl": 0.0698608604529305,
       "najbolji_neto": 0.0,
-      "neto_zivo": -3.5,
+      "neto_zivo": -3.77,
       "hod": [
-       -0.8537,
-       -0.8537,
-       -0.7964,
        -0.7964,
        -0.7964,
        -1.0648,
@@ -90,7 +87,10 @@
        -1.411,
        -1.5465,
        -0.7793,
-       -0.7793
+       -0.7793,
+       -0.8474,
+       -0.8474,
+       -0.8474
       ]
      },
      "APT": {
@@ -110,11 +110,8 @@
       "lokot_ts": null,
       "najbolji_pl": 0.0,
       "najbolji_neto": 0.0,
-      "neto_zivo": -3.24,
+      "neto_zivo": -3.44,
       "hod": [
-       0.0,
-       0.0,
-       -0.2627,
        -0.2627,
        -0.2627,
        -0.2365,
@@ -131,7 +128,10 @@
        -0.6803,
        -0.6803,
        -0.6803,
-       -1.5177
+       -1.5177,
+       -0.7647,
+       -0.7647,
+       -0.7647
       ]
      },
      "FIL": {
@@ -150,7 +150,13 @@
       "lokot": false,
       "lokot_ts": null,
       "najbolji_pl": 0.0,
-      "najbolji_neto": 0.0
+      "najbolji_neto": 0.0,
+      "neto_zivo": -0.56,
+      "hod": [
+       0.0,
+       0.0,
+       -0.1883
+      ]
      }
     },
     "sef": 306.56,
@@ -286,7 +292,7 @@
    "stanje": "MIJESANO",
    "prosla_sirina": 48
   },
-  "zadnja_runda": "08.10. 06:57 UTC"
+  "zadnja_runda": "08.10. 07:00 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
