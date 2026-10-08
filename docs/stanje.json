@@ -1,6 +1,6 @@
 {
- "generirano_utc": "08.10.2026 08:24:45 UTC",
- "generirano_ts": 1791447885,
+ "generirano_utc": "08.10.2026 08:27:57 UTC",
+ "generirano_ts": 1791448077,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -28,11 +28,8 @@
       "lokot_ts": null,
       "najbolji_pl": 0.127342839207234,
       "najbolji_neto": 0.0748001412095814,
-      "neto_zivo": -0.12,
+      "neto_zivo": -0.11,
       "hod": [
-       0.1025,
-       0.1025,
-       0.1178,
        0.1178,
        0.1178,
        0.1178,
@@ -49,7 +46,10 @@
        0.0412,
        0.0412,
        0.0412,
-       0.0412
+       0.0412,
+       0.0412,
+       0.0433,
+       0.0433
       ]
      },
      "ATOM": {
@@ -71,9 +71,6 @@
       "najbolji_neto": 0.0,
       "neto_zivo": -8.85,
       "hod": [
-       -1.2422,
-       -1.2422,
-       -1.2422,
        -1.3148,
        -1.164,
        -1.164,
@@ -89,6 +86,9 @@
        -1.2701,
        -1.2701,
        -1.2701,
+       -1.3816,
+       -1.3816,
+       -1.3816,
        -1.3816,
        -1.3816
       ]
@@ -110,11 +110,8 @@
       "lokot_ts": null,
       "najbolji_pl": 0.0,
       "najbolji_neto": 0.0,
-      "neto_zivo": -2.46,
+      "neto_zivo": -1.78,
       "hod": [
-       -0.338,
-       -0.338,
-       -0.338,
        -0.4936,
        -0.4936,
        -0.4936,
@@ -131,7 +128,10 @@
        -0.597,
        -0.597,
        -0.5195,
-       -0.5195
+       -0.5195,
+       -0.5195,
+       -0.5195,
+       -0.351
       ]
      },
      "SUI": {
@@ -151,11 +151,8 @@
       "lokot_ts": null,
       "najbolji_pl": 0.21108179419524475,
       "najbolji_neto": 0.2419736147757138,
-      "neto_zivo": -0.99,
+      "neto_zivo": -1.62,
       "hod": [
-       -0.7476,
-       -0.6157,
-       -0.5365,
        -0.5365,
        -0.5365,
        -0.5365,
@@ -172,52 +169,11 @@
        -0.4046,
        -0.4046,
        -0.4046,
-       -0.4046
+       -0.4046,
+       -0.4046,
+       -0.7212,
+       -0.7212
       ]
-     },
-     "OP": {
-      "smjer": "LONG",
-      "prvi_ulaz": 0.122,
-      "prosjek": 0.122,
-      "ulozeno": 200,
-      "kolicina": 1639.344262295082,
-      "dokupa": 0,
-      "naknade_usd": 0.09,
-      "funding_usd": 0.0,
-      "vrijeme_ulaza": "08.10. 07:48 UTC",
-      "ulaz_ts": 1791445720.3769646,
-      "zadnja_stepenica": 0.122,
-      "stop_pct": 0.379,
-      "lokot": true,
-      "lokot_ts": 1791447570.4246511,
-      "najbolji_pl": 0.5737704918032938,
-      "najbolji_neto": 0.9670245901639646,
-      "neto_zivo": 0.97,
-      "hod": [
-       -0.082,
-       -0.082,
-       -0.082,
-       -0.082,
-       -0.082,
-       -0.082,
-       0.1639,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.5738,
-       0.5738,
-       0.5738,
-       0.5738,
-       0.5738
-      ],
-      "gorivo": 44,
-      "opruga_razmak": 0.15,
-      "tajmer_h": 0.1
      },
      "ARB": {
       "smjer": "LONG",
@@ -243,16 +199,19 @@
        0.0,
        0.0,
        0.162,
+       0.162,
+       0.162,
+       0.162,
        0.162
       ]
      }
     },
-    "sef": 318.16,
-    "realizirano_period": 318.16,
+    "sef": 318.31,
+    "realizirano_period": 318.31,
     "period_od": null,
     "pauza_do": null,
-    "broj_trejdova": 554,
-    "dobitni": 487,
+    "broj_trejdova": 555,
+    "dobitni": 488,
     "gubitni": 67,
     "zadnji_izlaz_signal": {
      "LINK": "LONG",
@@ -292,7 +251,7 @@
      "ADA": 1791433424.147441,
      "XRP": 1791433551.5140266,
      "ARB": 1791435143.156087,
-     "OP": 1791433678.8309023,
+     "OP": 1791447889.4779618,
      "PEPE": 1791432532.8098073,
      "TON": 1791425784.9477549,
      "ALGO": 1791445592.6592994,
@@ -376,7 +335,7 @@
    "stanje": "MIJESANO",
    "prosla_sirina": 48
   },
-  "zadnja_runda": "08.10. 08:23 UTC"
+  "zadnja_runda": "08.10. 08:26 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
@@ -9990,6 +9949,22 @@
    "neto_usd": 8.76,
    "zatvorio": "CEGRTALJKA",
    "sef": 318.16,
+   "kasa": 6000
+  },
+  {
+   "vrijeme": "08.10. 08:24 UTC",
+   "knjiga": "dnevni",
+   "token": "OP",
+   "smjer": "LONG",
+   "ulaz_po": 0.122,
+   "izlaz_po": 0.1222,
+   "ulozeno_usd": 200,
+   "dokupa": 0,
+   "naknade_usd": 0.1801,
+   "funding_usd": 0.0,
+   "neto_usd": 0.15,
+   "zatvorio": "LOKOT-IZLAZ",
+   "sef": 318.31,
    "kasa": 6000
   }
  ]
