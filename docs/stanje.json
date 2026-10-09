@@ -1,6 +1,6 @@
 {
- "generirano_utc": "09.10.2026 14:01:53 UTC",
- "generirano_ts": 1791554513,
+ "generirano_utc": "09.10.2026 14:04:54 UTC",
+ "generirano_ts": 1791554694,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -28,11 +28,8 @@
       "lokot_ts": null,
       "najbolji_pl": 0.07273736772945849,
       "najbolji_neto": 0.0,
-      "neto_zivo": -22.1,
+      "neto_zivo": -25.03,
       "hod": [
-       -1.7801,
-       -1.7801,
-       -2.035,
        -2.035,
        -1.9559,
        -1.9559,
@@ -49,7 +46,10 @@
        -1.929,
        -1.929,
        -2.0954,
-       -2.0954
+       -2.0954,
+       -2.0954,
+       -2.3879,
+       -2.3879
       ]
      },
      "ADA": {
@@ -69,11 +69,8 @@
       "lokot_ts": null,
       "najbolji_pl": 0.3106556172930208,
       "najbolji_neto": 0.6969576178339367,
-      "neto_zivo": 0.7,
+      "neto_zivo": -0.21,
       "hod": [
-       -0.1538,
-       -0.1538,
-       0.0728,
        0.0728,
        0.0728,
        -0.0768,
@@ -90,60 +87,19 @@
        -0.6064,
        -0.2332,
        -0.2332,
-       0.2161
+       0.2161,
+       0.2161,
+       0.0656,
+       0.0656
       ]
-     },
-     "AVAX": {
-      "smjer": "SHORT",
-      "prvi_ulaz": 10.035,
-      "prosjek": 10.202206090220614,
-      "ulozeno": 600,
-      "kolicina": 58.81080961255367,
-      "dokupa": 2,
-      "naknade_usd": 0.27,
-      "funding_usd": 0.06,
-      "vrijeme_ulaza": "09.10. 00:03 UTC",
-      "ulaz_ts": 1791504180.6014006,
-      "zadnja_stepenica": 10.366,
-      "stop_pct": 0.09990205313918472,
-      "lokot": true,
-      "lokot_ts": 1791554365.6192005,
-      "najbolji_pl": 0.2597662104106391,
-      "najbolji_neto": 0.7093945703955653,
-      "neto_zivo": 0.71,
-      "hod": [
-       -0.3885,
-       -0.3885,
-       -0.3885,
-       0.002,
-       0.002,
-       0.002,
-       -0.0665,
-       -0.0665,
-       -0.1155,
-       -0.1155,
-       -0.1155,
-       -0.1155,
-       -0.1155,
-       -0.047,
-       -0.047,
-       -0.047,
-       -0.047,
-       0.2181,
-       0.2181,
-       0.2181
-      ],
-      "gorivo": 43,
-      "opruga_razmak": 0.15,
-      "tajmer_h": 0.0
      }
     },
-    "sef": 275.3,
-    "realizirano_period": 275.3,
+    "sef": 275.77,
+    "realizirano_period": 275.77,
     "period_od": null,
     "pauza_do": null,
-    "broj_trejdova": 592,
-    "dobitni": 518,
+    "broj_trejdova": 593,
+    "dobitni": 519,
     "gubitni": 74,
     "zadnji_izlaz_signal": {
      "LINK": "LONG",
@@ -169,7 +125,8 @@
      "APT": "LONG",
      "FET": "LONG",
      "DOGE": "LONG",
-     "BTC": "LONG"
+     "BTC": "LONG",
+     "AVAX": "SHORT"
     },
     "hladnjak": {
      "FET": 1791517682.6269403,
@@ -182,7 +139,7 @@
      "AAVE": 1791491376.8612866,
      "DOGE": 1791520803.4050562,
      "FIL": 1791491568.3554857,
-     "AVAX": 1789604615.5493832,
+     "AVAX": 1791554685.1875148,
      "GRT": 1791474198.0896542,
      "SOL": 1791497041.2614672,
      "BCH": 1791469624.68271,
@@ -225,11 +182,8 @@
       "lokot_ts": null,
       "najbolji_pl": 0.15959380456611605,
       "najbolji_neto": 0.13933101468995607,
-      "neto_zivo": -1.1,
+      "neto_zivo": -0.76,
       "hod": [
-       -0.5213,
-       -0.5213,
-       -0.5213,
        -0.295,
        -0.295,
        -0.295,
@@ -246,7 +200,10 @@
        -0.5801,
        -0.5801,
        -0.4476,
-       -0.4476
+       -0.4476,
+       -0.4476,
+       -0.2809,
+       -0.2809
       ]
      }
     },
@@ -315,7 +272,7 @@
    "stanje": "OSEKA",
    "prosla_sirina": 14
   },
-  "zadnja_runda": "09.10. 14:01 UTC"
+  "zadnja_runda": "09.10. 14:04 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
@@ -10537,6 +10494,22 @@
    "neto_usd": 1.08,
    "zatvorio": "OPRUGA",
    "sef": 275.3,
+   "kasa": 6000
+  },
+  {
+   "vrijeme": "09.10. 14:04 UTC",
+   "knjiga": "dnevni",
+   "token": "AVAX",
+   "smjer": "SHORT",
+   "ulaz_po": 10.20220609,
+   "izlaz_po": 10.184,
+   "ulozeno_usd": 600,
+   "dokupa": 2,
+   "naknade_usd": 0.5395,
+   "funding_usd": 0.06,
+   "neto_usd": 0.47,
+   "zatvorio": "CEGRTALJKA",
+   "sef": 275.77,
    "kasa": 6000
   }
  ]
