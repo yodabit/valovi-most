@@ -1,6 +1,6 @@
 {
- "generirano_utc": "13.10.2026 07:40:42 UTC",
- "generirano_ts": 1791877242,
+ "generirano_utc": "13.10.2026 07:43:46 UTC",
+ "generirano_ts": 1791877426,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -28,11 +28,8 @@
       "lokot_ts": null,
       "najbolji_pl": 0.432814077338306,
       "najbolji_neto": 0.5852386220070076,
-      "neto_zivo": -1.16,
+      "neto_zivo": -1.15,
       "hod": [
-       -0.4497,
-       -0.4497,
-       -0.4748,
        -0.4748,
        -0.463,
        -0.463,
@@ -49,7 +46,10 @@
        -0.4567,
        -0.4567,
        -0.4567,
-       -0.4017
+       -0.4017,
+       -0.4017,
+       -0.3929,
+       -0.3929
       ]
      },
      "ATOM": {
@@ -64,16 +64,13 @@
       "vrijeme_ulaza": "12.10. 05:01 UTC",
       "ulaz_ts": 1791781263.5239422,
       "zadnja_stepenica": 1.7596,
-      "stop_pct": -8,
-      "lokot": false,
-      "lokot_ts": null,
-      "najbolji_pl": 0.22314478463933973,
-      "najbolji_neto": 0.26608873897250407,
-      "neto_zivo": -6.02,
+      "stop_pct": 0.712,
+      "lokot": true,
+      "lokot_ts": 1791877334.9920707,
+      "najbolji_pl": 1.049613286290163,
+      "najbolji_neto": 9.311409603113322,
+      "neto_zivo": 9.31,
       "hod": [
-       -1.4727,
-       -1.4727,
-       -1.4727,
        -1.2567,
        -1.2567,
        -1.2567,
@@ -90,8 +87,14 @@
        -1.9102,
        -1.9102,
        -0.4843,
-       -0.4843
-      ]
+       -0.4843,
+       -0.4843,
+       1.0496,
+       1.0496
+      ],
+      "gorivo": 39,
+      "opruga_razmak": 0.29,
+      "tajmer_h": 0.0
      },
      "TON": {
       "smjer": "LONG",
@@ -110,11 +113,8 @@
       "lokot_ts": null,
       "najbolji_pl": 0.0,
       "najbolji_neto": 0.0,
-      "neto_zivo": -10.31,
+      "neto_zivo": -9.16,
       "hod": [
-       -1.6714,
-       -1.6714,
-       -1.5285,
        -1.5285,
        -1.6,
        -1.6,
@@ -131,7 +131,10 @@
        -1.3141,
        -1.3141,
        -1.1712,
-       -1.1712
+       -1.1712,
+       -1.1712,
+       -1.0283,
+       -1.0283
       ]
      }
     },
@@ -268,7 +271,7 @@
    "stanje": "OSEKA",
    "prosla_sirina": 28
   },
-  "zadnja_runda": "13.10. 07:40 UTC"
+  "zadnja_runda": "13.10. 07:43 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
