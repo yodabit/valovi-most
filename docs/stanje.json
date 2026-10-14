@@ -1,6 +1,6 @@
 {
- "generirano_utc": "14.10.2026 00:04:01 UTC",
- "generirano_ts": 1791936241,
+ "generirano_utc": "14.10.2026 00:07:12 UTC",
+ "generirano_ts": 1791936432,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -31,9 +31,6 @@
       "neto_zivo": -2.73,
       "hod": [
        -1.1364,
-       -1.1364,
-       -1.1364,
-       -1.1364,
        -1.1373,
        -1.1373,
        -1.1373,
@@ -49,6 +46,9 @@
        -1.1658,
        -1.1658,
        -1.1624,
+       -1.1636,
+       -1.1636,
+       -1.1636,
        -1.1636
       ]
      },
@@ -72,19 +72,19 @@
       "neto_zivo": -15.04,
       "hod": [
        -1.7429,
+       -1.8143,
+       -1.8143,
+       -1.8143,
+       -1.8143,
+       -1.8143,
+       -1.8143,
+       -1.8143,
+       -1.8143,
+       -1.8143,
+       -1.8143,
        -1.7429,
        -1.7429,
        -1.7429,
-       -1.8143,
-       -1.8143,
-       -1.8143,
-       -1.8143,
-       -1.8143,
-       -1.8143,
-       -1.8143,
-       -1.8143,
-       -1.8143,
-       -1.8143,
        -1.7429,
        -1.7429,
        -1.7429,
@@ -110,10 +110,36 @@
       "lokot_ts": null,
       "najbolji_pl": 0.0,
       "najbolji_neto": 0.0,
-      "neto_zivo": -0.18,
+      "neto_zivo": -0.57,
       "hod": [
        0.0,
-       0.0
+       0.0,
+       0.0,
+       -0.1956,
+       -0.1956
+      ]
+     },
+     "BTC": {
+      "smjer": "SHORT",
+      "prvi_ulaz": 83166.4,
+      "prosjek": 83166.4,
+      "ulozeno": 200,
+      "kolicina": 0.0024048173300756075,
+      "dokupa": 0,
+      "naknade_usd": 0.09,
+      "funding_usd": 0.0,
+      "vrijeme_ulaza": "14.10. 00:04 UTC",
+      "ulaz_ts": 1791936244.789322,
+      "zadnja_stepenica": 83166.4,
+      "stop_pct": -8,
+      "lokot": false,
+      "lokot_ts": null,
+      "najbolji_pl": 0.01022151834040308,
+      "najbolji_neto": 0.0,
+      "neto_zivo": -0.16,
+      "hod": [
+       0.0102,
+       0.0102
       ]
      }
     },
@@ -142,7 +168,6 @@
      "ALGO": "SHORT",
      "APT": "LONG",
      "GRT": "LONG",
-     "BTC": "LONG",
      "BCH": "LONG",
      "OP": "LONG",
      "ATOM": "LONG"
@@ -201,10 +226,13 @@
       "lokot_ts": null,
       "najbolji_pl": 0.0,
       "najbolji_neto": 0.0,
-      "neto_zivo": -0.18,
+      "neto_zivo": -2.36,
       "hod": [
        0.0,
-       0.0
+       0.0,
+       -1.0875,
+       -1.0875,
+       -1.0875
       ]
      }
     },
@@ -270,11 +298,11 @@
    }
   },
   "more": {
-   "sirina": 31,
+   "sirina": 34,
    "stanje": "MIJESANO",
-   "prosla_sirina": 31
+   "prosla_sirina": 34
   },
-  "zadnja_runda": "14.10. 00:03 UTC"
+  "zadnja_runda": "14.10. 00:06 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
