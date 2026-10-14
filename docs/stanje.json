@@ -1,6 +1,6 @@
 {
- "generirano_utc": "14.10.2026 00:00:44 UTC",
- "generirano_ts": 1791936044,
+ "generirano_utc": "14.10.2026 00:04:01 UTC",
+ "generirano_ts": 1791936241,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -30,9 +30,6 @@
       "najbolji_neto": 0.5852386220070076,
       "neto_zivo": -2.73,
       "hod": [
-       -1.1443,
-       -1.1443,
-       -1.1364,
        -1.1364,
        -1.1364,
        -1.1364,
@@ -49,7 +46,10 @@
        -1.1383,
        -1.1658,
        -1.1658,
-       -1.1658
+       -1.1658,
+       -1.1658,
+       -1.1624,
+       -1.1636
       ]
      },
      "TON": {
@@ -71,26 +71,49 @@
       "najbolji_neto": 0.0,
       "neto_zivo": -15.04,
       "hod": [
+       -1.7429,
+       -1.7429,
+       -1.7429,
+       -1.7429,
+       -1.8143,
+       -1.8143,
+       -1.8143,
+       -1.8143,
+       -1.8143,
+       -1.8143,
+       -1.8143,
+       -1.8143,
        -1.8143,
        -1.8143,
        -1.7429,
        -1.7429,
        -1.7429,
-       -1.7429,
-       -1.7429,
-       -1.8143,
-       -1.8143,
-       -1.8143,
-       -1.8143,
-       -1.8143,
-       -1.8143,
-       -1.8143,
-       -1.8143,
-       -1.8143,
-       -1.8143,
        -1.7429,
        -1.7429,
        -1.7429
+      ]
+     },
+     "DOGE": {
+      "smjer": "SHORT",
+      "prvi_ulaz": 0.0842601,
+      "prosjek": 0.0842601,
+      "ulozeno": 200,
+      "kolicina": 2373.602689766568,
+      "dokupa": 0,
+      "naknade_usd": 0.09,
+      "funding_usd": 0.0,
+      "vrijeme_ulaza": "14.10. 00:00 UTC",
+      "ulaz_ts": 1791936053.6764596,
+      "zadnja_stepenica": 0.0842601,
+      "stop_pct": -8,
+      "lokot": false,
+      "lokot_ts": null,
+      "najbolji_pl": 0.0,
+      "najbolji_neto": 0.0,
+      "neto_zivo": -0.18,
+      "hod": [
+       0.0,
+       0.0
       ]
      }
     },
@@ -160,7 +183,31 @@
     "valuta": "USD",
     "sredstva_pocetna": 4000,
     "kasa": 4000,
-    "pozicije": {},
+    "pozicije": {
+     "ARB": {
+      "smjer": "SHORT",
+      "prvi_ulaz": 0.191,
+      "prosjek": 0.191,
+      "ulozeno": 200,
+      "kolicina": 1047.1204188481674,
+      "dokupa": 0,
+      "naknade_usd": 0.09,
+      "funding_usd": 0.0,
+      "vrijeme_ulaza": "14.10. 00:00 UTC",
+      "ulaz_ts": 1791936053.6876593,
+      "zadnja_stepenica": 0.191,
+      "stop_pct": -15,
+      "lokot": false,
+      "lokot_ts": null,
+      "najbolji_pl": 0.0,
+      "najbolji_neto": 0.0,
+      "neto_zivo": -0.18,
+      "hod": [
+       0.0,
+       0.0
+      ]
+     }
+    },
     "sef": -154.32,
     "realizirano_period": -154.32,
     "period_od": null,
@@ -189,7 +236,6 @@
      "BCH": "SHORT",
      "DOGE": "SHORT",
      "ETH": "SHORT",
-     "ARB": "LONG",
      "PEPE": "SHORT",
      "LINK": "SHORT",
      "TON": "SHORT"
@@ -224,11 +270,11 @@
    }
   },
   "more": {
-   "sirina": 28,
-   "stanje": "OSEKA",
-   "prosla_sirina": 28
+   "sirina": 31,
+   "stanje": "MIJESANO",
+   "prosla_sirina": 31
   },
-  "zadnja_runda": "13.10. 23:59 UTC"
+  "zadnja_runda": "14.10. 00:03 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
