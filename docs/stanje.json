@@ -1,6 +1,6 @@
 {
- "generirano_utc": "16.10.2026 16:47:26 UTC",
- "generirano_ts": 1792169246,
+ "generirano_utc": "16.10.2026 16:50:29 UTC",
+ "generirano_ts": 1792169429,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -28,11 +28,8 @@
       "lokot_ts": null,
       "najbolji_pl": 0.0,
       "najbolji_neto": 0.0,
-      "neto_zivo": -0.6,
+      "neto_zivo": -0.64,
       "hod": [
-       -0.2426,
-       -0.2426,
-       -0.2426,
        -0.2073,
        -0.2073,
        -0.1817,
@@ -49,7 +46,10 @@
        -0.1999,
        -0.1906,
        -0.1906,
-       -0.1906
+       -0.1906,
+       -0.21,
+       -0.21,
+       -0.21
       ]
      },
      "LTC": {
@@ -69,11 +69,8 @@
       "lokot_ts": null,
       "najbolji_pl": 0.32727867779414055,
       "najbolji_neto": 0.4742628047782664,
-      "neto_zivo": -3.88,
+      "neto_zivo": -5.93,
       "hod": [
-       -0.8426,
-       -0.8426,
-       -0.8426,
        -0.8426,
        -1.0077,
        -1.0077,
@@ -90,31 +87,31 @@
        -1.0077,
        -1.0077,
        -0.8756,
-       -0.8756
+       -0.8756,
+       -0.8756,
+       -0.8756,
+       -1.3873
       ]
      },
      "ALGO": {
       "smjer": "LONG",
       "prvi_ulaz": 0.12045,
-      "prosjek": 0.11938058882653489,
-      "ulozeno": 400,
-      "kolicina": 3350.6284726172453,
-      "dokupa": 1,
-      "naknade_usd": 0.18,
+      "prosjek": 0.11837713573890446,
+      "ulozeno": 600,
+      "kolicina": 5068.546356142413,
+      "dokupa": 2,
+      "naknade_usd": 0.27,
       "funding_usd": 0.02,
       "vrijeme_ulaza": "16.10. 14:18 UTC",
       "ulaz_ts": 1792160330.668139,
-      "zadnja_stepenica": 0.11833,
+      "zadnja_stepenica": 0.11642,
       "stop_pct": -8,
       "lokot": false,
       "lokot_ts": null,
       "najbolji_pl": 0.33208800332087396,
       "najbolji_neto": 0.483877127438759,
-      "neto_zivo": -8.79,
+      "neto_zivo": -10.48,
       "hod": [
-       -1.8768,
-       -1.9104,
-       -1.9104,
        -1.9104,
        -2.1198,
        -2.1198,
@@ -131,7 +128,10 @@
        -2.3208,
        -2.3208,
        -2.103,
-       -2.103
+       -2.103,
+       -2.103,
+       -2.48,
+       -1.6533
       ]
      }
     },
@@ -273,7 +273,7 @@
    "stanje": "MIJESANO",
    "prosla_sirina": 31
   },
-  "zadnja_runda": "16.10. 16:46 UTC"
+  "zadnja_runda": "16.10. 16:49 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
