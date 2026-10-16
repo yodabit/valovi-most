@@ -1,6 +1,6 @@
 {
- "generirano_utc": "16.10.2026 20:59:43 UTC",
- "generirano_ts": 1792184383,
+ "generirano_utc": "16.10.2026 21:02:46 UTC",
+ "generirano_ts": 1792184566,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -28,13 +28,10 @@
       "lokot_ts": null,
       "najbolji_pl": 0.0,
       "najbolji_neto": 0.0,
-      "neto_zivo": -0.71,
+      "neto_zivo": -0.64,
       "hod": [
        -0.3109,
        -0.3109,
-       -0.3109,
-       -0.3109,
-       -0.3109,
        -0.2927,
        -0.2927,
        -0.2927,
@@ -49,7 +46,10 @@
        -0.2715,
        -0.2715,
        -0.2715,
-       -0.2447
+       -0.2447,
+       -0.21,
+       -0.21,
+       -0.21
       ]
      },
      "LTC": {
@@ -71,9 +71,6 @@
       "najbolji_neto": 0.4742628047782664,
       "neto_zivo": -7.91,
       "hod": [
-       -0.5258,
-       -0.5258,
-       -0.5258,
        -0.5924,
        -0.5425,
        -0.5425,
@@ -89,6 +86,9 @@
        -0.9751,
        -0.9751,
        -1.1082,
+       -1.2247,
+       -1.2247,
+       -1.2247,
        -1.2247,
        -1.2247
       ]
@@ -110,11 +110,8 @@
       "lokot_ts": null,
       "najbolji_pl": 0.33208800332087396,
       "najbolji_neto": 0.483877127438759,
-      "neto_zivo": -17.72,
+      "neto_zivo": -18.13,
       "hod": [
-       -1.6033,
-       -1.7738,
-       -1.7738,
        -1.7738,
        -1.7738,
        -1.7738,
@@ -131,7 +128,32 @@
        -2.1232,
        -2.1232,
        -2.1232,
-       -2.1232
+       -2.1232,
+       -2.1232,
+       -2.1743,
+       -2.1743
+      ]
+     },
+     "BTC": {
+      "smjer": "LONG",
+      "prvi_ulaz": 81597.5,
+      "prosjek": 81597.5,
+      "ulozeno": 200,
+      "kolicina": 0.0024510554857685592,
+      "dokupa": 0,
+      "naknade_usd": 0.09,
+      "funding_usd": 0.0,
+      "vrijeme_ulaza": "16.10. 21:01 UTC",
+      "ulaz_ts": 1792184463.4955385,
+      "zadnja_stepenica": 81597.5,
+      "stop_pct": -8,
+      "lokot": false,
+      "lokot_ts": null,
+      "najbolji_pl": 0.0,
+      "najbolji_neto": 0.0,
+      "neto_zivo": -0.33,
+      "hod": [
+       -0.0727
       ]
      }
     },
@@ -273,7 +295,7 @@
    "stanje": "MIJESANO",
    "prosla_sirina": 31
   },
-  "zadnja_runda": "16.10. 20:58 UTC"
+  "zadnja_runda": "16.10. 21:02 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
