@@ -1,6 +1,6 @@
 {
- "generirano_utc": "16.10.2026 00:04:26 UTC",
- "generirano_ts": 1792109066,
+ "generirano_utc": "16.10.2026 00:07:27 UTC",
+ "generirano_ts": 1792109247,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -26,8 +26,14 @@
       "stop_pct": -8,
       "lokot": false,
       "lokot_ts": null,
-      "najbolji_pl": 0.0,
-      "najbolji_neto": 0.0
+      "najbolji_pl": 0.024820177198781046,
+      "najbolji_neto": 0.0,
+      "neto_zivo": -0.13,
+      "hod": [
+       0.0,
+       0.0144,
+       0.0248
+      ]
      },
      "SOL": {
       "smjer": "SHORT",
@@ -45,7 +51,13 @@
       "lokot": false,
       "lokot_ts": null,
       "najbolji_pl": 0.0,
-      "najbolji_neto": 0.0
+      "najbolji_neto": 0.0,
+      "neto_zivo": -0.2,
+      "hod": [
+       -0.0095,
+       -0.0095,
+       -0.0095
+      ]
      }
     },
     "sef": 73.22,
@@ -135,7 +147,13 @@
       "lokot": false,
       "lokot_ts": null,
       "najbolji_pl": 0.0,
-      "najbolji_neto": 0.0
+      "najbolji_neto": 0.0,
+      "neto_zivo": -0.42,
+      "hod": [
+       -0.0638,
+       -0.0638,
+       -0.1185
+      ]
      },
      "FET": {
       "smjer": "SHORT",
@@ -149,6 +167,30 @@
       "vrijeme_ulaza": "16.10. 00:03 UTC",
       "ulaz_ts": 1792109013.950833,
       "zadnja_stepenica": 0.2062,
+      "stop_pct": -15,
+      "lokot": false,
+      "lokot_ts": null,
+      "najbolji_pl": 0.0,
+      "najbolji_neto": 0.0,
+      "neto_zivo": -0.28,
+      "hod": [
+       0.0,
+       -0.0485,
+       -0.0485
+      ]
+     },
+     "GRT": {
+      "smjer": "SHORT",
+      "prvi_ulaz": 0.02512,
+      "prosjek": 0.02512,
+      "ulozeno": 200,
+      "kolicina": 7961.783439490446,
+      "dokupa": 0,
+      "naknade_usd": 0.09,
+      "funding_usd": 0.0,
+      "vrijeme_ulaza": "16.10. 00:06 UTC",
+      "ulaz_ts": 1792109205.8511586,
+      "zadnja_stepenica": 0.02512,
       "stop_pct": -15,
       "lokot": false,
       "lokot_ts": null,
@@ -220,9 +262,9 @@
   "more": {
    "sirina": 31,
    "stanje": "MIJESANO",
-   "prosla_sirina": 24
+   "prosla_sirina": 31
   },
-  "zadnja_runda": "16.10. 00:03 UTC"
+  "zadnja_runda": "16.10. 00:06 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
