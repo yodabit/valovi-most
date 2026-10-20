@@ -1,6 +1,6 @@
 {
- "generirano_utc": "20.10.2026 14:47:40 UTC",
- "generirano_ts": 1792507660,
+ "generirano_utc": "20.10.2026 14:50:40 UTC",
+ "generirano_ts": 1792507840,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -10,58 +10,13 @@
     "valuta": "USD",
     "sredstva_pocetna": 6000,
     "kasa": 6000,
-    "pozicije": {
-     "RENDER": {
-      "smjer": "LONG",
-      "prvi_ulaz": 1.925,
-      "prosjek": 1.8508314775387493,
-      "ulozeno": 1200,
-      "kolicina": 648.3572462230703,
-      "dokupa": 5,
-      "naknade_usd": 0.54,
-      "funding_usd": 0.98,
-      "vrijeme_ulaza": "16.10. 22:31 UTC",
-      "ulaz_ts": 1792189880.5655057,
-      "zadnja_stepenica": 1.78,
-      "stop_pct": 2.353,
-      "lokot": true,
-      "lokot_ts": 1792505491.38966,
-      "najbolji_pl": 2.5485044442822957,
-      "najbolji_neto": 28.50829140738842,
-      "neto_zivo": 28.51,
-      "hod": [
-       1.0357,
-       1.5219,
-       1.7921,
-       1.7921,
-       1.7921,
-       2.0622,
-       2.0622,
-       2.0622,
-       2.0622,
-       2.0622,
-       2.2784,
-       2.2784,
-       2.2784,
-       2.2784,
-       2.2784,
-       2.1703,
-       2.1703,
-       2.5485,
-       2.5485,
-       2.5485
-      ],
-      "gorivo": 0,
-      "opruga_razmak": 0.15,
-      "tajmer_h": 0.6
-     }
-    },
-    "sef": 63.8,
-    "realizirano_period": 63.8,
+    "pozicije": {},
+    "sef": 78.7,
+    "realizirano_period": 78.7,
     "period_od": null,
     "pauza_do": null,
-    "broj_trejdova": 807,
-    "dobitni": 695,
+    "broj_trejdova": 808,
+    "dobitni": 696,
     "gubitni": 112,
     "zadnji_izlaz_signal": {
      "APT": "SHORT",
@@ -85,7 +40,8 @@
      "DOGE": "LONG",
      "ARB": "LONG",
      "ADA": "LONG",
-     "LTC": "LONG"
+     "LTC": "LONG",
+     "RENDER": "LONG"
     },
     "hladnjak": {
      "FET": 1792246142.9961474,
@@ -93,7 +49,7 @@
      "INJ": 1792202743.3042524,
      "ETH": 1792361374.9271305,
      "TIA": 1791957712.5801046,
-     "RENDER": 1792164546.8754957,
+     "RENDER": 1792507664.0390046,
      "BTC": 1792321293.7046723,
      "AAVE": 1792243846.6172934,
      "DOGE": 1792365068.3825114,
@@ -195,7 +151,7 @@
    "stanje": "OSEKA",
    "prosla_sirina": 17
   },
-  "zadnja_runda": "20.10. 14:46 UTC"
+  "zadnja_runda": "20.10. 14:49 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
@@ -14161,6 +14117,22 @@
    "neto_usd": -1.19,
    "zatvorio": "CEGRTALJKA",
    "sef": 63.8,
+   "kasa": 6000
+  },
+  {
+   "vrijeme": "20.10. 14:47 UTC",
+   "knjiga": "dnevni",
+   "token": "RENDER",
+   "smjer": "LONG",
+   "ulaz_po": 1.85083148,
+   "izlaz_po": 1.877,
+   "ulozeno_usd": 1200,
+   "dokupa": 5,
+   "naknade_usd": 1.0876,
+   "funding_usd": 0.98,
+   "neto_usd": 14.9,
+   "zatvorio": "CEGRTALJKA",
+   "sef": 78.7,
    "kasa": 6000
   }
  ]
