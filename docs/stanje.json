@@ -1,6 +1,6 @@
 {
- "generirano_utc": "21.10.2026 00:00:06 UTC",
- "generirano_ts": 1792540806,
+ "generirano_utc": "21.10.2026 00:03:16 UTC",
+ "generirano_ts": 1792540996,
  "izvor": "valovi-most paper",
  "state": {
   "verzija": "most-2.0",
@@ -151,7 +151,7 @@
    "stanje": "OSEKA",
    "prosla_sirina": 17
   },
-  "zadnja_runda": "20.10. 23:59 UTC"
+  "zadnja_runda": "21.10. 00:02 UTC"
  },
  "params": {
   "ciklus_sekundi": 60,
